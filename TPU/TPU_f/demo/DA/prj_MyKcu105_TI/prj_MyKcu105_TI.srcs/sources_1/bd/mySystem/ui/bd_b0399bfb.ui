@@ -1,0 +1,35 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.408136",
+   "Default View_TopLeft":"-235,-466",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port CLK_IN1_D -pg 1 -lvl 0 -x -110 -y 140 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x -110 -y 270 -defaultsOSRD
+preplace port sysrefn -pg 1 -lvl 0 -x -110 -y 230 -defaultsOSRD
+preplace port refclk_p -pg 1 -lvl 0 -x -110 -y 180 -defaultsOSRD
+preplace port sysrefp -pg 1 -lvl 0 -x -110 -y 250 -defaultsOSRD
+preplace port refclk_n -pg 1 -lvl 0 -x -110 -y 160 -defaultsOSRD
+preplace port tx_syncp -pg 1 -lvl 0 -x -110 -y 290 -defaultsOSRD
+preplace port tx_syncn -pg 1 -lvl 0 -x -110 -y 310 -defaultsOSRD
+preplace portBus leds -pg 1 -lvl 2 -x 2640 -y 310 -defaultsOSRD
+preplace portBus txp_out -pg 1 -lvl 2 -x 2640 -y 440 -defaultsOSRD
+preplace portBus txn_out -pg 1 -lvl 2 -x 2640 -y 460 -defaultsOSRD
+preplace inst JesdSubSys -pg 1 -lvl 1 -x 190 -y -138 -defaultsOSRD
+preplace netloc reset_1 1 0 1 -40J -108n
+preplace netloc JesdSubSys_leds 1 1 1 330J -158n
+preplace netloc sysrefn_1 1 0 1 -60J -148n
+preplace netloc refclk_p_1 1 0 1 -70J -168n
+preplace netloc sysrefp_1 1 0 1 -50J -128n
+preplace netloc refclk_n_1 1 0 1 -80J -188n
+preplace netloc JesdSubSys_txp_out 1 1 1 320J -138n
+preplace netloc JesdSubSys_txn_out 1 1 1 310J -118n
+preplace netloc tx_syncp_1 1 0 1 -30J -88n
+preplace netloc tx_syncn_1 1 0 1 -20J -68n
+preplace netloc CLK_IN1_D_1 1 0 1 -90J -208n
+levelinfo -pg 1 -110 190 2640
+pagesize -pg 1 -db -bbox -sgen -240 -270 2770 640
+"
+}
+0

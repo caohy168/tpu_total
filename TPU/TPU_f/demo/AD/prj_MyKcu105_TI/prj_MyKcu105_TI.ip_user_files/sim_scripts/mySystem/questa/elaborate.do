@@ -1,0 +1,1 @@
+vopt -64 +acc -l elaborate.log -L unisims_ver -L unimacro_ver -L secureip -L xil_defaultlib -L xpm -L gtwizard_ultrascale_v1_6_2 -L jesd204_v7_0_0 -L util_vector_logic_v2_0 -L util_reduced_logic_v2_0 -work xil_defaultlib xil_defaultlib.mySystem xil_defaultlib.glbl -o mySystem_opt

@@ -1,0 +1,1141 @@
+
+*** Running vivado
+    with args -log mySystem_wrapper.vds -m64 -mode batch -messageDb vivado.pb -notrace -source mySystem_wrapper.tcl
+
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source mySystem_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Soliton_work/Xilinx/UltraScale_Demo_T53/local_IP_TI/repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx1/Vivado/2016.1/data/ip'.
+add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 362.883 ; gain = 138.438
+Command: synth_design -top mySystem_wrapper -part xcku040-ffva1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-1223] The version limit for your license is '2016.10' and will expire in -295 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8700 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:58 . Memory (MB): peak = 447.910 ; gain = 241.449
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mySystem_wrapper' [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'mySystem' [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:459]
+INFO: [Synth 8-638] synthesizing module 'JesdSubSys_imp_1X7UZVI' [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:12]
+INFO: [Synth 8-638] synthesizing module 'mySystem_Transport_layer_12DJxx_0_0' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_Transport_layer_12DJxx_0_0/synth/mySystem_Transport_layer_12DJxx_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'Transport_layer_12DJxx' [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/new/Transport_layer_12DJxx.v:9]
+INFO: [Synth 8-256] done synthesizing module 'Transport_layer_12DJxx' (1#1) [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/new/Transport_layer_12DJxx.v:9]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_Transport_layer_12DJxx_0_0' (2#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_Transport_layer_12DJxx_0_0/synth/mySystem_Transport_layer_12DJxx_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'mySystem_clk_wiz_0_0' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'mySystem_clk_wiz_0_0_clk_wiz' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0_clk_wiz.v:119]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0_clk_wiz.v:119]
+INFO: [Synth 8-638] synthesizing module 'IBUFDS' [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:14160]
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS' (3#1) [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:14160]
+INFO: [Synth 8-638] synthesizing module 'PLLE3_ADV' [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:32790]
+INFO: [Synth 8-256] done synthesizing module 'PLLE3_ADV' (4#1) [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:32790]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (5#1) [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BUFGCE' [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:617]
+INFO: [Synth 8-256] done synthesizing module 'BUFGCE' (6#1) [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:617]
+INFO: [Synth 8-638] synthesizing module 'BUFH' [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'BUFH' (7#1) [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_clk_wiz_0_0_clk_wiz' (8#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_clk_wiz_0_0' (9#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0.v:70]
+WARNING: [Synth 8-350] instance 'clk_wiz_0' of module 'mySystem_clk_wiz_0_0' requires 5 connections, but only 4 given [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:154]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlconstant_0_2' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlconstant_0_2/sim/mySystem_xlconstant_0_2.v:56]
+INFO: [Synth 8-638] synthesizing module 'xlconstant' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant' (10#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlconstant_0_2' (11#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlconstant_0_2/sim/mySystem_xlconstant_0_2.v:56]
+INFO: [Synth 8-638] synthesizing module 'mySystem_iobufs_i_1' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_iobufs_i_1/synth/mySystem_iobufs_i_1.v:56]
+INFO: [Synth 8-638] synthesizing module 'iobufs_ti' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/user.org/iobufs_ti_v2_2/sources_1/imports/iobufs_ti/iobufs_ti.v:62]
+INFO: [Synth 8-638] synthesizing module 'OBUFDS' [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:21923]
+INFO: [Synth 8-256] done synthesizing module 'OBUFDS' (12#1) [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:21923]
+INFO: [Synth 8-638] synthesizing module 'IBUFDS_GTE3' [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:14316]
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS_GTE3' (13#1) [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:14316]
+INFO: [Synth 8-638] synthesizing module 'BUFG_GT' [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:760]
+INFO: [Synth 8-256] done synthesizing module 'BUFG_GT' (14#1) [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:760]
+INFO: [Synth 8-256] done synthesizing module 'iobufs_ti' (15#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/user.org/iobufs_ti_v2_2/sources_1/imports/iobufs_ti/iobufs_ti.v:62]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_iobufs_i_1' (16#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_iobufs_i_1/synth/mySystem_iobufs_i_1.v:56]
+WARNING: [Synth 8-350] instance 'iobufs_i' of module 'mySystem_iobufs_i_1' requires 13 connections, but only 12 given [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:161]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_phy_0' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_phy_0_support' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_support.v:52]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_phy_0_block' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_block.v:46]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_block.v:343]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_block.v:344]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_block.v:346]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_block.v:347]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_phy_0_gt' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/synth/mySystem_jesd204_phy_0_gt.v:62]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_phy_0_gt_gtwizard_top' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/synth/mySystem_jesd204_phy_0_gt_gtwizard_top.v:170]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_phy_0_gt_gtwizard_gthe3' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/synth/mySystem_jesd204_phy_0_gt_gtwizard_gthe3.v:138]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_phy_0_gt_gthe3_channel_wrapper' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/synth/mySystem_jesd204_phy_0_gt_gthe3_channel_wrapper.v:56]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_2_gthe3_channel' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/synth/gtwizard_ultrascale_v1_6_gthe3_channel.v:55]
+INFO: [Synth 8-638] synthesizing module 'GTHE3_CHANNEL' [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:5776]
+INFO: [Synth 8-256] done synthesizing module 'GTHE3_CHANNEL' (17#1) [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:5776]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_2_gthe3_channel' (18#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/synth/gtwizard_ultrascale_v1_6_gthe3_channel.v:55]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_phy_0_gt_gthe3_channel_wrapper' (19#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/synth/mySystem_jesd204_phy_0_gt_gthe3_channel_wrapper.v:56]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_phy_0_gt_gtwizard_gthe3' (20#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/synth/mySystem_jesd204_phy_0_gt_gtwizard_gthe3.v:138]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_phy_0_gt_gtwizard_top' (21#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/synth/mySystem_jesd204_phy_0_gt_gtwizard_top.v:170]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_phy_0_gt' (22#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/synth/mySystem_jesd204_phy_0_gt.v:62]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_2_gtwiz_reset' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_reset.v:55]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_2_reset_synchronizer' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_reset_synchronizer.v:55]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_reset_synchronizer.v:72]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_reset_synchronizer.v:73]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_reset_synchronizer.v:74]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_reset_synchronizer.v:75]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_2_reset_synchronizer' (23#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_reset_synchronizer.v:55]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_2_bit_synchronizer' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_bit_synchronizer.v:55]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_bit_synchronizer.v:71]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_bit_synchronizer.v:72]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_bit_synchronizer.v:73]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_bit_synchronizer.v:74]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_2_bit_synchronizer' (24#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_bit_synchronizer.v:55]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_reset.v:164]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_2_reset_inv_synchronizer' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_reset_inv_synchronizer.v:55]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_reset_inv_synchronizer.v:72]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_reset_inv_synchronizer.v:73]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_reset_inv_synchronizer.v:74]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_reset_inv_synchronizer.v:75]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_2_reset_inv_synchronizer' (25#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_reset_inv_synchronizer.v:55]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_2_gtwiz_reset' (26#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/gtwizard_ultrascale_v1_6_2/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_reset.v:55]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_phy_0_sync_block' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_sync_block.v:76]
+INFO: [Synth 8-638] synthesizing module 'FD' [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:3724]
+INFO: [Synth 8-256] done synthesizing module 'FD' (27#1) [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:3724]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_phy_0_sync_block' (28#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_sync_block.v:76]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_phy_0_reset_control' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_reset_control.v:47]
+INFO: [Synth 8-226] default block is never used [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_reset_control.v:84]
+INFO: [Synth 8-226] default block is never used [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_reset_control.v:122]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_phy_0_reset_control' (29#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_reset_control.v:47]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_phy_0_block' (30#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_block.v:46]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_phy_0_gt_common_wrapper' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_gt_common_wrapper.v:75]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_phy_0_gt_common' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_gt_common.v:4]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_2_gthe3_common' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/gtwizard_ultrascale_v1_6_gthe3_common.v:55]
+INFO: [Synth 8-638] synthesizing module 'GTHE3_COMMON' [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:6828]
+INFO: [Synth 8-256] done synthesizing module 'GTHE3_COMMON' (31#1) [D:/Xilinx1/Vivado/2016.1/scripts/rt/data/unisim_comp.v:6828]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_2_gthe3_common' (32#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/gtwizard_ultrascale_v1_6_gthe3_common.v:55]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_phy_0_gt_common' (33#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_gt_common.v:4]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_phy_0_gt_common_wrapper' (34#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_gt_common_wrapper.v:75]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_phy_0_support' (35#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_support.v:52]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_phy_0' (36#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0.v:53]
+WARNING: [Synth 8-350] instance 'jesd204_phy' of module 'mySystem_jesd204_phy_0' requires 155 connections, but only 118 given [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_rx_0' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0.v:55]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_rx_0_block' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0_block.v:52]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_rx_0_axi_lite_ipif' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/axi_ipif/mySystem_jesd204_rx_0_axi_lite_ipif.v:88]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_rx_0_slave_attachment' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/axi_ipif/mySystem_jesd204_rx_0_slave_attachment.v:83]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_rx_0_counter_f' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/axi_ipif/mySystem_jesd204_rx_0_counter_f.v:54]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_rx_0_counter_f' (56#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/axi_ipif/mySystem_jesd204_rx_0_counter_f.v:54]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_rx_0_address_decoder' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/axi_ipif/mySystem_jesd204_rx_0_address_decoder.v:65]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_rx_0_address_decoder' (57#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/axi_ipif/mySystem_jesd204_rx_0_address_decoder.v:65]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_rx_0_slave_attachment' (58#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/axi_ipif/mySystem_jesd204_rx_0_slave_attachment.v:83]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_rx_0_axi_lite_ipif' (59#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/axi_ipif/mySystem_jesd204_rx_0_axi_lite_ipif.v:88]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_rx_0_register_decode' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0_register_decode.v:51]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0_register_decode.v:86]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_rx_0_register_decode' (60#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0_register_decode.v:51]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_rx_0_count_err' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0_count_err.v:51]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_rx_0_count_err' (61#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0_count_err.v:51]
+INFO: [Synth 8-638] synthesizing module 'mySystem_jesd204_rx_0_sync_block' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0_sync_block.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_rx_0_sync_block' (62#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0_sync_block.v:76]
+INFO: [Synth 8-3936] Found unconnected internal register 'rx_stat_init_r1_reg' and it is trimmed from '256' to '255' bits. [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0_block.v:513]
+INFO: [Synth 8-3936] Found unconnected internal register 'rx_stat_init_r2_reg' and it is trimmed from '256' to '253' bits. [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0_block.v:514]
+INFO: [Synth 8-3936] Found unconnected internal register 'rx_stat_init_r3_reg' and it is trimmed from '256' to '236' bits. [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0_block.v:515]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_rx_0_block' (63#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0_block.v:52]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_jesd204_rx_0' (64#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0.v:55]
+WARNING: [Synth 8-350] instance 'jesd204_rx' of module 'mySystem_jesd204_rx_0' requires 66 connections, but only 53 given [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:293]
+INFO: [Synth 8-638] synthesizing module 'mySystem_leds_0_0' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_leds_0_0/synth/mySystem_leds_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'leds' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/user.org/leds_v1_1/sources_1/imports/leds/leds.v:5]
+INFO: [Synth 8-256] done synthesizing module 'leds' (65#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/user.org/leds_v1_1/sources_1/imports/leds/leds.v:5]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_leds_0_0' (66#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_leds_0_0/synth/mySystem_leds_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlconstant_0_0' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlconstant_0_0/sim/mySystem_xlconstant_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'xlconstant__parameterized0' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant__parameterized0' (66#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlconstant_0_0' (67#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlconstant_0_0/sim/mySystem_xlconstant_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlconstant_0_1' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlconstant_0_1/sim/mySystem_xlconstant_0_1.v:56]
+INFO: [Synth 8-638] synthesizing module 'xlconstant__parameterized1' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant__parameterized1' (67#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlconstant_v1_1/xlconstant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlconstant_0_1' (68#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlconstant_0_1/sim/mySystem_xlconstant_0_1.v:56]
+INFO: [Synth 8-638] synthesizing module 'mySystem_util_reduced_logic_1_3' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_util_reduced_logic_1_3/synth/mySystem_util_reduced_logic_1_3.vhd:66]
+INFO: [Synth 8-3491] module 'util_reduced_logic' declared at 'd:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/util_reduced_logic_v2_0/hdl/util_reduced_logic.vhd:76' bound to instance 'U0' of component 'util_reduced_logic' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_util_reduced_logic_1_3/synth/mySystem_util_reduced_logic_1_3.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'util_reduced_logic' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/util_reduced_logic_v2_0/hdl/util_reduced_logic.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'util_reduced_logic' (69#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/util_reduced_logic_v2_0/hdl/util_reduced_logic.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_util_reduced_logic_1_3' (70#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_util_reduced_logic_1_3/synth/mySystem_util_reduced_logic_1_3.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'mySystem_util_vector_logic_0_0' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_util_vector_logic_0_0/synth/mySystem_util_vector_logic_0_0.vhd:66]
+INFO: [Synth 8-3491] module 'util_vector_logic' declared at 'd:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/util_vector_logic_v2_0/hdl/util_vector_logic.vhd:76' bound to instance 'U0' of component 'util_vector_logic' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_util_vector_logic_0_0/synth/mySystem_util_vector_logic_0_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'util_vector_logic' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/util_vector_logic_v2_0/hdl/util_vector_logic.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'util_vector_logic' (71#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/util_vector_logic_v2_0/hdl/util_vector_logic.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_util_vector_logic_0_0' (72#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_util_vector_logic_0_0/synth/mySystem_util_vector_logic_0_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'mySystem_util_vector_logic_0_8' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_util_vector_logic_0_8/synth/mySystem_util_vector_logic_0_8.vhd:66]
+INFO: [Synth 8-3491] module 'util_vector_logic' declared at 'd:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/util_vector_logic_v2_0/hdl/util_vector_logic.vhd:76' bound to instance 'U0' of component 'util_vector_logic' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_util_vector_logic_0_8/synth/mySystem_util_vector_logic_0_8.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_util_vector_logic_0_8' (73#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_util_vector_logic_0_8/synth/mySystem_util_vector_logic_0_8.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlconcat_0_2' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlconcat_0_2/synth/mySystem_xlconcat_0_2.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (74#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlconcat_0_2' (75#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlconcat_0_2/synth/mySystem_xlconcat_0_2.v:58]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_1_0' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_1_0/synth/mySystem_xlslice_1_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice' (76#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_1_0' (77#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_1_0/synth/mySystem_xlslice_1_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_0' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_0/synth/mySystem_xlslice_21_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized0' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized0' (77#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_0' (78#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_0/synth/mySystem_xlslice_21_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_1' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_1/synth/mySystem_xlslice_21_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized1' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized1' (78#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_1' (79#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_1/synth/mySystem_xlslice_21_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_2' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_2/synth/mySystem_xlslice_21_2.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized2' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized2' (79#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_2' (80#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_2/synth/mySystem_xlslice_21_2.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_3' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_3/synth/mySystem_xlslice_21_3.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized3' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized3' (80#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_3' (81#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_3/synth/mySystem_xlslice_21_3.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_4' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_4/synth/mySystem_xlslice_21_4.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized4' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized4' (81#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_4' (82#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_4/synth/mySystem_xlslice_21_4.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_5' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_5/synth/mySystem_xlslice_21_5.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized5' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized5' (82#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_5' (83#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_5/synth/mySystem_xlslice_21_5.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_6' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_6/synth/mySystem_xlslice_21_6.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized6' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized6' (83#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_6' (84#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_6/synth/mySystem_xlslice_21_6.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_7' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_7/synth/mySystem_xlslice_21_7.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized7' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized7' (84#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_7' (85#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_7/synth/mySystem_xlslice_21_7.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_8' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_8/synth/mySystem_xlslice_21_8.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized8' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized8' (85#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_8' (86#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_8/synth/mySystem_xlslice_21_8.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_9' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_9/synth/mySystem_xlslice_21_9.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized9' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized9' (86#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_9' (87#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_9/synth/mySystem_xlslice_21_9.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_10' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_10/synth/mySystem_xlslice_21_10.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized10' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized10' (87#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_10' (88#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_10/synth/mySystem_xlslice_21_10.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_11' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_11/synth/mySystem_xlslice_21_11.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized11' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized11' (88#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_11' (89#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_11/synth/mySystem_xlslice_21_11.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_12' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_12/synth/mySystem_xlslice_21_12.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized12' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized12' (89#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_12' (90#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_12/synth/mySystem_xlslice_21_12.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_13' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_13/synth/mySystem_xlslice_21_13.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized13' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized13' (90#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_13' (91#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_13/synth/mySystem_xlslice_21_13.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_14' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_14/synth/mySystem_xlslice_21_14.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized14' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized14' (91#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_14' (92#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_14/synth/mySystem_xlslice_21_14.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_15' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_15/synth/mySystem_xlslice_21_15.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized15' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized15' (92#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_15' (93#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_15/synth/mySystem_xlslice_21_15.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_16' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_16/synth/mySystem_xlslice_21_16.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized16' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized16' (93#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_16' (94#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_16/synth/mySystem_xlslice_21_16.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_17' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_17/synth/mySystem_xlslice_21_17.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized17' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized17' (94#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_17' (95#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_17/synth/mySystem_xlslice_21_17.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_21_18' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_18/synth/mySystem_xlslice_21_18.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized18' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized18' (95#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_21_18' (96#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_21_18/synth/mySystem_xlslice_21_18.v:57]
+INFO: [Synth 8-638] synthesizing module 'mySystem_xlslice_0_8' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_0_8/synth/mySystem_xlslice_0_8.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized19' [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized19' (96#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/xilinx.com/xlslice_v1_0/xlslice.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_xlslice_0_8' (97#1) [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_xlslice_0_8/synth/mySystem_xlslice_0_8.v:57]
+INFO: [Synth 8-256] done synthesizing module 'JesdSubSys_imp_1X7UZVI' (98#1) [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:12]
+INFO: [Synth 8-256] done synthesizing module 'mySystem' (99#1) [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:459]
+INFO: [Synth 8-256] done synthesizing module 'mySystem_wrapper' (100#1) [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlslice__parameterized19 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice__parameterized19 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice__parameterized19 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[227]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[226]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[225]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[224]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[223]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[222]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[221]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[220]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[219]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[218]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[217]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[216]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[215]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[214]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[213]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[212]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[211]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[210]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[209]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[208]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[207]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[206]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[205]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[204]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[203]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[202]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[201]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[200]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[199]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[198]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[197]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[196]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[195]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[194]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[193]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[192]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[191]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[190]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[189]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[188]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[187]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[186]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[185]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[184]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[183]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[182]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[181]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[180]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[179]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[178]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[177]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[176]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[175]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[174]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[173]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[172]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[171]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[170]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[169]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[168]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[167]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[166]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[165]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[164]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[163]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[162]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[161]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[160]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[159]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[158]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[157]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[156]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[155]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[154]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[153]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[152]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[151]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[150]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[149]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[148]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[147]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[146]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[145]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[144]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[143]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[142]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[141]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[140]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[139]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[138]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[137]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[136]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[135]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[134]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[133]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[132]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[131]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:01:12 . Memory (MB): peak = 564.441 ; gain = 357.980
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+INFO: [Synth 8-3295] tying undriven pin jesd204_phy_gt_common_0_i:common_qpll0_reset to constant 0 [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_support.v:618]
+INFO: [Synth 8-3295] tying undriven pin jesd204_phy_gt_common_1_i:common_qpll0_reset to constant 0 [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_support.v:647]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[31] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[30] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[29] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[28] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[27] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[26] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[25] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[24] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[23] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[22] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[21] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[20] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[19] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[18] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[17] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[16] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[15] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[14] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[13] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[12] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[11] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[10] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[9] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[8] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[7] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[6] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[5] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[4] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[3] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[2] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[1] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[0] to constant 0 [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/hdl/mySystem.v:174]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:30 ; elapsed = 00:01:13 . Memory (MB): peak = 564.441 ; gain = 357.980
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/synth/mySystem_jesd204_phy_0_gt.xdc] for cell 'mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst'
+Finished Parsing XDC File [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/synth/mySystem_jesd204_phy_0_gt.xdc] for cell 'mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/ip_0/synth/mySystem_jesd204_phy_0_gt.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mySystem_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mySystem_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0.xdc] for cell 'mySystem_i/JesdSubSys/jesd204_phy/inst'
+Finished Parsing XDC File [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0.xdc] for cell 'mySystem_i/JesdSubSys/jesd204_phy/inst'
+Parsing XDC File [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0.xdc] for cell 'mySystem_i/JesdSubSys/jesd204_rx/inst'
+Finished Parsing XDC File [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/mySystem_jesd204_rx_0.xdc] for cell 'mySystem_i/JesdSubSys/jesd204_rx/inst'
+Parsing XDC File [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0_board.xdc] for cell 'mySystem_i/JesdSubSys/clk_wiz_0/inst'
+Finished Parsing XDC File [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0_board.xdc] for cell 'mySystem_i/JesdSubSys/clk_wiz_0/inst'
+Parsing XDC File [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0.xdc] for cell 'mySystem_i/JesdSubSys/clk_wiz_0/inst'
+Finished Parsing XDC File [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0.xdc] for cell 'mySystem_i/JesdSubSys/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mySystem_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mySystem_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/constrs_1/imports/constraints/KCU105.xdc]
+Finished Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/constrs_1/imports/constraints/KCU105.xdc]
+Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/constrs_1/imports/constraints/KCU105_io_TI.xdc]
+Finished Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/constrs_1/imports/constraints/KCU105_io_TI.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/constrs_1/imports/constraints/KCU105_io_TI.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mySystem_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mySystem_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/constrs_1/imports/constraints/KCU105_io.xdc]
+Finished Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/constrs_1/imports/constraints/KCU105_io.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/constrs_1/imports/constraints/KCU105_io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mySystem_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mySystem_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mySystem_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mySystem_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_clocks.xdc] for cell 'mySystem_i/JesdSubSys/jesd204_phy/inst'
+Finished Parsing XDC File [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_clocks.xdc] for cell 'mySystem_i/JesdSubSys/jesd204_phy/inst'
+Parsing XDC File [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0_late.xdc] for cell 'mySystem_i/JesdSubSys/clk_wiz_0/inst'
+Finished Parsing XDC File [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0_late.xdc] for cell 'mySystem_i/JesdSubSys/clk_wiz_0/inst'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 86 instances were transformed.
+  BUFG => BUFGCE: 1 instances
+  BUFH => BUFGCE: 1 instances
+  FD => FDRE: 80 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 2 instances
+  OBUFDS => OBUFDS_DUAL_BUF (OBUF, OBUF, INV): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1056.508 ; gain = 0.211
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:59 ; elapsed = 00:01:52 . Memory (MB): peak = 1056.508 ; gain = 850.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:59 ; elapsed = 00:01:52 . Memory (MB): peak = 1056.508 ; gain = 850.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst. (constraint file  D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/synth_1/dont_touch.xdc, line 121).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/jesd204_phy/inst. (constraint file  D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/synth_1/dont_touch.xdc, line 126).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/jesd204_rx/inst. (constraint file  D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/synth_1/dont_touch.xdc, line 132).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/clk_wiz_0/inst. (constraint file  D:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/synth_1/dont_touch.xdc, line 137).
+Applied set_property DONT_TOUCH = true for mySystem_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/Transport_layer_12DJxx_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/gt_prbssel. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/iobufs_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/jesd204_phy. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/jesd204_rx. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/leds_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/rx_polarity. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/sync_inv. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/util_reduced_logic_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/util_vector_logic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/util_vector_logic_8. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlconcat_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_21. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_22. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_23. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_24. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_25. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_26. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_27. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_28. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_29. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_30. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_31. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_32. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_33. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_34. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_35. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_36. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_37. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_38. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_39. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_40. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mySystem_i/JesdSubSys/xlslice_8. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:57 . Memory (MB): peak = 1056.508 ; gain = 850.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_all_reg' in module 'gtwizard_ultrascale_v1_6_2_gtwiz_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_tx_reg' in module 'gtwizard_ultrascale_v1_6_2_gtwiz_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_rx_reg' in module 'gtwizard_ultrascale_v1_6_2_gtwiz_reset'
+INFO: [Synth 8-5544] ROM "sm_reset_all_timer_clr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gtwiz_reset_rx_datapath_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gtwiz_reset_rx_pll_and_datapath_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gtwiz_reset_tx_pll_and_datapath_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_all" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_all" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pllreset_tx_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_tx_pll_timer_clr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_tx_timer_clr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_tx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pllreset_rx_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_rx_pll_timer_clr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_rx_timer_clr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_rx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "sof_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sof_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sfcnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eof_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "stall" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "eof_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eof_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "efcnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'jesd204_v7_0_0_cgs_state_32'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cfg_did" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cfg_f" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cfg_np" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cfg_res2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ila_test" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "k285_test" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ila_test" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "k285_test" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_rx_0/synth/axi_ipif/mySystem_jesd204_rx_0_counter_f.v:99]
+INFO: [Synth 8-802] inferred FSM for state register 'access_cs_reg' in module 'mySystem_jesd204_rx_0_slave_attachment'
+INFO: [Synth 8-5544] ROM "p_555_in" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "error_add" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_reset_gt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+      ST_RESET_TX_BRANCH |                              000 |                              000
+         ST_RESET_TX_PLL |                              001 |                              001
+    ST_RESET_TX_DATAPATH |                              010 |                              010
+   ST_RESET_TX_WAIT_LOCK |                              011 |                              011
+ST_RESET_TX_WAIT_USERRDY |                              100 |                              100
+ST_RESET_TX_WAIT_RESETDONE |                              101 |                              101
+        ST_RESET_TX_IDLE |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_tx_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_6_2_gtwiz_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+      ST_RESET_RX_BRANCH |                              000 |                              000
+         ST_RESET_RX_PLL |                              001 |                              001
+    ST_RESET_RX_DATAPATH |                              010 |                              010
+   ST_RESET_RX_WAIT_LOCK |                              011 |                              011
+    ST_RESET_RX_WAIT_CDR |                              100 |                              100
+ST_RESET_RX_WAIT_USERRDY |                              101 |                              101
+ST_RESET_RX_WAIT_RESETDONE |                              110 |                              110
+        ST_RESET_RX_IDLE |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_rx_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_6_2_gtwiz_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+     ST_RESET_ALL_BRANCH |                              000 |                              001
+     ST_RESET_ALL_TX_PLL |                              001 |                              010
+ST_RESET_ALL_TX_PLL_WAIT |                              010 |                              011
+      ST_RESET_ALL_RX_DP |                              011 |                              100
+     ST_RESET_ALL_RX_PLL |                              100 |                              101
+    ST_RESET_ALL_RX_WAIT |                              101 |                              110
+                  iSTATE |                              110 |                              111
+       ST_RESET_ALL_INIT |                              111 |                              000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_all_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_6_2_gtwiz_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     sxx |                             0000 |                             0000
+                     s30 |                             0001 |                             0001
+                     s31 |                             0010 |                             0010
+                     s02 |                             0011 |                             1011
+                     s13 |                             0100 |                             1001
+                     s01 |                             0101 |                             1010
+                     s12 |                             0110 |                             1000
+                     s23 |                             0111 |                             0110
+                     s11 |                             1000 |                             0111
+                     s22 |                             1001 |                             0101
+                     s33 |                             1010 |                             1101
+                     s21 |                             1011 |                             0100
+                     s32 |                             1100 |                             0011
+                     s03 |                             1101 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'jesd204_v7_0_0_cgs_state_32'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                 READING |                              001 |                              001
+               READ_WAIT |                              010 |                              010
+              WRITE_WAIT |                              011 |                              011
+                 WRITING |                              100 |                              100
+                 B_VALID |                              101 |                              101
+              BRESP_WAIT |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'access_cs_reg' using encoding 'sequential' in module 'mySystem_jesd204_rx_0_slave_attachment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:39 ; elapsed = 00:02:33 . Memory (MB): peak = 1056.508 ; gain = 850.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------------------------+------------+----------+
+|      |RTL Partition                              |Replication |Instances |
++------+-------------------------------------------+------------+----------+
+|1     |mySystem_clk_wiz_0_0_clk_wiz__GC0          |           1|        12|
+|2     |iobufs_ti__GC0                             |           1|         3|
+|3     |muxpart__79                                |           1|     36864|
+|4     |mySystem_jesd204_rx_0_register_decode__GB1 |           1|       326|
+|5     |mySystem_jesd204_rx_0_block__GC0           |           1|     42222|
+|6     |JesdSubSys_imp_1X7UZVI__GC0                |           1|      3963|
++------+-------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:40 ; elapsed = 00:02:34 . Memory (MB): peak = 1056.508 ; gain = 850.047
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:02:27 ; elapsed = 00:03:21 . Memory (MB): peak = 1056.508 ; gain = 850.047
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:02:27 ; elapsed = 00:03:21 . Memory (MB): peak = 1056.508 ; gain = 850.047
+
+Report RTL Partitions: 
++------+-------------------------------------------+------------+----------+
+|      |RTL Partition                              |Replication |Instances |
++------+-------------------------------------------+------------+----------+
+|1     |mySystem_clk_wiz_0_0_clk_wiz__GC0          |           1|        12|
+|2     |iobufs_ti__GC0                             |           1|         3|
+|3     |muxpart__79                                |           1|     36864|
+|4     |mySystem_jesd204_rx_0_register_decode__GB1 |           1|       326|
+|5     |mySystem_jesd204_rx_0_block__GC0           |           1|     44811|
+|6     |JesdSubSys_imp_1X7UZVI__GC0                |           1|      4936|
++------+-------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_axi_lite_ipif/I_SLAVE_ATTACHMENT/s_axi_rresp_reg_reg[0]' (FDRE) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_axi_lite_ipif/I_SLAVE_ATTACHMENT/s_axi_rresp_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_axi_lite_ipif/\I_SLAVE_ATTACHMENT/s_axi_rresp_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_axi_lite_ipif/I_SLAVE_ATTACHMENT/s_axi_bresp_reg_reg[0]' (FDRE) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_axi_lite_ipif/I_SLAVE_ATTACHMENT/s_axi_bresp_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_axi_lite_ipif/\I_SLAVE_ATTACHMENT/s_axi_bresp_reg_reg[1] )
+INFO: [Synth 8-3332] Sequential element (I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].cs_out_i_reg[0]) is unused and will be removed from module mySystem_jesd204_rx_0_axi_lite_ipif.
+INFO: [Synth 8-3332] Sequential element (I_SLAVE_ATTACHMENT/s_axi_bresp_reg_reg[1]) is unused and will be removed from module mySystem_jesd204_rx_0_axi_lite_ipif.
+INFO: [Synth 8-3332] Sequential element (I_SLAVE_ATTACHMENT/s_axi_bresp_reg_reg[0]) is unused and will be removed from module mySystem_jesd204_rx_0_axi_lite_ipif.
+INFO: [Synth 8-3332] Sequential element (I_SLAVE_ATTACHMENT/s_axi_rresp_reg_reg[1]) is unused and will be removed from module mySystem_jesd204_rx_0_axi_lite_ipif.
+INFO: [Synth 8-3332] Sequential element (I_SLAVE_ATTACHMENT/s_axi_rresp_reg_reg[0]) is unused and will be removed from module mySystem_jesd204_rx_0_axi_lite_ipif.
+INFO: [Synth 8-3332] Sequential element (I_SLAVE_ATTACHMENT/GEN_USE_WSTRB.bus2ip_be_reg_reg[3]) is unused and will be removed from module mySystem_jesd204_rx_0_axi_lite_ipif.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[0]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[1]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[2]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[3]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[4]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[5]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[6]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[7]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[8]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[9]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[10]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[11]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[12]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[13]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[14]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[15]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[16]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[17]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[18]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[19]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[20]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[21]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[22]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[23]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[24]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[25]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[26]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[27]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[28]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[29]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[30]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (error_count_reg[31]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (notb_errs_reg[3]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (notb_errs_reg[2]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (notb_errs_reg[1]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (notb_errs_reg[0]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (disp_errs_reg[3]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (disp_errs_reg[2]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (disp_errs_reg[1]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3332] Sequential element (disp_errs_reg[0]) is unused and will be removed from module mySystem_jesd204_rx_0_count_err.
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[4].rx_lane_32_c/comma_c/inv_ds_reg[3]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[4].rx_lane_32_c/comma_c/is_e_ds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[4].rx_lane_32_c/comma_c/inv_ds_reg[2]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[4].rx_lane_32_c/comma_c/is_e_ds_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[4].rx_lane_32_c/comma_c/inv_ds_reg[1]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[4].rx_lane_32_c/comma_c/is_e_ds_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[4].rx_lane_32_c/comma_c/is_e_ds_reg[0]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[4].rx_lane_32_c/comma_c/inv_ds_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[5].rx_lane_32_c/comma_c/inv_ds_reg[3]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[5].rx_lane_32_c/comma_c/is_e_ds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[5].rx_lane_32_c/comma_c/inv_ds_reg[2]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[5].rx_lane_32_c/comma_c/is_e_ds_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[5].rx_lane_32_c/comma_c/inv_ds_reg[1]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[5].rx_lane_32_c/comma_c/is_e_ds_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[5].rx_lane_32_c/comma_c/is_e_ds_reg[0]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[5].rx_lane_32_c/comma_c/inv_ds_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[7].rx_lane_32_c/comma_c/inv_ds_reg[3]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[7].rx_lane_32_c/comma_c/is_e_ds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[7].rx_lane_32_c/comma_c/inv_ds_reg[2]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[7].rx_lane_32_c/comma_c/is_e_ds_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[7].rx_lane_32_c/comma_c/inv_ds_reg[1]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[7].rx_lane_32_c/comma_c/is_e_ds_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[7].rx_lane_32_c/comma_c/is_e_ds_reg[0]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[7].rx_lane_32_c/comma_c/inv_ds_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[6].rx_lane_32_c/comma_c/inv_ds_reg[3]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[6].rx_lane_32_c/comma_c/is_e_ds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[6].rx_lane_32_c/comma_c/inv_ds_reg[2]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[6].rx_lane_32_c/comma_c/is_e_ds_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[6].rx_lane_32_c/comma_c/inv_ds_reg[1]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[6].rx_lane_32_c/comma_c/is_e_ds_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[6].rx_lane_32_c/comma_c/is_e_ds_reg[0]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[6].rx_lane_32_c/comma_c/inv_ds_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/inv_ds_reg[3]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/is_e_ds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/inv_ds_reg[2]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/is_e_ds_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/inv_ds_reg[1]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/is_e_ds_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/is_e_ds_reg[0]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/inv_ds_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/inv_ds_reg[3]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/is_e_ds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/inv_ds_reg[2]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/is_e_ds_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/inv_ds_reg[1]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/is_e_ds_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/is_e_ds_reg[0]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/inv_ds_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/inv_ds_reg[3]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/is_e_ds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/inv_ds_reg[2]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/is_e_ds_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/inv_ds_reg[1]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/is_e_ds_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/is_e_ds_reg[0]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/inv_ds_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[3].rx_lane_32_c/comma_c/inv_ds_reg[3]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[3].rx_lane_32_c/comma_c/is_e_ds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[3].rx_lane_32_c/comma_c/inv_ds_reg[2]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[3].rx_lane_32_c/comma_c/is_e_ds_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[3].rx_lane_32_c/comma_c/inv_ds_reg[1]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[3].rx_lane_32_c/comma_c/is_e_ds_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[3].rx_lane_32_c/comma_c/is_e_ds_reg[0]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[3].rx_lane_32_c/comma_c/inv_ds_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[8]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[40]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[24]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[56]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[16]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[48]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[9]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[41]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[25]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[57]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[17]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[49]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[10]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[26]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[58]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[18]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[50]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[11]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[43]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[27]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[59]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[19]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[51]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[12]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[44]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[28]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[60]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[20]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[52]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[13]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[45]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[29]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[61]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[21]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[53]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[14]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[46]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[30]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[62]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[22]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[54]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[15]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[47]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[31]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/comma_c/data_us_r_reg[23]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[0].rx_lane_32_c/ila_align_c/data_d_reg[55]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[8]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[40]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[24]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[56]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[16]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[48]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[9]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[41]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[25]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[57]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[17]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[49]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[10]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[26]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[58]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[18]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[50]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[11]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[43]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[27]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[59]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[19]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[51]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[12]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[44]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[28]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[60]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[20]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[52]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[13]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[45]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[29]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[61]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[21]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[53]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[14]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[46]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[30]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[62]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[22]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[54]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[15]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[47]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[31]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[63]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/comma_c/data_us_r_reg[23]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[1].rx_lane_32_c/ila_align_c/data_d_reg[55]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[8]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[40]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[24]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[56]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[16]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[48]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[9]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[41]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[25]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[57]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[17]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[49]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[10]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[26]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[58]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[18]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[50]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[11]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[43]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[27]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[59]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[19]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[51]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[12]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[44]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[28]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[60]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[20]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[52]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[13]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[45]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[29]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[61]'
+INFO: [Synth 8-3886] merging instance 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/comma_c/data_us_r_reg[21]' (FD) to 'mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/g_rx_lanes[2].rx_lane_32_c/ila_align_c/data_d_reg[53]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mySystem_i/JesdSubSys/jesd204_rx/inst/i_1/i_mySystem_jesd204_rx_0/rx_32_c/\stat_reg[28] )
+WARNING: [Synth 8-3332] Sequential element (bacc_calc_reg[3]) is unused and will be removed from module jesd204_v7_0_0_rx_lmfc_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[231]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[230]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[229]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[228]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[227]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[226]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[225]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[224]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[199]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[198]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[197]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[196]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[195]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[194]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[193]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[192]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[167]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[166]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[165]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[164]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[163]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[162]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[161]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[160]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[135]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[134]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[133]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[132]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[131]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[130]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[129]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[128]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[103]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[102]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[101]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[100]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[99]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[98]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[97]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[96]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[71]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[70]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[69]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[68]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[67]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[66]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[65]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[64]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[39]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[38]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[37]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[36]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+WARNING: [Synth 8-3332] Sequential element (data_d_reg[35]) is unused and will be removed from module jesd204_v7_0_0_rx_align_out_32.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:03:13 ; elapsed = 00:04:09 . Memory (MB): peak = 1056.508 ; gain = 850.047
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:03:13 ; elapsed = 00:04:09 . Memory (MB): peak = 1056.508 ; gain = 850.047
+
+Report RTL Partitions: 
++------+-------------------------------------------+------------+----------+
+|      |RTL Partition                              |Replication |Instances |
++------+-------------------------------------------+------------+----------+
+|1     |mySystem_clk_wiz_0_0_clk_wiz__GC0          |           1|        12|
+|2     |iobufs_ti__GC0                             |           1|         3|
+|3     |muxpart__79                                |           1|       160|
+|4     |mySystem_jesd204_rx_0_register_decode__GB1 |           1|       164|
+|5     |mySystem_jesd204_rx_0_block__GC0           |           1|     31514|
+|6     |JesdSubSys_imp_1X7UZVI__GC0                |           1|      3119|
++------+-------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:35 ; elapsed = 00:04:31 . Memory (MB): peak = 1348.012 ; gain = 1141.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:41 ; elapsed = 00:04:37 . Memory (MB): peak = 1366.832 ; gain = 1160.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------------------------+------------+----------+
+|      |RTL Partition                              |Replication |Instances |
++------+-------------------------------------------+------------+----------+
+|1     |mySystem_clk_wiz_0_0_clk_wiz__GC0          |           1|        12|
+|2     |iobufs_ti__GC0                             |           1|         3|
+|3     |muxpart__79                                |           1|       160|
+|4     |mySystem_jesd204_rx_0_register_decode__GB1 |           1|       164|
+|5     |mySystem_jesd204_rx_0_block__GC0           |           1|     31514|
+|6     |JesdSubSys_imp_1X7UZVI__GC0                |           1|      3119|
++------+-------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:55 ; elapsed = 00:04:52 . Memory (MB): peak = 1473.781 ; gain = 1267.320
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:03:55 ; elapsed = 00:04:52 . Memory (MB): peak = 1473.781 ; gain = 1267.320
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:03:55 ; elapsed = 00:04:52 . Memory (MB): peak = 1473.781 ; gain = 1267.320
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin jesd204_phy:gt_txdiffctrl[0] to constant 0
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/user.org/leds_v1_1/sources_1/imports/leds/leds.v:34]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [d:/Soliton_work/Xilinx/UltraScale_Demo_T53/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ipshared/user.org/leds_v1_1/sources_1/imports/leds/leds.v:34]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:57 ; elapsed = 00:04:54 . Memory (MB): peak = 1473.781 ; gain = 1267.320
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:58 ; elapsed = 00:04:54 . Memory (MB): peak = 1473.781 ; gain = 1267.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:01 ; elapsed = 00:04:58 . Memory (MB): peak = 1473.781 ; gain = 1267.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:01 ; elapsed = 00:04:58 . Memory (MB): peak = 1473.781 ; gain = 1267.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:02 ; elapsed = 00:04:59 . Memory (MB): peak = 1473.781 ; gain = 1267.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:02 ; elapsed = 00:04:59 . Memory (MB): peak = 1473.781 ; gain = 1267.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |     1|
+|2     |BUFGCE        |     1|
+|3     |BUFG_GT       |     3|
+|4     |BUFH          |     1|
+|5     |CARRY8        |   174|
+|6     |GTHE3_CHANNEL |     8|
+|7     |GTHE3_COMMON  |     2|
+|8     |IBUFDS_GTE3   |     1|
+|9     |LUT1          |  1215|
+|10    |LUT2          |   968|
+|11    |LUT3          |   538|
+|12    |LUT4          |  1165|
+|13    |LUT5          |  1003|
+|14    |LUT6          |  4116|
+|15    |MUXF7         |   137|
+|16    |MUXF8         |    24|
+|17    |PLLE3_ADV     |     1|
+|18    |RAM64M8       |   160|
+|19    |RAM64X1D      |    32|
+|20    |FD            |    80|
+|21    |FDCE          |   644|
+|22    |FDPE          |    37|
+|23    |FDRE          |  6465|
+|24    |FDSE          |   206|
+|25    |IBUF          |     1|
+|26    |IBUFDS        |     2|
+|27    |OBUF          |     8|
+|28    |OBUFDS        |     2|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:02 ; elapsed = 00:04:59 . Memory (MB): peak = 1473.781 ; gain = 1267.320
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 494 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:10 ; elapsed = 00:03:33 . Memory (MB): peak = 1473.781 ; gain = 610.852
+Synthesis Optimization Complete : Time (s): cpu = 00:04:03 ; elapsed = 00:04:59 . Memory (MB): peak = 1473.781 ; gain = 1267.320
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 280 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: mySystem_i/JesdSubSys/iobufs_i/inst/refclk_bufg_gt_c
+INFO: [Opt 31-262] Added new bufg_gt_sync: mySystem_i/JesdSubSys/iobufs_i/inst/BUFG_GT_SYNC
+INFO: [Opt 31-265] Reconnecting BUFG: mySystem_i/JesdSubSys/iobufs_i/inst/refclk_bufg_gt_c
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: mySystem_i/JesdSubSys/jesd204_phy/inst/rx_usrclk_bufg_gt
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: mySystem_i/JesdSubSys/jesd204_phy/inst/tx_usrclk_bufg_gt
+INFO: [Opt 31-263] Collapsing BUFG_gt_syncs for bufg_gt_sync: mySystem_i/JesdSubSys/iobufs_i/inst/BUFG_GT_SYNC
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance mySystem_i/JesdSubSys/clk_wiz_0/inst/plle3_adv_inst with COMPENSATION=INTERNAL is optimized away to aid design routability
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: mySystem_i/JesdSubSys/iobufs_i/inst/refclk_bufg_gt_c
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: mySystem_i/JesdSubSys/jesd204_phy/inst/rx_usrclk_bufg_gt
+INFO: [Opt 31-262] Added new bufg_gt_sync: mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst/gen_gtwizard_gthe3_top.mySystem_jesd204_phy_0_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC
+INFO: [Opt 31-265] Reconnecting BUFG: mySystem_i/JesdSubSys/jesd204_phy/inst/rx_usrclk_bufg_gt
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: mySystem_i/JesdSubSys/jesd204_phy/inst/tx_usrclk_bufg_gt
+INFO: [Opt 31-262] Added new bufg_gt_sync: mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst/gen_gtwizard_gthe3_top.mySystem_jesd204_phy_0_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1
+INFO: [Opt 31-265] Reconnecting BUFG: mySystem_i/JesdSubSys/jesd204_phy/inst/tx_usrclk_bufg_gt
+INFO: [Opt 31-263] Collapsing BUFG_gt_syncs for bufg_gt_sync: mySystem_i/JesdSubSys/iobufs_i/inst/BUFG_GT_SYNC
+INFO: [Opt 31-263] Collapsing BUFG_gt_syncs for bufg_gt_sync: mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst/gen_gtwizard_gthe3_top.mySystem_jesd204_phy_0_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC
+INFO: [Opt 31-263] Collapsing BUFG_gt_syncs for bufg_gt_sync: mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst/gen_gtwizard_gthe3_top.mySystem_jesd204_phy_0_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 279 instances were transformed.
+  BUFG => BUFGCE: 1 instances
+  BUFH => BUFGCE: 1 instances
+  FD => FDRE: 80 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 2 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF, OBUF): 2 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 160 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+486 Infos, 224 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:05 ; elapsed = 00:05:00 . Memory (MB): peak = 1473.781 ; gain = 1110.898
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 1473.781 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 22 06:04:16 2017...

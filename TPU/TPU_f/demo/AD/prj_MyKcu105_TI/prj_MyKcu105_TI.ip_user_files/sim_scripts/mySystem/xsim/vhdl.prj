@@ -1,0 +1,8 @@
+vhdl xpm "D:/Xilinx1/Vivado/2016.1/data/ip/xpm/xpm_VCOMP.vhd" 
+vhdl util_vector_logic_v2_0 "../../../bd/mySystem/ipshared/xilinx.com/util_vector_logic_v2_0/hdl/util_vector_logic.vhd" 
+vhdl xil_defaultlib "../../../bd/mySystem/ip/mySystem_util_vector_logic_0_0/sim/mySystem_util_vector_logic_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/mySystem/ip/mySystem_util_vector_logic_0_8/sim/mySystem_util_vector_logic_0_8.vhd" 
+vhdl util_reduced_logic_v2_0 "../../../bd/mySystem/ipshared/xilinx.com/util_reduced_logic_v2_0/hdl/util_reduced_logic.vhd" 
+vhdl xil_defaultlib "../../../bd/mySystem/ip/mySystem_util_reduced_logic_1_3/sim/mySystem_util_reduced_logic_1_3.vhd" 
+
+nosort

@@ -1,0 +1,34 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port refclk_n -pg 1 -y 70 -defaultsOSRD
+preplace port sysrefp -pg 1 -y 170 -defaultsOSRD
+preplace port rx_alt_syncp -pg 1 -y 160 -defaultsOSRD
+preplace port refclk_p -pg 1 -y 90 -defaultsOSRD
+preplace port rx_syncn -pg 1 -y 100 -defaultsOSRD
+preplace port CLK_IN1_D -pg 1 -y 50 -defaultsOSRD
+preplace port rx_syncp -pg 1 -y 120 -defaultsOSRD
+preplace port sysrefn -pg 1 -y 150 -defaultsOSRD
+preplace port rx_alt_syncn -pg 1 -y 140 -defaultsOSRD
+preplace port reset -pg 1 -y 190 -defaultsOSRD
+preplace portBus rxn_in -pg 1 -y 110 -defaultsOSRD
+preplace portBus leds -pg 1 -y 80 -defaultsOSRD
+preplace portBus rxp_in -pg 1 -y 130 -defaultsOSRD
+preplace inst JesdSubSys -pg 1 -lvl 1 -y 120 -defaultsOSRD
+preplace netloc sysrefn_1 1 0 1 NJ
+preplace netloc refclk_p_1 1 0 1 NJ
+preplace netloc sysrefp_1 1 0 1 NJ
+preplace netloc JesdSubSys_leds 1 1 1 NJ
+preplace netloc refclk_n_1 1 0 1 NJ
+preplace netloc JesdSubSys_rx_syncn 1 1 1 NJ
+preplace netloc JesdSubSys_rx_syncp 1 1 1 NJ
+preplace netloc CLK_IN1_D_1 1 0 1 NJ
+preplace netloc rxn_in_1 1 0 1 NJ
+preplace netloc JesdSubSys_rx_alt_syncn 1 1 1 NJ
+preplace netloc JesdSubSys_rx_alt_syncp 1 1 1 NJ
+preplace netloc rxp_in_1 1 0 1 NJ
+preplace netloc reset_1 1 0 1 NJ
+levelinfo -pg 1 0 130 260 -top 0 -bot 240
+",
+}
+0

@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"mySystem": {
+			"proto_instances": {
+			}
+		}
+	}
+}

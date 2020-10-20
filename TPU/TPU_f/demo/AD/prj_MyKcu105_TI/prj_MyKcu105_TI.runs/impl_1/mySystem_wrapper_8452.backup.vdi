@@ -1,0 +1,945 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Fri Jul 21 01:40:11 2017
+# Process ID: 8452
+# Current directory: D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/impl_1
+# Command line: vivado.exe -log mySystem_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source mySystem_wrapper.tcl -notrace
+# Log file: D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/impl_1/mySystem_wrapper.vdi
+# Journal file: D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source mySystem_wrapper.tcl -notrace
+Command: open_checkpoint D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/impl_1/mySystem_wrapper.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 207.082 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 198 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/impl_1/.Xil/Vivado-8452-HSP_DT002/dcp/mySystem_wrapper_board.xdc]
+Finished Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/impl_1/.Xil/Vivado-8452-HSP_DT002/dcp/mySystem_wrapper_board.xdc]
+Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/impl_1/.Xil/Vivado-8452-HSP_DT002/dcp/mySystem_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_clk_wiz_0_0/mySystem_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1098.926 ; gain = 348.906
+Finished Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/impl_1/.Xil/Vivado-8452-HSP_DT002/dcp/mySystem_wrapper_early.xdc]
+Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/impl_1/.Xil/Vivado-8452-HSP_DT002/dcp/mySystem_wrapper.xdc]
+Finished Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/impl_1/.Xil/Vivado-8452-HSP_DT002/dcp/mySystem_wrapper.xdc]
+Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/impl_1/.Xil/Vivado-8452-HSP_DT002/dcp/mySystem_wrapper_late.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.srcs/sources_1/bd/mySystem/ip/mySystem_jesd204_phy_0/synth/mySystem_jesd204_phy_0_clocks.xdc:14]
+Finished Parsing XDC File [D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/impl_1/.Xil/Vivado-8452-HSP_DT002/dcp/mySystem_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 1107.762 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 1107.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 198 instances were transformed.
+  IBUF => IBUF (INBUF, IBUFCTRL): 1 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 3 instances
+  OBUFDS => OBUFDS: 2 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 160 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 32 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.1 (64-bit) build 1538259
+open_checkpoint: Time (s): cpu = 00:00:35 ; elapsed = 00:00:55 . Memory (MB): peak = 1107.762 ; gain = 900.680
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-1223] The version limit for your license is '2016.10' and will expire in -263 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.335 . Memory (MB): peak = 1107.762 ; gain = 0.000
+
+Starting Logic Optimization Task
+INFO: [Mig 66-107] No memory instances. Ignoring
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Soliton_work/Xilinx/UltraScale_Demo_T10/local_IP_TI/repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx1/Vivado/2016.1/data/ip'.
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:1.1 for cell dbg_hub_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:1.1", from Vivado IP cache entry "f98903b227f2be4e".
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.1 for cell u_ila_0_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:ila:6.1", from Vivado IP cache entry "2a073a5487c81ec9".
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.436 . Memory (MB): peak = 1298.883 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 19b3ef653
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:02:49 . Memory (MB): peak = 1298.883 ; gain = 191.121
+Implement Debug Cores | Checksum: 1e429dfd5
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 12 inverter(s) to 484 load pin(s).
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: mySystem_i/JesdSubSys/iobufs_i/inst/refclk_bufg_gt_c
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: mySystem_i/JesdSubSys/jesd204_phy/inst/rx_usrclk_bufg_gt
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: mySystem_i/JesdSubSys/jesd204_phy/inst/tx_usrclk_bufg_gt
+INFO: [Opt 31-263] Collapsing BUFG_gt_syncs for bufg_gt_sync: mySystem_i/JesdSubSys/iobufs_i/inst/BUFG_GT_SYNC
+INFO: [Opt 31-263] Collapsing BUFG_gt_syncs for bufg_gt_sync: mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst/gen_gtwizard_gthe3_top.mySystem_jesd204_phy_0_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC
+INFO: [Opt 31-263] Collapsing BUFG_gt_syncs for bufg_gt_sync: mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst/gen_gtwizard_gthe3_top.mySystem_jesd204_phy_0_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 13edee1b6
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:03:05 . Memory (MB): peak = 1348.406 ; gain = 240.645
+
+Phase 3 Constant Propagation
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 3 load pin(s).
+INFO: [Opt 31-10] Eliminated 2337 cells.
+Phase 3 Constant Propagation | Checksum: 1bd84a9a2
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:03:15 . Memory (MB): peak = 1348.406 ; gain = 240.645
+
+Phase 4 Sweep
+INFO: [Opt 31-12] Eliminated 9210 unconnected nets.
+INFO: [Opt 31-11] Eliminated 7421 unconnected cells.
+Phase 4 Sweep | Checksum: 199002908
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:03:50 . Memory (MB): peak = 1348.406 ; gain = 240.645
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1348.406 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 199002908
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:03:51 . Memory (MB): peak = 1348.406 ; gain = 240.645
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][23]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][10]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][11]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][12]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][13]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][14]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][15]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][16]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][17]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][18]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][19]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][1]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][20]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][21]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][22]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][2]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][3]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][4]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][5]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][6]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][7]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][8]' has constant clock net mySystem_i/JesdSubSys/<const0>
+WARNING: [Pwropt 34-71] Flop 'mySystem_i/JesdSubSys/leds_0/inst/forloop[3].in_cnt_reg[3][9]' has constant clock net mySystem_i/JesdSubSys/<const0>
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 35 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 6 newly gated: 0 Total Ports: 70
+Ending PowerOpt Patch Enables Task | Checksum: 2245def8c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1612.664 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 2245def8c
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 1612.664 ; gain = 264.258
+INFO: [Common 17-83] Releasing license: Implementation
+48 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:59 ; elapsed = 00:04:52 . Memory (MB): peak = 1612.664 ; gain = 504.902
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1612.664 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1612.664 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/impl_1/mySystem_wrapper_drc_opted.rpt.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-1223] The version limit for your license is '2016.10' and will expire in -263 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (REQP-1851) BUFGCTRL_I0_I1_cascade_from_clock_buf - Cascaded clock buffers exist in the design with constant CE pin. This may result in large clock skew and timing violations. Cell BUFGCTRL mySystem_i/JesdSubSys/iobufs_i/inst/coreclk_mux_bufg_c I0 pin is driven by another clock buffer mySystem_i/JesdSubSys/iobufs_i/inst/inpclkdiv_mux_bufg_c.
+WARNING: [DRC 23-20] Rule violation (REQP-1851) BUFGCTRL_I0_I1_cascade_from_clock_buf - Cascaded clock buffers exist in the design with constant CE pin. This may result in large clock skew and timing violations. Cell BUFGCTRL mySystem_i/JesdSubSys/iobufs_i/inst/coreclk_mux_bufg_c I1 pin is driven by another clock buffer mySystem_i/JesdSubSys/iobufs_i/inst/intclk_mux_bufg_c.
+WARNING: [DRC 23-20] Rule violation (REQP-1851) BUFGCTRL_I0_I1_cascade_from_clock_buf - Cascaded clock buffers exist in the design with constant CE pin. This may result in large clock skew and timing violations. Cell BUFGCTRL mySystem_i/JesdSubSys/iobufs_i/inst/inpclkdiv_mux_bufg_c I0 pin is driven by another clock buffer mySystem_i/JesdSubSys/iobufs_i/inst/inpclksrc_mux_bufg_c.
+WARNING: [DRC 23-20] Rule violation (REQP-1851) BUFGCTRL_I0_I1_cascade_from_clock_buf - Cascaded clock buffers exist in the design with constant CE pin. This may result in large clock skew and timing violations. Cell BUFGCTRL mySystem_i/JesdSubSys/iobufs_i/inst/inpclksrc_mux_bufg_c I1 pin is driven by another clock buffer mySystem_i/JesdSubSys/iobufs_i/inst/refclk_bufg_gt_c.
+WARNING: [DRC 23-20] Rule violation (REQP-1851) BUFGCTRL_I0_I1_cascade_from_clock_buf - Cascaded clock buffers exist in the design with constant CE pin. This may result in large clock skew and timing violations. Cell BUFGCTRL mySystem_i/JesdSubSys/iobufs_i/inst/intclk_mux_bufg_c I0 pin is driven by another clock buffer mySystem_i/JesdSubSys/jesd204_phy/inst/tx_usrclk_bufg_gt.
+WARNING: [DRC 23-20] Rule violation (REQP-1851) BUFGCTRL_I0_I1_cascade_from_clock_buf - Cascaded clock buffers exist in the design with constant CE pin. This may result in large clock skew and timing violations. Cell BUFGCTRL mySystem_i/JesdSubSys/iobufs_i/inst/intclk_mux_bufg_c I1 pin is driven by another clock buffer mySystem_i/JesdSubSys/jesd204_phy/inst/rx_usrclk_bufg_gt.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 6 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.130 . Memory (MB): peak = 1612.664 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: mySystem_i/JesdSubSys/iobufs_i/inst/refclk_bufg_gt_c
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: mySystem_i/JesdSubSys/jesd204_phy/inst/rx_usrclk_bufg_gt
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: mySystem_i/JesdSubSys/jesd204_phy/inst/tx_usrclk_bufg_gt
+INFO: [Opt 31-263] Collapsing BUFG_gt_syncs for bufg_gt_sync: mySystem_i/JesdSubSys/iobufs_i/inst/BUFG_GT_SYNC
+INFO: [Opt 31-263] Collapsing BUFG_gt_syncs for bufg_gt_sync: mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst/gen_gtwizard_gthe3_top.mySystem_jesd204_phy_0_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC
+INFO: [Opt 31-263] Collapsing BUFG_gt_syncs for bufg_gt_sync: mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst/gen_gtwizard_gthe3_top.mySystem_jesd204_phy_0_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[0].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1612.664 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: 051fbdfd
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1612.664 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.2 IO and Clk Clean Up
+Phase 1.1.2 IO and Clk Clean Up | Checksum: 051fbdfd
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:28 . Memory (MB): peak = 1756.324 ; gain = 143.660
+
+Phase 1.1.3 Implementation Feasibility check On IDelay
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: 051fbdfd
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:28 . Memory (MB): peak = 1756.324 ; gain = 143.660
+
+Phase 1.1.4 Commit IO Placement
+Phase 1.1.4 Commit IO Placement | Checksum: ca086c56
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:28 . Memory (MB): peak = 1756.324 ; gain = 143.660
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1c4bcdd00
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:28 . Memory (MB): peak = 1756.324 ; gain = 143.660
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+
+Phase 1.2.1.1 Init Lut Pin Assignment
+Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: 1c08aa37e
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:30 . Memory (MB): peak = 1789.406 ; gain = 176.742
+Phase 1.2.1 Place Init Design | Checksum: 23ad80f5b
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 1853.000 ; gain = 240.336
+Phase 1.2 Build Placer Netlist Model | Checksum: 23ad80f5b
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 1853.000 ; gain = 240.336
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 23ad80f5b
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 1853.000 ; gain = 240.336
+Phase 1 Placer Initialization | Checksum: 23ad80f5b
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 1853.000 ; gain = 240.336
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1aa5752a5
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:01:10 . Memory (MB): peak = 1859.523 ; gain = 246.859
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1aa5752a5
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:01:11 . Memory (MB): peak = 1859.523 ; gain = 246.859
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1e65b1f83
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:17 . Memory (MB): peak = 1859.523 ; gain = 246.859
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 15db896fc
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:18 . Memory (MB): peak = 1859.523 ; gain = 246.859
+
+Phase 3.4 updateClock Trees: DP
+Phase 3.4 updateClock Trees: DP | Checksum: 15db896fc
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:18 . Memory (MB): peak = 1859.523 ; gain = 246.859
+
+Phase 3.5 IO Cut Optimizer
+Phase 3.5 IO Cut Optimizer | Checksum: 19d85b573
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:19 . Memory (MB): peak = 1859.523 ; gain = 246.859
+
+Phase 3.6 Timing Path Optimizer
+Phase 3.6 Timing Path Optimizer | Checksum: 19d85b573
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:19 . Memory (MB): peak = 1859.523 ; gain = 246.859
+
+Phase 3.7 Fast Optimization
+Phase 3.7 Fast Optimization | Checksum: 1e521b87a
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:20 . Memory (MB): peak = 1859.523 ; gain = 246.859
+
+Phase 3.8 Small Shape Detail Placement
+Phase 3.8 Small Shape Detail Placement | Checksum: 19d3fde95
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:29 . Memory (MB): peak = 1874.883 ; gain = 262.219
+
+Phase 3.9 Re-assign LUT pins
+Phase 3.9 Re-assign LUT pins | Checksum: 1bff0142e
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:30 . Memory (MB): peak = 1874.883 ; gain = 262.219
+
+Phase 3.10 Pipeline Register Optimization
+Phase 3.10 Pipeline Register Optimization | Checksum: 1bff0142e
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:30 . Memory (MB): peak = 1874.883 ; gain = 262.219
+
+Phase 3.11 Fast Optimization
+Phase 3.11 Fast Optimization | Checksum: 1cbea77eb
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:01:37 . Memory (MB): peak = 1874.883 ; gain = 262.219
+Phase 3 Detail Placement | Checksum: 1cbea77eb
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:01:38 . Memory (MB): peak = 1874.883 ; gain = 262.219
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 updateClock Trees: PCOPT
+Phase 4.1.1 updateClock Trees: PCOPT | Checksum: 100ce2d0a
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:52 . Memory (MB): peak = 1931.148 ; gain = 318.484
+
+Phase 4.1.2 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.368. For the most accurate timing information please run report_timing.
+Phase 4.1.2 Post Placement Optimization | Checksum: 1d6743910
+
+Time (s): cpu = 00:04:07 ; elapsed = 00:03:16 . Memory (MB): peak = 1931.148 ; gain = 318.484
+Phase 4.1 Post Commit Optimization | Checksum: 1d6743910
+
+Time (s): cpu = 00:04:07 ; elapsed = 00:03:16 . Memory (MB): peak = 1931.148 ; gain = 318.484
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 1d6743910
+
+Time (s): cpu = 00:04:10 ; elapsed = 00:03:18 . Memory (MB): peak = 1932.254 ; gain = 319.590
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: 1d6743910
+
+Time (s): cpu = 00:04:10 ; elapsed = 00:03:19 . Memory (MB): peak = 1932.254 ; gain = 319.590
+
+Phase 4.4 Placer Reporting
+Phase 4.4 Placer Reporting | Checksum: 204667785
+
+Time (s): cpu = 00:04:12 ; elapsed = 00:03:21 . Memory (MB): peak = 1932.254 ; gain = 319.590
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: 18a9501f0
+
+Time (s): cpu = 00:04:13 ; elapsed = 00:03:21 . Memory (MB): peak = 1932.254 ; gain = 319.590
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 18a9501f0
+
+Time (s): cpu = 00:04:13 ; elapsed = 00:03:21 . Memory (MB): peak = 1932.254 ; gain = 319.590
+Ending Placer Task | Checksum: 16c4ecd35
+
+Time (s): cpu = 00:04:13 ; elapsed = 00:03:21 . Memory (MB): peak = 1932.254 ; gain = 319.590
+INFO: [Common 17-83] Releasing license: Implementation
+73 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:04:17 ; elapsed = 00:04:04 . Memory (MB): peak = 1932.254 ; gain = 319.590
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 1932.254 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1932.254 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.235 . Memory (MB): peak = 1932.254 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.291 . Memory (MB): peak = 1932.254 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 1932.254 ; gain = 0.000
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-1223] The version limit for your license is '2016.10' and will expire in -263 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+Phase 1 Physical Synthesis Initialization | Checksum: d47f309f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 1932.254 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1932.254 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.368 | TNS=-0.461 |
+
+Phase 2 Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+Phase 2 Fanout Optimization | Checksum: d47f309f
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:14 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 3 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 2 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/dout_reg.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/yes_output_reg.dout_reg_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/STRG_QUAL.U_STRG_QUAL/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[10].U_ALL_SRL_SLICE/out.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/STRG_QUAL.U_STRG_QUAL/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[10].U_ALL_SRL_SLICE/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg
+INFO: [Physopt 32-661] Optimized 0 nets.  Re-placed 0 instances.
+Phase 3 Placement Based Optimization | Checksum: a6ca290e
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:15 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 4 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring (Signal Push) optimization.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1932.254 ; gain = 0.000
+Phase 4 Rewire | Checksum: a6ca290e
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:15 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 5 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 1 candidate net for critical-cell optimization.
+INFO: [Physopt 32-81] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/dout_reg. Replicated 1 times.
+INFO: [Physopt 32-232] Optimized 1 net. Created 1 new instance.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.102 | TNS=-0.102 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1932.254 ; gain = 0.000
+Phase 5 Critical Cell Optimization | Checksum: 23c916cb3
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 6 Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+Phase 6 Fanout Optimization | Checksum: 23c916cb3
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:16 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 7 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 100 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/dout_reg.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/yes_output_reg.dout_reg_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[1].U_M/dout_reg.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[1].U_M/yes_output_reg.dout_reg_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/dout_reg.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/yes_output_reg.dout_reg_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[9].U_M/dout_reg.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[9].U_M/yes_output_reg.dout_reg_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[22].U_M/dout_reg.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[22].U_M/yes_output_reg.dout_reg_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[5].U_M/dout_reg.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[5].U_M/yes_output_reg.dout_reg_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[7].U_M/dout_reg.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[7].U_M/yes_output_reg.dout_reg_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[2].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[1]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/dout_reg.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/yes_output_reg.dout_reg_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[14].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[7]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[12].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[6]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[4].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[26].U_M/dout_reg.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[26].U_M/yes_output_reg.dout_reg_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[8].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[4]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[1].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[0]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[2].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[7].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[7]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[0].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[0]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[7].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[3]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[0].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[6].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[3]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[12].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/D[2].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[12].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[4].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[4]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[2].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[1]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[9].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[4]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[1].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[1]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[3].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[3]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[6].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[3]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[12].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/D[0].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[12].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[7].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[3]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[10].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[5]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[23].U_M/dout_reg.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[23].U_M/yes_output_reg.dout_reg_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/dout_reg.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/yes_output_reg.dout_reg_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[12].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/D[3].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[12].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[3]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[0].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/current_state[3].  Did not re-place instance u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/current_state_reg[3]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[4].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[4].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/current_state[2].  Did not re-place instance u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/current_state_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[3].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[1]
+INFO: [Physopt 32-662] Processed net mySystem_i/JesdSubSys/jesd204_rx/inst/i_mySystem_jesd204_rx_0/rx_32_c/lmfc_c/lmfc_wpmf[3].  Did not re-place instance mySystem_i/JesdSubSys/jesd204_rx/inst/i_mySystem_jesd204_rx_0/rx_32_c/lmfc_c/lmfc_wpmf_reg[3]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[5].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[15].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[7]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[5].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[5].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/D[0].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[11].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[5]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[3].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[1]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[12].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[12]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[14].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[7]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[2].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[1]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[3].U_M/dout_reg.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[3].U_M/yes_output_reg.dout_reg_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[10].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[5]
+INFO: [Physopt 32-662] Processed net mySystem_i/JesdSubSys/jesd204_rx/inst/i_mySystem_jesd204_rx_0/rx_32_c/lmfc_c/lmfc_wpmf[2].  Did not re-place instance mySystem_i/JesdSubSys/jesd204_rx/inst/i_mySystem_jesd204_rx_0/rx_32_c/lmfc_c/lmfc_wpmf_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[1].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[0]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/STRG_QUAL.U_STRG_QUAL/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/Q[6].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/STRG_QUAL.U_STRG_QUAL/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[6]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/p_0_in.  Did not re-place instance u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/multiple_read_latency.read_enable_out_reg[3]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/STRG_QUAL.U_STRG_QUAL/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/Q[4].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/STRG_QUAL.U_STRG_QUAL/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[4]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[12].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/D[1].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[12].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[1]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[0].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[12].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[6]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[8].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[4]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/dout_reg_repN.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/yes_output_reg.dout_reg_reg_replica
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[8].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[4]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[26].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[6].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[26].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[3]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[13].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[6]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[4].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[8].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[8]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_den_o.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_den_r_reg
+INFO: [Physopt 32-662] Processed net mySystem_i/JesdSubSys/jesd204_rx/inst/i_mySystem_jesd204_rx_0/rx_32_c/lmfc_c/wcnt_reg__0[12].  Did not re-place instance mySystem_i/JesdSubSys/jesd204_rx/inst/i_mySystem_jesd204_rx_0/rx_32_c/lmfc_c/wcnt_reg[12]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[6].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[3]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/curr_read_block[1].  Did not re-place instance u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/curr_read_block_reg[1]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[11].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[11]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[26].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[4].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[26].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[4].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/curr_read_block[2].  Did not re-place instance u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/curr_read_block_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[12].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[6]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[6].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[3]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/STRG_QUAL.U_STRG_QUAL/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/Q[1].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/STRG_QUAL.U_STRG_QUAL/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[1]
+INFO: [Physopt 32-662] Processed net mySystem_i/JesdSubSys/jesd204_rx/inst/i_mySystem_jesd204_rx_0/rx_32_c/lmfc_c/lmfc_wpmf[0].  Did not re-place instance mySystem_i/JesdSubSys/jesd204_rx/inst/i_mySystem_jesd204_rx_0/rx_32_c/lmfc_c/lmfc_wpmf_reg[0]
+INFO: [Physopt 32-662] Processed net mySystem_i/JesdSubSys/jesd204_rx/inst/i_mySystem_jesd204_rx_0/rx_32_c/lmfc_c/wcnt_reg__0[13].  Did not re-place instance mySystem_i/JesdSubSys/jesd204_rx/inst/i_mySystem_jesd204_rx_0/rx_32_c/lmfc_c/wcnt_reg[13]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/current_state[4].  Did not re-place instance u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/current_state_reg[4]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[5].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[5]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[10].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/Q[2].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[10].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/D[3].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[3]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[1].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[8].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[0]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/STRG_QUAL.U_STRG_QUAL/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/Q[3].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/STRG_QUAL.U_STRG_QUAL/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[3]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[1].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[46].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[0]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[6].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[6]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[9].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[9]
+INFO: [Physopt 32-662] Processed net mySystem_i/JesdSubSys/jesd204_rx/inst/i_mySystem_jesd204_rx_0/rx_32_c/lmfc_c/lmfc_wpmf[1].  Did not re-place instance mySystem_i/JesdSubSys/jesd204_rx/inst/i_mySystem_jesd204_rx_0/rx_32_c/lmfc_c/lmfc_wpmf_reg[1]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[11].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[5]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/STRG_QUAL.U_STRG_QUAL/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/Q[2].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/STRG_QUAL.U_STRG_QUAL/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[2]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/mahesh_temp.  Did not re-place instance u_ila_0/inst/ila_core_inst/xsdb_memory_read_inst/multiple_read_latency.mahesh_temp_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[13].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[6].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[6]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[10].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/G_1PIPE_IFACE.s_daddr_r_reg[10]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[9].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[4].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[4]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[1].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/i_use_input_reg_eq1.probeDelay2_reg[0]
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[51].U_M/dout_reg.  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[51].U_M/yes_output_reg.dout_reg_reg
+INFO: [Physopt 32-662] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[26].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/all_in[0].  Did not re-place instance u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[26].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]
+INFO: [Physopt 32-661] Optimized 0 nets.  Re-placed 0 instances.
+Phase 7 Placement Based Optimization | Checksum: 1c0c123a9
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:27 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 8 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring (Signal Push) optimization.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1932.254 ; gain = 0.000
+Phase 8 Rewire | Checksum: 1c0c123a9
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:27 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 9 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 2 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-81] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/dout_reg. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net u_ila_0/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[1].U_M/dout_reg. Replicated 1 times.
+INFO: [Physopt 32-232] Optimized 2 nets. Created 2 new instances.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.298 | TNS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 1932.254 ; gain = 0.000
+Phase 9 Critical Cell Optimization | Checksum: f6a534ee
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:28 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 10 Fanout Optimization
+INFO: [Physopt 32-670] No setup violation found.  Fanout Optimization was not performed.
+Phase 10 Fanout Optimization | Checksum: f6a534ee
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:28 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 11 Placement Based Optimization
+INFO: [Physopt 32-670] No setup violation found.  Placement Based Optimization was not performed.
+Phase 11 Placement Based Optimization | Checksum: f6a534ee
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:28 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 12 Rewire
+INFO: [Physopt 32-670] No setup violation found.  Rewire was not performed.
+Phase 12 Rewire | Checksum: f6a534ee
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:28 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 13 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 13 Critical Cell Optimization | Checksum: f6a534ee
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:28 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 14 DSP Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+Phase 14 DSP Register Optimization | Checksum: f6a534ee
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:28 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 15 BRAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+Phase 15 BRAM Register Optimization | Checksum: f6a534ee
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:29 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 16 Shift Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+Phase 16 Shift Register Optimization | Checksum: f6a534ee
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:29 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 17 DSP Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+Phase 17 DSP Register Optimization | Checksum: f6a534ee
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:29 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 18 BRAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+Phase 18 BRAM Register Optimization | Checksum: f6a534ee
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:29 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 19 Shift Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+Phase 19 Shift Register Optimization | Checksum: f6a534ee
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:29 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 20 Critical Pin Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Pin Optimization was not performed.
+Phase 20 Critical Pin Optimization | Checksum: f6a534ee
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:29 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 21 Very High Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 3 candidate nets for fanout optimization.
+INFO: [Physopt 32-573] Net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[0] was not replicated.
+The following hierarchical instances have DONT_TOUCH attributes which can prevent cell replication:
+	u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization.
+INFO: [Physopt 32-573] Net u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[1] was not replicated.
+The following hierarchical instances have DONT_TOUCH attributes which can prevent cell replication:
+	u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization.
+INFO: [Physopt 32-29] End Pass 1. Optimized 0 net. Created 0 new instance.
+
+Phase 21 Very High Fanout Optimization | Checksum: 1ac6781d8
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:29 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 22 Placement Based Optimization
+INFO: [Physopt 32-670] No setup violation found.  Placement Based Optimization was not performed.
+Phase 22 Placement Based Optimization | Checksum: 1ac6781d8
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:29 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 23 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.298 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.298 | TNS=0.000 |
+Phase 23 Critical Path Optimization | Checksum: 1ac6781d8
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:30 . Memory (MB): peak = 1932.254 ; gain = 0.000
+
+Phase 24 BRAM Enable Optimization
+Phase 24 BRAM Enable Optimization | Checksum: 1ac6781d8
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:30 . Memory (MB): peak = 1932.254 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1932.254 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=0.298 | TNS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed (s)  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Fanout             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |            0  |
+|  Placement Based    |          0.000  |          0.000  |            0  |              0  |                     0  |          13  |           2  |           12  |
+|  Rewire             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |            0  |
+|  Critical Cell      |          0.666  |          0.461  |            3  |              0  |                     3  |           0  |           2  |            1  |
+|  DSP Register       |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |            0  |
+|  BRAM Register      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |            0  |
+|  Shift Register     |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |            0  |
+|  Very High Fanout   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |            0  |
+|  Critical Pin       |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |            0  |
+|  Critical Path      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |            0  |
+|  Total              |          0.666  |          0.461  |            3  |              0  |                     3  |          13  |          10  |           13  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Physical Synthesis Task | Checksum: 1c53eed90
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:33 . Memory (MB): peak = 1932.254 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+219 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:14 . Memory (MB): peak = 1932.254 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 1932.254 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1932.254 ; gain = 0.000
+Command: route_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-1223] The version limit for your license is '2016.10' and will expire in -263 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 9bb03e71 ConstDB: 0 ShapeSum: 95b899d3 RouteDB: 5cab02e5
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: abaf9851
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:44 . Memory (MB): peak = 2202.918 ; gain = 270.664
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 199876ae0
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:45 . Memory (MB): peak = 2202.918 ; gain = 270.664
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 199876ae0
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:46 . Memory (MB): peak = 2202.918 ; gain = 270.664
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 199876ae0
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:46 . Memory (MB): peak = 2202.918 ; gain = 270.664
+
+Phase 2.4 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.4 Global Clock Net Routing | Checksum: 14a40f391
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:52 . Memory (MB): peak = 2268.441 ; gain = 336.188
+
+Phase 2.5 Update Timing
+Phase 2.5 Update Timing | Checksum: 1fc043297
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:12 . Memory (MB): peak = 2268.441 ; gain = 336.188
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.479  | TNS=0.000  | WHS=-0.613 | THS=-118.957|
+
+Phase 2 Router Initialization | Checksum: 22ff774c2
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:01:17 . Memory (MB): peak = 2268.441 ; gain = 336.188
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 10349623d
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:01:29 . Memory (MB): peak = 2268.441 ; gain = 336.188
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3849
+ Number of Nodes with overlaps = 198
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 1a5425fcc
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:58 . Memory (MB): peak = 2268.441 ; gain = 336.188
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.019 | TNS=-0.019 | WHS=0.004  | THS=0.000  |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 1ee4940b5
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:02:00 . Memory (MB): peak = 2268.441 ; gain = 336.188
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 1da9e3e06
+
+Time (s): cpu = 00:03:20 ; elapsed = 00:02:02 . Memory (MB): peak = 2268.441 ; gain = 336.188
+Phase 4.1.2 GlobIterForTiming | Checksum: 255ea6706
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:03 . Memory (MB): peak = 2268.441 ; gain = 336.188
+Phase 4.1 Global Iteration 0 | Checksum: 255ea6706
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:03 . Memory (MB): peak = 2268.441 ; gain = 336.188
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 13c55367f
+
+Time (s): cpu = 00:03:23 ; elapsed = 00:02:05 . Memory (MB): peak = 2268.441 ; gain = 336.188
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.121  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 13c55367f
+
+Time (s): cpu = 00:03:24 ; elapsed = 00:02:05 . Memory (MB): peak = 2268.441 ; gain = 336.188
+Phase 4 Rip-up And Reroute | Checksum: 13c55367f
+
+Time (s): cpu = 00:03:24 ; elapsed = 00:02:05 . Memory (MB): peak = 2268.441 ; gain = 336.188
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 17df8e17b
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:02:09 . Memory (MB): peak = 2268.441 ; gain = 336.188
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.121  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 17df8e17b
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:02:09 . Memory (MB): peak = 2268.441 ; gain = 336.188
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 17df8e17b
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:02:09 . Memory (MB): peak = 2268.441 ; gain = 336.188
+Phase 5 Delay and Skew Optimization | Checksum: 17df8e17b
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:02:09 . Memory (MB): peak = 2268.441 ; gain = 336.188
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 139b13211
+
+Time (s): cpu = 00:03:35 ; elapsed = 00:02:13 . Memory (MB): peak = 2268.441 ; gain = 336.188
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.121  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 24052da00
+
+Time (s): cpu = 00:03:35 ; elapsed = 00:02:13 . Memory (MB): peak = 2268.441 ; gain = 336.188
+Phase 6 Post Hold Fix | Checksum: 22f4a4066
+
+Time (s): cpu = 00:03:35 ; elapsed = 00:02:13 . Memory (MB): peak = 2268.441 ; gain = 336.188
+
+Phase 7 Timing Verification
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 21ce6f939
+
+Time (s): cpu = 00:04:07 ; elapsed = 00:02:30 . Memory (MB): peak = 2268.441 ; gain = 336.188
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.121  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+Phase 7 Timing Verification | Checksum: 21ce6f939
+
+Time (s): cpu = 00:04:07 ; elapsed = 00:02:30 . Memory (MB): peak = 2268.441 ; gain = 336.188
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.21394 %
+  Global Horizontal Routing Utilization  = 1.1773 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 10f03f431
+
+Time (s): cpu = 00:04:10 ; elapsed = 00:02:32 . Memory (MB): peak = 2268.441 ; gain = 336.188
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 10f03f431
+
+Time (s): cpu = 00:04:10 ; elapsed = 00:02:32 . Memory (MB): peak = 2268.441 ; gain = 336.188
+
+Phase 10 Depositing Routes
+INFO: [Route 35-467] Router swapped GT pin mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst/gen_gtwizard_gthe3_top.mySystem_jesd204_phy_0_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[1].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[0].GTHE3_CHANNEL_PRIM_INST/GTREFCLK0 to physical pin GTHE3_CHANNEL_X0Y12/SOUTHREFCLK1
+INFO: [Route 35-467] Router swapped GT pin mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst/gen_gtwizard_gthe3_top.mySystem_jesd204_phy_0_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[1].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[1].GTHE3_CHANNEL_PRIM_INST/GTREFCLK0 to physical pin GTHE3_CHANNEL_X0Y14/SOUTHREFCLK1
+INFO: [Route 35-467] Router swapped GT pin mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst/gen_gtwizard_gthe3_top.mySystem_jesd204_phy_0_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[1].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[2].GTHE3_CHANNEL_PRIM_INST/GTREFCLK0 to physical pin GTHE3_CHANNEL_X0Y13/SOUTHREFCLK1
+INFO: [Route 35-467] Router swapped GT pin mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_block_i/mySystem_jesd204_phy_0_gt_i/inst/gen_gtwizard_gthe3_top.mySystem_jesd204_phy_0_gt_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[1].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/gthe3_channel_gen.gen_gthe3_channel_inst[3].GTHE3_CHANNEL_PRIM_INST/GTREFCLK0 to physical pin GTHE3_CHANNEL_X0Y15/SOUTHREFCLK1
+INFO: [Route 35-467] Router swapped GT pin mySystem_i/JesdSubSys/jesd204_phy/inst/jesd204_phy_gt_common_1_i/mySystem_jesd204_phy_0_gt_common_i/common_inst/gthe3_common_gen.GTHE3_COMMON_PRIM_INST/GTREFCLK00 to physical pin GTHE3_COMMON_X0Y3/COM0_REFCLKOUT5
+Phase 10 Depositing Routes | Checksum: 10f03f431
+
+Time (s): cpu = 00:04:12 ; elapsed = 00:02:34 . Memory (MB): peak = 2268.441 ; gain = 336.188
+
+Phase 11 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.122  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 11 Post Router Timing | Checksum: 16db10972
+
+Time (s): cpu = 00:04:28 ; elapsed = 00:02:43 . Memory (MB): peak = 2268.441 ; gain = 336.188
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:04:28 ; elapsed = 00:02:44 . Memory (MB): peak = 2268.441 ; gain = 336.188
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+244 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:04:31 ; elapsed = 00:03:26 . Memory (MB): peak = 2268.441 ; gain = 336.188
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2268.441 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 2268.441 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/Soliton_work/Xilinx/UltraScale_Demo_T10/prj_MyKcu105_TI/prj_MyKcu105_TI.runs/impl_1/mySystem_wrapper_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2268.441 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+report_power: Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 2268.441 ; gain = 0.000
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku040'
+INFO: [Common 17-1223] The version limit for your license is '2016.10' and will expire in -263 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+255 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:00 ; elapsed = 00:00:40 . Memory (MB): peak = 2268.441 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2268.441 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 2268.441 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 21 01:56:43 2017...

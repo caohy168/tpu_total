@@ -1,0 +1,2 @@
+xfft_detect.vhd,vhdl,xil_defaultlib,../../../../TPU.srcs/sources_1/ip/xfft_detect/sim/xfft_detect.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

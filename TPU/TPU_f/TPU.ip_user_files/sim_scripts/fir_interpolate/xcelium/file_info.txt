@@ -1,0 +1,7 @@
+xpm_cdc.sv,systemverilog,xpm,D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../TPU.srcs/sources_1/ip/fir_interpolate/cmodel"
+xpm_VCOMP.vhd,vhdl,xpm,D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../TPU.srcs/sources_1/ip/fir_interpolate/cmodel"
+xbip_utils_v3_0_vh_rfs.vhd,vhdl,xbip_utils_v3_0_10,../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd,incdir="../../../../TPU.srcs/sources_1/ip/fir_interpolate/cmodel"
+axi_utils_v2_0_vh_rfs.vhd,vhdl,axi_utils_v2_0_6,../../../ipstatic/hdl/axi_utils_v2_0_vh_rfs.vhd,incdir="../../../../TPU.srcs/sources_1/ip/fir_interpolate/cmodel"
+fir_compiler_v7_2_vh_rfs.vhd,vhdl,fir_compiler_v7_2_13,../../../ipstatic/hdl/fir_compiler_v7_2_vh_rfs.vhd,incdir="../../../../TPU.srcs/sources_1/ip/fir_interpolate/cmodel"
+fir_interpolate.vhd,vhdl,xil_defaultlib,../../../../TPU.srcs/sources_1/ip/fir_interpolate/sim/fir_interpolate.vhd,incdir="../../../../TPU.srcs/sources_1/ip/fir_interpolate/cmodel"
+glbl.v,Verilog,xil_defaultlib,glbl.v

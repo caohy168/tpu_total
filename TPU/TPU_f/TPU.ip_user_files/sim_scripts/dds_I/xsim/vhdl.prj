@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../TPU.srcs/sources_1/ip/dds_I/sim/dds_I.vhd" \
+
+nosort

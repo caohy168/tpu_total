@@ -1,0 +1,1111 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x4CF4821EE3D796D9",
+      "device": "xcku040-ffva1156-2-e",
+      "name": "mySystem",
+      "synth_flow_mode": "None",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "JesdSubSys": {
+        "leds_0": "",
+        "iobufs_i": "",
+        "Transport_layer_DAC38Rf82_84111_0": "",
+        "util_vector_logic_0": "",
+        "util_vector_logic_1": "",
+        "util_vector_logic_21": "",
+        "util_vector_logic_23": "",
+        "util_vector_logic_22": "",
+        "clk_wiz_0": "",
+        "dds_compiler_0": "",
+        "dds_2": "",
+        "dds_1": "",
+        "dds_3": "",
+        "jesd204_phy": "",
+        "jesd204_tx": "",
+        "xlconcat_0": "",
+        "rx_polarity": "",
+        "sync_inv": ""
+      }
+    },
+    "interface_ports": {
+      "CLK_IN1_D": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "300000000"
+          }
+        }
+      }
+    },
+    "ports": {
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "leds": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "sysrefn": {
+        "direction": "I"
+      },
+      "refclk_p": {
+        "direction": "I"
+      },
+      "sysrefp": {
+        "direction": "I"
+      },
+      "refclk_n": {
+        "direction": "I"
+      },
+      "txp_out": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "txn_out": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "tx_syncp": {
+        "direction": "I"
+      },
+      "tx_syncn": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "JesdSubSys": {
+        "interface_ports": {
+          "CLK_IN1_D": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0"
+          }
+        },
+        "ports": {
+          "leds": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "refclk_n": {
+            "direction": "I"
+          },
+          "refclk_p": {
+            "direction": "I"
+          },
+          "sysrefn": {
+            "direction": "I"
+          },
+          "sysrefp": {
+            "direction": "I"
+          },
+          "tx_reset": {
+            "direction": "I"
+          },
+          "txp_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "txn_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "tx_syncp": {
+            "direction": "I"
+          },
+          "tx_syncn": {
+            "direction": "I"
+          }
+        },
+        "components": {
+          "leds_0": {
+            "vlnv": "user.org:user:leds:1.1",
+            "xci_name": "mySystem_leds_0_0",
+            "parameters": {
+              "CNFG": {
+                "value": "120"
+              }
+            }
+          },
+          "iobufs_i": {
+            "vlnv": "user.org:user:iobufs_ti:2.3",
+            "xci_name": "mySystem_iobufs_i_1"
+          },
+          "Transport_layer_DAC38Rf82_84111_0": {
+            "vlnv": "xilinx.com:module_ref:Transport_layer_DAC38Rf82_84111:1.0",
+            "xci_name": "mySystem_Transport_layer_DAC38Rf82_84111_0_1",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "Transport_layer_DAC38Rf82_84111",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "tx_link_clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_RESET": {
+                    "value": "tx_link_clk_async_rstn",
+                    "value_src": "constant"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "mySystem_jesd204_phy_0_txoutclk",
+                    "value_src": "default_prop"
+                  },
+                  "FREQ_HZ": {
+                    "value": "192000000.000",
+                    "value_src": "user_prop"
+                  }
+                }
+              },
+              "tx_link_clk_async_rstn": {
+                "type": "rst",
+                "direction": "I",
+                "parameters": {
+                  "POLARITY": {
+                    "value": "ACTIVE_LOW",
+                    "value_src": "constant"
+                  }
+                }
+              },
+              "jesd204_tx_link_valid": {
+                "direction": "I"
+              },
+              "jesd204_tx_link_data": {
+                "direction": "I",
+                "left": "63",
+                "right": "0",
+                "parameters": {
+                  "PortWidth": {
+                    "value": "64",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "tx_dataout": {
+                "direction": "O",
+                "left": "255",
+                "right": "0"
+              },
+              "tx_validout": {
+                "direction": "O"
+              }
+            }
+          },
+          "util_vector_logic_0": {
+            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+            "xci_name": "mySystem_util_vector_logic_0_0",
+            "parameters": {
+              "C_OPERATION": {
+                "value": "not"
+              },
+              "C_SIZE": {
+                "value": "1"
+              }
+            }
+          },
+          "util_vector_logic_1": {
+            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+            "xci_name": "mySystem_util_vector_logic_0_1",
+            "parameters": {
+              "C_OPERATION": {
+                "value": "or"
+              },
+              "C_SIZE": {
+                "value": "1"
+              }
+            }
+          },
+          "util_vector_logic_21": {
+            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+            "xci_name": "mySystem_util_vector_logic_21_0",
+            "parameters": {
+              "C_SIZE": {
+                "value": "1"
+              }
+            }
+          },
+          "util_vector_logic_23": {
+            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+            "xci_name": "mySystem_util_vector_logic_21_1",
+            "parameters": {
+              "C_SIZE": {
+                "value": "1"
+              }
+            }
+          },
+          "util_vector_logic_22": {
+            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+            "xci_name": "mySystem_util_vector_logic_21_2",
+            "parameters": {
+              "C_SIZE": {
+                "value": "1"
+              }
+            }
+          },
+          "clk_wiz_0": {
+            "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+            "xci_name": "mySystem_clk_wiz_0_0",
+            "parameters": {
+              "CLKIN1_JITTER_PS": {
+                "value": "33.330000000000005"
+              },
+              "CLKOUT1_DRIVES": {
+                "value": "BUFGCE"
+              },
+              "CLKOUT1_JITTER": {
+                "value": "108.112"
+              },
+              "CLKOUT1_PHASE_ERROR": {
+                "value": "105.563"
+              },
+              "CLKOUT1_REQUESTED_OUT_FREQ": {
+                "value": "100"
+              },
+              "CLKOUT2_DRIVES": {
+                "value": "BUFGCE"
+              },
+              "CLKOUT2_JITTER": {
+                "value": "99.774"
+              },
+              "CLKOUT2_PHASE_ERROR": {
+                "value": "105.563"
+              },
+              "CLKOUT2_REQUESTED_OUT_FREQ": {
+                "value": "100.000"
+              },
+              "CLKOUT2_USED": {
+                "value": "false"
+              },
+              "CLKOUT3_DRIVES": {
+                "value": "BUFGCE"
+              },
+              "CLKOUT4_DRIVES": {
+                "value": "BUFGCE"
+              },
+              "CLKOUT5_DRIVES": {
+                "value": "BUFGCE"
+              },
+              "CLKOUT6_DRIVES": {
+                "value": "BUFGCE"
+              },
+              "CLKOUT7_DRIVES": {
+                "value": "BUFGCE"
+              },
+              "CLK_IN1_BOARD_INTERFACE": {
+                "value": "default_sysclk_300"
+              },
+              "FEEDBACK_SOURCE": {
+                "value": "FDBK_AUTO"
+              },
+              "MMCM_CLKFBOUT_MULT_F": {
+                "value": "2"
+              },
+              "MMCM_CLKIN1_PERIOD": {
+                "value": "3.333"
+              },
+              "MMCM_CLKIN2_PERIOD": {
+                "value": "10.0"
+              },
+              "MMCM_CLKOUT0_DIVIDE_F": {
+                "value": "6"
+              },
+              "MMCM_CLKOUT1_DIVIDE": {
+                "value": "1"
+              },
+              "MMCM_COMPENSATION": {
+                "value": "AUTO"
+              },
+              "MMCM_DIVCLK_DIVIDE": {
+                "value": "1"
+              },
+              "NUM_OUT_CLKS": {
+                "value": "1"
+              },
+              "PRIMITIVE": {
+                "value": "PLL"
+              },
+              "PRIM_IN_FREQ": {
+                "value": "300.000"
+              },
+              "PRIM_SOURCE": {
+                "value": "Differential_clock_capable_pin"
+              },
+              "SECONDARY_SOURCE": {
+                "value": "Single_ended_clock_capable_pin"
+              },
+              "USE_PHASE_ALIGNMENT": {
+                "value": "false"
+              },
+              "USE_SAFE_CLOCK_STARTUP": {
+                "value": "true"
+              }
+            }
+          },
+          "dds_compiler_0": {
+            "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+            "xci_name": "mySystem_dds_compiler_0_0",
+            "parameters": {
+              "DATA_Has_TLAST": {
+                "value": "Not_Required"
+              },
+              "DDS_Clock_Rate": {
+                "value": "192"
+              },
+              "Frequency_Resolution": {
+                "value": "0.4"
+              },
+              "Has_Phase_Out": {
+                "value": "true"
+              },
+              "Latency": {
+                "value": "8"
+              },
+              "M_DATA_Has_TUSER": {
+                "value": "Not_Required"
+              },
+              "Noise_Shaping": {
+                "value": "None"
+              },
+              "Output_Frequency1": {
+                "value": "0"
+              },
+              "Output_Selection": {
+                "value": "Sine"
+              },
+              "Output_Width": {
+                "value": "16"
+              },
+              "PINC1": {
+                "value": "1101010101100"
+              },
+              "Parameter_Entry": {
+                "value": "Hardware_Parameters"
+              },
+              "PartsPresent": {
+                "value": "Phase_Generator_and_SIN_COS_LUT"
+              },
+              "Phase_Width": {
+                "value": "16"
+              },
+              "Phase_offset": {
+                "value": "Fixed"
+              },
+              "S_PHASE_Has_TUSER": {
+                "value": "Not_Required"
+              }
+            }
+          },
+          "dds_2": {
+            "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+            "xci_name": "mySystem_dds_compiler_0_1",
+            "parameters": {
+              "DATA_Has_TLAST": {
+                "value": "Not_Required"
+              },
+              "DDS_Clock_Rate": {
+                "value": "192"
+              },
+              "Frequency_Resolution": {
+                "value": "0.4"
+              },
+              "Has_Phase_Out": {
+                "value": "true"
+              },
+              "Latency": {
+                "value": "8"
+              },
+              "M_DATA_Has_TUSER": {
+                "value": "Not_Required"
+              },
+              "Noise_Shaping": {
+                "value": "None"
+              },
+              "Output_Frequency1": {
+                "value": "0"
+              },
+              "Output_Selection": {
+                "value": "Sine"
+              },
+              "Output_Width": {
+                "value": "16"
+              },
+              "PINC1": {
+                "value": "1101010101100"
+              },
+              "POFF1": {
+                "value": "110101010110"
+              },
+              "Parameter_Entry": {
+                "value": "Hardware_Parameters"
+              },
+              "PartsPresent": {
+                "value": "Phase_Generator_and_SIN_COS_LUT"
+              },
+              "Phase_Width": {
+                "value": "16"
+              },
+              "Phase_offset": {
+                "value": "Fixed"
+              },
+              "S_PHASE_Has_TUSER": {
+                "value": "Not_Required"
+              }
+            }
+          },
+          "dds_1": {
+            "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+            "xci_name": "mySystem_dds_compiler_0_2",
+            "parameters": {
+              "DATA_Has_TLAST": {
+                "value": "Not_Required"
+              },
+              "DDS_Clock_Rate": {
+                "value": "192"
+              },
+              "Frequency_Resolution": {
+                "value": "0.4"
+              },
+              "Has_Phase_Out": {
+                "value": "true"
+              },
+              "Latency": {
+                "value": "8"
+              },
+              "M_DATA_Has_TUSER": {
+                "value": "Not_Required"
+              },
+              "Noise_Shaping": {
+                "value": "None"
+              },
+              "Output_Frequency1": {
+                "value": "0"
+              },
+              "Output_Selection": {
+                "value": "Sine"
+              },
+              "Output_Width": {
+                "value": "16"
+              },
+              "PINC1": {
+                "value": "1101010101100"
+              },
+              "POFF1": {
+                "value": "11010101011"
+              },
+              "Parameter_Entry": {
+                "value": "Hardware_Parameters"
+              },
+              "PartsPresent": {
+                "value": "Phase_Generator_and_SIN_COS_LUT"
+              },
+              "Phase_Width": {
+                "value": "16"
+              },
+              "Phase_offset": {
+                "value": "Fixed"
+              },
+              "S_PHASE_Has_TUSER": {
+                "value": "Not_Required"
+              }
+            }
+          },
+          "dds_3": {
+            "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+            "xci_name": "mySystem_dds_compiler_0_3",
+            "parameters": {
+              "DATA_Has_TLAST": {
+                "value": "Not_Required"
+              },
+              "DDS_Clock_Rate": {
+                "value": "192"
+              },
+              "Frequency_Resolution": {
+                "value": "0.4"
+              },
+              "Has_Phase_Out": {
+                "value": "true"
+              },
+              "Latency": {
+                "value": "8"
+              },
+              "M_DATA_Has_TUSER": {
+                "value": "Not_Required"
+              },
+              "Noise_Shaping": {
+                "value": "None"
+              },
+              "Output_Frequency1": {
+                "value": "0"
+              },
+              "Output_Selection": {
+                "value": "Sine"
+              },
+              "Output_Width": {
+                "value": "16"
+              },
+              "PINC1": {
+                "value": "1101010101100"
+              },
+              "POFF1": {
+                "value": "1010000000001"
+              },
+              "Parameter_Entry": {
+                "value": "Hardware_Parameters"
+              },
+              "PartsPresent": {
+                "value": "Phase_Generator_and_SIN_COS_LUT"
+              },
+              "Phase_Width": {
+                "value": "16"
+              },
+              "Phase_offset": {
+                "value": "Fixed"
+              },
+              "S_PHASE_Has_TUSER": {
+                "value": "Not_Required"
+              }
+            }
+          },
+          "jesd204_phy": {
+            "vlnv": "xilinx.com:ip:jesd204_phy:4.0",
+            "xci_name": "mySystem_jesd204_phy_0",
+            "parameters": {
+              "Axi_Lite": {
+                "value": "false"
+              },
+              "C_LANES": {
+                "value": "8"
+              },
+              "C_PLL_SELECTION": {
+                "value": "1"
+              },
+              "DRPCLK_FREQ": {
+                "value": "100"
+              },
+              "GT_Line_Rate": {
+                "value": "7.68"
+              },
+              "GT_REFCLK_FREQ": {
+                "value": "192"
+              },
+              "RX_GT_Line_Rate": {
+                "value": "7.68"
+              },
+              "RX_GT_REFCLK_FREQ": {
+                "value": "192"
+              },
+              "RX_PLL_SELECTION": {
+                "value": "0"
+              },
+              "TransceiverControl": {
+                "value": "true"
+              }
+            }
+          },
+          "jesd204_tx": {
+            "vlnv": "xilinx.com:ip:jesd204:7.2",
+            "xci_name": "mySystem_jesd204_rx_0",
+            "parameters": {
+              "AXICLK_FREQ": {
+                "value": "100.0"
+              },
+              "C_DEFAULT_F": {
+                "value": "1"
+              },
+              "C_DEFAULT_K": {
+                "value": "20"
+              },
+              "C_DEFAULT_SCR": {
+                "value": "0"
+              },
+              "C_LANES": {
+                "value": "8"
+              },
+              "C_NODE_IS_TRANSMIT": {
+                "value": "1"
+              }
+            }
+          },
+          "xlconcat_0": {
+            "vlnv": "xilinx.com:ip:xlconcat:2.1",
+            "xci_name": "mySystem_xlconcat_0_0",
+            "parameters": {
+              "IN0_WIDTH": {
+                "value": "16"
+              },
+              "IN1_WIDTH": {
+                "value": "16"
+              },
+              "IN2_WIDTH": {
+                "value": "16"
+              },
+              "IN3_WIDTH": {
+                "value": "16"
+              },
+              "NUM_PORTS": {
+                "value": "4"
+              },
+              "dout_width": {
+                "value": "64"
+              }
+            }
+          },
+          "rx_polarity": {
+            "vlnv": "xilinx.com:ip:xlconstant:1.1",
+            "xci_name": "mySystem_xlconstant_0_0",
+            "parameters": {
+              "CONST_VAL": {
+                "value": "0"
+              },
+              "CONST_WIDTH": {
+                "value": "8"
+              }
+            }
+          },
+          "sync_inv": {
+            "vlnv": "xilinx.com:ip:xlconstant:1.1",
+            "xci_name": "mySystem_xlconstant_0_1",
+            "parameters": {
+              "CONST_VAL": {
+                "value": "0"
+              },
+              "CONST_WIDTH": {
+                "value": "1"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "jesd204_tx_gt2_tx": {
+            "interface_ports": [
+              "jesd204_tx/gt2_tx",
+              "jesd204_phy/gt2_tx"
+            ]
+          },
+          "jesd204_tx_gt0_tx": {
+            "interface_ports": [
+              "jesd204_tx/gt0_tx",
+              "jesd204_phy/gt0_tx"
+            ]
+          },
+          "jesd204_tx_gt5_tx": {
+            "interface_ports": [
+              "jesd204_tx/gt5_tx",
+              "jesd204_phy/gt5_tx"
+            ]
+          },
+          "jesd204_tx_gt4_tx": {
+            "interface_ports": [
+              "jesd204_tx/gt4_tx",
+              "jesd204_phy/gt4_tx"
+            ]
+          },
+          "jesd204_tx_gt7_tx": {
+            "interface_ports": [
+              "jesd204_tx/gt7_tx",
+              "jesd204_phy/gt7_tx"
+            ]
+          },
+          "Conn1": {
+            "interface_ports": [
+              "CLK_IN1_D",
+              "clk_wiz_0/CLK_IN1_D"
+            ]
+          },
+          "jesd204_tx_gt1_tx": {
+            "interface_ports": [
+              "jesd204_tx/gt1_tx",
+              "jesd204_phy/gt1_tx"
+            ]
+          },
+          "jesd204_tx_gt3_tx": {
+            "interface_ports": [
+              "jesd204_tx/gt3_tx",
+              "jesd204_phy/gt3_tx"
+            ]
+          },
+          "jesd204_tx_gt6_tx": {
+            "interface_ports": [
+              "jesd204_tx/gt6_tx",
+              "jesd204_phy/gt6_tx"
+            ]
+          }
+        },
+        "nets": {
+          "jesd_data_if_0_refclk": {
+            "ports": [
+              "iobufs_i/refclk",
+              "jesd204_phy/cpll_refclk",
+              "jesd204_phy/qpll0_refclk"
+            ]
+          },
+          "leds_0_leds": {
+            "ports": [
+              "leds_0/leds",
+              "leds"
+            ]
+          },
+          "refclk_p_1": {
+            "ports": [
+              "refclk_p",
+              "iobufs_i/refclk_p"
+            ]
+          },
+          "refclk_n_1": {
+            "ports": [
+              "refclk_n",
+              "iobufs_i/refclk_n"
+            ]
+          },
+          "sysrefp_1": {
+            "ports": [
+              "sysrefp",
+              "iobufs_i/sysrefp"
+            ]
+          },
+          "sysrefn_1": {
+            "ports": [
+              "sysrefn",
+              "iobufs_i/sysrefn"
+            ]
+          },
+          "tx_reset_1": {
+            "ports": [
+              "tx_reset",
+              "leds_0/rst",
+              "util_vector_logic_0/Op1",
+              "clk_wiz_0/reset",
+              "jesd204_phy/rx_reset_gt",
+              "jesd204_phy/tx_sys_reset",
+              "jesd204_phy/rx_sys_reset",
+              "jesd204_tx/tx_reset"
+            ],
+            "hdl_attributes": {
+              "MARK_DEBUG": {
+                "value": "true"
+              }
+            }
+          },
+          "xlconstant_0_dout": {
+            "ports": [
+              "rx_polarity/dout",
+              "jesd204_phy/gt_rxpolarity"
+            ]
+          },
+          "clk_wiz_0_clk_out1": {
+            "ports": [
+              "clk_wiz_0/clk_out1",
+              "jesd204_phy/drpclk",
+              "jesd204_tx/s_axi_aclk"
+            ]
+          },
+          "util_vector_logic_0_Res": {
+            "ports": [
+              "util_vector_logic_0/Res",
+              "Transport_layer_DAC38Rf82_84111_0/tx_link_clk_async_rstn",
+              "jesd204_tx/s_axi_aresetn"
+            ]
+          },
+          "xlconstant_1_dout": {
+            "ports": [
+              "sync_inv/dout",
+              "iobufs_i/sync_inv_i"
+            ]
+          },
+          "jesd204_phy_rxoutclk1": {
+            "ports": [
+              "jesd204_phy/txoutclk",
+              "leds_0/in4",
+              "Transport_layer_DAC38Rf82_84111_0/tx_link_clk",
+              "dds_compiler_0/aclk",
+              "dds_2/aclk",
+              "dds_1/aclk",
+              "dds_3/aclk",
+              "jesd204_phy/tx_core_clk",
+              "jesd204_phy/rx_core_clk",
+              "jesd204_tx/tx_core_clk"
+            ]
+          },
+          "dds_compiler_0_m_axis_data_tvalid": {
+            "ports": [
+              "dds_compiler_0/m_axis_data_tvalid",
+              "util_vector_logic_22/Op2"
+            ]
+          },
+          "Sample_2": {
+            "ports": [
+              "dds_2/m_axis_data_tdata",
+              "xlconcat_0/In2"
+            ],
+            "hdl_attributes": {
+              "MARK_DEBUG": {
+                "value": "true"
+              }
+            }
+          },
+          "Concat_OP": {
+            "ports": [
+              "xlconcat_0/dout",
+              "Transport_layer_DAC38Rf82_84111_0/jesd204_tx_link_data"
+            ],
+            "hdl_attributes": {
+              "MARK_DEBUG": {
+                "value": "true"
+              }
+            }
+          },
+          "jesd204_tx_gt_prbssel_out": {
+            "ports": [
+              "jesd204_tx/gt_prbssel_out",
+              "jesd204_phy/gt_prbssel"
+            ]
+          },
+          "jesd204_tx_tx_reset_gt": {
+            "ports": [
+              "jesd204_tx/tx_reset_gt",
+              "jesd204_phy/tx_reset_gt"
+            ]
+          },
+          "jesd204_phy_tx_reset_done": {
+            "ports": [
+              "jesd204_phy/tx_reset_done",
+              "jesd204_tx/tx_reset_done"
+            ]
+          },
+          "iobufs_i_sysref": {
+            "ports": [
+              "iobufs_i/sysref",
+              "jesd204_tx/tx_sysref"
+            ]
+          },
+          "Sample_0": {
+            "ports": [
+              "dds_compiler_0/m_axis_data_tdata",
+              "xlconcat_0/In0"
+            ],
+            "hdl_attributes": {
+              "MARK_DEBUG": {
+                "value": "true"
+              }
+            }
+          },
+          "iobufs_i_tx_sync": {
+            "ports": [
+              "iobufs_i/tx_sync",
+              "leds_0/in0",
+              "jesd204_tx/tx_sync"
+            ],
+            "hdl_attributes": {
+              "MARK_DEBUG": {
+                "value": "true"
+              }
+            }
+          },
+          "jesd204_phy_txp_out": {
+            "ports": [
+              "jesd204_phy/txp_out",
+              "txp_out"
+            ]
+          },
+          "jesd204_phy_txn_out": {
+            "ports": [
+              "jesd204_phy/txn_out",
+              "txn_out"
+            ]
+          },
+          "Transport_layer_DAC38Rf82_84111_0_rx_dataout": {
+            "ports": [
+              "Transport_layer_DAC38Rf82_84111_0/tx_dataout",
+              "jesd204_tx/tx_tdata"
+            ],
+            "hdl_attributes": {
+              "MARK_DEBUG": {
+                "value": "true"
+              }
+            }
+          },
+          "tx_syncp_1": {
+            "ports": [
+              "tx_syncp",
+              "iobufs_i/tx_syncp"
+            ]
+          },
+          "tx_syncn_1": {
+            "ports": [
+              "tx_syncn",
+              "iobufs_i/tx_syncn"
+            ]
+          },
+          "dds_3_m_axis_data_tvalid": {
+            "ports": [
+              "dds_3/m_axis_data_tvalid",
+              "util_vector_logic_22/Op1"
+            ]
+          },
+          "dds_2_m_axis_data_tvalid": {
+            "ports": [
+              "dds_2/m_axis_data_tvalid",
+              "util_vector_logic_21/Op2"
+            ]
+          },
+          "dds_1_m_axis_data_tvalid": {
+            "ports": [
+              "dds_1/m_axis_data_tvalid",
+              "util_vector_logic_21/Op1"
+            ]
+          },
+          "util_vector_logic_22_Res": {
+            "ports": [
+              "util_vector_logic_22/Res",
+              "util_vector_logic_23/Op2"
+            ]
+          },
+          "util_vector_logic_21_Res": {
+            "ports": [
+              "util_vector_logic_21/Res",
+              "util_vector_logic_23/Op1"
+            ]
+          },
+          "util_vector_logic_23_Res": {
+            "ports": [
+              "util_vector_logic_23/Res",
+              "util_vector_logic_1/Op2"
+            ]
+          },
+          "Sample_3": {
+            "ports": [
+              "dds_3/m_axis_data_tdata",
+              "xlconcat_0/In3"
+            ],
+            "hdl_attributes": {
+              "MARK_DEBUG": {
+                "value": "true"
+              }
+            }
+          },
+          "Sample_1": {
+            "ports": [
+              "dds_1/m_axis_data_tdata",
+              "xlconcat_0/In1"
+            ],
+            "hdl_attributes": {
+              "MARK_DEBUG": {
+                "value": "true"
+              }
+            }
+          },
+          "jesd204_tx_tx_tready": {
+            "ports": [
+              "jesd204_tx/tx_tready",
+              "util_vector_logic_1/Op1"
+            ],
+            "hdl_attributes": {
+              "MARK_DEBUG": {
+                "value": "true"
+              }
+            }
+          },
+          "util_vector_logic_1_Res": {
+            "ports": [
+              "util_vector_logic_1/Res",
+              "Transport_layer_DAC38Rf82_84111_0/jesd204_tx_link_valid"
+            ]
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "CLK_IN1_D_1": {
+        "interface_ports": [
+          "CLK_IN1_D",
+          "JesdSubSys/CLK_IN1_D"
+        ]
+      }
+    },
+    "nets": {
+      "reset_1": {
+        "ports": [
+          "reset",
+          "JesdSubSys/tx_reset"
+        ]
+      },
+      "JesdSubSys_leds": {
+        "ports": [
+          "JesdSubSys/leds",
+          "leds"
+        ]
+      },
+      "sysrefn_1": {
+        "ports": [
+          "sysrefn",
+          "JesdSubSys/sysrefn"
+        ]
+      },
+      "refclk_p_1": {
+        "ports": [
+          "refclk_p",
+          "JesdSubSys/refclk_p"
+        ]
+      },
+      "sysrefp_1": {
+        "ports": [
+          "sysrefp",
+          "JesdSubSys/sysrefp"
+        ]
+      },
+      "refclk_n_1": {
+        "ports": [
+          "refclk_n",
+          "JesdSubSys/refclk_n"
+        ]
+      },
+      "JesdSubSys_txp_out": {
+        "ports": [
+          "JesdSubSys/txp_out",
+          "txp_out"
+        ]
+      },
+      "JesdSubSys_txn_out": {
+        "ports": [
+          "JesdSubSys/txn_out",
+          "txn_out"
+        ]
+      },
+      "tx_syncp_1": {
+        "ports": [
+          "tx_syncp",
+          "JesdSubSys/tx_syncp"
+        ]
+      },
+      "tx_syncn_1": {
+        "ports": [
+          "tx_syncn",
+          "JesdSubSys/tx_syncn"
+        ]
+      }
+    }
+  }
+}

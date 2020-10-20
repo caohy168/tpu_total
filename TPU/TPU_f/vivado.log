@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Jan 21 10:36:10 2020
+# Process ID: 11984
+# Current directory: C:/Users/dell/Desktop/TPU/TPU_f
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25176 C:\Users\dell\Desktop\TPU\TPU_f\TPU.xpr
+# Log file: C:/Users/dell/Desktop/TPU/TPU_f/vivado.log
+# Journal file: C:/Users/dell/Desktop/TPU/TPU_f\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 21 10:36:57 2020...
