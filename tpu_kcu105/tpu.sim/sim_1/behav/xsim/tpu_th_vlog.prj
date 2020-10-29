@@ -1,0 +1,40 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../tpu.ip_user_files/ipstatic/hdl" \
+"../../../../tpu.srcs/sources_1/ip/axis_fifo_t8/sim/axis_fifo_t8.v" \
+"../../../../tpu.srcs/sources_1/ip/axis_fifo_t/sim/axis_fifo_t.v" \
+"../../../../tpu.srcs/sources_1/ip/ddc_out_fifo/sim/ddc_out_fifo.v" \
+"../../../../tpu.srcs/sources_1/ip/duc_out_fifo/sim/duc_out_fifo.v" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/crc24_calc_1bit.v" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/crc24_insert_1bit.v" \
+
+sv xil_defaultlib  --include "../../../../tpu.ip_user_files/ipstatic/hdl" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/crc_detector.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/crc_generator.sv" \
+"../../../../tpu.srcs/sources_1/new/data_source.sv" \
+"../../../../tpu.srcs/sources_1/new/ddc.sv" \
+"../../../../tpu.srcs/sources_1/new/dec2.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/deintrlv.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/descrambler.sv" \
+"../../../../tpu.srcs/sources_1/new/duc.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/eqam.sv" \
+"../../../../tpu.srcs/sources_1/new/inter2.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/interleaver.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/layer1.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/layer1_receive.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/layer1_transmit.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/mac_block.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/mac_deblock.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/qam.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/radio.sv" \
+"../../../../tpu.srcs/sources_1/new/radio_receive.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/radio_transmit.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/scrambler.sv" \
+"../../../../tpu.srcs/sources_1/imports/tpu.srcs/tpu.sv" \
+"../../../../tpu.srcs/sources_1/new/tpu_top.sv" \
+"../../../../tpu.srcs/sim_1/imports/tpu.sim/tpu_th.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

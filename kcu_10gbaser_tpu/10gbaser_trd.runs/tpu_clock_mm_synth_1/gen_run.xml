@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="tpu_clock_mm_synth_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1592196912">
+  <File Type="REPORTS-TCL" Name="tpu_clock_mm_reports.tcl"/>
+  <File Type="RDS-RDS" Name="tpu_clock_mm.vds"/>
+  <File Type="RDS-DCP" Name="tpu_clock_mm.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="tpu_clock_mm_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="tpu_clock_mm_utilization_synth.rpt"/>
+  <File Type="PA-TCL" Name="tpu_clock_mm.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/tpu_clock_mm">
+    <File Path="$PSRCDIR/sources_1/ip/tpu_clock_mm/tpu_clock_mm.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="tpu_clock_mm"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/tpu_clock_mm">
+    <File Path="$PSRCDIR/sources_1/ip/tpu_clock_mm/tpu_clock_mm.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="tpu_clock_mm"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

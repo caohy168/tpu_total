@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov 21 15:06:02 2019
+# Process ID: 7404
+# Current directory: D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13304 D:\project\ethnet\kcu105_10gbaser_trd\hardware\vivado\runs\impl_run\10gbaser_trd.xpr
+# Log file: D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/vivado.log
+# Journal file: D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.xpr
+update_compile_order -fileset sources_1
+set_param generla.maxthreads 32
+set_param generl.maxthreads 32
+set_param general.maxthreads 32
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/ila_gen_mon_axis"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/axi_stream_interface/ila_interface"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/ila_gen_mon_axis"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_gen_mon"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]]
+add_wave -into {hw_ila_data_3.wcfg} -radix hex { {axi_stream_gen_mon_1/axi_stream_interface/bb_rx_axis_tdata} {axi_stream_gen_mon_1/axi_stream_interface/bb_rx_axis_tkeep} {axi_stream_gen_mon_1/axi_stream_interface/bb_rx_axis_tlast} {axi_stream_gen_mon_1/axi_stream_interface/bb_rx_axis_tuser} {axi_stream_gen_mon_1/axi_stream_interface/bb_rx_axis_tvalid} {axi_stream_gen_mon_1/axi_stream_interface/bb_tx_axis_tdata} {axi_stream_gen_mon_1/axi_stream_interface/bb_tx_axis_tkeep} {axi_stream_gen_mon_1/axi_stream_interface/bb_tx_axis_tlast} {axi_stream_gen_mon_1/axi_stream_interface/bb_tx_axis_tready} {axi_stream_gen_mon_1/axi_stream_interface/bb_tx_axis_tuser} {axi_stream_gen_mon_1/axi_stream_interface/bb_tx_axis_tvalid} {axi_stream_gen_mon_1/axi_stream_interface/n_0_0} {axi_stream_gen_mon_1/axi_stream_interface/rx_axis_tdata} {axi_stream_gen_mon_1/axi_stream_interface/rx_axis_tkeep} {axi_stream_gen_mon_1/axi_stream_interface/rx_axis_tlast} {axi_stream_gen_mon_1/axi_stream_interface/rx_axis_tready} {axi_stream_gen_mon_1/axi_stream_interface/rx_axis_tuser} {axi_stream_gen_mon_1/axi_stream_interface/rx_axis_tvalid} {axi_stream_gen_mon_1/axi_stream_interface/tx_axis_tdata} {axi_stream_gen_mon_1/axi_stream_interface/tx_axis_tkeep} {axi_stream_gen_mon_1/axi_stream_interface/tx_axis_tlast} {axi_stream_gen_mon_1/axi_stream_interface/tx_axis_tready} {axi_stream_gen_mon_1/axi_stream_interface/tx_axis_tuser} {axi_stream_gen_mon_1/axi_stream_interface/tx_axis_tvalid} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/axi_stream_interface/ila_interface"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/axi_stream_interface/ila_interface"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/axi_stream_interface/ila_interface"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]]
+set_property PROBES.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]]
+add_wave -into {hw_ila_data_6.wcfg} -radix hex { {Interface_(i6:s0)_(s_axis_tx_0_1)} {T_Channel_(i6:s0)_(s_axis_tx_0_1)} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_0_axis_tdata} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_0_axis_tkeep} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_0_axis_tlast} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_0_axis_tready} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_0_axis_tuser} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_0_axis_tvalid} {Interface_(i6:s1)_(mac_phy_ch0_m_axis_rx)} {T_Channel_(i6:s1)_(mac_phy_ch0_m_axis_rx)} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_1_axis_tdata} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_1_axis_tkeep} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_1_axis_tlast} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_1_axis_tuser} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_1_axis_tvalid} {Interface_(i6:s2)_(s_axis_tx_1_1)} {T_Channel_(i6:s2)_(s_axis_tx_1_1)} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_2_axis_tdata} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_2_axis_tkeep} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_2_axis_tlast} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_2_axis_tready} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_2_axis_tuser} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_2_axis_tvalid} {Interface_(i6:s3)_(mac_phy_ch1_m_axis_rx)} {T_Channel_(i6:s3)_(mac_phy_ch1_m_axis_rx)} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_3_axis_tdata} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_3_axis_tkeep} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_3_axis_tlast} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_3_axis_tuser} {mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_3_axis_tvalid} }
+set_property NAME.CUSTOM {slot_0 : s_axis_tx_0_1 : Interface  Events} [get_hw_probes Interface_(i6:s0)_(s_axis_tx_0_1)] 
+set_property NAME.CUSTOM {slot_0 : s_axis_tx_0_1 : T Channel  Events} [get_hw_probes T_Channel_(i6:s0)_(s_axis_tx_0_1)] 
+set_property NAME.CUSTOM {slot_0 : s_axis_tx_0_1 : TDATA} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_0_axis_tdata] 
+set_property NAME.CUSTOM {slot_0 : s_axis_tx_0_1 : TKEEP} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_0_axis_tkeep] 
+set_property NAME.CUSTOM {slot_0 : s_axis_tx_0_1 : TLAST} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_0_axis_tlast] 
+set_property NAME.CUSTOM {slot_0 : s_axis_tx_0_1 : TREADY} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_0_axis_tready] 
+set_property NAME.CUSTOM {slot_0 : s_axis_tx_0_1 : TUSER} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_0_axis_tuser] 
+set_property NAME.CUSTOM {slot_0 : s_axis_tx_0_1 : TVALID} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_0_axis_tvalid] 
+set_property NAME.CUSTOM {slot_1 : mac_phy_ch0_m_axis_rx : Interface  Events} [get_hw_probes Interface_(i6:s1)_(mac_phy_ch0_m_axis_rx)] 
+set_property NAME.CUSTOM {slot_1 : mac_phy_ch0_m_axis_rx : T Channel  Events} [get_hw_probes T_Channel_(i6:s1)_(mac_phy_ch0_m_axis_rx)] 
+set_property NAME.CUSTOM {slot_1 : mac_phy_ch0_m_axis_rx : TDATA} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_1_axis_tdata] 
+set_property NAME.CUSTOM {slot_1 : mac_phy_ch0_m_axis_rx : TKEEP} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_1_axis_tkeep] 
+set_property NAME.CUSTOM {slot_1 : mac_phy_ch0_m_axis_rx : TLAST} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_1_axis_tlast] 
+set_property NAME.CUSTOM {slot_1 : mac_phy_ch0_m_axis_rx : TUSER} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_1_axis_tuser] 
+set_property NAME.CUSTOM {slot_1 : mac_phy_ch0_m_axis_rx : TVALID} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_1_axis_tvalid] 
+set_property NAME.CUSTOM {slot_2 : s_axis_tx_1_1 : Interface  Events} [get_hw_probes Interface_(i6:s2)_(s_axis_tx_1_1)] 
+set_property NAME.CUSTOM {slot_2 : s_axis_tx_1_1 : T Channel  Events} [get_hw_probes T_Channel_(i6:s2)_(s_axis_tx_1_1)] 
+set_property NAME.CUSTOM {slot_2 : s_axis_tx_1_1 : TDATA} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_2_axis_tdata] 
+set_property NAME.CUSTOM {slot_2 : s_axis_tx_1_1 : TKEEP} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_2_axis_tkeep] 
+set_property NAME.CUSTOM {slot_2 : s_axis_tx_1_1 : TLAST} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_2_axis_tlast] 
+set_property NAME.CUSTOM {slot_2 : s_axis_tx_1_1 : TREADY} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_2_axis_tready] 
+set_property NAME.CUSTOM {slot_2 : s_axis_tx_1_1 : TUSER} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_2_axis_tuser] 
+set_property NAME.CUSTOM {slot_2 : s_axis_tx_1_1 : TVALID} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_2_axis_tvalid] 
+set_property NAME.CUSTOM {slot_3 : mac_phy_ch1_m_axis_rx : Interface  Events} [get_hw_probes Interface_(i6:s3)_(mac_phy_ch1_m_axis_rx)] 
+set_property NAME.CUSTOM {slot_3 : mac_phy_ch1_m_axis_rx : T Channel  Events} [get_hw_probes T_Channel_(i6:s3)_(mac_phy_ch1_m_axis_rx)] 
+set_property NAME.CUSTOM {slot_3 : mac_phy_ch1_m_axis_rx : TDATA} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_3_axis_tdata] 
+set_property NAME.CUSTOM {slot_3 : mac_phy_ch1_m_axis_rx : TKEEP} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_3_axis_tkeep] 
+set_property NAME.CUSTOM {slot_3 : mac_phy_ch1_m_axis_rx : TLAST} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_3_axis_tlast] 
+set_property NAME.CUSTOM {slot_3 : mac_phy_ch1_m_axis_rx : TUSER} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_3_axis_tuser] 
+set_property NAME.CUSTOM {slot_3 : mac_phy_ch1_m_axis_rx : TVALID} [get_hw_probes mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/net_slot_3_axis_tvalid] 
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]]
+save_wave_config {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+save_wave_config {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/hw_1/wave/hw_ila_data_4/hw_ila_data_4.wcfg}
+save_wave_config {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/hw_1/wave/hw_ila_data_5/hw_ila_data_5.wcfg}
+save_wave_config {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/hw_1/wave/hw_ila_data_6/hw_ila_data_6.wcfg}

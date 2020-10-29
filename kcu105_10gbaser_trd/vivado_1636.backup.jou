@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov 21 14:52:43 2019
+# Process ID: 1636
+# Current directory: D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3284 D:\project\ethnet\kcu105_10gbaser_trd\hardware\vivado\runs\impl_run\10gbaser_trd.xpr
+# Log file: D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/vivado.log
+# Journal file: D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/ila_gen_mon_axis"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/axi_stream_interface/ila_interface"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/ila_gen_mon_axis"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"ila_gen_mon"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]]
+set_property PROBES.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.ltx} [get_hw_devices xcku040_0]
+set_property PROGRAM.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.bit} [get_hw_devices xcku040_0]
+program_hw_devices [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]

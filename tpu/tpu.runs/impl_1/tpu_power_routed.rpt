@@ -1,0 +1,484 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date             : Wed May 20 01:03:44 2020
+| Host             : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command          : report_power -file tpu_power_routed.rpt -pb tpu_power_summary_routed.pb -rpx tpu_power_routed.rpx
+| Design           : tpu
+| Device           : xcvu9p-flga2104-2L-e
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+------------------------------------+
+| Total On-Chip Power (W)  | 1064.824 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                       |
+| Power Budget Margin (W)  | NA                                 |
+| Dynamic (W)              | 1041.378                           |
+| Device Static (W)        | 23.445                             |
+| Effective TJA (C/W)      | 0.5                                |
+| Max Ambient (C)          | 0.0                                |
+| Junction Temperature (C) | 125.0                              |
+| Confidence Level         | Low                                |
+| Setting File             | ---                                |
+| Simulation Activity File | ---                                |
+| Design Nets Matched      | NA                                 |
++--------------------------+------------------------------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| CLB Logic                |   541.607 |   428853 |       --- |             --- |
+|   LUT as Logic           |   451.017 |   162547 |   1182240 |           13.75 |
+|   LUT as Distributed RAM |    53.301 |     9232 |    591840 |            1.56 |
+|   CARRY8                 |    15.390 |     2536 |    147780 |            1.72 |
+|   Register               |    14.043 |   180312 |   2364480 |            7.63 |
+|   LUT as Shift Register  |     7.856 |      496 |    591840 |            0.08 |
+|   BUFG                   |     0.001 |        2 |       240 |            0.83 |
+|   Others                 |     0.000 |     5600 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |    16128 |   1182240 |            1.36 |
+| Signals                  |   442.653 |   302762 |       --- |             --- |
+| Block RAM                |     9.849 |      168 |      2160 |            7.78 |
+| I/O                      |    47.268 |      473 |       832 |           56.85 |
+| Static Power             |    23.445 |          |           |                 |
+| Total                    |  1064.822 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++------------+-------------+-----------+-------------+------------+
+| Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++------------+-------------+-----------+-------------+------------+
+| Vccint     |       0.850 |  1191.116 |    1168.864 |     22.252 |
+| Vccint_io  |       0.850 |     3.308 |       2.506 |      0.802 |
+| Vccbram    |       0.850 |     1.109 |       0.677 |      0.432 |
+| Vccaux     |       1.800 |     1.721 |       0.000 |      1.721 |
+| Vccaux_io  |       1.800 |     5.694 |       5.506 |      0.188 |
+| Vcco33     |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25     |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18     |       1.800 |    19.572 |      19.571 |      0.001 |
+| Vcco15     |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135    |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12     |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vcco10     |       1.000 |     0.000 |       0.000 |      0.000 |
+| Vccadc     |       1.800 |     0.024 |       0.000 |      0.024 |
+| MGTYAVcc   |       0.900 |     0.000 |       0.000 |      0.000 |
+| MGTYAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTYVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
++------------+-------------+-----------+-------------+------------+
+* The Vccint supply current exceeds the maximum limit of the selected package.  See the packaging and pinout user guide for limit values.
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 0.5                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 0.7                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++---------------------------------------------+-----------+
+| Name                                        | Power (W) |
++---------------------------------------------+-----------+
+| tpu                                         |  1041.376 |
+|   buffer[0].axis_fifo_t8I                   |     0.305 |
+|     inst                                    |     0.305 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.305 |
+|   buffer[0].axis_fifo_t8Q                   |     0.303 |
+|     inst                                    |     0.303 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.303 |
+|   buffer[0].axis_fifo_tI                    |     0.202 |
+|     inst                                    |     0.202 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.202 |
+|   buffer[0].axis_fifo_tI_i_1                |     0.044 |
+|   buffer[0].axis_fifo_tQ                    |     0.198 |
+|     inst                                    |     0.198 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.198 |
+|   buffer[0].axis_fifo_tQ_i_1                |     0.010 |
+|   buffer[1].axis_fifo_t8I                   |     0.243 |
+|     inst                                    |     0.243 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.243 |
+|   buffer[1].axis_fifo_t8Q                   |     0.268 |
+|     inst                                    |     0.268 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.268 |
+|   buffer[1].axis_fifo_tI                    |     0.205 |
+|     inst                                    |     0.205 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.205 |
+|   buffer[1].axis_fifo_tI_i_1                |     0.011 |
+|   buffer[1].axis_fifo_tQ                    |     0.192 |
+|     inst                                    |     0.192 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.192 |
+|   buffer[1].axis_fifo_tQ_i_1                |     0.008 |
+|   buffer[2].axis_fifo_t8I                   |     0.302 |
+|     inst                                    |     0.302 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.302 |
+|   buffer[2].axis_fifo_t8Q                   |     0.349 |
+|     inst                                    |     0.349 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.349 |
+|   buffer[2].axis_fifo_tI                    |     0.294 |
+|     inst                                    |     0.294 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.294 |
+|   buffer[2].axis_fifo_tI_i_1                |     0.016 |
+|   buffer[2].axis_fifo_tQ                    |     0.198 |
+|     inst                                    |     0.198 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.198 |
+|   buffer[2].axis_fifo_tQ_i_1                |     0.015 |
+|   buffer[3].axis_fifo_t8I                   |     0.274 |
+|     inst                                    |     0.274 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.274 |
+|   buffer[3].axis_fifo_t8Q                   |     0.272 |
+|     inst                                    |     0.272 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.272 |
+|   buffer[3].axis_fifo_tI                    |     0.213 |
+|     inst                                    |     0.213 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.213 |
+|   buffer[3].axis_fifo_tI_i_1                |     0.012 |
+|   buffer[3].axis_fifo_tQ                    |     0.193 |
+|     inst                                    |     0.193 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.193 |
+|   buffer[3].axis_fifo_tQ_i_1                |     0.011 |
+|   buffer[4].axis_fifo_t8I                   |     0.256 |
+|     inst                                    |     0.256 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.256 |
+|   buffer[4].axis_fifo_t8Q                   |     0.245 |
+|     inst                                    |     0.245 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.245 |
+|   buffer[4].axis_fifo_tI                    |     0.213 |
+|     inst                                    |     0.213 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.213 |
+|   buffer[4].axis_fifo_tI_i_1                |     0.014 |
+|   buffer[4].axis_fifo_tQ                    |     0.195 |
+|     inst                                    |     0.195 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.195 |
+|   buffer[4].axis_fifo_tQ_i_1                |     0.010 |
+|   buffer[5].axis_fifo_t8I                   |     0.282 |
+|     inst                                    |     0.282 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.282 |
+|   buffer[5].axis_fifo_t8Q                   |     0.263 |
+|     inst                                    |     0.263 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.263 |
+|   buffer[5].axis_fifo_tI                    |     0.193 |
+|     inst                                    |     0.193 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.193 |
+|   buffer[5].axis_fifo_tI_i_1                |     0.011 |
+|   buffer[5].axis_fifo_tQ                    |     0.257 |
+|     inst                                    |     0.257 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.257 |
+|   buffer[5].axis_fifo_tQ_i_1                |     0.039 |
+|   buffer[6].axis_fifo_t8I                   |     0.252 |
+|     inst                                    |     0.252 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.252 |
+|   buffer[6].axis_fifo_t8Q                   |     0.294 |
+|     inst                                    |     0.294 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.294 |
+|   buffer[6].axis_fifo_tI                    |     0.206 |
+|     inst                                    |     0.206 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.206 |
+|   buffer[6].axis_fifo_tI_i_1                |     0.009 |
+|   buffer[6].axis_fifo_tQ                    |     0.187 |
+|     inst                                    |     0.187 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.187 |
+|   buffer[6].axis_fifo_tQ_i_1                |     0.011 |
+|   buffer[7].axis_fifo_t8I                   |     0.256 |
+|     inst                                    |     0.256 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.256 |
+|   buffer[7].axis_fifo_t8Q                   |     0.287 |
+|     inst                                    |     0.287 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.287 |
+|   buffer[7].axis_fifo_tI                    |     0.269 |
+|     inst                                    |     0.269 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.269 |
+|   buffer[7].axis_fifo_tI_i_1                |     0.010 |
+|   buffer[7].axis_fifo_tQ                    |     0.244 |
+|     inst                                    |     0.244 |
+|       gen_fifo.xpm_fifo_axis_inst           |     0.244 |
+|   buffer[7].axis_fifo_tQ_i_1                |     0.032 |
+|   clk_250m_IBUF_inst                        |     0.006 |
+|   clk_500m_IBUF_inst                        |     0.006 |
+|   layer1                                    |   591.332 |
+|     layer1_receive                          |   247.391 |
+|       layer1_receive_lane[0].crc_detector   |     1.149 |
+|       layer1_receive_lane[0].deintrlv       |     7.666 |
+|       layer1_receive_lane[0].descrambler    |    10.607 |
+|       layer1_receive_lane[0].eqam           |     1.364 |
+|       layer1_receive_lane[0].rs_decoder     |     9.816 |
+|       layer1_receive_lane[1].crc_detector   |     1.125 |
+|       layer1_receive_lane[1].deintrlv       |     7.265 |
+|       layer1_receive_lane[1].descrambler    |    10.735 |
+|       layer1_receive_lane[1].eqam           |     1.513 |
+|       layer1_receive_lane[1].rs_decoder     |    10.245 |
+|       layer1_receive_lane[2].crc_detector   |     1.250 |
+|       layer1_receive_lane[2].deintrlv       |     7.616 |
+|       layer1_receive_lane[2].descrambler    |    10.707 |
+|       layer1_receive_lane[2].eqam           |     1.609 |
+|       layer1_receive_lane[2].rs_decoder     |    10.492 |
+|       layer1_receive_lane[3].crc_detector   |     1.193 |
+|       layer1_receive_lane[3].deintrlv       |     7.141 |
+|       layer1_receive_lane[3].descrambler    |    10.244 |
+|       layer1_receive_lane[3].eqam           |     1.616 |
+|       layer1_receive_lane[3].rs_decoder     |     9.751 |
+|       layer1_receive_lane[4].crc_detector   |     1.198 |
+|       layer1_receive_lane[4].deintrlv       |     7.786 |
+|       layer1_receive_lane[4].descrambler    |    10.859 |
+|       layer1_receive_lane[4].eqam           |     1.510 |
+|       layer1_receive_lane[4].rs_decoder     |     9.685 |
+|       layer1_receive_lane[5].crc_detector   |     1.154 |
+|       layer1_receive_lane[5].deintrlv       |     7.619 |
+|       layer1_receive_lane[5].descrambler    |    10.868 |
+|       layer1_receive_lane[5].eqam           |     1.507 |
+|       layer1_receive_lane[5].rs_decoder     |     9.610 |
+|       layer1_receive_lane[6].crc_detector   |     1.196 |
+|       layer1_receive_lane[6].deintrlv       |     7.614 |
+|       layer1_receive_lane[6].descrambler    |    10.783 |
+|       layer1_receive_lane[6].eqam           |     1.644 |
+|       layer1_receive_lane[6].rs_decoder     |     9.731 |
+|       layer1_receive_lane[7].crc_detector   |     1.100 |
+|       layer1_receive_lane[7].deintrlv       |     8.007 |
+|       layer1_receive_lane[7].descrambler    |    10.672 |
+|       layer1_receive_lane[7].eqam           |     1.758 |
+|       layer1_receive_lane[7].rs_decoder     |     9.571 |
+|       mac_deblock                           |     0.376 |
+|     layer1_transmit                         |   343.940 |
+|       layer1_transmit_lane[0].crc_generator |     1.420 |
+|       layer1_transmit_lane[0].interleaver   |    14.531 |
+|       layer1_transmit_lane[0].qam           |    11.571 |
+|       layer1_transmit_lane[0].rs_encoder    |     3.207 |
+|       layer1_transmit_lane[0].scrambler     |    11.226 |
+|       layer1_transmit_lane[1].crc_generator |     1.486 |
+|       layer1_transmit_lane[1].interleaver   |    15.072 |
+|       layer1_transmit_lane[1].qam           |    11.598 |
+|       layer1_transmit_lane[1].rs_encoder    |     3.325 |
+|       layer1_transmit_lane[1].scrambler     |    11.408 |
+|       layer1_transmit_lane[2].crc_generator |     1.555 |
+|       layer1_transmit_lane[2].interleaver   |    15.448 |
+|       layer1_transmit_lane[2].qam           |    11.433 |
+|       layer1_transmit_lane[2].rs_encoder    |     3.419 |
+|       layer1_transmit_lane[2].scrambler     |    11.151 |
+|       layer1_transmit_lane[3].crc_generator |     1.463 |
+|       layer1_transmit_lane[3].interleaver   |    15.001 |
+|       layer1_transmit_lane[3].qam           |    11.153 |
+|       layer1_transmit_lane[3].rs_encoder    |     3.221 |
+|       layer1_transmit_lane[3].scrambler     |    10.807 |
+|       layer1_transmit_lane[4].crc_generator |     1.421 |
+|       layer1_transmit_lane[4].interleaver   |    15.015 |
+|       layer1_transmit_lane[4].qam           |    11.904 |
+|       layer1_transmit_lane[4].rs_encoder    |     3.294 |
+|       layer1_transmit_lane[4].scrambler     |    11.308 |
+|       layer1_transmit_lane[5].crc_generator |     1.457 |
+|       layer1_transmit_lane[5].interleaver   |    15.124 |
+|       layer1_transmit_lane[5].qam           |    11.426 |
+|       layer1_transmit_lane[5].rs_encoder    |     3.144 |
+|       layer1_transmit_lane[5].scrambler     |    11.130 |
+|       layer1_transmit_lane[6].crc_generator |     1.404 |
+|       layer1_transmit_lane[6].interleaver   |    14.805 |
+|       layer1_transmit_lane[6].qam           |    11.181 |
+|       layer1_transmit_lane[6].rs_encoder    |     3.200 |
+|       layer1_transmit_lane[6].scrambler     |    10.835 |
+|       layer1_transmit_lane[7].crc_generator |     1.382 |
+|       layer1_transmit_lane[7].interleaver   |    15.339 |
+|       layer1_transmit_lane[7].qam           |    11.807 |
+|       layer1_transmit_lane[7].rs_encoder    |     3.236 |
+|       layer1_transmit_lane[7].scrambler     |    11.311 |
+|       mac_block                             |     4.686 |
+|   m_axis_output_tready_IBUF_inst            |     0.007 |
+|   radio                                     |   386.676 |
+|     radio_receive                           |   306.606 |
+|       radio_receive[0].ddc                  |    35.411 |
+|       radio_receive[0].dec2_I               |     1.169 |
+|       radio_receive[0].dec2_Q               |     1.075 |
+|       radio_receive[1].ddc                  |    35.258 |
+|       radio_receive[1].dec2_I               |     1.250 |
+|       radio_receive[1].dec2_Q               |     1.082 |
+|       radio_receive[2].ddc                  |    38.101 |
+|       radio_receive[2].dec2_I               |     1.444 |
+|       radio_receive[2].dec2_Q               |     1.323 |
+|       radio_receive[3].ddc                  |    34.887 |
+|       radio_receive[3].dec2_I               |     1.231 |
+|       radio_receive[3].dec2_Q               |     1.108 |
+|       radio_receive[4].ddc                  |    35.674 |
+|       radio_receive[4].dec2_I               |     1.291 |
+|       radio_receive[4].dec2_Q               |     1.148 |
+|       radio_receive[5].ddc                  |    36.551 |
+|       radio_receive[5].dec2_I               |     1.219 |
+|       radio_receive[5].dec2_Q               |     1.095 |
+|       radio_receive[6].ddc                  |    35.536 |
+|       radio_receive[6].dec2_I               |     1.230 |
+|       radio_receive[6].dec2_Q               |     1.134 |
+|       radio_receive[7].ddc                  |    35.849 |
+|       radio_receive[7].dec2_I               |     1.311 |
+|       radio_receive[7].dec2_Q               |     1.230 |
+|     radio_transmit                          |    80.070 |
+|       radio_transmit[0].duc                 |     9.932 |
+|       radio_transmit[0].inter2_I            |     0.027 |
+|       radio_transmit[0].inter2_Q            |     0.023 |
+|       radio_transmit[1].duc                 |     9.640 |
+|       radio_transmit[1].inter2_I            |     0.030 |
+|       radio_transmit[1].inter2_Q            |     0.021 |
+|       radio_transmit[2].duc                 |     9.821 |
+|       radio_transmit[2].inter2_I            |     0.036 |
+|       radio_transmit[2].inter2_Q            |     0.024 |
+|       radio_transmit[3].duc                 |     9.690 |
+|       radio_transmit[3].inter2_I            |     0.034 |
+|       radio_transmit[3].inter2_Q            |     0.020 |
+|       radio_transmit[4].duc                 |     9.706 |
+|       radio_transmit[4].inter2_I            |     0.031 |
+|       radio_transmit[4].inter2_Q            |     0.022 |
+|       radio_transmit[5].duc                 |    10.120 |
+|       radio_transmit[5].inter2_I            |     0.033 |
+|       radio_transmit[5].inter2_Q            |     0.021 |
+|       radio_transmit[6].duc                 |     9.926 |
+|       radio_transmit[6].inter2_I            |     0.036 |
+|       radio_transmit[6].inter2_Q            |     0.028 |
+|       radio_transmit[7].duc                 |     9.706 |
+|       radio_transmit[7].inter2_I            |     0.029 |
+|       radio_transmit[7].inter2_Q            |     0.021 |
+|   s_axis_input_tdata_IBUF[0]_inst           |     0.012 |
+|   s_axis_input_tdata_IBUF[10]_inst          |     0.012 |
+|   s_axis_input_tdata_IBUF[11]_inst          |     0.019 |
+|   s_axis_input_tdata_IBUF[12]_inst          |     0.015 |
+|   s_axis_input_tdata_IBUF[13]_inst          |     0.012 |
+|   s_axis_input_tdata_IBUF[14]_inst          |     0.017 |
+|   s_axis_input_tdata_IBUF[15]_inst          |     0.015 |
+|   s_axis_input_tdata_IBUF[16]_inst          |     0.011 |
+|   s_axis_input_tdata_IBUF[17]_inst          |     0.011 |
+|   s_axis_input_tdata_IBUF[18]_inst          |     0.011 |
+|   s_axis_input_tdata_IBUF[19]_inst          |     0.010 |
+|   s_axis_input_tdata_IBUF[1]_inst           |     0.014 |
+|   s_axis_input_tdata_IBUF[20]_inst          |     0.011 |
+|   s_axis_input_tdata_IBUF[21]_inst          |     0.012 |
+|   s_axis_input_tdata_IBUF[22]_inst          |     0.010 |
+|   s_axis_input_tdata_IBUF[23]_inst          |     0.015 |
+|   s_axis_input_tdata_IBUF[24]_inst          |     0.011 |
+|   s_axis_input_tdata_IBUF[25]_inst          |     0.011 |
+|   s_axis_input_tdata_IBUF[26]_inst          |     0.010 |
+|   s_axis_input_tdata_IBUF[27]_inst          |     0.011 |
+|   s_axis_input_tdata_IBUF[28]_inst          |     0.010 |
+|   s_axis_input_tdata_IBUF[29]_inst          |     0.012 |
+|   s_axis_input_tdata_IBUF[2]_inst           |     0.015 |
+|   s_axis_input_tdata_IBUF[30]_inst          |     0.013 |
+|   s_axis_input_tdata_IBUF[31]_inst          |     0.012 |
+|   s_axis_input_tdata_IBUF[32]_inst          |     0.016 |
+|   s_axis_input_tdata_IBUF[33]_inst          |     0.013 |
+|   s_axis_input_tdata_IBUF[34]_inst          |     0.014 |
+|   s_axis_input_tdata_IBUF[35]_inst          |     0.011 |
+|   s_axis_input_tdata_IBUF[36]_inst          |     0.011 |
+|   s_axis_input_tdata_IBUF[37]_inst          |     0.012 |
+|   s_axis_input_tdata_IBUF[38]_inst          |     0.011 |
+|   s_axis_input_tdata_IBUF[39]_inst          |     0.014 |
+|   s_axis_input_tdata_IBUF[3]_inst           |     0.012 |
+|   s_axis_input_tdata_IBUF[40]_inst          |     0.011 |
+|   s_axis_input_tdata_IBUF[41]_inst          |     0.016 |
+|   s_axis_input_tdata_IBUF[42]_inst          |     0.010 |
+|   s_axis_input_tdata_IBUF[43]_inst          |     0.010 |
+|   s_axis_input_tdata_IBUF[44]_inst          |     0.012 |
+|   s_axis_input_tdata_IBUF[45]_inst          |     0.018 |
+|   s_axis_input_tdata_IBUF[46]_inst          |     0.010 |
+|   s_axis_input_tdata_IBUF[47]_inst          |     0.012 |
+|   s_axis_input_tdata_IBUF[48]_inst          |     0.018 |
+|   s_axis_input_tdata_IBUF[49]_inst          |     0.014 |
+|   s_axis_input_tdata_IBUF[4]_inst           |     0.015 |
+|   s_axis_input_tdata_IBUF[50]_inst          |     0.013 |
+|   s_axis_input_tdata_IBUF[51]_inst          |     0.016 |
+|   s_axis_input_tdata_IBUF[52]_inst          |     0.015 |
+|   s_axis_input_tdata_IBUF[53]_inst          |     0.011 |
+|   s_axis_input_tdata_IBUF[54]_inst          |     0.014 |
+|   s_axis_input_tdata_IBUF[55]_inst          |     0.016 |
+|   s_axis_input_tdata_IBUF[56]_inst          |     0.012 |
+|   s_axis_input_tdata_IBUF[57]_inst          |     0.015 |
+|   s_axis_input_tdata_IBUF[58]_inst          |     0.016 |
+|   s_axis_input_tdata_IBUF[59]_inst          |     0.016 |
+|   s_axis_input_tdata_IBUF[5]_inst           |     0.016 |
+|   s_axis_input_tdata_IBUF[60]_inst          |     0.015 |
+|   s_axis_input_tdata_IBUF[61]_inst          |     0.015 |
+|   s_axis_input_tdata_IBUF[62]_inst          |     0.012 |
+|   s_axis_input_tdata_IBUF[63]_inst          |     0.013 |
+|   s_axis_input_tdata_IBUF[6]_inst           |     0.013 |
+|   s_axis_input_tdata_IBUF[7]_inst           |     0.012 |
+|   s_axis_input_tdata_IBUF[8]_inst           |     0.015 |
+|   s_axis_input_tdata_IBUF[9]_inst           |     0.015 |
+|   s_axis_input_tlast_IBUF_inst              |     0.026 |
+|   tready_state_reg[0]_i_2                   |     0.008 |
+|   tready_state_reg[0]_i_2__0                |     0.008 |
+|   tready_state_reg[0]_i_2__1                |     0.012 |
+|   tready_state_reg[0]_i_2__2                |     0.020 |
+|   tready_state_reg[0]_i_2__3                |     0.018 |
+|   tready_state_reg[0]_i_2__4                |     0.008 |
+|   tready_state_reg[0]_i_2__5                |     0.009 |
+|   tready_state_reg[0]_i_2__6                |     0.013 |
+|   tready_state_reg[1]_i_3                   |     0.023 |
+|   tready_state_reg[1]_i_3__0                |     0.021 |
+|   tready_state_reg[1]_i_3__1                |     0.017 |
+|   tready_state_reg[1]_i_3__2                |     0.022 |
+|   tready_state_reg[1]_i_3__3                |     0.018 |
+|   tready_state_reg[1]_i_3__4                |     0.029 |
+|   tready_state_reg[1]_i_3__5                |     0.015 |
+|   tready_state_reg[1]_i_3__6                |     0.016 |
++---------------------------------------------+-----------+
+
+

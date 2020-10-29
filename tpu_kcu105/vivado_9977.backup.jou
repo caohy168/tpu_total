@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun May 24 19:32:23 2020
+# Process ID: 9977
+# Current directory: /home/caohy/work/tpu_kcu105
+# Command line: vivado
+# Log file: /home/caohy/work/tpu_kcu105/vivado.log
+# Journal file: /home/caohy/work/tpu_kcu105/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/caohy/work/tpu_kcu105/tpu.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /home/caohy/work/tpu_kcu105/tpu_th_behav.wcfg
+source tpu_th.tcl
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu_top/data_source}} 
+restart
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all

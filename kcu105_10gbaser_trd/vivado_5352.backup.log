@@ -1,0 +1,244 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov 21 18:11:16 2019
+# Process ID: 5352
+# Current directory: D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5584 D:\project\ethnet\kcu105_10gbaser_trd\hardware\vivado\runs\impl_run\10gbaser_trd.xpr
+# Log file: D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/vivado.log
+# Journal file: D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/project/ethnet/kcu105_10gbaser_trd/hardware/sources/ip_packaged/gen_mon'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1075.199 ; gain = 353.148
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1487.895 ; gain = 5.660
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A5F54F
+set_property PROGRAM.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.bit} [get_hw_devices xcku040_0]
+set_property PROBES.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.ltx} [get_hw_devices xcku040_0]
+set_property FULL_PROBES.FILE {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/impl_1/kcu105_10gbaser_top.ltx} [get_hw_devices xcku040_0]
+current_hw_device [get_hw_devices xcku040_0]
+refresh_hw_device [lindex [get_hw_devices xcku040_0] 0]
+INFO: [Labtools 27-2302] Device xcku040 (JTAG device index = 0) is programmed with a design that has 5 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 2722.688 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]]
+display_hw_ila_data: Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 2722.688 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/ila_gen_mon_axis"}]]
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/D was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_10 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_11 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_12 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_13 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_14 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_15 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_16 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_1 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_2 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_3 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_4 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_5 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_6 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_7 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_8 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/Q_9 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_1 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_10 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_11 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_12 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_13 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_14 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_15 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_16 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_17 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_18 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_19 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_2 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_20 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_21 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_22 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_23 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_24 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_25 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_26 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_27 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_28 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_29 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_3 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_30 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_31 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_32 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_33 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_34 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_35 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_36 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_37 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_38 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_39 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_4 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_40 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_41 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_42 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_43 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_44 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_45 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_46 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_47 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_48 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_49 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_5 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_50 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_51 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_52 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_53 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_54 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_55 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_56 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_57 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_58 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_59 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_6 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_60 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_61 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_62 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_63 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_64 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_65 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_66 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_67 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_68 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_69 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_7 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_70 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_71 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_72 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_73 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_74 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_75 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_8 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx_n_9 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bbstub_m_axis_tlast was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bbstub_m_axis_tuser was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bbstub_m_axis_tvalid was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bbstub_s_axis_tready was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/bbstub_s_axis_tready_0 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/in0 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/m_axis_rx_1_tdata was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/m_axis_rx_1_tlast was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/m_axis_rx_1_tuser was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/m_axis_rx_1_tvalid was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/out was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/reg_rx_tready_reg was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/reg_tx_tvalid_reg was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/reg_tx_tvalid_reg_1 was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/s_axis_tx_1_tready was not found in the design.
+WARNING: Simulation object axi_stream_gen_mon_1/axi_stream_interface/tx_axis_tvalid_g was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/axi_stream_interface/ila_interface"}]]
+display_hw_ila_data: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2722.688 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/ila_gen_mon_axis"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]]
+Processed interface s_axis_tx_0_1_ila5_slot0
+Processed interface mac_phy_ch0_m_axis_rx_ila5_slot1
+Processed interface s_axis_tx_1_1_ila5_slot2
+Processed interface mac_phy_ch1_m_axis_rx_ila5_slot3
+display_hw_ila_data: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2722.688 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Nov-21 18:16:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Nov-21 18:16:05
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2722.688 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_5] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_5] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/axi_stream_interface/ila_interface"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2019-Nov-21 18:16:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/axi_stream_interface/ila_interface"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/axi_stream_interface/ila_interface"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2019-Nov-21 18:16:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2722.688 ; gain = 0.000
+add_wave -into {hw_ila_data_4.wcfg} -radix hex { {axi_stream_gen_mon_1/axi_stream_interface_n_75} {axi_stream_gen_mon_1/rx_axis_tdata} {axi_stream_gen_mon_1/rx_axis_tkeep} {axi_stream_gen_mon_1/rx_axis_tlast} {axi_stream_gen_mon_1/rx_axis_tready_lb} {axi_stream_gen_mon_1/rx_axis_tuser} {axi_stream_gen_mon_1/rx_axis_tvalid} {axi_stream_gen_mon_1/tx_axis_tdata} {axi_stream_gen_mon_1/tx_axis_tdata_g} {axi_stream_gen_mon_1/tx_axis_tdata_lb} {axi_stream_gen_mon_1/tx_axis_tkeep} {axi_stream_gen_mon_1/tx_axis_tkeep_g} {axi_stream_gen_mon_1/tx_axis_tkeep_lb} {axi_stream_gen_mon_1/tx_axis_tlast} {axi_stream_gen_mon_1/tx_axis_tlast_g} {axi_stream_gen_mon_1/tx_axis_tlast_lb} {axi_stream_gen_mon_1/tx_axis_tready} {axi_stream_gen_mon_1/tx_axis_tready_1} {axi_stream_gen_mon_1/tx_axis_tuser} {axi_stream_gen_mon_1/tx_axis_tuser_g} {axi_stream_gen_mon_1/tx_axis_tuser_lb} {axi_stream_gen_mon_1/tx_axis_tvalid} {axi_stream_gen_mon_1/tx_axis_tvalid_g} {axi_stream_gen_mon_1/tx_axis_tvalid_lb} }
+add_wave: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2722.688 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/ila_gen_mon_axis"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_4' trigger was armed at 2019-Nov-21 18:17:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/ila_gen_mon_axis"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/ila_gen_mon_axis"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_4' triggered at 2019-Nov-21 18:17:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/backup/hw_ila_data_4.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2722.688 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2/inst/ila_lib"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_5] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Nov-21 18:18:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Nov-21 18:18:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2722.688 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Nov-21 18:19:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Nov-21 18:19:01
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2722.688 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Nov-21 18:22:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Nov-21 18:22:39
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2722.688 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/axi_stream_interface/ila_interface"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2019-Nov-21 18:23:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/axi_stream_interface/ila_interface"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_1/axi_stream_interface/ila_interface"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2019-Nov-21 18:23:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2722.688 ; gain = 0.000
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2019-Nov-21 18:27:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku040_0] -filter {CELL_NAME=~"axi_stream_gen_mon_0/axi_stream_interface/ila_interface"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2019-Nov-21 18:27:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2722.688 ; gain = 0.000
+save_wave_config {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+save_wave_config {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/hw_1/wave/hw_ila_data_4/hw_ila_data_4.wcfg}
+save_wave_config {D:/project/ethnet/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.hw/hw_1/wave/hw_ila_data_5/hw_ila_data_5.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 18:28:52 2019...

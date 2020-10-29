@@ -1,0 +1,196 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun May 17 22:44:01 2020
+# Process ID: 2668
+# Current directory: /home/caohy/tpu
+# Command line: vivado
+# Log file: /home/caohy/tpu/vivado.log
+# Journal file: /home/caohy/tpu/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/caohy/tpu/tpu.xpr
+update_compile_order -fileset sources_1
+close [ open /home/caohy/tpu/tpu.srcs/sources_1/new/inter2.sv w ]
+add_files /home/caohy/tpu/tpu.srcs/sources_1/new/inter2.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /home/caohy/tpu/tpu_th_behav.wcfg
+source tpu_th.tcl
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_transmit/inter2}} 
+restart
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+restart
+run all
+relaunch_sim
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_transmit/inter2/tlast_flag}} 
+restart
+run all
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_transmit}} 
+restart
+run all
+relaunch_sim
+relaunch_sim
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc }} 
+restart
+run all
+relaunch_sim
+restart
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive}} 
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /ram_cos_cnt}} 
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /mult_cnt}} 
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc }} 
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc }} 
+restart
+run all
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc }} 
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc }} 
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc }} 
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].inter2_I }} 
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc }} 
+relaunch_sim
+restart
+run all
+relaunch_sim
+restart
+run all
+relaunch_sim
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc }} 
+restart
+run all
+relaunch_sim
+restart
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc }} 
+relaunch_sim
+restart
+run all
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /ddc_out_fifo_I}} 
+restart
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_I4}} {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_Q4}} 
+restart
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_I}} {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_I1}} {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_I2}} {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_I3}} {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_I4}} {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_Q1}} {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_Q2}} {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_Q3}} {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_Q4}} 
+restart
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc }} 
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive}} 
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[7].duc }} 
+restart
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[2].duc /duc_out_fifo_cos}} 
+restart
+run all
+relaunch_sim
+restart
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc }} 
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc }} 
+restart
+run all
+close [ open /home/caohy/tpu/tpu.srcs/sources_1/new/dec2.sv w ]
+add_files /home/caohy/tpu/tpu.srcs/sources_1/new/dec2.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_forces { {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /aclk} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /reset} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tvalid_I} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tvalid_Q} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_I} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_Q} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tready_I} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tready_Q} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tdata_I} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tdata_Q} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /m_axis_data_tready_ddc_I} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /m_axis_data_tready_ddc_Q} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /m_axis_data_tvalid_ddc_I} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /m_axis_data_tvalid_ddc_Q} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /m_axis_data_tlast_ddc_I} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /m_axis_data_tlast_ddc_Q} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /m_axis_data_tdata_ddc_I} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /m_axis_data_tdata_ddc_Q} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tdata_I} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tdata_Q} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /vco_datai_valid} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /vco_dataq_valid} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /vco_datai} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /vco_dataq} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /vco_phasei_valid} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /vco_phaseq_valid} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /vco_phasei} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /vco_phaseq} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /ram_cos_cnt} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /ram_sin_cnt} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /ram_cos_state} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /ram_sin_state} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tvalid_I1} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tvalid_I2} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tvalid_I3} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tvalid_I4} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tvalid_Q1} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tvalid_Q2} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tvalid_Q3} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tvalid_Q4} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_I1} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_I2} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_I3} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_I4} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_Q1} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_Q2} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_Q3} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /s_axis_data_tlast_Q4} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /mult_cnt} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /cos_add_data1} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /cos_add_data2} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /cos_add_result} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /sin_sub_data1} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /sin_sub_data2} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /sin_sub_result} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /cos_add_result16} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /sin_sub_result16} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /cos_add_result8} {/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc /sin_sub_result8} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /aclk} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /reset} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tvalid_I} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tvalid_Q} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tlast_I} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tlast_Q} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_dataI_tready} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_dataQ_tready} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /m_axis_data_tdata_duc_I} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /m_axis_data_tdata_duc_Q} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /m_axis_data_tready_duc_I} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /m_axis_data_tready_duc_Q} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /m_axis_data_tvalid_duc_I} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /m_axis_data_tvalid_duc_Q} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /m_axis_data_tlast_duc_I} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /m_axis_data_tlast_duc_Q} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tvalid_I1} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tvalid_I2} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tvalid_I3} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tvalid_Q1} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tvalid_Q2} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tvalid_Q3} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tlast_I1} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tlast_I2} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tlast_I3} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tlast_Q1} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tlast_Q2} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /s_axis_data_tlast_Q3} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /vco_datai_valid} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /vco_dataq_valid} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /vco_datai} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /vco_dataq} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /vco_phasei_valid} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /vco_phaseq_valid} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /vco_phasei} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /vco_phaseq} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /ram_cos_cnt} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /ram_sin_cnt} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /ram_cos_state} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /ram_sin_state} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /mult_cnt} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /cos_sub_data1} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /cos_sub_data2} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /cos_sub_result} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /sin_add_data1} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /sin_add_data2} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /sin_add_result} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /cos_sub_result16} {/tpu_th_1/tpu/radio/radio_transmit/\radio_transmit[0].duc /sin_add_result16} }
+relaunch_sim
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/dec2}} 
+restart
+run all
+relaunch_sim
+restart
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc }} 
+restart
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/dec2}} 
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/\ddc[0].ddc }} 
+relaunch_sim
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive/dec2}} 
+restart
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_receive}} 
+restart
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/data_source}} 
+restart
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/data_source}} 
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/layer1/layer1_transmit}} 
+restart
+run all
+relaunch_sim
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/tpu/radio/radio_transmit}} 
+restart
+run all
+current_wave_config {tpu_th_behav.wcfg}
+add_wave {{/tpu_th_1/data_source}} 
+restart
+run all
+save_wave_config {/home/caohy/tpu/tpu_th_behav.wcfg}
+close_sim

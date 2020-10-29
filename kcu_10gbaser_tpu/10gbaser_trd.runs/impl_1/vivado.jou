@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Oct 18 23:00:24 2020
+# Process ID: 87791
+# Current directory: /home/caohy/work/kcu_10gbaser_tpu/10gbaser_trd.runs/impl_1
+# Command line: vivado -log kcu10gbaser_tpu_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source kcu10gbaser_tpu_top.tcl -notrace
+# Log file: /home/caohy/work/kcu_10gbaser_tpu/10gbaser_trd.runs/impl_1/kcu10gbaser_tpu_top.vdi
+# Journal file: /home/caohy/work/kcu_10gbaser_tpu/10gbaser_trd.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source kcu10gbaser_tpu_top.tcl -notrace

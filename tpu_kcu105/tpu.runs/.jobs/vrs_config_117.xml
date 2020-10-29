@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="add_ddc_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/add_ddc_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="add_duc_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/add_duc_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axis_fifo_t_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/axis_fifo_t_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axis_fifo_t8_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/axis_fifo_t8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ddc_out_fifo_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/ddc_out_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="axis_fifo_t8_synth_1"/>
+	</Run>
+	<Run Id="dds_125m_i_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/dds_125m_i_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dds_125m_q_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/dds_125m_q_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dds_ri_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/dds_ri_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dds_rq_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/dds_rq_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="deci_firout_fifo_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/deci_firout_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="decimation_infifo_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/decimation_infifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="duc_out_fifo_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/duc_out_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="axis_fifo_t_synth_1"/>
+	</Run>
+	<Run Id="fir_compiler_r_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/fir_compiler_r_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fir_compiler_t_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/fir_compiler_t_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fir_out_fifo_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/fir_out_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="interpolation_infifo_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/interpolation_infifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mult_ddc_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/mult_ddc_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mult_duc_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/mult_duc_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="rs_decoder_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/rs_decoder_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="rs_encoder_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/rs_encoder_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sub_ddc_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/sub_ddc_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sub_duc_synth_1" LaunchDir="/home/caohy/tpu_kcu105/tpu.runs/sub_duc_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

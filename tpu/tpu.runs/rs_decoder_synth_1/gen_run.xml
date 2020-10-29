@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="rs_decoder_synth_1" LaunchPart="xcvu9p-flga2104-2L-e" LaunchTime="1584501217">
+  <File Type="REPORTS-TCL" Name="rs_decoder_reports.tcl"/>
+  <File Type="RDS-UTIL-PB" Name="rs_decoder_utilization_synth.pb"/>
+  <File Type="RDS-RDS" Name="rs_decoder.vds"/>
+  <File Type="RDS-DCP" Name="rs_decoder.dcp"/>
+  <File Type="RDS-UTIL" Name="rs_decoder_utilization_synth.rpt"/>
+  <File Type="PA-TCL" Name="rs_decoder.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/rs_decoder">
+    <File Path="$PSRCDIR/sources_1/ip/rs_decoder/rs_decoder.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="rs_decoder"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/rs_decoder">
+    <File Path="$PSRCDIR/sources_1/ip/rs_decoder/rs_decoder.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="rs_decoder"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

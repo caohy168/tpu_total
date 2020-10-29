@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 20 01:49:27 2020
+# Process ID: 4786
+# Current directory: /home/caohy/tpu_kcu105/tpu.runs/decimation_infifo_synth_1
+# Command line: vivado -log decimation_infifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decimation_infifo.tcl
+# Log file: /home/caohy/tpu_kcu105/tpu.runs/decimation_infifo_synth_1/decimation_infifo.vds
+# Journal file: /home/caohy/tpu_kcu105/tpu.runs/decimation_infifo_synth_1/vivado.jou
+#-----------------------------------------------------------
+source decimation_infifo.tcl -notrace

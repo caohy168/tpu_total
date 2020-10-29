@@ -1,0 +1,144 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 20 01:44:55 2020
+# Process ID: 1949
+# Current directory: /home/caohy/tpu_kcu105
+# Command line: vivado
+# Log file: /home/caohy/tpu_kcu105/vivado.log
+# Journal file: /home/caohy/tpu_kcu105/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/caohy/tpu_kcu105/tpu.xpr
+update_compile_order -fileset sources_1
+create_run impl_2 -parent_run synth_1 -flow {Vivado Implementation 2019} -strategy {Vivado Implementation Defaults} -report_strategy {Vivado Implementation Default Reports}
+current_run [get_runs impl_2]
+set_property board_part xilinx.com:kcu105:part0:1.6 [current_project]
+reset_property board_connections [get_projects tpu]
+delete_runs "impl_1"
+set_property name impl_1 [get_runs impl_2]
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {add_ddc add_duc axis_fifo_t axis_fifo_t8 ddc_out_fifo dds_125m_i dds_125m_q dds_ri dds_rq deci_firout_fifo decimation_infifo duc_out_fifo fir_compiler_r fir_compiler_t fir_out_fifo interpolation_infifo mult_ddc mult_duc rs_decoder rs_encoder sub_ddc sub_duc}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {add_ddc add_duc axis_fifo_t axis_fifo_t8 ddc_out_fifo dds_125m_i dds_125m_q dds_ri dds_rq deci_firout_fifo decimation_infifo duc_out_fifo fir_compiler_r fir_compiler_t fir_out_fifo interpolation_infifo mult_ddc mult_duc rs_decoder rs_encoder sub_ddc sub_duc}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+generate_target all [get_files  {/home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/add_ddc/add_ddc.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/add_duc/add_duc.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/axis_fifo_t/axis_fifo_t.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/axis_fifo_t8/axis_fifo_t8.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/ddc_out_fifo/ddc_out_fifo.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_125m_i/dds_125m_i.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_125m_q/dds_125m_q.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_ri/dds_ri.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_rq/dds_rq.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/deci_firout_fifo/deci_firout_fifo.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/decimation_infifo/decimation_infifo.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/duc_out_fifo/duc_out_fifo.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/fir_compiler_r/fir_compiler_r.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/fir_compiler_t/fir_compiler_t.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/fir_out_fifo/fir_out_fifo.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/interpolation_infifo/interpolation_infifo.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/mult_ddc/mult_ddc.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/mult_duc/mult_duc.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/rs_decoder/rs_decoder.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/rs_encoder/rs_encoder.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/sub_ddc/sub_ddc.xci /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/sub_duc/sub_duc.xci}]
+catch { config_ip_cache -export [get_ips -all add_ddc] }
+catch { config_ip_cache -export [get_ips -all add_duc] }
+catch { config_ip_cache -export [get_ips -all axis_fifo_t] }
+catch { config_ip_cache -export [get_ips -all axis_fifo_t8] }
+catch { config_ip_cache -export [get_ips -all ddc_out_fifo] }
+catch { config_ip_cache -export [get_ips -all dds_125m_i] }
+catch { config_ip_cache -export [get_ips -all dds_125m_q] }
+catch { config_ip_cache -export [get_ips -all dds_ri] }
+catch { config_ip_cache -export [get_ips -all dds_rq] }
+catch { config_ip_cache -export [get_ips -all deci_firout_fifo] }
+catch { config_ip_cache -export [get_ips -all decimation_infifo] }
+catch { config_ip_cache -export [get_ips -all duc_out_fifo] }
+catch { config_ip_cache -export [get_ips -all fir_compiler_r] }
+catch { config_ip_cache -export [get_ips -all fir_compiler_t] }
+catch { config_ip_cache -export [get_ips -all fir_out_fifo] }
+catch { config_ip_cache -export [get_ips -all interpolation_infifo] }
+catch { config_ip_cache -export [get_ips -all mult_ddc] }
+catch { config_ip_cache -export [get_ips -all mult_duc] }
+catch { config_ip_cache -export [get_ips -all rs_decoder] }
+catch { config_ip_cache -export [get_ips -all rs_encoder] }
+catch { config_ip_cache -export [get_ips -all sub_ddc] }
+catch { config_ip_cache -export [get_ips -all sub_duc] }
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/add_ddc/add_ddc.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/add_duc/add_duc.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/axis_fifo_t/axis_fifo_t.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/axis_fifo_t8/axis_fifo_t8.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/ddc_out_fifo/ddc_out_fifo.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_125m_i/dds_125m_i.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_125m_q/dds_125m_q.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_ri/dds_ri.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_rq/dds_rq.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/deci_firout_fifo/deci_firout_fifo.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/decimation_infifo/decimation_infifo.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/duc_out_fifo/duc_out_fifo.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/fir_compiler_r/fir_compiler_r.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/fir_compiler_t/fir_compiler_t.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/fir_out_fifo/fir_out_fifo.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/interpolation_infifo/interpolation_infifo.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/mult_ddc/mult_ddc.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/mult_duc/mult_duc.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/rs_decoder/rs_decoder.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/rs_encoder/rs_encoder.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/sub_ddc/sub_ddc.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/sub_duc/sub_duc.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/add_ddc/add_ddc.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/add_duc/add_duc.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/axis_fifo_t/axis_fifo_t.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/axis_fifo_t8/axis_fifo_t8.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/ddc_out_fifo/ddc_out_fifo.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_125m_i/dds_125m_i.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_125m_q/dds_125m_q.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_ri/dds_ri.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_rq/dds_rq.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/deci_firout_fifo/deci_firout_fifo.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/decimation_infifo/decimation_infifo.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/duc_out_fifo/duc_out_fifo.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/fir_compiler_r/fir_compiler_r.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/fir_compiler_t/fir_compiler_t.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/fir_out_fifo/fir_out_fifo.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/interpolation_infifo/interpolation_infifo.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/mult_ddc/mult_ddc.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/mult_duc/mult_duc.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/rs_decoder/rs_decoder.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/rs_encoder/rs_encoder.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/sub_ddc/sub_ddc.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/sub_duc/sub_duc.xci]
+launch_runs -jobs 16 {add_ddc_synth_1 add_duc_synth_1 axis_fifo_t_synth_1 axis_fifo_t8_synth_1 ddc_out_fifo_synth_1 dds_125m_i_synth_1 dds_125m_q_synth_1 dds_ri_synth_1 dds_rq_synth_1 deci_firout_fifo_synth_1 decimation_infifo_synth_1 duc_out_fifo_synth_1 fir_compiler_r_synth_1 fir_compiler_t_synth_1 fir_out_fifo_synth_1 interpolation_infifo_synth_1 mult_ddc_synth_1 mult_duc_synth_1 rs_decoder_synth_1 rs_encoder_synth_1 sub_ddc_synth_1 sub_duc_synth_1}
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/add_ddc/add_ddc.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/add_duc/add_duc.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/axis_fifo_t/axis_fifo_t.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/axis_fifo_t8/axis_fifo_t8.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/ddc_out_fifo/ddc_out_fifo.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_125m_i/dds_125m_i.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_125m_q/dds_125m_q.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_ri/dds_ri.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_rq/dds_rq.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/deci_firout_fifo/deci_firout_fifo.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/decimation_infifo/decimation_infifo.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/duc_out_fifo/duc_out_fifo.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/fir_compiler_r/fir_compiler_r.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/fir_compiler_t/fir_compiler_t.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/fir_out_fifo/fir_out_fifo.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/interpolation_infifo/interpolation_infifo.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/mult_ddc/mult_ddc.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/mult_duc/mult_duc.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/rs_decoder/rs_decoder.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/rs_encoder/rs_encoder.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/sub_ddc/sub_ddc.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/sub_duc/sub_duc.xci] -directory /home/caohy/tpu_kcu105/tpu.ip_user_files/sim_scripts -ip_user_files_dir /home/caohy/tpu_kcu105/tpu.ip_user_files -ipstatic_source_dir /home/caohy/tpu_kcu105/tpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/modelsim} {questa=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/questa} {ies=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/ies} {xcelium=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/xcelium} {vcs=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/vcs} {riviera=/home/caohy/tpu_kcu105/tpu.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tpu_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /home/caohy/tpu_kcu105/tpu_th_behav.wcfg
+source tpu_th.tcl
+restart
+run all
+relaunch_sim
+restart
+run all
+reset_run synth_1
+set_param general.maxthreads 32
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tpu [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+close_sim

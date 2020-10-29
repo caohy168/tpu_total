@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="mac_phy_ten_gig_eth_mac_ch1_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_ten_gig_eth_mac_ch1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_ten_gig_eth_pcs_pma_ch1_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_ten_gig_eth_pcs_pma_ch1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_ten_gig_eth_mac_ch0_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_ten_gig_eth_mac_ch0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_ten_gig_eth_pcs_pma_ch0_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_ten_gig_eth_pcs_pma_ch0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

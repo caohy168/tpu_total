@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="mac_phy_axi_uartlite_0_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_eth_axi_stream_gen_mon_0_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_eth_axi_stream_gen_mon_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_eth_axi_stream_gen_mon_1_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_eth_axi_stream_gen_mon_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_system_management_wiz_0_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_system_management_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_xlconstant_1b0_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_xlconstant_1b0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_xlconstant_1b1_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_xlconstant_1b1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_xlconstant_3b101_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_xlconstant_3b101_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_xlconstant_8b0_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_xlconstant_8b0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_mdm_1_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_microblaze_0_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_microblaze_0_axi_intc_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_microblaze_0_axi_intc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_microblaze_0_xlconcat_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_microblaze_0_xlconcat_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_rst_clk_156_156M_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_rst_clk_156_156M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_dlmb_v10_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_ilmb_v10_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="mac_phy_dlmb_v10_0_synth_1"/>
+	</Run>
+	<Run Id="mac_phy_lmb_bram_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_xbar_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_ten_gig_eth_mac_ch1_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_ten_gig_eth_mac_ch1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_ten_gig_eth_pcs_pma_ch1_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_ten_gig_eth_pcs_pma_ch1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_ten_gig_eth_mac_ch0_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_ten_gig_eth_mac_ch0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mac_phy_ten_gig_eth_pcs_pma_ch0_0_synth_1" LaunchDir="D:/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/mac_phy_ten_gig_eth_pcs_pma_ch0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

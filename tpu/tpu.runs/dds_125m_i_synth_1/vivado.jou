@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Apr 15 20:13:06 2020
+# Process ID: 91993
+# Current directory: /home/caohy/work/tpu_fs/tpu.runs/dds_125m_i_synth_1
+# Command line: vivado -log dds_125m_i.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dds_125m_i.tcl
+# Log file: /home/caohy/work/tpu_fs/tpu.runs/dds_125m_i_synth_1/dds_125m_i.vds
+# Journal file: /home/caohy/work/tpu_fs/tpu.runs/dds_125m_i_synth_1/vivado.jou
+#-----------------------------------------------------------
+source dds_125m_i.tcl -notrace

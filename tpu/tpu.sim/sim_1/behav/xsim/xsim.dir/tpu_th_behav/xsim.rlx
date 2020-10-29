@@ -1,0 +1,12 @@
+
+{ 
+    crc :  2930847025561582738  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 4692df8a94584874aa1943551f0d471a --incr --debug typical --relax --mt 8 -L axis_infrastructure_v1_1_0 -L axis_data_fifo_v2_0_2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L axi_utils_v2_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_19 -L c_mux_bit_v12_0_6 -L c_mux_bus_v12_0_6 -L c_gate_bit_v12_0_6 -L c_compare_v12_0_6 -L xbip_counter_v3_0_6 -L c_counter_binary_v12_0_14 -L c_shift_ram_v12_0_14 -L rs_toolbox_v9_0_8 -L rs_decoder_v9_0_17 -L rs_encoder_v9_0_16 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tpu_th_behav xil_defaultlib.tpu_th xil_defaultlib.glbl" , 
+    buildDate : "Nov  6 2019" , 
+    buildTime : "21:42:20" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/tpu_th_behav/xsimk\"   \"xsim.dir/tpu_th_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/tpu_th_behav/obj/xsim_1.lnx64.o\" \"xsim.dir/tpu_th_behav/obj/xsim_2.lnx64.o\" \"xsim.dir/tpu_th_behav/obj/xsim_3.lnx64.o\" \"xsim.dir/tpu_th_behav/obj/xsim_4.lnx64.o\" \"xsim.dir/tpu_th_behav/obj/xsim_5.lnx64.o\" \"xsim.dir/tpu_th_behav/obj/xsim_6.lnx64.o\" \"xsim.dir/tpu_th_behav/obj/xsim_7.lnx64.o\" \"xsim.dir/tpu_th_behav/obj/xsim_8.lnx64.o\" \"xsim.dir/tpu_th_behav/obj/xsim_9.lnx64.o\" \"xsim.dir/tpu_th_behav/obj/xsim_10.lnx64.o\" \"xsim.dir/tpu_th_behav/obj/xsim_11.lnx64.o\" -L\"/tools/Xilinx/Vivado/2019.2/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

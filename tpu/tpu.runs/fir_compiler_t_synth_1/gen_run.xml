@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="fir_compiler_t_synth_1" LaunchPart="xcvu9p-flga2104-2L-e" LaunchTime="1586420493">
+  <File Type="RDS-RDS" Name="fir_compiler_t.vds"/>
+  <File Type="RDS-DCP" Name="fir_compiler_t.dcp"/>
+  <File Type="RDS-UTIL" Name="fir_compiler_t_utilization_synth.rpt"/>
+  <File Type="PA-TCL" Name="fir_compiler_t.tcl"/>
+  <File Type="RDS-UTIL-PB" Name="fir_compiler_t_utilization_synth.pb"/>
+  <File Type="REPORTS-TCL" Name="fir_compiler_t_reports.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fir_compiler_t">
+    <File Path="$PSRCDIR/sources_1/ip/fir_compiler_t/fir_compiler_t.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fir_compiler_t"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fir_compiler_t">
+    <File Path="$PSRCDIR/sources_1/ip/fir_compiler_t/fir_compiler_t.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fir_compiler_t"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="41018116fs"></ZoomStartTime>
+      <ZoomEndTime time="46519228fs"></ZoomEndTime>
+      <Cursor1Time time="42917076fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="209"></NameColumnWidth>
+      <ValueColumnWidth column_width="161"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="124" />
+   <wvobject type="logic" fp_name="/tb/top_i/refclk_p">
+      <obj_property name="ElementShortName">refclk_p</obj_property>
+      <obj_property name="ObjectShortName">refclk_p</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/refclk_n">
+      <obj_property name="ElementShortName">refclk_n</obj_property>
+      <obj_property name="ObjectShortName">refclk_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/xphy_txp">
+      <obj_property name="ElementShortName">xphy_txp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">xphy_txp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/xphy_txn">
+      <obj_property name="ElementShortName">xphy_txn[1:0]</obj_property>
+      <obj_property name="ObjectShortName">xphy_txn[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/xphy_rxp">
+      <obj_property name="ElementShortName">xphy_rxp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">xphy_rxp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/xphy_rxn">
+      <obj_property name="ElementShortName">xphy_rxn[1:0]</obj_property>
+      <obj_property name="ObjectShortName">xphy_rxn[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/tx_disable">
+      <obj_property name="ElementShortName">tx_disable[1:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_disable[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/leds">
+      <obj_property name="ElementShortName">leds[2:0]</obj_property>
+      <obj_property name="ObjectShortName">leds[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/clk156">
+      <obj_property name="ElementShortName">clk156</obj_property>
+      <obj_property name="ObjectShortName">clk156</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/reset_d">
+      <obj_property name="ElementShortName">reset_d</obj_property>
+      <obj_property name="ObjectShortName">reset_d</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/xphy_status_ch0">
+      <obj_property name="ElementShortName">xphy_status_ch0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">xphy_status_ch0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/xphy_status_ch1">
+      <obj_property name="ElementShortName">xphy_status_ch1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">xphy_status_ch1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/rx_statistics_valid_ch0">
+      <obj_property name="ElementShortName">rx_statistics_valid_ch0</obj_property>
+      <obj_property name="ObjectShortName">rx_statistics_valid_ch0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/rx_statistics_vector_ch0">
+      <obj_property name="ElementShortName">rx_statistics_vector_ch0[29:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_statistics_vector_ch0[29:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/tx_statistics_valid_ch0">
+      <obj_property name="ElementShortName">tx_statistics_valid_ch0</obj_property>
+      <obj_property name="ObjectShortName">tx_statistics_valid_ch0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/tx_statistics_vector_ch0">
+      <obj_property name="ElementShortName">tx_statistics_vector_ch0[25:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_statistics_vector_ch0[25:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/rx_statistics_valid_ch1">
+      <obj_property name="ElementShortName">rx_statistics_valid_ch1</obj_property>
+      <obj_property name="ObjectShortName">rx_statistics_valid_ch1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/rx_statistics_vector_ch1">
+      <obj_property name="ElementShortName">rx_statistics_vector_ch1[29:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_statistics_vector_ch1[29:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/tx_statistics_valid_ch1">
+      <obj_property name="ElementShortName">tx_statistics_valid_ch1</obj_property>
+      <obj_property name="ObjectShortName">tx_statistics_valid_ch1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/tx_statistics_vector_ch1">
+      <obj_property name="ElementShortName">tx_statistics_vector_ch1[25:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_statistics_vector_ch1[25:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/tg_config_ch0">
+      <obj_property name="ElementShortName">tg_config_ch0[47:0]</obj_property>
+      <obj_property name="ObjectShortName">tg_config_ch0[47:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/tg_config_ch1">
+      <obj_property name="ElementShortName">tg_config_ch1[47:0]</obj_property>
+      <obj_property name="ObjectShortName">tg_config_ch1[47:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/resetdone_ch0">
+      <obj_property name="ElementShortName">resetdone_ch0</obj_property>
+      <obj_property name="ObjectShortName">resetdone_ch0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/tx_resetdone_ch1">
+      <obj_property name="ElementShortName">tx_resetdone_ch1</obj_property>
+      <obj_property name="ObjectShortName">tx_resetdone_ch1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/rx_resetdone_ch1">
+      <obj_property name="ElementShortName">rx_resetdone_ch1</obj_property>
+      <obj_property name="ObjectShortName">rx_resetdone_ch1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/sim_speedup_control_ch0">
+      <obj_property name="ElementShortName">sim_speedup_control_ch0</obj_property>
+      <obj_property name="ObjectShortName">sim_speedup_control_ch0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/sim_speedup_control_ch1">
+      <obj_property name="ElementShortName">sim_speedup_control_ch1</obj_property>
+      <obj_property name="ObjectShortName">sim_speedup_control_ch1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/reset_counter">
+      <obj_property name="ElementShortName">reset_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reset_counter[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/reset_pulse">
+      <obj_property name="ElementShortName">reset_pulse[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reset_pulse[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/reset_sys">
+      <obj_property name="ElementShortName">reset_sys</obj_property>
+      <obj_property name="ObjectShortName">reset_sys</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/s_axi_aresetn">
+      <obj_property name="ElementShortName">s_axi_aresetn[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_aresetn[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_araddr">
+      <obj_property name="ElementShortName">M03_AXI_0_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_arprot">
+      <obj_property name="ElementShortName">M03_AXI_0_arprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_arprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_arready">
+      <obj_property name="ElementShortName">M03_AXI_0_arready[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_arready[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_arvalid">
+      <obj_property name="ElementShortName">M03_AXI_0_arvalid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_arvalid[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_awaddr">
+      <obj_property name="ElementShortName">M03_AXI_0_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_awprot">
+      <obj_property name="ElementShortName">M03_AXI_0_awprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_awprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_awready">
+      <obj_property name="ElementShortName">M03_AXI_0_awready[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_awready[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_awvalid">
+      <obj_property name="ElementShortName">M03_AXI_0_awvalid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_awvalid[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_bready">
+      <obj_property name="ElementShortName">M03_AXI_0_bready[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_bready[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_bresp">
+      <obj_property name="ElementShortName">M03_AXI_0_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_bvalid">
+      <obj_property name="ElementShortName">M03_AXI_0_bvalid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_bvalid[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_rdata">
+      <obj_property name="ElementShortName">M03_AXI_0_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_rready">
+      <obj_property name="ElementShortName">M03_AXI_0_rready[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_rready[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_rresp">
+      <obj_property name="ElementShortName">M03_AXI_0_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_rvalid">
+      <obj_property name="ElementShortName">M03_AXI_0_rvalid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_rvalid[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_wdata">
+      <obj_property name="ElementShortName">M03_AXI_0_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_wready">
+      <obj_property name="ElementShortName">M03_AXI_0_wready[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_wready[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_wstrb">
+      <obj_property name="ElementShortName">M03_AXI_0_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M03_AXI_0_wvalid">
+      <obj_property name="ElementShortName">M03_AXI_0_wvalid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_AXI_0_wvalid[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_araddr">
+      <obj_property name="ElementShortName">M05_AXI_0_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_arprot">
+      <obj_property name="ElementShortName">M05_AXI_0_arprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_arprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_arready">
+      <obj_property name="ElementShortName">M05_AXI_0_arready[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_arready[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_arvalid">
+      <obj_property name="ElementShortName">M05_AXI_0_arvalid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_arvalid[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_awaddr">
+      <obj_property name="ElementShortName">M05_AXI_0_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_awprot">
+      <obj_property name="ElementShortName">M05_AXI_0_awprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_awprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_awready">
+      <obj_property name="ElementShortName">M05_AXI_0_awready[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_awready[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_awvalid">
+      <obj_property name="ElementShortName">M05_AXI_0_awvalid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_awvalid[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_bready">
+      <obj_property name="ElementShortName">M05_AXI_0_bready[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_bready[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_bresp">
+      <obj_property name="ElementShortName">M05_AXI_0_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_bvalid">
+      <obj_property name="ElementShortName">M05_AXI_0_bvalid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_bvalid[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_rdata">
+      <obj_property name="ElementShortName">M05_AXI_0_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_rready">
+      <obj_property name="ElementShortName">M05_AXI_0_rready[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_rready[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_rresp">
+      <obj_property name="ElementShortName">M05_AXI_0_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_rvalid">
+      <obj_property name="ElementShortName">M05_AXI_0_rvalid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_rvalid[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_wdata">
+      <obj_property name="ElementShortName">M05_AXI_0_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_wready">
+      <obj_property name="ElementShortName">M05_AXI_0_wready[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_wready[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_wstrb">
+      <obj_property name="ElementShortName">M05_AXI_0_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/M05_AXI_0_wvalid">
+      <obj_property name="ElementShortName">M05_AXI_0_wvalid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">M05_AXI_0_wvalid[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/m_axis_rx_0_tdata">
+      <obj_property name="ElementShortName">m_axis_rx_0_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_0_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/m_axis_rx_0_tkeep">
+      <obj_property name="ElementShortName">m_axis_rx_0_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_0_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/m_axis_rx_0_tlast">
+      <obj_property name="ElementShortName">m_axis_rx_0_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_0_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/m_axis_rx_0_tuser">
+      <obj_property name="ElementShortName">m_axis_rx_0_tuser</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_0_tuser</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/m_axis_rx_0_tvalid">
+      <obj_property name="ElementShortName">m_axis_rx_0_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_0_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/m_axis_rx_1_tdata">
+      <obj_property name="ElementShortName">m_axis_rx_1_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_1_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/m_axis_rx_1_tkeep">
+      <obj_property name="ElementShortName">m_axis_rx_1_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_1_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/m_axis_rx_1_tlast">
+      <obj_property name="ElementShortName">m_axis_rx_1_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_1_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/m_axis_rx_1_tuser">
+      <obj_property name="ElementShortName">m_axis_rx_1_tuser</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_1_tuser</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/m_axis_rx_1_tvalid">
+      <obj_property name="ElementShortName">m_axis_rx_1_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_1_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/s_axis_tx_0_tdata">
+      <obj_property name="ElementShortName">s_axis_tx_0_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tx_0_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/s_axis_tx_0_tkeep">
+      <obj_property name="ElementShortName">s_axis_tx_0_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tx_0_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/s_axis_tx_0_tlast">
+      <obj_property name="ElementShortName">s_axis_tx_0_tlast</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tx_0_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/s_axis_tx_0_tready">
+      <obj_property name="ElementShortName">s_axis_tx_0_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tx_0_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/s_axis_tx_0_tuser">
+      <obj_property name="ElementShortName">s_axis_tx_0_tuser[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tx_0_tuser[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/s_axis_tx_0_tvalid">
+      <obj_property name="ElementShortName">s_axis_tx_0_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tx_0_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/s_axis_tx_1_tdata">
+      <obj_property name="ElementShortName">s_axis_tx_1_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tx_1_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/s_axis_tx_1_tkeep">
+      <obj_property name="ElementShortName">s_axis_tx_1_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tx_1_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/s_axis_tx_1_tlast">
+      <obj_property name="ElementShortName">s_axis_tx_1_tlast</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tx_1_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/s_axis_tx_1_tready">
+      <obj_property name="ElementShortName">s_axis_tx_1_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tx_1_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/s_axis_tx_1_tuser">
+      <obj_property name="ElementShortName">s_axis_tx_1_tuser[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tx_1_tuser[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/s_axis_tx_1_tvalid">
+      <obj_property name="ElementShortName">s_axis_tx_1_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tx_1_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/tb_tg_config_ch0">
+      <obj_property name="ElementShortName">tb_tg_config_ch0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_tg_config_ch0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/tb_tg_config_ch1">
+      <obj_property name="ElementShortName">tb_tg_config_ch1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_tg_config_ch1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/tg_config_ch_state0">
+      <obj_property name="ElementShortName">tg_config_ch_state0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tg_config_ch_state0[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/tg_config_ch_state1">
+      <obj_property name="ElementShortName">tg_config_ch_state1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tg_config_ch_state1[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/tg_config_ch_cnt0">
+      <obj_property name="ElementShortName">tg_config_ch_cnt0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tg_config_ch_cnt0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/tg_config_ch_cnt1">
+      <obj_property name="ElementShortName">tg_config_ch_cnt1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tg_config_ch_cnt1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/bb_rx_axis_tdata0">
+      <obj_property name="ElementShortName">bb_rx_axis_tdata0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tdata0[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/bb_rx_axis_tdata1">
+      <obj_property name="ElementShortName">bb_rx_axis_tdata1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tdata1[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/bb_rx_axis_tkeep0">
+      <obj_property name="ElementShortName">bb_rx_axis_tkeep0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tkeep0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/bb_rx_axis_tkeep1">
+      <obj_property name="ElementShortName">bb_rx_axis_tkeep1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tkeep1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_rx_axis_tvalid0">
+      <obj_property name="ElementShortName">bb_rx_axis_tvalid0</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tvalid0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_rx_axis_tvalid1">
+      <obj_property name="ElementShortName">bb_rx_axis_tvalid1</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tvalid1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_rx_axis_tlast0">
+      <obj_property name="ElementShortName">bb_rx_axis_tlast0</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tlast0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_rx_axis_tlast1">
+      <obj_property name="ElementShortName">bb_rx_axis_tlast1</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tlast1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_rx_axis_tuser0">
+      <obj_property name="ElementShortName">bb_rx_axis_tuser0</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tuser0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_rx_axis_tuser1">
+      <obj_property name="ElementShortName">bb_rx_axis_tuser1</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tuser1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_rx_axis_tready0">
+      <obj_property name="ElementShortName">bb_rx_axis_tready0</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tready0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_rx_axis_tready1">
+      <obj_property name="ElementShortName">bb_rx_axis_tready1</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tready1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/bb_tx_axis_tdata0">
+      <obj_property name="ElementShortName">bb_tx_axis_tdata0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tdata0[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/bb_tx_axis_tdata1">
+      <obj_property name="ElementShortName">bb_tx_axis_tdata1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tdata1[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/bb_tx_axis_tkeep0">
+      <obj_property name="ElementShortName">bb_tx_axis_tkeep0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tkeep0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/bb_tx_axis_tkeep1">
+      <obj_property name="ElementShortName">bb_tx_axis_tkeep1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tkeep1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_tx_axis_tvalid0">
+      <obj_property name="ElementShortName">bb_tx_axis_tvalid0</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tvalid0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_tx_axis_tvalid1">
+      <obj_property name="ElementShortName">bb_tx_axis_tvalid1</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tvalid1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_tx_axis_tlast0">
+      <obj_property name="ElementShortName">bb_tx_axis_tlast0</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tlast0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_tx_axis_tlast1">
+      <obj_property name="ElementShortName">bb_tx_axis_tlast1</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tlast1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_tx_axis_tuser0">
+      <obj_property name="ElementShortName">bb_tx_axis_tuser0</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tuser0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_tx_axis_tuser1">
+      <obj_property name="ElementShortName">bb_tx_axis_tuser1</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tuser1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_tx_axis_tready0">
+      <obj_property name="ElementShortName">bb_tx_axis_tready0</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tready0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/bb_tx_axis_tready1">
+      <obj_property name="ElementShortName">bb_tx_axis_tready1</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tready1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/AXIS_TDATA_WIDTH">
+      <obj_property name="ElementShortName">AXIS_TDATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AXIS_TDATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/AXIS_TKEEP_WIDTH">
+      <obj_property name="ElementShortName">AXIS_TKEEP_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AXIS_TKEEP_WIDTH[31:0]</obj_property>
+   </wvobject>
+</wave_config>

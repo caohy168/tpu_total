@@ -1,0 +1,1210 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue May 26 17:24:09 2020
+# Process ID: 17692
+# Current directory: C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1
+# Command line: vivado.exe -log kcu105_10gbaser_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source kcu105_10gbaser_top.tcl
+# Log file: C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/kcu105_10gbaser_top.vds
+# Journal file: C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source kcu105_10gbaser_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/ip_packaged/gen_mon'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.cache/ip 
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 536.465 ; gain = 62.109
+Command: synth_design -top kcu105_10gbaser_top -part xcku040-ffva1156-2-e -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18576 
+WARNING: [Synth 8-6901] identifier 'AXIS_TKEEP_WIDTH' is used before its declaration [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:86]
+WARNING: [Synth 8-6901] identifier 'AXIS_TKEEP_WIDTH' is used before its declaration [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:93]
+WARNING: [Synth 8-2507] parameter declaration becomes local in tgm_slave_attachment with formal parameter declaration list [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:223]
+WARNING: [Synth 8-2507] parameter declaration becomes local in tgm_slave_attachment with formal parameter declaration list [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:224]
+WARNING: [Synth 8-2507] parameter declaration becomes local in tgm_slave_attachment with formal parameter declaration list [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:225]
+WARNING: [Synth 8-2507] parameter declaration becomes local in tgm_slave_attachment with formal parameter declaration list [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:226]
+WARNING: [Synth 8-2507] parameter declaration becomes local in tgm_slave_attachment with formal parameter declaration list [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:227]
+WARNING: [Synth 8-2507] parameter declaration becomes local in tgm_slave_attachment with formal parameter declaration list [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:228]
+WARNING: [Synth 8-2507] parameter declaration becomes local in tgm_slave_attachment with formal parameter declaration list [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:229]
+WARNING: [Synth 8-2507] parameter declaration becomes local in tgm_slave_attachment with formal parameter declaration list [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:230]
+WARNING: [Synth 8-2507] parameter declaration becomes local in tgm_slave_attachment with formal parameter declaration list [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:231]
+WARNING: [Synth 8-2507] parameter declaration becomes local in tgm_slave_attachment with formal parameter declaration list [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:232]
+WARNING: [Synth 8-2507] parameter declaration becomes local in tgm_slave_attachment with formal parameter declaration list [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:233]
+WARNING: [Synth 8-2507] parameter declaration becomes local in tgm_slave_attachment with formal parameter declaration list [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:234]
+WARNING: [Synth 8-2507] parameter declaration becomes local in tgm_slave_attachment with formal parameter declaration list [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:235]
+WARNING: [Synth 8-2507] parameter declaration becomes local in tgm_slave_attachment with formal parameter declaration list [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:236]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1339.789 ; gain = 244.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'kcu105_10gbaser_top' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:24]
+	Parameter AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXIS_TKEEP_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/debouncer.v:21]
+	Parameter SHIFT_REG_LEN bound to: 4 - type: integer 
+	Parameter ACTIVE_VAL bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (1#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/debouncer.v:21]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:278]
+INFO: [Synth 8-6157] synthesizing module 'ila_interface' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/ila_interface_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_interface' (2#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/ila_interface_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_stream_gen_mon' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:25]
+	Parameter AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter XIL_MAC_ID_THIS bound to: 48'b000100010001000100000000000000000000000000000000 
+	Parameter XIL_MAC_ID_OTHER bound to: 48'b001000100010001000000000000000000000000000000000 
+	Parameter EXT_MAC_ID bound to: 48'b001100110011001100000000000000000000000000000000 
+	Parameter S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter S_AXI_MIN_SIZE bound to: 16'b1111111111111111 
+	Parameter S_AXI_BASE_ADDRESS bound to: 1151336448 - type: integer 
+	Parameter DESIGN_VERSION bound to: 17110065 - type: integer 
+	Parameter ONE_SEC_CLOCK_COUNT bound to: 156250000 - type: integer 
+	Parameter AXIS_TKEEP_WIDTH bound to: 8 - type: integer 
+	Parameter S_AXI_HIGH_ADDRESS bound to: 32'b01000100101000001111111111111111 
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:85]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:86]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:87]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:88]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:89]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:90]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:92]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:93]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:94]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:95]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:96]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:97]
+INFO: [Synth 8-6157] synthesizing module 'axi_stream_interface' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:23]
+	Parameter AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXIS_TKEEP_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:31]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:32]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:33]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:34]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:35]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:36]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:38]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:39]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:40]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:41]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:42]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:43]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:45]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:46]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:47]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:48]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:49]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:50]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:52]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:53]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:54]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:55]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:56]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bb_interface_fifo' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/bb_interface_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bb_interface_fifo' (3#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/bb_interface_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_stream_interface' (4#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'axi_stream_lb' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/axi_stream_lb.v:67]
+	Parameter AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXIS_TKEEP_WIDTH bound to: 8 - type: integer 
+	Parameter XIL_MAC_ID_THIS bound to: 48'b000100010001000100000000000000000000000000000000 
+	Parameter EXT_MAC_ID bound to: 48'b001100110011001100000000000000000000000000000000 
+	Parameter ETH_HEADER_CNT bound to: 4'b0010 
+	Parameter IDLE bound to: 1'b0 
+	Parameter IN_PKT bound to: 1'b1 
+INFO: [Synth 8-226] default block is never used [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/axi_stream_lb.v:167]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_0' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/axis_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_0' (5#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/axis_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_stream_lb' (6#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/axi_stream_lb.v:67]
+INFO: [Synth 8-6157] synthesizing module 'axi_stream_gen' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_gen.sv:42]
+	Parameter AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXIS_TKEEP_WIDTH bound to: 8 - type: integer 
+	Parameter XIL_MAC_ID_THIS bound to: 48'b000100010001000100000000000000000000000000000000 
+	Parameter XIL_MAC_ID_OTHER bound to: 48'b001000100010001000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'axi_stream_gen' (7#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_gen.sv:42]
+INFO: [Synth 8-6157] synthesizing module 'eth_performance_monitor' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_performance_monitor.v:29]
+	Parameter AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXIS_TKEEP_WIDTH bound to: 8 - type: integer 
+	Parameter ONE_SEC_CLOCK_COUNT bound to: 156250000 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element reg_tx_tdata_reg was removed.  [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_performance_monitor.v:107]
+WARNING: [Synth 8-6014] Unused sequential element reg_rx_tdata_reg was removed.  [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_performance_monitor.v:113]
+INFO: [Synth 8-6155] done synthesizing module 'eth_performance_monitor' (8#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_performance_monitor.v:29]
+INFO: [Synth 8-6157] synthesizing module 'user_registers_slave' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/user_registers_slave.v:25]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_BASE_ADDRESS bound to: 1151336448 - type: integer 
+	Parameter C_HIGH_ADDRESS bound to: 32'b01000100101000001111111111111111 
+	Parameter C_TOTAL_NUM_CE bound to: 1 - type: integer 
+	Parameter C_NUM_ADDRESS_RANGES bound to: 1 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 16'b1111111111111111 
+	Parameter C_DPHASE_TIMEOUT bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: kintexu - type: string 
+	Parameter DESIGN_VERSION bound to: 17110065 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tgm_axi_lite_ipif' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_axi_lite_ipif.v:143]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 65535 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 32 - type: integer 
+	Parameter C_NUM_ADDRESS_RANGES bound to: 1 - type: integer 
+	Parameter C_TOTAL_NUM_CE bound to: 1 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 64'b0100010010100000000000000000000001000100101000001111111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 8'b00000001 
+	Parameter C_FAMILY bound to: kintexu - type: string 
+INFO: [Synth 8-6157] synthesizing module 'tgm_slave_attachment' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:138]
+	Parameter C_NUM_ADDRESS_RANGES bound to: 1 - type: integer 
+	Parameter C_TOTAL_NUM_CE bound to: 1 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 64'b0100010010100000000000000000000001000100101000001111111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 8'b00000001 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 65535 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: kintexu - type: string 
+	Parameter C_INCLUDE_DPHASE_TIMER bound to: 32 - type: integer 
+	Parameter AXI_RESP_OK bound to: 2'b00 
+	Parameter AXI_RESP_SLVERR bound to: 2'b10 
+	Parameter C_ADDR_DECODE_BITS bound to: 16 - type: integer 
+	Parameter ZEROS bound to: 16'b0000000000000000 
+	Parameter IDLE bound to: 3'b000 
+	Parameter READING bound to: 3'b001 
+	Parameter READ_WAIT bound to: 3'b010 
+	Parameter WRITE_WAIT bound to: 3'b011 
+	Parameter WRITING bound to: 3'b100 
+	Parameter B_VALID bound to: 3'b101 
+	Parameter BRESP_WAIT bound to: 3'b110 
+	Parameter COUNTER_WIDTH bound to: 6 - type: integer 
+	Parameter DPTO_LD_VALUE bound to: 6'b011111 
+INFO: [Synth 8-6157] synthesizing module 'counter_f' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_counter_f.v:107]
+	Parameter C_NUM_BITS bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'counter_f' (9#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_counter_f.v:107]
+INFO: [Synth 8-6157] synthesizing module 'tgm_address_decoder' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_address_decoder.v:118]
+	Parameter C_NUM_ADDRESS_RANGES bound to: 1 - type: integer 
+	Parameter C_TOTAL_NUM_CE bound to: 1 - type: integer 
+	Parameter C_BUS_AWIDTH bound to: 16 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 64'b0100010010100000000000000000000001000100101000001111111111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 8'b00000001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'tgm_address_decoder' (10#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_address_decoder.v:118]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:362]
+INFO: [Synth 8-6155] done synthesizing module 'tgm_slave_attachment' (11#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_slave_attachment.v:138]
+INFO: [Synth 8-6155] done synthesizing module 'tgm_axi_lite_ipif' (12#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_axi_lite_ipif.v:143]
+INFO: [Synth 8-6157] synthesizing module 'registers' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/registers.v:46]
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_reg_00 bound to: 16'b0000000000000000 
+	Parameter ADDR_reg_04 bound to: 16'b0000000000000100 
+	Parameter ADDR_reg_08 bound to: 16'b0000000000001000 
+	Parameter ADDR_reg_0C bound to: 16'b0000000000001100 
+	Parameter ADDR_reg_10 bound to: 16'b0000000000010000 
+	Parameter ADDR_reg_14 bound to: 16'b0000000000010100 
+	Parameter ADDR_reg_18 bound to: 16'b0000000000011000 
+	Parameter ADDR_reg_1C bound to: 16'b0000000000011100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/registers.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'registers' (13#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/registers.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'user_registers_slave' (14#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/user_registers_slave.v:25]
+INFO: [Synth 8-6157] synthesizing module 'sync_registers' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sync_registers.v:25]
+INFO: [Synth 8-6157] synthesizing module 'synchronizer_simple' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/synchronizer_simple.v:59]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer_simple' (15#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/synchronizer_simple.v:59]
+INFO: [Synth 8-6157] synthesizing module 'synchronizer_simple__parameterized0' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/synchronizer_simple.v:59]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer_simple__parameterized0' (15#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/synchronizer_simple.v:59]
+INFO: [Synth 8-6157] synthesizing module 'synchronizer_simple__parameterized1' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/synchronizer_simple.v:59]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer_simple__parameterized1' (15#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/synchronizer_simple.v:59]
+INFO: [Synth 8-6157] synthesizing module 'synchronizer_simple__parameterized2' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/synchronizer_simple.v:59]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer_simple__parameterized2' (15#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/synchronizer_simple.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'sync_registers' (16#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sync_registers.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'axi_stream_gen_mon' (17#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:25]
+INFO: [Synth 8-6157] synthesizing module 'axi_stream_gen_mon__parameterized0' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:25]
+	Parameter AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter XIL_MAC_ID_THIS bound to: 48'b000100010001000100000000000000000000000000000000 
+	Parameter XIL_MAC_ID_OTHER bound to: 48'b010001000100010000000000000000000000000000000000 
+	Parameter EXT_MAC_ID bound to: 48'b001100110011001100000000000000000000000000000000 
+	Parameter S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter S_AXI_MIN_SIZE bound to: 16'b1111111111111111 
+	Parameter S_AXI_BASE_ADDRESS bound to: 1151336448 - type: integer 
+	Parameter DESIGN_VERSION bound to: 17110065 - type: integer 
+	Parameter ONE_SEC_CLOCK_COUNT bound to: 156250000 - type: integer 
+	Parameter AXIS_TKEEP_WIDTH bound to: 8 - type: integer 
+	Parameter S_AXI_HIGH_ADDRESS bound to: 32'b01000100101000001111111111111111 
+INFO: [Synth 8-6157] synthesizing module 'axi_stream_gen__parameterized0' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_gen.sv:42]
+	Parameter AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXIS_TKEEP_WIDTH bound to: 8 - type: integer 
+	Parameter XIL_MAC_ID_THIS bound to: 48'b000100010001000100000000000000000000000000000000 
+	Parameter XIL_MAC_ID_OTHER bound to: 48'b010001000100010000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'axi_stream_gen__parameterized0' (17#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_gen.sv:42]
+INFO: [Synth 8-6155] done synthesizing module 'axi_stream_gen_mon__parameterized0' (17#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:25]
+INFO: [Synth 8-6157] synthesizing module 'mac_phy_wrapper' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/hdl/mac_phy_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'mac_phy' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/synth/mac_phy.v:13]
+INFO: [Synth 8-6157] synthesizing module 'mac_phy_ch0_imp_15CV18U' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/synth/mac_phy.v:425]
+INFO: [Synth 8-6157] synthesizing module 'mac_phy_ten_gig_eth_mac_ch0_0' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/mac_phy_ten_gig_eth_mac_ch0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mac_phy_ten_gig_eth_mac_ch0_0' (18#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/mac_phy_ten_gig_eth_mac_ch0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ten_gig_eth_mac_ch0' of module 'mac_phy_ten_gig_eth_mac_ch0_0' has 52 connections declared, but only 50 given [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/synth/mac_phy.v:694]
+INFO: [Synth 8-6157] synthesizing module 'mac_phy_ten_gig_eth_pcs_pma_ch0_0' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/mac_phy_ten_gig_eth_pcs_pma_ch0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mac_phy_ten_gig_eth_pcs_pma_ch0_0' (19#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/mac_phy_ten_gig_eth_pcs_pma_ch0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ten_gig_eth_pcs_pma_ch0' of module 'mac_phy_ten_gig_eth_pcs_pma_ch0_0' has 51 connections declared, but only 48 given [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/synth/mac_phy.v:745]
+INFO: [Synth 8-6155] done synthesizing module 'mac_phy_ch0_imp_15CV18U' (20#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/synth/mac_phy.v:425]
+WARNING: [Synth 8-7023] instance 'mac_phy_ch0' of module 'mac_phy_ch0_imp_15CV18U' has 63 connections declared, but only 55 given [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/synth/mac_phy.v:277]
+INFO: [Synth 8-6157] synthesizing module 'mac_phy_ch1_imp_OVJPU8' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/synth/mac_phy.v:796]
+INFO: [Synth 8-6157] synthesizing module 'mac_phy_ten_gig_eth_mac_ch1_0' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/mac_phy_ten_gig_eth_mac_ch1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mac_phy_ten_gig_eth_mac_ch1_0' (21#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/mac_phy_ten_gig_eth_mac_ch1_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ten_gig_eth_mac_ch1' of module 'mac_phy_ten_gig_eth_mac_ch1_0' has 52 connections declared, but only 50 given [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/synth/mac_phy.v:1073]
+INFO: [Synth 8-6157] synthesizing module 'mac_phy_ten_gig_eth_pcs_pma_ch1_0' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/mac_phy_ten_gig_eth_pcs_pma_ch1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mac_phy_ten_gig_eth_pcs_pma_ch1_0' (22#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/mac_phy_ten_gig_eth_pcs_pma_ch1_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ten_gig_eth_pcs_pma_ch1' of module 'mac_phy_ten_gig_eth_pcs_pma_ch1_0' has 52 connections declared, but only 49 given [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/synth/mac_phy.v:1124]
+INFO: [Synth 8-6155] done synthesizing module 'mac_phy_ch1_imp_OVJPU8' (23#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/synth/mac_phy.v:796]
+WARNING: [Synth 8-7023] instance 'mac_phy_ch1' of module 'mac_phy_ch1_imp_OVJPU8' has 65 connections declared, but only 56 given [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/synth/mac_phy.v:333]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/synth/mac_phy.v:390]
+INFO: [Synth 8-6157] synthesizing module 'mac_phy_system_ila_mac_phy1_0' [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/mac_phy_system_ila_mac_phy1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mac_phy_system_ila_mac_phy1_0' (24#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/.Xil/Vivado-17692-DESKTOP-4A374NS/realtime/mac_phy_system_ila_mac_phy1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mac_phy_xlconstant_1b0_0' [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_xlconstant_1b0_0/synth/mac_phy_xlconstant_1b0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (25#1) [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mac_phy_xlconstant_1b0_0' (26#1) [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_xlconstant_1b0_0/synth/mac_phy_xlconstant_1b0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'mac_phy_xlconstant_1b1_0' [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_xlconstant_1b1_0/synth/mac_phy_xlconstant_1b1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized0' [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized0' (26#1) [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mac_phy_xlconstant_1b1_0' (27#1) [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_xlconstant_1b1_0/synth/mac_phy_xlconstant_1b1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'mac_phy_xlconstant_3b101_0' [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_xlconstant_3b101_0/synth/mac_phy_xlconstant_3b101_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized1' [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 5 - type: integer 
+	Parameter CONST_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized1' (27#1) [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mac_phy_xlconstant_3b101_0' (28#1) [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_xlconstant_3b101_0/synth/mac_phy_xlconstant_3b101_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'mac_phy_xlconstant_8b0_0' [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_xlconstant_8b0_0/synth/mac_phy_xlconstant_8b0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized2' [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized2' (28#1) [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mac_phy_xlconstant_8b0_0' (29#1) [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_xlconstant_8b0_0/synth/mac_phy_xlconstant_8b0_0.v:57]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mac_phy_ch1'. This will prevent further optimization [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/synth/mac_phy.v:333]
+INFO: [Synth 8-6155] done synthesizing module 'mac_phy' (30#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/synth/mac_phy.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'mac_phy_wrapper' (31#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/hdl/mac_phy_wrapper.v:12]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_stream_gen_mon_0'. This will prevent further optimization [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:313]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_interface'. This will prevent further optimization [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:278]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_stream_gen_mon_1'. This will prevent further optimization [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:380]
+WARNING: [Synth 8-3848] Net sim_speedup_control_ch0 in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:63]
+WARNING: [Synth 8-3848] Net sim_speedup_control_ch1 in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:64]
+WARNING: [Synth 8-3848] Net M03_AXI_0_awaddr in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:82]
+WARNING: [Synth 8-3848] Net M03_AXI_0_awvalid in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:85]
+WARNING: [Synth 8-3848] Net M03_AXI_0_wdata in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:93]
+WARNING: [Synth 8-3848] Net M03_AXI_0_wstrb in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:95]
+WARNING: [Synth 8-3848] Net M03_AXI_0_wvalid in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:96]
+WARNING: [Synth 8-3848] Net M03_AXI_0_bready in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:86]
+WARNING: [Synth 8-3848] Net M03_AXI_0_araddr in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:78]
+WARNING: [Synth 8-3848] Net M03_AXI_0_arvalid in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:81]
+WARNING: [Synth 8-3848] Net M03_AXI_0_rready in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:90]
+WARNING: [Synth 8-3848] Net M05_AXI_0_awaddr in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:101]
+WARNING: [Synth 8-3848] Net M05_AXI_0_awvalid in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:104]
+WARNING: [Synth 8-3848] Net M05_AXI_0_wdata in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:112]
+WARNING: [Synth 8-3848] Net M05_AXI_0_wstrb in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:114]
+WARNING: [Synth 8-3848] Net M05_AXI_0_wvalid in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:115]
+WARNING: [Synth 8-3848] Net M05_AXI_0_bready in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:105]
+WARNING: [Synth 8-3848] Net M05_AXI_0_araddr in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:97]
+WARNING: [Synth 8-3848] Net M05_AXI_0_arvalid in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:100]
+WARNING: [Synth 8-3848] Net M05_AXI_0_rready in module/entity kcu105_10gbaser_top does not have driver. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'kcu105_10gbaser_top' (32#1) [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:24]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[31]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[30]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[29]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[28]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[27]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[26]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[25]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[24]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[23]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[22]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[21]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[20]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[19]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[18]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[17]
+WARNING: [Synth 8-3331] design registers has unconnected port Bus2IP_Addr[16]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[0]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[1]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[2]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[3]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[4]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[5]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[6]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[7]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[8]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[9]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[10]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[11]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[12]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[13]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[14]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Address_In_Erly[15]
+WARNING: [Synth 8-3331] design tgm_address_decoder has unconnected port Bus_RNW
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[31]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[30]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[29]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[28]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[27]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[26]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[25]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[24]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[23]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[22]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[21]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[20]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[19]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[18]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[17]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_AWADDR[16]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[31]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[30]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[29]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[28]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[27]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[26]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[25]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[24]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[23]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[22]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[21]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[20]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[19]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[18]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[17]
+WARNING: [Synth 8-3331] design tgm_slave_attachment has unconnected port S_AXI_ARADDR[16]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[63]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[62]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[61]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[60]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[59]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[58]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[57]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[56]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[55]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[54]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[53]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[52]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[51]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[50]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[49]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[48]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[47]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[46]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[45]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[44]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[43]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[42]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[41]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[40]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[39]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[38]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[37]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[36]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[35]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[34]
+WARNING: [Synth 8-3331] design eth_performance_monitor has unconnected port s_axis_tx_tdata[33]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1397.777 ; gain = 302.078
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1415.645 ; gain = 319.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1415.645 ; gain = 319.945
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Netlist 29-72] Incorrect value 'true|yes' specified for property 'dont_touch'. Expecting type 'bool' with possible values of '1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:62]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value 'true|yes' specified for property 'dont_touch'. Expecting type 'bool' with possible values of '1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/new/axi_stream_interface.sv:80]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value 'true|yes' specified for property 'dont_touch'. Expecting type 'bool' with possible values of '1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:186]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value 'true|yes' specified for property 'dont_touch'. Expecting type 'bool' with possible values of '1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:186]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value 'true|yes' specified for property 'dont_touch'. Expecting type 'bool' with possible values of '1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/sources/hdl/kcu105_10gbaser_top.v:278]
+Resolution: Please check the value of the property and set to a correct value.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1427.699 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_mac_ch1_0/mac_phy_ten_gig_eth_mac_ch1_0/mac_phy_ten_gig_eth_mac_ch1_0_in_context.xdc] for cell 'mac_phy_wrapper_i/mac_phy_i/mac_phy_ch1/ten_gig_eth_mac_ch1'
+Finished Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_mac_ch1_0/mac_phy_ten_gig_eth_mac_ch1_0/mac_phy_ten_gig_eth_mac_ch1_0_in_context.xdc] for cell 'mac_phy_wrapper_i/mac_phy_i/mac_phy_ch1/ten_gig_eth_mac_ch1'
+Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0_in_context.xdc] for cell 'mac_phy_wrapper_i/mac_phy_i/mac_phy_ch1/ten_gig_eth_pcs_pma_ch1'
+Finished Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0_in_context.xdc] for cell 'mac_phy_wrapper_i/mac_phy_i/mac_phy_ch1/ten_gig_eth_pcs_pma_ch1'
+Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_mac_ch0_0/mac_phy_ten_gig_eth_mac_ch0_0/mac_phy_ten_gig_eth_mac_ch0_0_in_context.xdc] for cell 'mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_mac_ch0'
+Finished Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_mac_ch0_0/mac_phy_ten_gig_eth_mac_ch0_0/mac_phy_ten_gig_eth_mac_ch0_0_in_context.xdc] for cell 'mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_mac_ch0'
+Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_in_context.xdc] for cell 'mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0'
+Finished Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_in_context.xdc] for cell 'mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0'
+Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_system_ila_mac_phy1_0/mac_phy_system_ila_mac_phy1_0/mac_phy_system_ila_mac_phy1_0_in_context.xdc] for cell 'mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2'
+Finished Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_system_ila_mac_phy1_0/mac_phy_system_ila_mac_phy1_0/mac_phy_system_ila_mac_phy1_0_in_context.xdc] for cell 'mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2'
+Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/axis_data_fifo_0/axis_data_fifo_0_in_context.xdc] for cell 'axi_stream_gen_mon_0/axi_stream_lb_i/axis_data_fifo_0_inst'
+Finished Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/axis_data_fifo_0/axis_data_fifo_0_in_context.xdc] for cell 'axi_stream_gen_mon_0/axi_stream_lb_i/axis_data_fifo_0_inst'
+Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/axis_data_fifo_0/axis_data_fifo_0_in_context.xdc] for cell 'axi_stream_gen_mon_1/axi_stream_lb_i/axis_data_fifo_0_inst'
+Finished Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/axis_data_fifo_0/axis_data_fifo_0_in_context.xdc] for cell 'axi_stream_gen_mon_1/axi_stream_lb_i/axis_data_fifo_0_inst'
+Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/ip/bb_interface_fifo/bb_interface_fifo/bb_interface_fifo_in_context.xdc] for cell 'axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx'
+Finished Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/ip/bb_interface_fifo/bb_interface_fifo/bb_interface_fifo_in_context.xdc] for cell 'axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx'
+Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/ip/bb_interface_fifo/bb_interface_fifo/bb_interface_fifo_in_context.xdc] for cell 'axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_tx'
+Finished Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/ip/bb_interface_fifo/bb_interface_fifo/bb_interface_fifo_in_context.xdc] for cell 'axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_tx'
+Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/ip/bb_interface_fifo/bb_interface_fifo/bb_interface_fifo_in_context.xdc] for cell 'axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx'
+Finished Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/ip/bb_interface_fifo/bb_interface_fifo/bb_interface_fifo_in_context.xdc] for cell 'axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx'
+Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/ip/bb_interface_fifo/bb_interface_fifo/bb_interface_fifo_in_context.xdc] for cell 'axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_tx'
+Finished Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/ip/bb_interface_fifo/bb_interface_fifo/bb_interface_fifo_in_context.xdc] for cell 'axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_tx'
+Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/ip/ila_interface/ila_interface/ila_interface_in_context.xdc] for cell 'ila_interface'
+Finished Parsing XDC File [c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/ip/ila_interface/ila_interface/ila_interface_in_context.xdc] for cell 'ila_interface'
+Parsing XDC File [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/constrs_1/imports/constraints/kcu105_10gbaser.xdc]
+Finished Parsing XDC File [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/constrs_1/imports/constraints/kcu105_10gbaser.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/constrs_1/imports/constraints/kcu105_10gbaser.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/kcu105_10gbaser_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/kcu105_10gbaser_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1524.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1524.652 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ila_interface' at clock pin 'clk' is different from the actual clock period '6.400', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx' at clock pin 's_axis_aclk' is different from the actual clock period '6.400', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_tx' at clock pin 's_axis_aclk' is different from the actual clock period '6.400', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'axi_stream_gen_mon_0/axi_stream_lb_i/axis_data_fifo_0_inst' at clock pin 's_axis_aclk' is different from the actual clock period '6.400', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx' at clock pin 's_axis_aclk' is different from the actual clock period '6.400', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_tx' at clock pin 's_axis_aclk' is different from the actual clock period '6.400', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'axi_stream_gen_mon_1/axi_stream_lb_i/axis_data_fifo_0_inst' at clock pin 's_axis_aclk' is different from the actual clock period '6.400', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0' at clock pin 'dclk' is different from the actual clock period '6.400', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_phy_wrapper_i/mac_phy_i/mac_phy_ch1/ten_gig_eth_pcs_pma_ch1' at clock pin 'dclk' is different from the actual clock period '6.400', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1524.676 ; gain = 428.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1524.676 ; gain = 428.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for xphy_rxn[1]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for xphy_rxn[1]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for xphy_rxp[1]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for xphy_rxp[1]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for xphy_txn[1]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for xphy_txn[1]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for xphy_txp[1]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for xphy_txp[1]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0/mac_phy_ten_gig_eth_pcs_pma_ch1_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for refclk_n. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for refclk_n. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for refclk_p. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for refclk_p. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for xphy_rxn[0]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for xphy_rxn[0]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for xphy_rxp[0]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for xphy_rxp[0]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for xphy_txn[0]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for xphy_txn[0]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for xphy_txp[0]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for xphy_txp[0]. (constraint file  c:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/sources_1/bd/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_in_context.xdc, line 19).
+Applied set_property DONT_TOUCH = true for mac_phy_wrapper_i/mac_phy_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mac_phy_wrapper_i/mac_phy_i/xlconstant_1b0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mac_phy_wrapper_i/mac_phy_i/xlconstant_1b1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mac_phy_wrapper_i/mac_phy_i/xlconstant_3b101. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mac_phy_wrapper_i/mac_phy_i/xlconstant_8b0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mac_phy_wrapper_i/mac_phy_i/mac_phy_ch1/ten_gig_eth_mac_ch1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mac_phy_wrapper_i/mac_phy_i/mac_phy_ch1/ten_gig_eth_pcs_pma_ch1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_mac_ch0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mac_phy_wrapper_i/mac_phy_i/system_ila_mac_phy2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for axi_stream_gen_mon_0/axi_stream_lb_i/axis_data_fifo_0_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for axi_stream_gen_mon_1/axi_stream_lb_i/axis_data_fifo_0_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_rx. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_tx. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for axi_stream_gen_mon_1/axi_stream_interface/bb_interface_fifo_tx. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ila_interface. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1524.676 ; gain = 428.977
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_pkg_state_reg' in module 'axi_stream_gen'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/tgm_counter_f.v:152]
+INFO: [Synth 8-802] inferred FSM for state register 'access_cs_reg' in module 'tgm_slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_pkg_state_reg' in module 'axi_stream_gen__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'tg_config_ch_state0_reg' in module 'kcu105_10gbaser_top'
+INFO: [Synth 8-802] inferred FSM for state register 'tg_config_ch_state1_reg' in module 'kcu105_10gbaser_top'
+INFO: [Synth 8-5544] ROM "tb_tg_config_ch0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tb_tg_config_ch1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                 0000000000000000
+                 iSTATE0 |                              001 |                 0000000000000001
+                 iSTATE2 |                              010 |                 0000000000000010
+                 iSTATE1 |                              011 |                 0000000000000011
+                 iSTATE3 |                              100 |                 0000000000000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_pkg_state_reg' using encoding 'sequential' in module 'axi_stream_gen'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                 READING |                              001 |                              001
+               READ_WAIT |                              010 |                              010
+              WRITE_WAIT |                              011 |                              011
+                 WRITING |                              100 |                              100
+                 B_VALID |                              101 |                              101
+              BRESP_WAIT |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'access_cs_reg' using encoding 'sequential' in module 'tgm_slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                 0000000000000000
+                 iSTATE0 |                              001 |                 0000000000000001
+                 iSTATE2 |                              010 |                 0000000000000010
+                 iSTATE1 |                              011 |                 0000000000000011
+                 iSTATE3 |                              100 |                 0000000000000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_pkg_state_reg' using encoding 'sequential' in module 'axi_stream_gen__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                             0000
+                 iSTATE0 |                               01 |                             0001
+                 iSTATE1 |                               10 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tg_config_ch_state0_reg' using encoding 'sequential' in module 'kcu105_10gbaser_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                             0000
+                 iSTATE0 |                               01 |                             0001
+                 iSTATE1 |                               10 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tg_config_ch_state1_reg' using encoding 'sequential' in module 'kcu105_10gbaser_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1524.676 ; gain = 428.977
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	  10 Input     32 Bit       Adders := 4     
+	   2 Input     16 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               64 Bit    Registers := 4     
+	               32 Bit    Registers := 40    
+	               16 Bit    Registers := 15    
+	               13 Bit    Registers := 2     
+	                8 Bit    Registers := 12    
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 67    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 6     
+	   3 Input     64 Bit        Muxes := 2     
+	   5 Input     64 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 10    
+	   7 Input     32 Bit        Muxes := 4     
+	   9 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 2     
+	   3 Input     23 Bit        Muxes := 2     
+	   5 Input     16 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 14    
+	   7 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 44    
+	   3 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module kcu105_10gbaser_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   3 Input     23 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+Module debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module axi_stream_lb__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_stream_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input     64 Bit        Muxes := 1     
+	   5 Input     64 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+Module eth_performance_monitor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	  10 Input     32 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module counter_f 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module tgm_address_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module tgm_slave_attachment 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   7 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	   7 Input      1 Bit        Muxes := 16    
+Module registers 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   9 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+Module synchronizer_simple 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module synchronizer_simple__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+Module synchronizer_simple__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module synchronizer_simple__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+Module axi_stream_lb 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_stream_gen__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input     64 Bit        Muxes := 1     
+	   5 Input     64 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tuser_reg)
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tkeep_reg[0]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tkeep_reg[1]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tkeep_reg[2]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tkeep_reg[3]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tkeep_reg[3]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tkeep_reg[4]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tkeep_reg[4]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tkeep_reg[5]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tkeep_reg[5]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tkeep_reg[6]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tkeep_reg[6]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tkeep_reg[7]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[1]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[2]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[3]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[35]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[4]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[36]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[5]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[6]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[38]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[7]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[39]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[8]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[40]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[9]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[10]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[11]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[13]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[14]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[15]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[16]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[32]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[19]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[35]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[22]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[38]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[23]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[39]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[28]' (FDRE) to 'axi_stream_gen_mon_1/axi_stream_gen_i/tx_axis_tdata_reg[44]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tuser_reg)
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tkeep_reg[0]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tkeep_reg[1]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tkeep_reg[2]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tkeep_reg[3]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tkeep_reg[3]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tkeep_reg[4]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tkeep_reg[4]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tkeep_reg[5]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tkeep_reg[5]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tkeep_reg[6]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tkeep_reg[6]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tkeep_reg[7]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[1]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[2]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[3]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[35]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[4]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[36]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[5]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[6]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[38]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[7]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[39]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[8]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[40]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[9]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[10]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[11]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[13]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[14]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[15]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[16]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[32]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[19]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[35]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[22]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[38]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[23]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[39]'
+INFO: [Synth 8-3886] merging instance 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[28]' (FDRE) to 'axi_stream_gen_mon_0/axi_stream_gen_i/tx_axis_tdata_reg[44]'
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_access_cs_reg[2]) is unused and will be removed from module tgm_slave_attachment.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_access_cs_reg[1]) is unused and will be removed from module tgm_slave_attachment.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_access_cs_reg[0]) is unused and will be removed from module tgm_slave_attachment.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_tg_config_ch_state0_reg[1]) is unused and will be removed from module kcu105_10gbaser_top.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_tg_config_ch_state0_reg[0]) is unused and will be removed from module kcu105_10gbaser_top.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_tg_config_ch_state1_reg[1]) is unused and will be removed from module kcu105_10gbaser_top.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_tg_config_ch_state1_reg[0]) is unused and will be removed from module kcu105_10gbaser_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1524.676 ; gain = 428.977
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1608.852 ; gain = 513.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1634.324 ; gain = 538.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1637.426 ; gain = 541.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tready_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tready_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[63] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[62] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[61] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[60] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[59] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[58] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[57] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[56] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[55] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[54] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[53] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[52] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[51] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[50] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[49] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[48] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[47] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[46] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[45] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[44] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[43] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[42] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[41] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[40] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[39] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[38] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[37] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[36] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[35] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[34] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[33] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[32] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata0_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tkeep0_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tkeep0_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tkeep0_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tkeep0_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tkeep0_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tkeep0_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tkeep0_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tkeep0_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tvalid0_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tlast0_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tuser0_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[63] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[62] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[61] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[60] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[59] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[58] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[57] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[56] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[55] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[54] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[53] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[52] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[51] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[50] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[49] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[48] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[47] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[46] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[45] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[44] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[43] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[42] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin bb_tx_axis_tdata1_inferred:in0[41] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1642.223 ; gain = 546.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1642.223 ; gain = 546.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1642.223 ; gain = 546.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------+--------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name         | RTL Name           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------+--------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|kcu105_10gbaser_top | reset_pulse_reg[0] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++--------------------+--------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |bb_interface_fifo                 |         4|
+|2     |axis_data_fifo_0                  |         2|
+|3     |mac_phy_ten_gig_eth_mac_ch0_0     |         1|
+|4     |mac_phy_ten_gig_eth_pcs_pma_ch0_0 |         1|
+|5     |mac_phy_ten_gig_eth_mac_ch1_0     |         1|
+|6     |mac_phy_ten_gig_eth_pcs_pma_ch1_0 |         1|
+|7     |mac_phy_system_ila_mac_phy1_0     |         1|
+|8     |ila_interface                     |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------+------+
+|      |Cell                              |Count |
++------+----------------------------------+------+
+|1     |axis_data_fifo_0                  |     1|
+|2     |axis_data_fifo_0__2               |     1|
+|3     |bb_interface_fifo                 |     1|
+|4     |bb_interface_fifo__4              |     1|
+|5     |bb_interface_fifo__5              |     1|
+|6     |bb_interface_fifo__6              |     1|
+|7     |ila_interface                     |     1|
+|8     |mac_phy_system_ila_mac_phy1_0     |     1|
+|9     |mac_phy_ten_gig_eth_mac_ch0_0     |     1|
+|10    |mac_phy_ten_gig_eth_mac_ch1_0     |     1|
+|11    |mac_phy_ten_gig_eth_pcs_pma_ch0_0 |     1|
+|12    |mac_phy_ten_gig_eth_pcs_pma_ch1_0 |     1|
+|13    |CARRY8                            |     6|
+|14    |LUT1                              |   166|
+|15    |LUT2                              |    55|
+|16    |LUT3                              |    30|
+|17    |LUT4                              |    81|
+|18    |LUT5                              |    39|
+|19    |LUT6                              |   217|
+|20    |SRL16E                            |     1|
+|21    |FDRE                              |   366|
+|22    |FDSE                              |    18|
+|23    |IBUF                              |     1|
+|24    |OBUF                              |     5|
++------+----------------------------------+------+
+
+Report Instance Areas: 
++------+-------------------------+-----------------------------------+------+
+|      |Instance                 |Module                             |Cells |
++------+-------------------------+-----------------------------------+------+
+|1     |top                      |                                   |  2365|
+|2     |  debounce_reset         |debouncer                          |     6|
+|3     |  axi_stream_gen_mon_0   |axi_stream_gen_mon                 |   694|
+|4     |    axi_stream_interface |axi_stream_interface__xdcDup__1    |   153|
+|5     |    axi_stream_lb_i      |axi_stream_lb__xdcDup__1           |   289|
+|6     |    axi_stream_gen_i     |axi_stream_gen                     |   250|
+|7     |  axi_stream_gen_mon_1   |axi_stream_gen_mon__parameterized0 |   686|
+|8     |    axi_stream_interface |axi_stream_interface               |   153|
+|9     |    axi_stream_lb_i      |axi_stream_lb                      |   289|
+|10    |    axi_stream_gen_i     |axi_stream_gen__parameterized0     |   242|
+|11    |  mac_phy_wrapper_i      |mac_phy_wrapper                    |   796|
+|12    |    mac_phy_i            |mac_phy                            |   796|
+|13    |      mac_phy_ch0        |mac_phy_ch0_imp_15CV18U            |   402|
+|14    |      mac_phy_ch1        |mac_phy_ch1_imp_OVJPU8             |   394|
+|15    |      xlconstant_1b0     |mac_phy_xlconstant_1b0_0           |     0|
+|16    |      xlconstant_1b1     |mac_phy_xlconstant_1b1_0           |     0|
+|17    |      xlconstant_3b101   |mac_phy_xlconstant_3b101_0         |     0|
+|18    |      xlconstant_8b0     |mac_phy_xlconstant_8b0_0           |     0|
++------+-------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1642.223 ; gain = 546.523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 454 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1642.223 ; gain = 437.492
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1642.223 ; gain = 546.523
+INFO: [Project 1-571] Translating synthesized netlist
+CRITICAL WARNING: [Netlist 29-72] Incorrect value 'true|yes' specified for property 'dont_touch'. Expecting type 'bool' with possible values of '1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:186]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value 'true|yes' specified for property 'dont_touch'. Expecting type 'bool' with possible values of '1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.srcs/eth_axi_stream_gen_mon.v:186]
+Resolution: Please check the value of the property and set to a correct value.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1650.270 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1671.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+206 Infos, 263 Warnings, 7 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1671.949 ; gain = 1135.371
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1671.949 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/dell/Desktop/kcu105_10gbaser_trd/hardware/vivado/runs/impl_run/10gbaser_trd.runs/synth_1/kcu105_10gbaser_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file kcu105_10gbaser_top_utilization_synth.rpt -pb kcu105_10gbaser_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 26 17:24:57 2020...

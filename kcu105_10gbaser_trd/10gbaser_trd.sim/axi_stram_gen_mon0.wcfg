@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="120000001fs"></ZoomEndTime>
+      <Cursor1Time time="40561865fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="167"></NameColumnWidth>
+      <ValueColumnWidth column_width="165"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="188" />
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_awaddr">
+      <obj_property name="ElementShortName">s_axi_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_awvalid">
+      <obj_property name="ElementShortName">s_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_awready">
+      <obj_property name="ElementShortName">s_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_wdata">
+      <obj_property name="ElementShortName">s_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_wstrb">
+      <obj_property name="ElementShortName">s_axi_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_wvalid">
+      <obj_property name="ElementShortName">s_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_wready">
+      <obj_property name="ElementShortName">s_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_bresp">
+      <obj_property name="ElementShortName">s_axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_bvalid">
+      <obj_property name="ElementShortName">s_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_bready">
+      <obj_property name="ElementShortName">s_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_araddr">
+      <obj_property name="ElementShortName">s_axi_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_arvalid">
+      <obj_property name="ElementShortName">s_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_arready">
+      <obj_property name="ElementShortName">s_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_rdata">
+      <obj_property name="ElementShortName">s_axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_rresp">
+      <obj_property name="ElementShortName">s_axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_rvalid">
+      <obj_property name="ElementShortName">s_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_rready">
+      <obj_property name="ElementShortName">s_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/rx_axis_tdata">
+      <obj_property name="ElementShortName">rx_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/rx_axis_tkeep">
+      <obj_property name="ElementShortName">rx_axis_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/rx_axis_tvalid">
+      <obj_property name="ElementShortName">rx_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/rx_axis_tlast">
+      <obj_property name="ElementShortName">rx_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/rx_axis_tuser">
+      <obj_property name="ElementShortName">rx_axis_tuser</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tuser</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/rx_axis_tready">
+      <obj_property name="ElementShortName">rx_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_clk">
+      <obj_property name="ElementShortName">s_axi_clk</obj_property>
+      <obj_property name="ObjectShortName">s_axi_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/axis_reset_n">
+      <obj_property name="ElementShortName">axis_reset_n</obj_property>
+      <obj_property name="ObjectShortName">axis_reset_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/tg_config">
+      <obj_property name="ElementShortName">tg_config[47:0]</obj_property>
+      <obj_property name="ObjectShortName">tg_config[47:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/s_axi_areset_n">
+      <obj_property name="ElementShortName">s_axi_areset_n</obj_property>
+      <obj_property name="ObjectShortName">s_axi_areset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/axis_clk">
+      <obj_property name="ElementShortName">axis_clk</obj_property>
+      <obj_property name="ObjectShortName">axis_clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/phy_status">
+      <obj_property name="ElementShortName">phy_status[7:0]</obj_property>
+      <obj_property name="ObjectShortName">phy_status[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tdata">
+      <obj_property name="ElementShortName">tx_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tkeep">
+      <obj_property name="ElementShortName">tx_axis_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tvalid">
+      <obj_property name="ElementShortName">tx_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tlast">
+      <obj_property name="ElementShortName">tx_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tuser">
+      <obj_property name="ElementShortName">tx_axis_tuser</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tuser</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tready">
+      <obj_property name="ElementShortName">tx_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/bb_rx_axis_tdata">
+      <obj_property name="ElementShortName">bb_rx_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/bb_rx_axis_tkeep">
+      <obj_property name="ElementShortName">bb_rx_axis_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/bb_rx_axis_tvalid">
+      <obj_property name="ElementShortName">bb_rx_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/bb_rx_axis_tlast">
+      <obj_property name="ElementShortName">bb_rx_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/bb_rx_axis_tuser">
+      <obj_property name="ElementShortName">bb_rx_axis_tuser</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tuser</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/bb_rx_axis_tready">
+      <obj_property name="ElementShortName">bb_rx_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/bb_tx_axis_tdata">
+      <obj_property name="ElementShortName">bb_tx_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/bb_tx_axis_tkeep">
+      <obj_property name="ElementShortName">bb_tx_axis_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/bb_tx_axis_tvalid">
+      <obj_property name="ElementShortName">bb_tx_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/bb_tx_axis_tlast">
+      <obj_property name="ElementShortName">bb_tx_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/bb_tx_axis_tuser">
+      <obj_property name="ElementShortName">bb_tx_axis_tuser</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tuser</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/bb_tx_axis_tready">
+      <obj_property name="ElementShortName">bb_tx_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tdata_g">
+      <obj_property name="ElementShortName">tx_axis_tdata_g[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tdata_g[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tkeep_g">
+      <obj_property name="ElementShortName">tx_axis_tkeep_g[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tkeep_g[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tvalid_g">
+      <obj_property name="ElementShortName">tx_axis_tvalid_g</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tvalid_g</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tlast_g">
+      <obj_property name="ElementShortName">tx_axis_tlast_g</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tlast_g</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tuser_g">
+      <obj_property name="ElementShortName">tx_axis_tuser_g</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tuser_g</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tdata_lb">
+      <obj_property name="ElementShortName">tx_axis_tdata_lb[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tdata_lb[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tkeep_lb">
+      <obj_property name="ElementShortName">tx_axis_tkeep_lb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tkeep_lb[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tvalid_lb">
+      <obj_property name="ElementShortName">tx_axis_tvalid_lb</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tvalid_lb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tlast_lb">
+      <obj_property name="ElementShortName">tx_axis_tlast_lb</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tlast_lb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tuser_lb">
+      <obj_property name="ElementShortName">tx_axis_tuser_lb</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tuser_lb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/rx_axis_tready_lb">
+      <obj_property name="ElementShortName">rx_axis_tready_lb</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tready_lb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/enable_loopback">
+      <obj_property name="ElementShortName">enable_loopback</obj_property>
+      <obj_property name="ObjectShortName">enable_loopback</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/enable_gen">
+      <obj_property name="ElementShortName">enable_gen</obj_property>
+      <obj_property name="ObjectShortName">enable_gen</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/data_payload">
+      <obj_property name="ElementShortName">data_payload[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_payload[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/packet_count">
+      <obj_property name="ElementShortName">packet_count[15:0]</obj_property>
+      <obj_property name="ObjectShortName">packet_count[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_byte_count">
+      <obj_property name="ElementShortName">tx_byte_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_byte_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/rx_byte_count">
+      <obj_property name="ElementShortName">rx_byte_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_byte_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_pkt_count">
+      <obj_property name="ElementShortName">tx_pkt_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_pkt_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/rx_pkt_count">
+      <obj_property name="ElementShortName">rx_pkt_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_pkt_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/lb_dropped_packet">
+      <obj_property name="ElementShortName">lb_dropped_packet</obj_property>
+      <obj_property name="ObjectShortName">lb_dropped_packet</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/enable_loopback_sync">
+      <obj_property name="ElementShortName">enable_loopback_sync</obj_property>
+      <obj_property name="ObjectShortName">enable_loopback_sync</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/enable_gen_sync">
+      <obj_property name="ElementShortName">enable_gen_sync</obj_property>
+      <obj_property name="ObjectShortName">enable_gen_sync</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/data_payload_sync">
+      <obj_property name="ElementShortName">data_payload_sync[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_payload_sync[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/packet_count_sync">
+      <obj_property name="ElementShortName">packet_count_sync[15:0]</obj_property>
+      <obj_property name="ObjectShortName">packet_count_sync[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_byte_count_sync">
+      <obj_property name="ElementShortName">tx_byte_count_sync[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_byte_count_sync[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/rx_byte_count_sync">
+      <obj_property name="ElementShortName">rx_byte_count_sync[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_byte_count_sync[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_pkt_count_sync">
+      <obj_property name="ElementShortName">tx_pkt_count_sync[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_pkt_count_sync[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/rx_pkt_count_sync">
+      <obj_property name="ElementShortName">rx_pkt_count_sync[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_pkt_count_sync[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/lb_dropped_pkt_sync">
+      <obj_property name="ElementShortName">lb_dropped_pkt_sync</obj_property>
+      <obj_property name="ObjectShortName">lb_dropped_pkt_sync</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/phy_status_sync">
+      <obj_property name="ElementShortName">phy_status_sync[7:0]</obj_property>
+      <obj_property name="ObjectShortName">phy_status_sync[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/enable_loopback_sim">
+      <obj_property name="ElementShortName">enable_loopback_sim</obj_property>
+      <obj_property name="ObjectShortName">enable_loopback_sim</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/enable_gen_sim">
+      <obj_property name="ElementShortName">enable_gen_sim</obj_property>
+      <obj_property name="ObjectShortName">enable_gen_sim</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/data_payload_sim">
+      <obj_property name="ElementShortName">data_payload_sim[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_payload_sim[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/packet_count_sim">
+      <obj_property name="ElementShortName">packet_count_sim[15:0]</obj_property>
+      <obj_property name="ObjectShortName">packet_count_sim[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_0/tx_axis_tready_g">
+      <obj_property name="ElementShortName">tx_axis_tready_g</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tready_g</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/AXIS_TDATA_WIDTH">
+      <obj_property name="ElementShortName">AXIS_TDATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AXIS_TDATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/XIL_MAC_ID_THIS">
+      <obj_property name="ElementShortName">XIL_MAC_ID_THIS[47:0]</obj_property>
+      <obj_property name="ObjectShortName">XIL_MAC_ID_THIS[47:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/XIL_MAC_ID_OTHER">
+      <obj_property name="ElementShortName">XIL_MAC_ID_OTHER[47:0]</obj_property>
+      <obj_property name="ObjectShortName">XIL_MAC_ID_OTHER[47:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/EXT_MAC_ID">
+      <obj_property name="ElementShortName">EXT_MAC_ID[47:0]</obj_property>
+      <obj_property name="ObjectShortName">EXT_MAC_ID[47:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/S_AXI_ADDR_WIDTH">
+      <obj_property name="ElementShortName">S_AXI_ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ADDR_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/S_AXI_DATA_WIDTH">
+      <obj_property name="ElementShortName">S_AXI_DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/S_AXI_MIN_SIZE">
+      <obj_property name="ElementShortName">S_AXI_MIN_SIZE[15:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_MIN_SIZE[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/S_AXI_BASE_ADDRESS">
+      <obj_property name="ElementShortName">S_AXI_BASE_ADDRESS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BASE_ADDRESS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/DESIGN_VERSION">
+      <obj_property name="ElementShortName">DESIGN_VERSION[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DESIGN_VERSION[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/ONE_SEC_CLOCK_COUNT">
+      <obj_property name="ElementShortName">ONE_SEC_CLOCK_COUNT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ONE_SEC_CLOCK_COUNT[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/AXIS_TKEEP_WIDTH">
+      <obj_property name="ElementShortName">AXIS_TKEEP_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AXIS_TKEEP_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_0/S_AXI_HIGH_ADDRESS">
+      <obj_property name="ElementShortName">S_AXI_HIGH_ADDRESS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_HIGH_ADDRESS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_awaddr">
+      <obj_property name="ElementShortName">s_axi_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_awvalid">
+      <obj_property name="ElementShortName">s_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_awready">
+      <obj_property name="ElementShortName">s_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_wdata">
+      <obj_property name="ElementShortName">s_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_wstrb">
+      <obj_property name="ElementShortName">s_axi_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_wvalid">
+      <obj_property name="ElementShortName">s_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_wready">
+      <obj_property name="ElementShortName">s_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_bresp">
+      <obj_property name="ElementShortName">s_axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_bvalid">
+      <obj_property name="ElementShortName">s_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_bready">
+      <obj_property name="ElementShortName">s_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_araddr">
+      <obj_property name="ElementShortName">s_axi_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_arvalid">
+      <obj_property name="ElementShortName">s_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_arready">
+      <obj_property name="ElementShortName">s_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_rdata">
+      <obj_property name="ElementShortName">s_axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_rresp">
+      <obj_property name="ElementShortName">s_axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_rvalid">
+      <obj_property name="ElementShortName">s_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_rready">
+      <obj_property name="ElementShortName">s_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/rx_axis_tdata">
+      <obj_property name="ElementShortName">rx_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/rx_axis_tkeep">
+      <obj_property name="ElementShortName">rx_axis_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/rx_axis_tvalid">
+      <obj_property name="ElementShortName">rx_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/rx_axis_tlast">
+      <obj_property name="ElementShortName">rx_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/rx_axis_tuser">
+      <obj_property name="ElementShortName">rx_axis_tuser</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tuser</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/rx_axis_tready">
+      <obj_property name="ElementShortName">rx_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_clk">
+      <obj_property name="ElementShortName">s_axi_clk</obj_property>
+      <obj_property name="ObjectShortName">s_axi_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/axis_reset_n">
+      <obj_property name="ElementShortName">axis_reset_n</obj_property>
+      <obj_property name="ObjectShortName">axis_reset_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/tg_config">
+      <obj_property name="ElementShortName">tg_config[47:0]</obj_property>
+      <obj_property name="ObjectShortName">tg_config[47:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/s_axi_areset_n">
+      <obj_property name="ElementShortName">s_axi_areset_n</obj_property>
+      <obj_property name="ObjectShortName">s_axi_areset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/axis_clk">
+      <obj_property name="ElementShortName">axis_clk</obj_property>
+      <obj_property name="ObjectShortName">axis_clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/phy_status">
+      <obj_property name="ElementShortName">phy_status[7:0]</obj_property>
+      <obj_property name="ObjectShortName">phy_status[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tdata">
+      <obj_property name="ElementShortName">tx_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tkeep">
+      <obj_property name="ElementShortName">tx_axis_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tvalid">
+      <obj_property name="ElementShortName">tx_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tlast">
+      <obj_property name="ElementShortName">tx_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tuser">
+      <obj_property name="ElementShortName">tx_axis_tuser</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tuser</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tready">
+      <obj_property name="ElementShortName">tx_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/bb_rx_axis_tdata">
+      <obj_property name="ElementShortName">bb_rx_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/bb_rx_axis_tkeep">
+      <obj_property name="ElementShortName">bb_rx_axis_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/bb_rx_axis_tvalid">
+      <obj_property name="ElementShortName">bb_rx_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/bb_rx_axis_tlast">
+      <obj_property name="ElementShortName">bb_rx_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/bb_rx_axis_tuser">
+      <obj_property name="ElementShortName">bb_rx_axis_tuser</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tuser</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/bb_rx_axis_tready">
+      <obj_property name="ElementShortName">bb_rx_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">bb_rx_axis_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/bb_tx_axis_tdata">
+      <obj_property name="ElementShortName">bb_tx_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/bb_tx_axis_tkeep">
+      <obj_property name="ElementShortName">bb_tx_axis_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/bb_tx_axis_tvalid">
+      <obj_property name="ElementShortName">bb_tx_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/bb_tx_axis_tlast">
+      <obj_property name="ElementShortName">bb_tx_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/bb_tx_axis_tuser">
+      <obj_property name="ElementShortName">bb_tx_axis_tuser</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tuser</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/bb_tx_axis_tready">
+      <obj_property name="ElementShortName">bb_tx_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">bb_tx_axis_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tdata_g">
+      <obj_property name="ElementShortName">tx_axis_tdata_g[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tdata_g[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tkeep_g">
+      <obj_property name="ElementShortName">tx_axis_tkeep_g[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tkeep_g[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tvalid_g">
+      <obj_property name="ElementShortName">tx_axis_tvalid_g</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tvalid_g</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tlast_g">
+      <obj_property name="ElementShortName">tx_axis_tlast_g</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tlast_g</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tuser_g">
+      <obj_property name="ElementShortName">tx_axis_tuser_g</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tuser_g</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tdata_lb">
+      <obj_property name="ElementShortName">tx_axis_tdata_lb[63:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tdata_lb[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tkeep_lb">
+      <obj_property name="ElementShortName">tx_axis_tkeep_lb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tkeep_lb[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tvalid_lb">
+      <obj_property name="ElementShortName">tx_axis_tvalid_lb</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tvalid_lb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tlast_lb">
+      <obj_property name="ElementShortName">tx_axis_tlast_lb</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tlast_lb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tuser_lb">
+      <obj_property name="ElementShortName">tx_axis_tuser_lb</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tuser_lb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/rx_axis_tready_lb">
+      <obj_property name="ElementShortName">rx_axis_tready_lb</obj_property>
+      <obj_property name="ObjectShortName">rx_axis_tready_lb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/enable_loopback">
+      <obj_property name="ElementShortName">enable_loopback</obj_property>
+      <obj_property name="ObjectShortName">enable_loopback</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/enable_gen">
+      <obj_property name="ElementShortName">enable_gen</obj_property>
+      <obj_property name="ObjectShortName">enable_gen</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/data_payload">
+      <obj_property name="ElementShortName">data_payload[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_payload[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/packet_count">
+      <obj_property name="ElementShortName">packet_count[15:0]</obj_property>
+      <obj_property name="ObjectShortName">packet_count[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_byte_count">
+      <obj_property name="ElementShortName">tx_byte_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_byte_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/rx_byte_count">
+      <obj_property name="ElementShortName">rx_byte_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_byte_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_pkt_count">
+      <obj_property name="ElementShortName">tx_pkt_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_pkt_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/rx_pkt_count">
+      <obj_property name="ElementShortName">rx_pkt_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_pkt_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/lb_dropped_packet">
+      <obj_property name="ElementShortName">lb_dropped_packet</obj_property>
+      <obj_property name="ObjectShortName">lb_dropped_packet</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/enable_loopback_sync">
+      <obj_property name="ElementShortName">enable_loopback_sync</obj_property>
+      <obj_property name="ObjectShortName">enable_loopback_sync</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/enable_gen_sync">
+      <obj_property name="ElementShortName">enable_gen_sync</obj_property>
+      <obj_property name="ObjectShortName">enable_gen_sync</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/data_payload_sync">
+      <obj_property name="ElementShortName">data_payload_sync[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_payload_sync[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/packet_count_sync">
+      <obj_property name="ElementShortName">packet_count_sync[15:0]</obj_property>
+      <obj_property name="ObjectShortName">packet_count_sync[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_byte_count_sync">
+      <obj_property name="ElementShortName">tx_byte_count_sync[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_byte_count_sync[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/rx_byte_count_sync">
+      <obj_property name="ElementShortName">rx_byte_count_sync[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_byte_count_sync[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_pkt_count_sync">
+      <obj_property name="ElementShortName">tx_pkt_count_sync[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_pkt_count_sync[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/rx_pkt_count_sync">
+      <obj_property name="ElementShortName">rx_pkt_count_sync[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_pkt_count_sync[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/lb_dropped_pkt_sync">
+      <obj_property name="ElementShortName">lb_dropped_pkt_sync</obj_property>
+      <obj_property name="ObjectShortName">lb_dropped_pkt_sync</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/phy_status_sync">
+      <obj_property name="ElementShortName">phy_status_sync[7:0]</obj_property>
+      <obj_property name="ObjectShortName">phy_status_sync[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/enable_loopback_sim">
+      <obj_property name="ElementShortName">enable_loopback_sim</obj_property>
+      <obj_property name="ObjectShortName">enable_loopback_sim</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/enable_gen_sim">
+      <obj_property name="ElementShortName">enable_gen_sim</obj_property>
+      <obj_property name="ObjectShortName">enable_gen_sim</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/data_payload_sim">
+      <obj_property name="ElementShortName">data_payload_sim[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_payload_sim[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/packet_count_sim">
+      <obj_property name="ElementShortName">packet_count_sim[15:0]</obj_property>
+      <obj_property name="ObjectShortName">packet_count_sim[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/top_i/axi_stream_gen_mon_1/tx_axis_tready_g">
+      <obj_property name="ElementShortName">tx_axis_tready_g</obj_property>
+      <obj_property name="ObjectShortName">tx_axis_tready_g</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/AXIS_TDATA_WIDTH">
+      <obj_property name="ElementShortName">AXIS_TDATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AXIS_TDATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/XIL_MAC_ID_THIS">
+      <obj_property name="ElementShortName">XIL_MAC_ID_THIS[47:0]</obj_property>
+      <obj_property name="ObjectShortName">XIL_MAC_ID_THIS[47:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/XIL_MAC_ID_OTHER">
+      <obj_property name="ElementShortName">XIL_MAC_ID_OTHER[47:0]</obj_property>
+      <obj_property name="ObjectShortName">XIL_MAC_ID_OTHER[47:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/EXT_MAC_ID">
+      <obj_property name="ElementShortName">EXT_MAC_ID[47:0]</obj_property>
+      <obj_property name="ObjectShortName">EXT_MAC_ID[47:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/S_AXI_ADDR_WIDTH">
+      <obj_property name="ElementShortName">S_AXI_ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ADDR_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/S_AXI_DATA_WIDTH">
+      <obj_property name="ElementShortName">S_AXI_DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/S_AXI_MIN_SIZE">
+      <obj_property name="ElementShortName">S_AXI_MIN_SIZE[15:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_MIN_SIZE[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/S_AXI_BASE_ADDRESS">
+      <obj_property name="ElementShortName">S_AXI_BASE_ADDRESS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BASE_ADDRESS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/DESIGN_VERSION">
+      <obj_property name="ElementShortName">DESIGN_VERSION[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DESIGN_VERSION[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/ONE_SEC_CLOCK_COUNT">
+      <obj_property name="ElementShortName">ONE_SEC_CLOCK_COUNT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ONE_SEC_CLOCK_COUNT[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/AXIS_TKEEP_WIDTH">
+      <obj_property name="ElementShortName">AXIS_TKEEP_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AXIS_TKEEP_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/top_i/axi_stream_gen_mon_1/S_AXI_HIGH_ADDRESS">
+      <obj_property name="ElementShortName">S_AXI_HIGH_ADDRESS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_HIGH_ADDRESS[31:0]</obj_property>
+   </wvobject>
+</wave_config>

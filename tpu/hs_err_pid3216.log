@@ -1,0 +1,26 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xb6aadb) [0x7f7192306adb]
+/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/lib//server/libjvm.so(JVM_handle_linux_signal+0xbb) [0x7f719230be1b]
+/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xb647b8) [0x7f71923007b8]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef20) [0x7f71de49df20]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_simbridge_kernel.so(SimBridge::WdbCommonReader::getLatestTime() const+0xc) [0x7f7197387c3c]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_simbridge_kernel.so(SimBridge::WdbLiveReader::getLatestTime() const+0x33) [0x7f719739aaa3]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_simbridge_kernel.so(SimBridge::WdbCommonReader::getValueEvent(long long, std::vector<SimBridge::WdbScalarBTree*, std::allocator<SimBridge::WdbScalarBTree*> > const&, SimBridge::WdbTimeByteValues&) const+0x232) [0x7f7197389802]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_simbridge_kernel.so(SimBridge::WdbLiveReader::getValueEvent(long long, std::vector<SimBridge::WdbScalarBTree*, std::allocator<SimBridge::WdbScalarBTree*> > const&, SimBridge::WdbTimeByteValues&) const+0x4f) [0x7f719739acef]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_wavedata.so(SimBridge::WdbDataSource::getValueTime(SimBridge::DataObj const*, long long, long long&, SimBridge::Value&) const+0x46c) [0x7f71a09646ac]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_wavedata.so(SimBridge::WdbDataSource::getValue(SimBridge::DataObj const*, long long, SimBridge::Value&) const+0x1a) [0x7f71a09648ea]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_wavedata.so(SimBridge::DataObjMgr::getValue(SimBridge::DataObj const*, long long, SimBridge::ValueFormat const&, bool, SimBridge::Value&) const+0x99d) [0x7f71a0961a2d]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_wavedata.so(SimBridge::DataReader::getValue(SimBridge::IDataObj const*, long long, SimBridge::ValueFormat const&, SimBridge::Value&) const+0x14b) [0x7f71a09706cb]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_wavedata.so(SG_Model::Model::getValue(SG_Model::WVDataObject const*, long long, SimBridge::Radix const&) const+0x101) [0x7f71a0a13db1]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVNameValueTreeModel::getCurrentValue[abi:cxx11](SG_Model::WVDataObject const*, long long, SimBridge::Radix) const+0xb1) [0x7f71a0a91dc1]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVWaveformTraverserValue::buildValueNodeItem(SG_Model::WVDataObject const*, WVValueNode*, WaveViewer::WVNameValueTreeModel::ITraverseHandler::ItemSize const&) const+0x80) [0x7f71a0ac2760]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVWaveformTraverserValue::handleItemSize(WaveViewer::WVNameValueTreeModel::ITraverseHandler::ItemSize const&)+0x8d) [0x7f71a0ac29dd]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVNameValueTreeModel::traverseYRange(SG_Model::WVDataObject const*, WaveViewer::WVNameValueTreeModel::ITraverseHandler&, int, int, int&, int&) const+0x268) [0x7f71a0a92388]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVNameValueTreeModel::traverseYRange(SG_Model::WVDataObject const*, WaveViewer::WVNameValueTreeModel::ITraverseHandler&, int, int, int&, int&) const+0x336) [0x7f71a0a92456]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVNameValueTreeModel::traverseYRange(WaveViewer::WVNameValueTreeModel::ITraverseHandler&, int, int) const+0x57) [0x7f71a0a93467]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_wavedata.so(WVExecutiveImp::getValueDataSize()+0xb6) [0x7f71a0a88746]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_wavedata.so(Java_ui_views_waveform_waveformi_WVExecutive_1getValueDataSize+0x17) [0x7f71a0ac9877]
+[0x7f71833b4291]

@@ -1,0 +1,11 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xb6aadb) [0x7fdfc1403adb]
+/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/lib//server/libjvm.so(JVM_handle_linux_signal+0xbb) [0x7fdfc1408e1b]
+/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xb647b8) [0x7fdfc13fd7b8]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef20) [0x7fe00d59af20]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_common.so(HI18N::convert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&)+0x1e) [0x7fe00e64a2de]
+/tools/Xilinx/Vivado/2019.2/lib/lnx64.o/librdi_runs.so(Java_ui_data_experiment_xperimenti_ExpFlowStep_1getName+0x43) [0x7fdfd43443a3]
+[0x7fdfa9732db5]

@@ -1,0 +1,734 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:43 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sub_duc'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of sub_duc (xilinx.com:ip:c_addsub:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:42 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sub_ddc'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of sub_ddc (xilinx.com:ip:c_addsub:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:42 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'rs_encoder'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of rs_encoder (xilinx.com:ip:rs_encoder:9.0 (Rev. 16)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:41 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'rs_decoder'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of rs_decoder (xilinx.com:ip:rs_decoder:9.0 (Rev. 17)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:40 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mult_duc'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mult_duc (xilinx.com:ip:mult_gen:12.0 (Rev. 16)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:39 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mult_ddc'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mult_ddc (xilinx.com:ip:mult_gen:12.0 (Rev. 16)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:39 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'interpolation_infifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of interpolation_infifo (xilinx.com:ip:axis_data_fifo:2.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:38 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fir_out_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of fir_out_fifo (xilinx.com:ip:axis_data_fifo:2.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:38 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fir_compiler_t'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of fir_compiler_t (xilinx.com:ip:fir_compiler:7.2 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:36 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fir_compiler_r'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of fir_compiler_r (xilinx.com:ip:fir_compiler:7.2 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:33 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'duc_out_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of duc_out_fifo (xilinx.com:ip:axis_data_fifo:2.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:32 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'decimation_infifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of decimation_infifo (xilinx.com:ip:axis_data_fifo:2.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:32 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'deci_firout_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of deci_firout_fifo (xilinx.com:ip:axis_data_fifo:2.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:31 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dds_rq'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of dds_rq (xilinx.com:ip:dds_compiler:6.0 (Rev. 19)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:30 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dds_ri'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of dds_ri (xilinx.com:ip:dds_compiler:6.0 (Rev. 19)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:29 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dds_125m_q'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of dds_125m_q (xilinx.com:ip:dds_compiler:6.0 (Rev. 19)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:27 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dds_125m_i'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of dds_125m_i (xilinx.com:ip:dds_compiler:6.0 (Rev. 19)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'Latency' from '3' to '4' has been ignored for IP 'dds_125m_i'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:dds_compiler:6.0 -user_name dds_125m_i
+set_property -dict "\
+  CONFIG.Amplitude_Mode {Unit_Circle} \
+  CONFIG.Channels {1} \
+  CONFIG.Component_Name {dds_125m_i} \
+  CONFIG.DATA_Has_TLAST {Not_Required} \
+  CONFIG.DDS_Clock_Rate {250} \
+  CONFIG.DSP48_Use {Minimal} \
+  CONFIG.Frequency_Resolution {0.4} \
+  CONFIG.GUI_Behaviour {Coregen} \
+  CONFIG.Has_ACLKEN {false} \
+  CONFIG.Has_ARESETn {false} \
+  CONFIG.Has_Phase_Out {true} \
+  CONFIG.Has_TREADY {false} \
+  CONFIG.Latency {4} \
+  CONFIG.Latency_Configuration {Auto} \
+  CONFIG.M_AXIS_DATA.CLK_DOMAIN {} \
+  CONFIG.M_AXIS_DATA.FREQ_HZ {100000000} \
+  CONFIG.M_AXIS_DATA.HAS_TKEEP {0} \
+  CONFIG.M_AXIS_DATA.HAS_TLAST {0} \
+  CONFIG.M_AXIS_DATA.HAS_TREADY {0} \
+  CONFIG.M_AXIS_DATA.HAS_TSTRB {0} \
+  CONFIG.M_AXIS_DATA.INSERT_VIP {0} \
+  CONFIG.M_AXIS_DATA.LAYERED_METADATA {undef} \
+  CONFIG.M_AXIS_DATA.PHASE {0.000} \
+  CONFIG.M_AXIS_DATA.TDATA_NUM_BYTES {1} \
+  CONFIG.M_AXIS_DATA.TDEST_WIDTH {0} \
+  CONFIG.M_AXIS_DATA.TID_WIDTH {0} \
+  CONFIG.M_AXIS_DATA.TUSER_WIDTH {0} \
+  CONFIG.M_AXIS_PHASE.CLK_DOMAIN {} \
+  CONFIG.M_AXIS_PHASE.FREQ_HZ {100000000} \
+  CONFIG.M_AXIS_PHASE.HAS_TKEEP {0} \
+  CONFIG.M_AXIS_PHASE.HAS_TLAST {0} \
+  CONFIG.M_AXIS_PHASE.HAS_TREADY {0} \
+  CONFIG.M_AXIS_PHASE.HAS_TSTRB {0} \
+  CONFIG.M_AXIS_PHASE.INSERT_VIP {0} \
+  CONFIG.M_AXIS_PHASE.LAYERED_METADATA {undef} \
+  CONFIG.M_AXIS_PHASE.PHASE {0.000} \
+  CONFIG.M_AXIS_PHASE.TDATA_NUM_BYTES {2} \
+  CONFIG.M_AXIS_PHASE.TDEST_WIDTH {0} \
+  CONFIG.M_AXIS_PHASE.TID_WIDTH {0} \
+  CONFIG.M_AXIS_PHASE.TUSER_WIDTH {0} \
+  CONFIG.M_DATA_Has_TUSER {Not_Required} \
+  CONFIG.M_PHASE_Has_TUSER {Not_Required} \
+  CONFIG.Memory_Type {Auto} \
+  CONFIG.Mode_of_Operation {Standard} \
+  CONFIG.Modulus {9} \
+  CONFIG.Negative_Cosine {false} \
+  CONFIG.Negative_Sine {false} \
+  CONFIG.Noise_Shaping {None} \
+  CONFIG.OUTPUT_FORM {Twos_Complement} \
+  CONFIG.Optimization_Goal {Auto} \
+  CONFIG.Output_Frequency1 {0} \
+  CONFIG.Output_Frequency10 {0} \
+  CONFIG.Output_Frequency11 {0} \
+  CONFIG.Output_Frequency12 {0} \
+  CONFIG.Output_Frequency13 {0} \
+  CONFIG.Output_Frequency14 {0} \
+  CONFIG.Output_Frequency15 {0} \
+  CONFIG.Output_Frequency16 {0} \
+  CONFIG.Output_Frequency2 {0} \
+  CONFIG.Output_Frequency3 {0} \
+  CONFIG.Output_Frequency4 {0} \
+  CONFIG.Output_Frequency5 {0} \
+  CONFIG.Output_Frequency6 {0} \
+  CONFIG.Output_Frequency7 {0} \
+  CONFIG.Output_Frequency8 {0} \
+  CONFIG.Output_Frequency9 {0} \
+  CONFIG.Output_Selection {Cosine} \
+  CONFIG.Output_Width {8} \
+  CONFIG.PINC1 {0001100110011001} \
+  CONFIG.PINC10 {0} \
+  CONFIG.PINC11 {0} \
+  CONFIG.PINC12 {0} \
+  CONFIG.PINC13 {0} \
+  CONFIG.PINC14 {0} \
+  CONFIG.PINC15 {0} \
+  CONFIG.PINC16 {0} \
+  CONFIG.PINC2 {0} \
+  CONFIG.PINC3 {0} \
+  CONFIG.PINC4 {0} \
+  CONFIG.PINC5 {0} \
+  CONFIG.PINC6 {0} \
+  CONFIG.PINC7 {0} \
+  CONFIG.PINC8 {0} \
+  CONFIG.PINC9 {0} \
+  CONFIG.POFF1 {0} \
+  CONFIG.POFF10 {0} \
+  CONFIG.POFF11 {0} \
+  CONFIG.POFF12 {0} \
+  CONFIG.POFF13 {0} \
+  CONFIG.POFF14 {0} \
+  CONFIG.POFF15 {0} \
+  CONFIG.POFF16 {0} \
+  CONFIG.POFF2 {0} \
+  CONFIG.POFF3 {0} \
+  CONFIG.POFF4 {0} \
+  CONFIG.POFF5 {0} \
+  CONFIG.POFF6 {0} \
+  CONFIG.POFF7 {0} \
+  CONFIG.POFF8 {0} \
+  CONFIG.POFF9 {0} \
+  CONFIG.POR_mode {false} \
+  CONFIG.Parameter_Entry {Hardware_Parameters} \
+  CONFIG.PartsPresent {Phase_Generator_and_SIN_COS_LUT} \
+  CONFIG.Phase_Increment {Fixed} \
+  CONFIG.Phase_Offset_Angles1 {0} \
+  CONFIG.Phase_Offset_Angles10 {0} \
+  CONFIG.Phase_Offset_Angles11 {0} \
+  CONFIG.Phase_Offset_Angles12 {0} \
+  CONFIG.Phase_Offset_Angles13 {0} \
+  CONFIG.Phase_Offset_Angles14 {0} \
+  CONFIG.Phase_Offset_Angles15 {0} \
+  CONFIG.Phase_Offset_Angles16 {0} \
+  CONFIG.Phase_Offset_Angles2 {0} \
+  CONFIG.Phase_Offset_Angles3 {0} \
+  CONFIG.Phase_Offset_Angles4 {0} \
+  CONFIG.Phase_Offset_Angles5 {0} \
+  CONFIG.Phase_Offset_Angles6 {0} \
+  CONFIG.Phase_Offset_Angles7 {0} \
+  CONFIG.Phase_Offset_Angles8 {0} \
+  CONFIG.Phase_Offset_Angles9 {0} \
+  CONFIG.Phase_Width {16} \
+  CONFIG.Phase_offset {None} \
+  CONFIG.Resync {false} \
+  CONFIG.S_CONFIG_Sync_Mode {On_Vector} \
+  CONFIG.S_PHASE_Has_TUSER {Not_Required} \
+  CONFIG.S_PHASE_TUSER_Width {1} \
+  CONFIG.Spurious_Free_Dynamic_Range {45} \
+  CONFIG.aclk_intf.ASSOCIATED_BUSIF {M_AXIS_PHASE:S_AXIS_CONFIG:M_AXIS_DATA:S_AXIS_PHASE} \
+  CONFIG.aclk_intf.ASSOCIATED_CLKEN {aclken} \
+  CONFIG.aclk_intf.ASSOCIATED_RESET {aresetn} \
+  CONFIG.aclk_intf.CLK_DOMAIN {} \
+  CONFIG.aclk_intf.FREQ_HZ {100000000} \
+  CONFIG.aclk_intf.INSERT_VIP {0} \
+  CONFIG.aclk_intf.PHASE {0.000} \
+  CONFIG.aclken_intf.POLARITY {ACTIVE_HIGH} \
+  CONFIG.aresetn_intf.INSERT_VIP {0} \
+  CONFIG.aresetn_intf.POLARITY {ACTIVE_LOW} \
+  CONFIG.event_phase_in_invalid_intf.PortWidth {1} \
+  CONFIG.event_phase_in_invalid_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.event_pinc_invalid_intf.PortWidth {1} \
+  CONFIG.event_pinc_invalid_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.event_poff_invalid_intf.PortWidth {1} \
+  CONFIG.event_poff_invalid_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.event_s_config_tlast_missing_intf.PortWidth {1} \
+  CONFIG.event_s_config_tlast_missing_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.event_s_config_tlast_unexpected_intf.PortWidth {1} \
+  CONFIG.event_s_config_tlast_unexpected_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.event_s_phase_chanid_incorrect_intf.PortWidth {1} \
+  CONFIG.event_s_phase_chanid_incorrect_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.event_s_phase_tlast_missing_intf.PortWidth {1} \
+  CONFIG.event_s_phase_tlast_missing_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.event_s_phase_tlast_unexpected_intf.PortWidth {1} \
+  CONFIG.event_s_phase_tlast_unexpected_intf.SENSITIVITY {EDGE_RISING} \
+  CONFIG.explicit_period {false} \
+  CONFIG.period {1} " [get_ips dds_125m_i]
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:26 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ddc_out_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ddc_out_fifo (xilinx.com:ip:axis_data_fifo:2.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:25 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'axis_fifo_t8'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of axis_fifo_t8 (xilinx.com:ip:axis_data_fifo:2.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:25 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'axis_fifo_t'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of axis_fifo_t (xilinx.com:ip:axis_data_fifo:2.0 (Rev. 2)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'PROG_FULL_THRESH' from '11' to '330' has been ignored for IP 'axis_fifo_t'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axis_data_fifo:2.0 -user_name axis_fifo_t
+set_property -dict "\
+  CONFIG.ACLKEN_CONV_MODE {0} \
+  CONFIG.Component_Name {axis_fifo_t} \
+  CONFIG.ENABLE_ECC {0} \
+  CONFIG.FIFO_DEPTH {1024} \
+  CONFIG.FIFO_MEMORY_TYPE {auto} \
+  CONFIG.FIFO_MODE {1} \
+  CONFIG.HAS_AEMPTY {0} \
+  CONFIG.HAS_AFULL {0} \
+  CONFIG.HAS_ECC_ERR_INJECT {0} \
+  CONFIG.HAS_PROG_EMPTY {0} \
+  CONFIG.HAS_PROG_FULL {0} \
+  CONFIG.HAS_RD_DATA_COUNT {0} \
+  CONFIG.HAS_TKEEP {0} \
+  CONFIG.HAS_TLAST {1} \
+  CONFIG.HAS_TREADY {1} \
+  CONFIG.HAS_TSTRB {0} \
+  CONFIG.HAS_WR_DATA_COUNT {0} \
+  CONFIG.IS_ACLK_ASYNC {0} \
+  CONFIG.M_AXIS.CLK_DOMAIN {} \
+  CONFIG.M_AXIS.FREQ_HZ {100000000} \
+  CONFIG.M_AXIS.HAS_TKEEP {0} \
+  CONFIG.M_AXIS.HAS_TLAST {1} \
+  CONFIG.M_AXIS.HAS_TREADY {1} \
+  CONFIG.M_AXIS.HAS_TSTRB {0} \
+  CONFIG.M_AXIS.INSERT_VIP {0} \
+  CONFIG.M_AXIS.LAYERED_METADATA {undef} \
+  CONFIG.M_AXIS.PHASE {0.000} \
+  CONFIG.M_AXIS.TDATA_NUM_BYTES {2} \
+  CONFIG.M_AXIS.TDEST_WIDTH {0} \
+  CONFIG.M_AXIS.TID_WIDTH {0} \
+  CONFIG.M_AXIS.TUSER_WIDTH {0} \
+  CONFIG.PROG_EMPTY_THRESH {5} \
+  CONFIG.PROG_FULL_THRESH {330} \
+  CONFIG.SYNCHRONIZATION_STAGES {3} \
+  CONFIG.S_AXIS.CLK_DOMAIN {} \
+  CONFIG.S_AXIS.FREQ_HZ {100000000} \
+  CONFIG.S_AXIS.HAS_TKEEP {0} \
+  CONFIG.S_AXIS.HAS_TLAST {1} \
+  CONFIG.S_AXIS.HAS_TREADY {1} \
+  CONFIG.S_AXIS.HAS_TSTRB {0} \
+  CONFIG.S_AXIS.INSERT_VIP {0} \
+  CONFIG.S_AXIS.LAYERED_METADATA {undef} \
+  CONFIG.S_AXIS.PHASE {0.000} \
+  CONFIG.S_AXIS.TDATA_NUM_BYTES {2} \
+  CONFIG.S_AXIS.TDEST_WIDTH {0} \
+  CONFIG.S_AXIS.TID_WIDTH {0} \
+  CONFIG.S_AXIS.TUSER_WIDTH {0} \
+  CONFIG.S_CLKIF.ASSOCIATED_BUSIF {S_AXIS} \
+  CONFIG.S_CLKIF.ASSOCIATED_RESET {} \
+  CONFIG.S_CLKIF.CLK_DOMAIN {} \
+  CONFIG.S_CLKIF.FREQ_HZ {100000000} \
+  CONFIG.S_CLKIF.INSERT_VIP {0} \
+  CONFIG.S_CLKIF.PHASE {0.000} \
+  CONFIG.S_RSTIF.INSERT_VIP {0} \
+  CONFIG.S_RSTIF.POLARITY {ACTIVE_LOW} \
+  CONFIG.TDATA_NUM_BYTES {2} \
+  CONFIG.TDEST_WIDTH {0} \
+  CONFIG.TID_WIDTH {0} \
+  CONFIG.TUSER_WIDTH {0} " [get_ips axis_fifo_t]
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:24 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'add_duc'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of add_duc (xilinx.com:ip:c_addsub:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed May 20 01:47:23 2020
+| Host         : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'add_ddc'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of add_ddc (xilinx.com:ip:c_addsub:12.0 (Rev. 14)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Mar 18 14:08:35 2020
+| Host         : DESKTOP-4A374NS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcvu9p-flga2104-2L-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'rs_encoder'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of rs_encoder (xilinx.com:ip:rs_encoder:9.0) from (Rev. 13) to (Rev. 16)
+

@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../tpu.srcs/sources_1/ip/upfir/sim/upfir.vhd" \
+
+nosort
