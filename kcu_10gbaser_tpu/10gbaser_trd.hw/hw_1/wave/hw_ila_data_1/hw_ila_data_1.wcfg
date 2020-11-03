@@ -9,13 +9,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="2049fs"></ZoomEndTime>
+      <ZoomStartTime time="790fs"></ZoomStartTime>
+      <ZoomEndTime time="1197fs"></ZoomEndTime>
       <Cursor1Time time="760fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="254"></NameColumnWidth>
-      <ValueColumnWidth column_width="77"></ValueColumnWidth>
+      <ValueColumnWidth column_width="73"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="4" />
    <wave_markers>
@@ -26,7 +26,7 @@
       <obj_property name="Detail_Data">Interface_(i1:s0)_(s_axis_tx_0_1)_tooltip</obj_property>
       <obj_property name="Render_Data">Interface_(i1:s0)_(s_axis_tx_0_1)</obj_property>
       <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
-      <obj_property name="CustomSignalColor">Cornsilk</obj_property>
+      <obj_property name="CustomSignalColor">OliveDrab</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       <wvobject fp_name="group480" type="group">
@@ -96,7 +96,7 @@
       <obj_property name="Detail_Data">Interface_(i1:s1)_(mac_phy_ch0_m_axis_rx)_tooltip</obj_property>
       <obj_property name="Render_Data">Interface_(i1:s1)_(mac_phy_ch0_m_axis_rx)</obj_property>
       <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
-      <obj_property name="CustomSignalColor">Cornsilk</obj_property>
+      <obj_property name="CustomSignalColor">OliveDrab</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       <wvobject fp_name="group488" type="group">
@@ -158,7 +158,7 @@
       <obj_property name="Detail_Data">Interface_(i1:s2)_(s_axis_tx_1_1)_tooltip</obj_property>
       <obj_property name="Render_Data">Interface_(i1:s2)_(s_axis_tx_1_1)</obj_property>
       <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
-      <obj_property name="CustomSignalColor">OliveDrab</obj_property>
+      <obj_property name="CustomSignalColor">Cornsilk</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       <wvobject fp_name="group495" type="group">
@@ -228,7 +228,7 @@
       <obj_property name="Detail_Data">Interface_(i1:s3)_(mac_phy_ch1_m_axis_rx)_tooltip</obj_property>
       <obj_property name="Render_Data">Interface_(i1:s3)_(mac_phy_ch1_m_axis_rx)</obj_property>
       <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
-      <obj_property name="CustomSignalColor">OliveDrab</obj_property>
+      <obj_property name="CustomSignalColor">Cornsilk</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       <wvobject fp_name="group503" type="group">

@@ -61,7 +61,7 @@ vcom -work dds_compiler_v6_0_19 -64 -93 \
 "../../../ipstatic/hdl/dds_compiler_v6_0_vh_rfs.vhd" \
 
 vcom -work xil_defaultlib -64 -93 \
-"../../../../10gbaser_trd.srcs/sources_1/ip/dds_rq/sim/dds_rq.vhd" \
+"../../../../10gbaser_trd.srcs/sources_1/new/tpu_source/ip/dds_rq/sim/dds_rq.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

@@ -9,17 +9,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="360fs"></ZoomStartTime>
-      <ZoomEndTime time="921fs"></ZoomEndTime>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="706fs"></ZoomEndTime>
       <Cursor1Time time="284fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="219"></NameColumnWidth>
-      <ValueColumnWidth column_width="65"></ValueColumnWidth>
+      <ValueColumnWidth column_width="61"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="20" />
-   <wave_markers>
-   </wave_markers>
    <wvobject fp_name="tpu/layer1/layer1_receive/crc_detector_tready" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">tpu/layer1/layer1_receive/crc_detector_tready[0:0]</obj_property>

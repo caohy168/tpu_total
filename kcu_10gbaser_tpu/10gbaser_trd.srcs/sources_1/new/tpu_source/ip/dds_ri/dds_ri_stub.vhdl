@@ -1,10 +1,9 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Sun Oct 18 18:58:22 2020
--- Host        : ubuntu running 64-bit Ubuntu 18.04.5 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/caohy/work/kcu_10gbaser_tpu/10gbaser_trd.srcs/sources_1/new/tpu_source/ip/dds_ri/dds_ri_stub.vhdl
+-- Date        : Wed May 20 01:51:41 2020
+-- Host        : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+-- Command     : write_vhdl -force -mode synth_stub /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/dds_ri/dds_ri_stub.vhdl
 -- Design      : dds_ri
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xcku040-ffva1156-2-e

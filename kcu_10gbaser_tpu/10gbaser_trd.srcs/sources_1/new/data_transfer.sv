@@ -4,6 +4,7 @@
 // Engineer: caohy
 // 
 // Create Date: 2020/03/10 12:38:15
+// add comment line to be more understand and modify 2020/03/11
 // Design Name: Telecommunications processing unit
 // Module Name: tpu
 // Project Name: BFB(base frequency band) research group
@@ -27,28 +28,28 @@ module data_transfer #(
 
   input                        aclk,
   input                        reset,  
-  
+  //DATA FROM 10G MAC
   input [AXIS_TDATA_WIDTH-1:0] rx_axis_tdata_right,
   input [AXIS_TKEEP_WIDTH-1:0] rx_axis_tkeep_right,
   input                        rx_axis_tvalid_right,
   input                        rx_axis_tlast_right,
   input                        rx_axis_tuser_right,
   output logic                 rx_axis_tready_right,
-  
+  //DATA TO TPU BAESBAND 
   output logic[AXIS_TDATA_WIDTH-1:0]tx_axis_tdata_right,
   output logic[AXIS_TKEEP_WIDTH-1:0]tx_axis_tkeep_right,
   output logic                      tx_axis_tvalid_right,
   output logic                      tx_axis_tlast_right,
   output logic                      tx_axis_tuser_right,
   input                             tx_axis_tready_right,
-  
+  //DATA FROM TPU BASEBAND
   input [AXIS_TDATA_WIDTH-1:0] rx_axis_tdata_left,
   input [AXIS_TKEEP_WIDTH-1:0] rx_axis_tkeep_left,
   input                        rx_axis_tvalid_left,
   input                        rx_axis_tlast_left,
   input                        rx_axis_tuser_left,
   output logic                 rx_axis_tready_left,
-  
+  //DATA TO 10G MAC
   output logic[AXIS_TDATA_WIDTH-1:0]tx_axis_tdata_left,
   output logic[AXIS_TKEEP_WIDTH-1:0]tx_axis_tkeep_left,
   output logic                      tx_axis_tvalid_left,
@@ -63,7 +64,7 @@ logic [63:00]lane2_pkg_dat_right[59:1];
 logic [07:00]lane2_pkg_dat8_right[472:1];
 logic [15:00]lane2_i;
 always @ (posedge aclk) begin
-    if(mux_number==2)begin
+    if(mux_number==2)begin//receive date from 10g MAC put into 64bit buffer lane2_pkg_dat_right
         if(rx_axis_tvalid_right)begin
             lane2_i=lane2_i+1;
             lane2_pkg_dat_right[lane2_i]=rx_axis_tdata_right;
@@ -71,7 +72,7 @@ always @ (posedge aclk) begin
         else lane2_i=0;
     end
     else lane2_pkg_dat_right=lane2_pkg_dat_right;
-    
+    //transfer 64bit databus to 8bit databus by 64bit buffer lane2_pkg_dat_right ans 8bit buffer lane2_pkg_dat8_right
     lane2_pkg_dat8_right[8*lane2_i-7][07:00]=lane2_pkg_dat_right[lane2_i][07:00];
     lane2_pkg_dat8_right[8*lane2_i-6][07:00]=lane2_pkg_dat_right[lane2_i][15:08];
     lane2_pkg_dat8_right[8*lane2_i-5][07:00]=lane2_pkg_dat_right[lane2_i][23:16];
@@ -82,6 +83,10 @@ always @ (posedge aclk) begin
     lane2_pkg_dat8_right[8*lane2_i-0][07:00]=lane2_pkg_dat_right[lane2_i][63:56];
 end
 
+//data tranfer state control
+//state0 wait data tranfer from 10g MAC
+//state1 save data from 10g MAC into bufer(lane2_pkg_dat_right and lane2_pkg_dat8_right) 
+//transfer the date to tpu baseband process
 always @ (posedge aclk) begin
     case (mux_number)
         2:begin

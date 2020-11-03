@@ -1,9 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../10gbaser_trd.ip_user_files/ipstatic/hdl" --include "../../../../../10gbaser_trd.srcs/sources_1/new" --include "../../../../../10gbaser_trd.srcs/sources_1/ip/tpu_clock_mm" -d "SIMULATION=1" -d "OOB_SIM=1" \
-"tb_func_synth.v" \
-
-sv xil_defaultlib  --include "../../../../../10gbaser_trd.ip_user_files/ipstatic/hdl" --include "../../../../../10gbaser_trd.srcs/sources_1/new" --include "../../../../../10gbaser_trd.srcs/sources_1/ip/tpu_clock_mm" -d "SIMULATION=1" -d "OOB_SIM=1" \
-"../../../../../10gbaser_trd.srcs/sources_1/new/tb.sv" \
-
-# Do not sort compile order
-nosort

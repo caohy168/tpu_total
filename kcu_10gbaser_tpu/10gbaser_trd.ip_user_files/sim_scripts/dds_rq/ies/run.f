@@ -34,7 +34,7 @@
   "../../../ipstatic/hdl/dds_compiler_v6_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../../10gbaser_trd.srcs/sources_1/ip/dds_rq/sim/dds_rq.vhd" \
+  "../../../../10gbaser_trd.srcs/sources_1/new/tpu_source/ip/dds_rq/sim/dds_rq.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v
