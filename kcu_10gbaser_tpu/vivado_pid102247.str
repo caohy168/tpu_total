@@ -15381,3 +15381,90 @@ selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 590, 213); // n (q, cr)
 // Elapsed time: 99 seconds
 selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 407, 253); // n (q, cr)
 // HMemoryUtils.trashcanNow. Engine heap size: 2,428 MB. GUI used memory: 113 MB. Current time: 11/3/20, 2:05:46 AM PST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 304 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 722, 161); // n (q, cr)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // aj (cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [HDL 9-849] Syntax error : file ended before end of clause. [/home/caohy/Downloads/kcu_10gbaser_tpu/10gbaser_trd.srcs/sources_1/new/tpu_source/ip/rs_decoder/hdl/axi_utils_v2_0_vh_rfs.vhd:3842]. ]", 3, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/caohy/Downloads/kcu_10gbaser_tpu/10gbaser_trd.srcs/sources_1/new/tpu_source/ip/rs_decoder/hdl/axi_utils_v2_0_vh_rfs.vhd;-;;-;16;-;line;-;3842;-;;-;16;-;"); // ah (O, cr)
+// ad (cr): Unable to Open File: addNotify
+// Elapsed time: 11 seconds
+selectButton(PAResourceOtoP.OpenFileAction_CANCEL, "Cancel"); // a (ad)
+selectButton(PAResourceOtoP.OpenFileAction_CANCEL, "Cancel"); // a (ad)
+dismissDialog("Unable to Open File"); // ad (cr)
+selectCodeEditor("layer1_transmit.sv", 340, 554); // ch (w, cr)
+selectCodeEditor("layer1_transmit.sv", 266, 456); // ch (w, cr)
+selectCodeEditor("layer1_transmit.sv", 266, 456, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("layer1_transmit.sv", 268, 381); // ch (w, cr)
+selectCodeEditor("layer1_transmit.sv", 268, 381, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb (tb.sv), kcu10gbaser_tpu_top : kcu10gbaser_tpu_top (kcu10gbaser_tpu_top.sv), tpu : tpu (tpu.sv), layer1 : layer1 (layer1.sv), layer1_receive : layer1_receive (layer1_receive.sv)]", 21, false); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb (tb.sv), kcu10gbaser_tpu_top : kcu10gbaser_tpu_top (kcu10gbaser_tpu_top.sv), tpu : tpu (tpu.sv), layer1 : layer1 (layer1.sv), layer1_receive : layer1_receive (layer1_receive.sv)]", 21); // B (F, cr)
+selectCodeEditor("layer1_transmit.sv", 330, 517); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rs_decoder.vhd", 9); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "layer1_receive.sv", 8); // i (h, cr)
+selectCodeEditor("layer1_receive.sv", 371, 202); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; opt_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Tue Nov 03 02:08:38 PST 2020 ; 00:01:53 ; Vivado Implementation Defaults (Vivado Implementation 2017) ; Vivado Implementation Default Reports (Vivado Implementation 2017) ; xcku040-ffva1156-2-e ;  ; Default settings for Implementation.", 1, "impl_1", 0, false); // az (O, cr)
+selectButton(PAResourceEtoH.ExploreAheadView_RESET_SELECTED_RUNS, "Design Runs_reset"); // E (f, cr)
+// r (cr): Reset Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "Reset"); // a (r)
+// r (cr): Reset Runs: addNotify
+// bB (r):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+selectButton(RDIResource.BaseDialog_OK, "Reset"); // a (r)
+dismissDialog("Resetting Runs"); // bB (r)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ; 42618 ; 40802 ; 0.0 ; 0 ; 0 ; Tue Nov 03 01:59:20 PST 2020 ; 00:09:10 ; Vivado Synthesis Defaults* (Vivado Synthesis 2017) ; Vivado Synthesis Default Reports (Vivado Synthesis 2017) ; xcku040-ffva1156-2-e ;  ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // az (O, cr) - Node
+selectButton(PAResourceEtoH.ExploreAheadView_RESET_SELECTED_RUNS, "Design Runs_reset"); // E (f, cr)
+// r (cr): Reset Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "Reset"); // a (r)
+// r (cr): Reset Runs: addNotify
+// bB (r):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.BaseDialog_OK, "Reset"); // a (r)
+dismissDialog("Resetting Runs"); // bB (r)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults (Vivado Implementation 2017) ; Vivado Implementation Default Reports (Vivado Implementation 2017) ; xcku040-ffva1156-2-e ;  ; Default settings for Implementation.", 1, "impl_1", 0, false); // az (O, cr)
+selectButton(PAResourceEtoH.ExploreAheadView_LAUNCH_SELECTED_RUNS, "Design Runs_launch_runs"); // E (f, cr)
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Starting Design Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 16 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Tue Nov  3 02:11:51 2020] Launched synth_1... Run output will be captured here: /home/caohy/Downloads/kcu_10gbaser_tpu/10gbaser_trd.runs/synth_1/runme.log [Tue Nov  3 02:11:51 2020] Launched impl_1... Run output will be captured here: /home/caohy/Downloads/kcu_10gbaser_tpu/10gbaser_trd.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Starting Design Runs"); // bB (cr)
+selectCodeEditor("layer1_receive.sv", 405, 283); // ch (w, cr)
