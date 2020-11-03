@@ -27,3 +27,38 @@ current_wave_config {axi_stram_gen_mon0.wcfg}
 add_wave {{/tb/kcu10gbaser_tpu_top/data_transfer/aclk}} {{/tb/kcu10gbaser_tpu_top/data_transfer/reset}} {{/tb/kcu10gbaser_tpu_top/data_transfer/rx_axis_tdata_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/rx_axis_tkeep_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/rx_axis_tvalid_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/rx_axis_tlast_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/rx_axis_tuser_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/rx_axis_tready_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tx_axis_tdata_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tx_axis_tkeep_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tx_axis_tvalid_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tx_axis_tlast_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tx_axis_tuser_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tx_axis_tready_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/rx_axis_tdata_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/rx_axis_tkeep_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/rx_axis_tvalid_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/rx_axis_tlast_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/rx_axis_tuser_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/rx_axis_tready_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tx_axis_tdata_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tx_axis_tkeep_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tx_axis_tvalid_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tx_axis_tlast_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tx_axis_tuser_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tx_axis_tready_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tranfer_state_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/pkg_cnt_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/lane2_pkg_dat_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/lane2_pkg_dat8_right}} {{/tb/kcu10gbaser_tpu_top/data_transfer/lane2_i}} {{/tb/kcu10gbaser_tpu_top/data_transfer/pkg_cnt_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/lane2_pkg_dat_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/lane2_pkg_dat8_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tranfer_state_left}} {{/tb/kcu10gbaser_tpu_top/data_transfer/tranfer_pkg_cnt_left}} 
 restart
 run all
+current_wave_config {axi_stram_gen_mon0.wcfg}
+add_wave {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/s_axis_tx_0_tdata}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/s_axis_tx_0_tkeep}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/s_axis_tx_0_tlast}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/s_axis_tx_0_tready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/s_axis_tx_0_tuser}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/s_axis_tx_0_tvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/s_axis_tx_1_tdata}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/s_axis_tx_1_tkeep}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/s_axis_tx_1_tlast}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/s_axis_tx_1_tready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/s_axis_tx_1_tuser}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/s_axis_tx_1_tvalid}} 
+current_wave_config {axi_stram_gen_mon0.wcfg}
+add_wave {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/m_axis_rx_0_tdata}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/m_axis_rx_0_tkeep}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/m_axis_rx_0_tlast}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/m_axis_rx_0_tuser}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/m_axis_rx_0_tvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/m_axis_rx_1_tdata}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/m_axis_rx_1_tkeep}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/m_axis_rx_1_tlast}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/m_axis_rx_1_tuser}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/mac_phy_wrapper_i/m_axis_rx_1_tvalid}} 
+restart
+run all
+close [ open /home/caohy/Downloads/kcu_10gbaser_tpu/10gbaser_trd.srcs/sources_1/new/debounce_reset.sv w ]
+add_files /home/caohy/Downloads/kcu_10gbaser_tpu/10gbaser_trd.srcs/sources_1/new/debounce_reset.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+current_wave_config {axi_stram_gen_mon0.wcfg}
+add_wave {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/axi_stream_gen_mon_0/axi_stream_gen_i}} 
+restart
+run all
+set_param general.maxthreads 32
+restart
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+current_wave_config {axi_stram_gen_mon0.wcfg}
+add_wave {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/bb_back_rx_axis_tdata0}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/bb_back_rx_axis_tkeep0}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/bb_back_rx_axis_tvalid0}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/bb_back_rx_axis_tlast0}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/bb_back_rx_axis_tuser0}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/bb_back_rx_axis_tready0}} 
+current_wave_config {axi_stram_gen_mon0.wcfg}
+add_wave {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/bb_rx_axis_tdata1}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/bb_rx_axis_tkeep1}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/bb_rx_axis_tvalid1}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/bb_rx_axis_tlast1}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/bb_rx_axis_tuser1}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/bb_rx_axis_tready1}} 
+restart
+run all
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1

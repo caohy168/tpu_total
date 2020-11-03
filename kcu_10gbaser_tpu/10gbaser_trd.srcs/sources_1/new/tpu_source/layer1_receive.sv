@@ -160,8 +160,8 @@ deintrlv deintrlv(
     .m_axis_output_tdata(rs_decoder_data[i]),
     .m_axis_output_tvalid(rs_decoder_data_tvalid[i]),
     .m_axis_output_tready(crc_detector_tready[i]),
-    .m_axis_output_tlast(rs_decoder_data_tlast[i]),
-    .m_axis_stat_tready(1));
+    .m_axis_output_tlast(rs_decoder_data_tlast[i]));
+//    .m_axis_stat_tready(1));
     
  crc_detector crc_detector(
     .clk(clk),

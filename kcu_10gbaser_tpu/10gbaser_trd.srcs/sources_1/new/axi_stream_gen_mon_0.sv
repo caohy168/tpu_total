@@ -37,7 +37,11 @@ module axi_stream_gen_mon_0 #(
     // 1    - Ethernet Reference Design 1
     parameter [31:0] DESIGN_VERSION      =  32'h0105_1431,
     // one second timer in terms of 156.25 MHz clock
-    parameter ONE_SEC_CLOCK_COUNT =  32'h9502F90)
+    parameter ONE_SEC_CLOCK_COUNT =  32'h9502F90,
+    
+    localparam          AXIS_TKEEP_WIDTH    =  AXIS_TDATA_WIDTH/8,
+    localparam [31:0]   S_AXI_HIGH_ADDRESS  =  S_AXI_BASE_ADDRESS + S_AXI_MIN_SIZE
+    )
 (
     // Slave AXI-Lite Interface for register
     // reads and writes
@@ -98,8 +102,8 @@ module axi_stream_gen_mon_0 #(
     (* DONT_TOUCH = "true" *)    output wire                  bb_tx_axis_tready
 );
     
-    localparam          AXIS_TKEEP_WIDTH    =  AXIS_TDATA_WIDTH/8;   
-    localparam [31:0]   S_AXI_HIGH_ADDRESS  =  S_AXI_BASE_ADDRESS + S_AXI_MIN_SIZE;
+//    localparam          AXIS_TKEEP_WIDTH    =  AXIS_TDATA_WIDTH/8;   
+//    localparam [31:0]   S_AXI_HIGH_ADDRESS  =  S_AXI_BASE_ADDRESS + S_AXI_MIN_SIZE;
     
     wire  [AXIS_TDATA_WIDTH-1:0]     tx_axis_tdata_g;
     wire  [AXIS_TKEEP_WIDTH-1:0]     tx_axis_tkeep_g;

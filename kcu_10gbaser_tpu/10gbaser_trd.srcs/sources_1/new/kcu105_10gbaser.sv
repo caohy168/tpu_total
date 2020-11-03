@@ -36,11 +36,11 @@ module kcu105_10gbaser #(
   output [2:0]      leds,
   
   input                         bb_rx_axis_aclk0,
-  output [AXIS_TDATA_WIDTH-1:0] bb_rx_axis_tdata0,
-  output [AXIS_TKEEP_WIDTH-1:0] bb_rx_axis_tkeep0,
-  output                        bb_rx_axis_tvalid0,
-  output                        bb_rx_axis_tlast0,
-  output                        bb_rx_axis_tuser0,
+  output logic[AXIS_TDATA_WIDTH-1:0] bb_rx_axis_tdata0,
+  output logic[AXIS_TKEEP_WIDTH-1:0] bb_rx_axis_tkeep0,
+  output logic                       bb_rx_axis_tvalid0,
+  output logic                       bb_rx_axis_tlast0,
+  output logic                       bb_rx_axis_tuser0,
   input                         bb_rx_axis_tready0,
   
   input                        bb_back_rx_axis_aclk0,
@@ -184,12 +184,12 @@ assign tg_config_ch1 = {16'b0, tb_tg_config_ch1};
 reg  [3:0]tg_config_ch_state0,tg_config_ch_state1;
 reg  [31:0]tg_config_ch_cnt0,tg_config_ch_cnt1;
 
-wire [AXIS_TDATA_WIDTH-1:0] bb_rx_axis_tdata0 ,bb_rx_axis_tdata1 ;
-wire [AXIS_TKEEP_WIDTH-1:0] bb_rx_axis_tkeep0 ,bb_rx_axis_tkeep1 ;
-wire                        bb_rx_axis_tvalid0,bb_rx_axis_tvalid1;
-wire                        bb_rx_axis_tlast0 ,bb_rx_axis_tlast1 ;
-wire                        bb_rx_axis_tuser0 ,bb_rx_axis_tuser1 ;
-wire                        bb_rx_axis_tready0,bb_rx_axis_tready1;
+wire [AXIS_TDATA_WIDTH-1:0] bb_rx_axis_tdata1 ;
+wire [AXIS_TKEEP_WIDTH-1:0] bb_rx_axis_tkeep1 ;
+wire                        bb_rx_axis_tvalid1;
+wire                        bb_rx_axis_tlast1 ;
+wire                        bb_rx_axis_tuser1 ;
+wire                        bb_rx_axis_tready1;
 
 wire[AXIS_TDATA_WIDTH-1:0]  bb_tx_axis_tdata0 ,bb_tx_axis_tdata1 ;
 wire[AXIS_TKEEP_WIDTH-1:0]  bb_tx_axis_tkeep0 ,bb_tx_axis_tkeep1 ;

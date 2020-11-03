@@ -20,6 +20,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 //`include "parameter_define.vh"
+// the name include left means data from RF to tpu base band processor to 10g MAC
+// the nane include right means data from 10G MAC to tpu base band processor to RF
 parameter mux_number = 2;//2--lane2;4--lane4;8--lane8
 module data_transfer #(
         parameter AXIS_TDATA_WIDTH =  64,
@@ -206,7 +208,7 @@ end
   
 always @ (posedge aclk) begin
     case (mux_number)
-        2:begin
+        2:begin//tranfer the data from lane1-2
             if(pkg_cnt_right<236 && tranfer_state_right==2)begin
                 tx_axis_tdata_right[07:00]=lane2_pkg_dat8_right[2*(pkg_cnt_right+1)-1];
                 tx_axis_tdata_right[15:08]=lane2_pkg_dat8_right[2*(pkg_cnt_right+1)-0];
