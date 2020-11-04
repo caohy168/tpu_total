@@ -114,44 +114,44 @@ wire          reset_sys;
 
 wire [0:0]s_axi_aresetn;
 
-wire [31:0]M03_AXI_0_araddr;
-wire [2:0]M03_AXI_0_arprot;
-wire [0:0]M03_AXI_0_arready;
-wire [0:0]M03_AXI_0_arvalid;
-wire [31:0]M03_AXI_0_awaddr;
-wire [2:0]M03_AXI_0_awprot;
-wire [0:0]M03_AXI_0_awready;
-wire [0:0]M03_AXI_0_awvalid;
-wire [0:0]M03_AXI_0_bready;
-wire [1:0]M03_AXI_0_bresp;
-wire [0:0]M03_AXI_0_bvalid;
-wire [31:0]M03_AXI_0_rdata;
-wire [0:0]M03_AXI_0_rready;
-wire [1:0]M03_AXI_0_rresp;
-wire [0:0]M03_AXI_0_rvalid;
-wire [31:0]M03_AXI_0_wdata;
-wire [0:0]M03_AXI_0_wready;
-wire [3:0]M03_AXI_0_wstrb;
-wire [0:0]M03_AXI_0_wvalid;
-wire [31:0]M05_AXI_0_araddr;
-wire [2:0]M05_AXI_0_arprot;
-wire [0:0]M05_AXI_0_arready;
-wire [0:0]M05_AXI_0_arvalid;
-wire [31:0]M05_AXI_0_awaddr;
-wire [2:0]M05_AXI_0_awprot;
-wire [0:0]M05_AXI_0_awready;
-wire [0:0]M05_AXI_0_awvalid;
-wire [0:0]M05_AXI_0_bready;
-wire [1:0]M05_AXI_0_bresp;
-wire [0:0]M05_AXI_0_bvalid;
-wire [31:0]M05_AXI_0_rdata;
-wire [0:0]M05_AXI_0_rready;
-wire [1:0]M05_AXI_0_rresp;
-wire [0:0]M05_AXI_0_rvalid;
-wire [31:0]M05_AXI_0_wdata;
-wire [0:0]M05_AXI_0_wready;
-wire [3:0]M05_AXI_0_wstrb;
-wire [0:0]M05_AXI_0_wvalid;
+//wire [31:0]M03_AXI_0_araddr;
+//wire [2:0]M03_AXI_0_arprot;
+//wire [0:0]M03_AXI_0_arready;
+//wire [0:0]M03_AXI_0_arvalid;
+//wire [31:0]M03_AXI_0_awaddr;
+//wire [2:0]M03_AXI_0_awprot;
+//wire [0:0]M03_AXI_0_awready;
+//wire [0:0]M03_AXI_0_awvalid;
+//wire [0:0]M03_AXI_0_bready;
+//wire [1:0]M03_AXI_0_bresp;
+//wire [0:0]M03_AXI_0_bvalid;
+//wire [31:0]M03_AXI_0_rdata;
+//wire [0:0]M03_AXI_0_rready;
+//wire [1:0]M03_AXI_0_rresp;
+//wire [0:0]M03_AXI_0_rvalid;
+//wire [31:0]M03_AXI_0_wdata;
+//wire [0:0]M03_AXI_0_wready;
+//wire [3:0]M03_AXI_0_wstrb;
+//wire [0:0]M03_AXI_0_wvalid;
+//wire [31:0]M05_AXI_0_araddr;
+//wire [2:0]M05_AXI_0_arprot;
+//wire [0:0]M05_AXI_0_arready;
+//wire [0:0]M05_AXI_0_arvalid;
+//wire [31:0]M05_AXI_0_awaddr;
+//wire [2:0]M05_AXI_0_awprot;
+//wire [0:0]M05_AXI_0_awready;
+//wire [0:0]M05_AXI_0_awvalid;
+//wire [0:0]M05_AXI_0_bready;
+//wire [1:0]M05_AXI_0_bresp;
+//wire [0:0]M05_AXI_0_bvalid;
+//wire [31:0]M05_AXI_0_rdata;
+//wire [0:0]M05_AXI_0_rready;
+//wire [1:0]M05_AXI_0_rresp;
+//wire [0:0]M05_AXI_0_rvalid;
+//wire [31:0]M05_AXI_0_wdata;
+//wire [0:0]M05_AXI_0_wready;
+//wire [3:0]M05_AXI_0_wstrb;
+//wire [0:0]M05_AXI_0_wvalid;
 
 wire [63:0]m_axis_rx_0_tdata;
 wire [7:0]m_axis_rx_0_tkeep;
@@ -325,23 +325,41 @@ axi_stream_gen_mon_0
         .s_axi_clk      (clk156),
         .s_axi_areset_n (!reset_sys),
         
-        .s_axi_awaddr   (M03_AXI_0_awaddr),
-        .s_axi_awvalid  (M03_AXI_0_awvalid),
-        .s_axi_awready  (M03_AXI_0_awready),
-        .s_axi_wdata    (M03_AXI_0_wdata),
-        .s_axi_wstrb    (M03_AXI_0_wstrb),
-        .s_axi_wvalid   (M03_AXI_0_wvalid),
-        .s_axi_wready   (M03_AXI_0_wready),
-        .s_axi_bresp    (M03_AXI_0_bresp),
-        .s_axi_bvalid   (M03_AXI_0_bvalid),
-        .s_axi_bready   (M03_AXI_0_bready),
-        .s_axi_araddr   (M03_AXI_0_araddr),
-        .s_axi_arvalid  (M03_AXI_0_arvalid),
-        .s_axi_arready  (M03_AXI_0_arready),
-        .s_axi_rdata    (M03_AXI_0_rdata),
-        .s_axi_rresp    (M03_AXI_0_rresp),
-        .s_axi_rvalid   (M03_AXI_0_rvalid),
-        .s_axi_rready   (M03_AXI_0_rready),
+ //       .s_axi_awaddr   (M03_AXI_0_awaddr),
+ //       .s_axi_awvalid  (M03_AXI_0_awvalid),
+ //       .s_axi_awready  (M03_AXI_0_awready),
+ //       .s_axi_wdata    (M03_AXI_0_wdata),
+ //       .s_axi_wstrb    (M03_AXI_0_wstrb),
+ //       .s_axi_wvalid   (M03_AXI_0_wvalid),
+ //       .s_axi_wready   (M03_AXI_0_wready),
+ //       .s_axi_bresp    (M03_AXI_0_bresp),
+ //       .s_axi_bvalid   (M03_AXI_0_bvalid),
+ //       .s_axi_bready   (M03_AXI_0_bready),
+ //       .s_axi_araddr   (M03_AXI_0_araddr),
+ //       .s_axi_arvalid  (M03_AXI_0_arvalid),
+ //       .s_axi_arready  (M03_AXI_0_arready),
+ //       .s_axi_rdata    (M03_AXI_0_rdata),
+ //       .s_axi_rresp    (M03_AXI_0_rresp),
+ //       .s_axi_rvalid   (M03_AXI_0_rvalid),
+ //       .s_axi_rready   (M03_AXI_0_rready),
+ 
+.s_axi_awaddr   (), 
+.s_axi_awvalid  (),
+.s_axi_awready  (),
+.s_axi_wdata    (),  
+.s_axi_wstrb    (),  
+.s_axi_wvalid   (), 
+.s_axi_wready   (), 
+.s_axi_bresp    (),  
+.s_axi_bvalid   (), 
+.s_axi_bready   (), 
+.s_axi_araddr   (), 
+.s_axi_arvalid  (),
+.s_axi_arready  (),
+.s_axi_rdata    (),  
+.s_axi_rresp    (),  
+.s_axi_rvalid   (), 
+.s_axi_rready   (), 
     
         .rx_axis_tdata  (m_axis_rx_0_tdata),
         .rx_axis_tkeep  (m_axis_rx_0_tkeep),
@@ -393,23 +411,41 @@ axi_stream_gen_mon_1
         .s_axi_clk      (clk156),
         .s_axi_areset_n (!reset_sys),
         
-        .s_axi_awaddr   (M05_AXI_0_awaddr),
-        .s_axi_awvalid  (M05_AXI_0_awvalid),
-        .s_axi_awready  (M05_AXI_0_awready),
-        .s_axi_wdata    (M05_AXI_0_wdata),
-        .s_axi_wstrb    (M05_AXI_0_wstrb),
-        .s_axi_wvalid   (M05_AXI_0_wvalid),
-        .s_axi_wready   (M05_AXI_0_wready),
-        .s_axi_bresp    (M05_AXI_0_bresp),
-        .s_axi_bvalid   (M05_AXI_0_bvalid),
-        .s_axi_bready   (M05_AXI_0_bready),
-        .s_axi_araddr   (M05_AXI_0_araddr),
-        .s_axi_arvalid  (M05_AXI_0_arvalid),
-        .s_axi_arready  (M05_AXI_0_arready),
-        .s_axi_rdata    (M05_AXI_0_rdata),
-        .s_axi_rresp    (M05_AXI_0_rresp),
-        .s_axi_rvalid   (M05_AXI_0_rvalid),
-        .s_axi_rready   (M05_AXI_0_rready),
+//        .s_axi_awaddr   (M05_AXI_0_awaddr),
+//        .s_axi_awvalid  (M05_AXI_0_awvalid),
+//        .s_axi_awready  (M05_AXI_0_awready),
+//        .s_axi_wdata    (M05_AXI_0_wdata),
+//        .s_axi_wstrb    (M05_AXI_0_wstrb),
+//        .s_axi_wvalid   (M05_AXI_0_wvalid),
+//        .s_axi_wready   (M05_AXI_0_wready),
+//        .s_axi_bresp    (M05_AXI_0_bresp),
+//        .s_axi_bvalid   (M05_AXI_0_bvalid),
+//        .s_axi_bready   (M05_AXI_0_bready),
+//        .s_axi_araddr   (M05_AXI_0_araddr),
+//        .s_axi_arvalid  (M05_AXI_0_arvalid),
+//        .s_axi_arready  (M05_AXI_0_arready),
+//        .s_axi_rdata    (M05_AXI_0_rdata),
+//        .s_axi_rresp    (M05_AXI_0_rresp),
+//        .s_axi_rvalid   (M05_AXI_0_rvalid),
+//        .s_axi_rready   (M05_AXI_0_rready),
+
+.s_axi_awaddr   (),  
+.s_axi_awvalid  (), 
+.s_axi_awready  (), 
+.s_axi_wdata    (),   
+.s_axi_wstrb    (),   
+.s_axi_wvalid   (),  
+.s_axi_wready   (),  
+.s_axi_bresp    (),   
+.s_axi_bvalid   (),  
+.s_axi_bready   (),  
+.s_axi_araddr   (),  
+.s_axi_arvalid  (), 
+.s_axi_arready  (), 
+.s_axi_rdata    (),   
+.s_axi_rresp    (),   
+.s_axi_rvalid   (),  
+.s_axi_rready   (),  
     
         .rx_axis_tdata  (m_axis_rx_1_tdata),
         .rx_axis_tkeep  (m_axis_rx_1_tkeep),
@@ -504,6 +540,7 @@ mac_phy_wrapper mac_phy_wrapper_i
         .txn_ch0                            (xphy_txn[0]              ),
         .txp_ch0                            (xphy_txp[0]              ),
         .sim_speedup_control_ch0            (sim_speedup_control_ch0  ),
+//        .sim_speedup_control_ch0            (),
 
         .core_status_ch1                    (xphy_status_ch1          ),
         .prtad_ch1                          (5'b1                     ),
@@ -525,6 +562,7 @@ mac_phy_wrapper mac_phy_wrapper_i
         .txn_ch1                            (xphy_txn[1]              ),
         .txp_ch1                            (xphy_txp[1]              ),
         .sim_speedup_control_ch1            (sim_speedup_control_ch1  ),
+        //.sim_speedup_control_ch1            (),
 
         .aux_resetn                       (!reset_sys                 ),
         .mb_clk                             (clk156                   ),
