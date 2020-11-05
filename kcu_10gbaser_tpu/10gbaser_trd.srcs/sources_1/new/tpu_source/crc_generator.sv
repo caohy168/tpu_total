@@ -32,6 +32,18 @@ output logic [7:0]m_axis_output_tdata,
 output logic m_axis_output_tlast
     );
     
+
+//integer fp_r, fp_w, cnt;
+//initial begin
+  //fp_r = $fopen("data_in.txt", "r");
+  //fp_w = $fopen("/home/caohy/work/tpu_total/intermediate/CrcDataOut","w");
+ 
+  //while(m_axis_output_tvalid) begin
+    //cnt = $fscanf(fp_r, "%d %d %d", reg1, reg2, reg3);
+//  $display("crc_data_out=%d", crc_data_out);
+  //  $fwrite(fp_w, "%d\n", crc_data_out);
+ //end //end
+    
 logic[15:0]tready_state; 
 assign s_axis_input_tready = (tready_state==2)?0:1;
 always @(posedge clk)begin
@@ -127,7 +139,9 @@ crc24_insert_1bit crc24_insert_1bit
     .data_o(data_o)
 );
 logic [15:0]data_out_i=0;logic [15:0]data_out_j=0;
+
 byte crc_data_out[239]; 
+logic [7:0]crc_data_out_mem[239];
 always@(posedge clk)
     begin
         if(vld_o)begin
@@ -139,6 +153,7 @@ always@(posedge clk)
             else data_out_i<=0;
             end
          crc_data_out[data_out_i][7-data_out_j]<=data_o;
+         
     end 
 
  logic [15:0]axi_out_state=0;
@@ -188,7 +203,14 @@ always@(posedge clk)
                 end
             if((axi_out_i==238)&&(axi_out_state==1))m_axis_output_tlast<=1;
             else m_axis_output_tlast<=0;
-            end
+            
+            if(m_axis_output_tvalid)begin
+//            fp_w = $fopen("/home/caohy/work/tpu_total/intermediate/CrcDataOut","w");
+            //$display("crc_data_out[%d]= %d ", axi_out_i,crc_data_out[axi_out_i]);end
+            //$display("fp_w= %s ", fp_w);end
+            //$writememh ("/home/caohy/work/tpu_total/intermediate/CrcDataOut", crc_data_out[axi_out_i]);end
+            
+           end end
         else begin
                 m_axis_output_tvalid<=0;
                 m_axis_output_tdata<=0;

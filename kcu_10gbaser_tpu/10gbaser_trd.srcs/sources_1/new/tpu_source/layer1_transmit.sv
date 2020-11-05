@@ -102,6 +102,21 @@ logic qam_tready[8];
 //    .probe14(scrambler_tlast[0]        ),
 //    .probe15(qam_tready[0]             ));
 
+integer fp_r, fp_w, cnt;
+always@(posedge clk)
+    begin
+        
+            $write ("layer1_transmit_crc");
+            if(crc_gen_data_tvalid[0])begin
+            //fp_w = $fopen("/home/caohy/work/tpu_total/intermediate/CrcDataOut","w");
+            //$display(" %d ", crc_gen_data[0]);
+            //$display("fp_w= %s ", fp_w);end
+            //$fwrite(fp_w,"%d",$signed(crc_gen_data[0]));end
+            $write (" %d ", crc_gen_data[0]);end
+            
+           end
+   
+
 genvar i;
 generate
     for (i = 0; i < layer1_transmit_lane_number; i = i + 1)begin:layer1_transmit_lane

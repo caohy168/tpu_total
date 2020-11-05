@@ -2,37 +2,21 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue Nov  3 17:14:45 2020
-# Process ID: 103856
-# Current directory: /home/caohy/Downloads/kcu_10gbaser_tpu
+# Start of session at: Thu Nov  5 00:23:35 2020
+# Process ID: 3738
+# Current directory: /home/caohy/work/tpu_total/kcu_10gbaser_tpu
 # Command line: vivado
-# Log file: /home/caohy/Downloads/kcu_10gbaser_tpu/vivado.log
-# Journal file: /home/caohy/Downloads/kcu_10gbaser_tpu/vivado.jou
+# Log file: /home/caohy/work/tpu_total/kcu_10gbaser_tpu/vivado.log
+# Journal file: /home/caohy/work/tpu_total/kcu_10gbaser_tpu/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project /home/caohy/Downloads/kcu_10gbaser_tpu/10gbaser_trd.xpr
+open_project /home/caohy/work/tpu_total/kcu_10gbaser_tpu/10gbaser_trd.xpr
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 16
-wait_on_run synth_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 16
-wait_on_run synth_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 16
-wait_on_run synth_1
 launch_simulation
-launch_simulation
-open_wave_config /home/caohy/Downloads/kcu_10gbaser_tpu/10gbaser_trd.sim/axi_stram_gen_mon0.wcfg
+open_wave_config /home/caohy/work/tpu_total/kcu_10gbaser_tpu/10gbaser_trd.sim/axi_stram_gen_mon0.wcfg
 source tb.tcl
 current_wave_config {axi_stram_gen_mon0.wcfg}
-add_wave {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser}} 
-current_wave_config {axi_stram_gen_mon0.wcfg}
-add_wave {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_araddr}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_arprot}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_arready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_arvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_awaddr}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_awprot}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_awready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_awvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_bready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_bresp}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_bvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_rdata}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_rready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_rresp}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_rvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_wdata}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_wready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_wstrb}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_wvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_araddr}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_arprot}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_arready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_arvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_awaddr}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_awprot}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_awready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_awvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_bready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_bresp}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_bvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_rdata}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_rready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_rresp}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_rvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_wdata}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_wready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_wstrb}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_wvalid}} 
+add_wave {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/\layer1_transmit_lane[0].crc_generator /crc24_insert_1bit/u_crc24_calc/clk}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/\layer1_transmit_lane[0].crc_generator /crc24_insert_1bit/u_crc24_calc/rst_n}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/\layer1_transmit_lane[0].crc_generator /crc24_insert_1bit/u_crc24_calc/init}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/\layer1_transmit_lane[0].crc_generator /crc24_insert_1bit/u_crc24_calc/valid}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/\layer1_transmit_lane[0].crc_generator /crc24_insert_1bit/u_crc24_calc/data}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/\layer1_transmit_lane[0].crc_generator /crc24_insert_1bit/u_crc24_calc/crc}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/\layer1_transmit_lane[0].crc_generator /crc24_insert_1bit/u_crc24_calc/CRC_INIT_VALUE}} 
 restart
 run all
-reset_run synth_1
-launch_runs synth_1 -jobs 16
-wait_on_run synth_1
+relaunch_sim

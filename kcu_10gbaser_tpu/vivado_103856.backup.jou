@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Nov  3 17:14:45 2020
+# Process ID: 103856
+# Current directory: /home/caohy/Downloads/kcu_10gbaser_tpu
+# Command line: vivado
+# Log file: /home/caohy/Downloads/kcu_10gbaser_tpu/vivado.log
+# Journal file: /home/caohy/Downloads/kcu_10gbaser_tpu/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/caohy/Downloads/kcu_10gbaser_tpu/10gbaser_trd.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+open_wave_config /home/caohy/Downloads/kcu_10gbaser_tpu/10gbaser_trd.sim/axi_stram_gen_mon0.wcfg
+source tb.tcl
+current_wave_config {axi_stram_gen_mon0.wcfg}
+add_wave {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser}} 
+current_wave_config {axi_stram_gen_mon0.wcfg}
+add_wave {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_araddr}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_arprot}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_arready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_arvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_awaddr}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_awprot}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_awready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_awvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_bready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_bresp}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_bvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_rdata}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_rready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_rresp}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_rvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_wdata}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_wready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_wstrb}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M03_AXI_0_wvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_araddr}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_arprot}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_arready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_arvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_awaddr}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_awprot}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_awready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_awvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_bready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_bresp}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_bvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_rdata}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_rready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_rresp}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_rvalid}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_wdata}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_wready}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_wstrb}} {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/M05_AXI_0_wvalid}} 
+restart
+run all
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+current_wave_config {axi_stram_gen_mon0.wcfg}
+add_wave {{/tb/kcu10gbaser_tpu_top/kcu105_10gbaser/axi_stream_gen_mon_0/eth_performance_monitor_i}} 
+restart
+run all
+current_wave_config {axi_stram_gen_mon0.wcfg}
+add_wave {{/tb/kcu10gbaser_tpu_top/data_transfer}} 
+restart
+run all
+current_wave_config {axi_stram_gen_mon0.wcfg}
+add_wave {{/tb/kcu10gbaser_tpu_top/tpu/clk_250m}} {{/tb/kcu10gbaser_tpu_top/tpu/clk_500m}} {{/tb/kcu10gbaser_tpu_top/tpu/reset}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_input_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_input_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_input_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_input_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_output_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_output_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_output_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_output_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputIf_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputIf_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputIf_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputIf_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQf_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQf_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQf_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQf_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputI_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputI_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputI_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputI_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputQ_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputQ_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputQ_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputQ_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputI_tvalid_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputI_tready_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputI_tdata_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputI_tlast_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQ_tvalid_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQ_tready_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQ_tdata_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQ_tlast_8}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputI_tvalid_8}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputI_tready_8}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputI_tdata_8}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputI_tlast_8}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputQ_tvalid_8}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputQ_tready_8}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputQ_tdata_8}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputQ_tlast_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputI_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputI_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputI_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputI_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQ_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQ_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQ_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQ_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputIf_tvalid_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputIf_tready_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputIf_tdata_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputIf_tlast_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQf_tvalid_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQf_tready_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQf_tdata_8}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_outputQf_tlast_8}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputIf_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputIf_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputIf_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputIf_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputQf_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputQf_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputQf_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_inputQf_tlast}} 
+restart
+run all
+current_wave_config {axi_stram_gen_mon0.wcfg}
+add_wave {{/tb/kcu10gbaser_tpu_top/tpu/clk_250m}} {{/tb/kcu10gbaser_tpu_top/tpu/clk_500m}} {{/tb/kcu10gbaser_tpu_top/tpu/reset}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_input_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_input_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_input_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/s_axis_input_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_output_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_output_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_output_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/m_axis_output_tlast}} 
+restart
+run all
+current_wave_config {axi_stram_gen_mon0.wcfg}
+add_wave {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/clk}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/reset}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/s_axis_input_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/s_axis_input_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/s_axis_input_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/s_axis_input_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputI_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputI_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputI_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputI_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputQ_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputQ_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputQ_tdata}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputQ_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputI_tvalid_8}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputI_tready_8}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputI_tdata_8}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputI_tlast_8}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputQ_tvalid_8}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputQ_tready_8}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputQ_tdata_8}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/m_axis_outputQ_tlast_8}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/mac_block_data_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/mac_block_data}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/mac_block_data_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/crc_generator_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/crc_gen_data}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/crc_gen_data_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/crc_gen_data_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/rs_enc_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/rs_enc_data}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/rs_enc_data_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/rs_enc_data_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/interleaver_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/interleaver_data}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/interleaver_data_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/interleaver_data_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/scrambler_tready}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/scrambler_data}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/scrambler_tvalid}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/scrambler_tlast}} {{/tb/kcu10gbaser_tpu_top/tpu/layer1/layer1_transmit/qam_tready}} 
+restart
+run all
+close_sim
