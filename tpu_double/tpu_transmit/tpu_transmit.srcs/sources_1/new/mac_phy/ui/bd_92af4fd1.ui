@@ -1,0 +1,63 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.780966",
+   "Default View_TopLeft":"-233,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port refclk_diff_port -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port rx_statistics_ch0 -pg 1 -lvl 4 -x 1130 -y 80 -defaultsOSRD
+preplace port s_axis_pause_ch0 -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace port tx_statistics_ch0 -pg 1 -lvl 4 -x 1130 -y 100 -defaultsOSRD
+preplace port s_axis_tx_0 -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace port m_axis_rx_0 -pg 1 -lvl 4 -x 1130 -y 60 -defaultsOSRD
+preplace port aux_resetn -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace port core_clk156_out -pg 1 -lvl 4 -x 1130 -y 140 -defaultsOSRD
+preplace port resetdone_ch0 -pg 1 -lvl 4 -x 1130 -y 300 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace port reset_n -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
+preplace port rxn_ch0 -pg 1 -lvl 0 -x 0 -y 270 -defaultsOSRD
+preplace port rxp_ch0 -pg 1 -lvl 0 -x 0 -y 290 -defaultsOSRD
+preplace port sim_speedup_control_ch0 -pg 1 -lvl 0 -x 0 -y 350 -defaultsOSRD
+preplace port tx_disable_ch0 -pg 1 -lvl 4 -x 1130 -y 320 -defaultsOSRD
+preplace port txn_ch0 -pg 1 -lvl 4 -x 1130 -y 340 -defaultsOSRD
+preplace port txp_ch0 -pg 1 -lvl 4 -x 1130 -y 360 -defaultsOSRD
+preplace port mb_clk -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace portBus prtad_ch0 -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace portBus s_axi_aresetn -pg 1 -lvl 4 -x 1130 -y 490 -defaultsOSRD
+preplace portBus core_status_ch0 -pg 1 -lvl 4 -x 1130 -y 160 -defaultsOSRD
+preplace inst mac_phy_ch0 -pg 1 -lvl 2 -x 590 -y 240 -defaultsOSRD
+preplace inst xlconstant_1b0 -pg 1 -lvl 1 -x 110 -y 1090 -defaultsOSRD
+preplace inst xlconstant_1b1 -pg 1 -lvl 1 -x 110 -y 910 -defaultsOSRD
+preplace inst xlconstant_3b101 -pg 1 -lvl 1 -x 110 -y 1290 -defaultsOSRD
+preplace inst xlconstant_8b0 -pg 1 -lvl 1 -x 110 -y 1190 -defaultsOSRD
+preplace netloc mac_phy_ch0_resetdone 1 2 2 NJ 300 NJ
+preplace netloc prtad_1 1 0 2 NJ 210 NJ
+preplace netloc reset_1 1 0 2 NJ 170 N
+preplace netloc reset_n_mac_1 1 0 2 NJ 230 N
+preplace netloc rst_clk_156_156M_peripheral_aresetn 1 0 4 NJ 330 210 490 NJ 490 NJ
+preplace netloc rxn_1 1 0 2 NJ 270 NJ
+preplace netloc rxp_1 1 0 2 NJ 290 NJ
+preplace netloc s_axis_pause_tdata_1 1 1 1 230 390n
+preplace netloc s_axis_pause_tvalid_1 1 1 1 220 370n
+preplace netloc sim_speedup_control_1 1 0 2 NJ 350 NJ
+preplace netloc ten_gig_eth_pcs_pma_ch0_tx_disable 1 2 2 NJ 320 NJ
+preplace netloc ten_gig_eth_pcs_pma_ch0_txn 1 2 2 NJ 340 NJ
+preplace netloc ten_gig_eth_pcs_pma_ch0_txp 1 2 2 NJ 360 NJ
+preplace netloc xlconstant_0_const 1 1 1 200 250n
+preplace netloc mac_phy_ch0_core_status 1 2 2 NJ 160 NJ
+preplace netloc microblaze_0_Clk 1 0 2 NJ 310 N
+preplace netloc mac_phy_ch0_core_clk156_out 1 1 3 240 470 780 140 NJ
+preplace netloc refclk_diff_port_1 1 0 2 NJ 90 NJ
+preplace netloc s_axis_pause_1 1 0 2 NJ 130 NJ
+preplace netloc s_axis_tx_0_1 1 0 2 NJ 150 N
+preplace netloc mac_phy_ch0_m_axis_rx 1 2 2 N 60 NJ
+preplace netloc mac_phy_ch0_tx_statistics 1 2 2 NJ 100 NJ
+preplace netloc mac_phy_ch0_rx_statistics 1 2 2 NJ 80 NJ
+levelinfo -pg 1 0 110 590 1000 1130
+pagesize -pg 1 -db -bbox -sgen -240 0 1330 1350
+"
+}
+{
+   "da_clkrst_cnt":"4"
+}

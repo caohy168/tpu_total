@@ -1,0 +1,2 @@
+rs_encoder.vhd,vhdl,xil_defaultlib,../../../../tpu_transmit.srcs/sources_1/new/rs_encoder/sim/rs_encoder.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

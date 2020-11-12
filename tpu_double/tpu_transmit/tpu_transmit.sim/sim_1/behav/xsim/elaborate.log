@@ -1,0 +1,10 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 1df77b122ba5468d9ff674a0cb595e5a --incr --debug typical --relax --mt 8 -L axis_infrastructure_v1_1_0 -L axis_data_fifo_v2_0_2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L axi_utils_v2_0_6 -L c_reg_fd_v12_0_6 -L c_mux_bit_v12_0_6 -L c_mux_bus_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L c_gate_bit_v12_0_6 -L c_compare_v12_0_6 -L xbip_counter_v3_0_6 -L c_counter_binary_v12_0_14 -L c_shift_ram_v12_0_14 -L rs_toolbox_v9_0_8 -L rs_encoder_v9_0_16 -L xlconstant_v1_1_6 -L ten_gig_eth_mac_v15_1_7 -L gtwizard_ultrascale_v1_7_7 -L ten_gig_eth_pcs_pma_v6_0_16 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'm_axis_outputIf_tready_8' is not connected on this instance [/home/caohy/Downloads/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/tpu_transmit.sv:109]
+WARNING: [VRFC 10-5021] port 'event_s_input_tlast_missing' is not connected on this instance [/home/caohy/Downloads/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/layer1_transmit.sv:131]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
