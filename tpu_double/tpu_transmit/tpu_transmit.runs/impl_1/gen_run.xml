@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1604996551">
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="tpu_transmit_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-STATUS" Name="tpu_transmit_route_status.rpt"/>
+  <File Type="RBD_FILE" Name="tpu_transmit.rbd"/>
+  <File Type="BITSTR-LTX" Name="tpu_transmit.ltx"/>
+  <File Type="ROUTE-PWR-SUM" Name="tpu_transmit_power_summary_routed.pb"/>
+  <File Type="RNPI_FILE" Name="tpu_transmit.rnpi"/>
+  <File Type="ROUTE-PWR-RPX" Name="tpu_transmit_power_routed.rpx"/>
+  <File Type="NPI_FILE" Name="tpu_transmit.npi"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="tpu_transmit_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-SYSDEF" Name="tpu_transmit.sysdef"/>
+  <File Type="ROUTE-PWR" Name="tpu_transmit_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="tpu_transmit.tcl"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="REPORTS-TCL" Name="tpu_transmit_reports.tcl"/>
+  <File Type="OPT-DRC" Name="tpu_transmit_drc_opted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="tpu_transmit_incremental_reuse_pre_placed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="tpu_transmit_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="tpu_transmit_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-STATUS-PB" Name="tpu_transmit_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="tpu_transmit_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="tpu_transmit_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="tpu_transmit_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-CLK" Name="tpu_transmit_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="tpu_transmit_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="tpu_transmit_bus_skew_routed.rpx"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="tpu_transmit_routed_bb.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="tpu_transmit_routed_error.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="tpu_transmit_physopt.dcp"/>
-  <File Type="BITSTR-NKY" Name="tpu_transmit.nky"/>
-  <File Type="BITSTR-RBT" Name="tpu_transmit.rbt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="tpu_transmit_postplace_pwropt.dcp"/>
   <File Type="BITSTR-MSK" Name="tpu_transmit.msk"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="tpu_transmit_incremental_reuse_pre_placed.rpt"/>
-  <File Type="OPT-DRC" Name="tpu_transmit_drc_opted.rpt"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="PA-TCL" Name="tpu_transmit.tcl"/>
-  <File Type="REPORTS-TCL" Name="tpu_transmit_reports.tcl"/>
+  <File Type="BITSTR-RBT" Name="tpu_transmit.rbt"/>
+  <File Type="PHYSOPT-DCP" Name="tpu_transmit_physopt.dcp"/>
+  <File Type="BITSTR-NKY" Name="tpu_transmit.nky"/>
+  <File Type="ROUTE-ERROR-DCP" Name="tpu_transmit_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="tpu_transmit_routed_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="tpu_transmit_methodology_drc_routed.pb"/>
+  <File Type="PLACE-CTRL" Name="tpu_transmit_control_sets_placed.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="tpu_transmit_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="tpu_transmit_route_status.pb"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="tpu_transmit_bus_skew_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="tpu_transmit_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="tpu_transmit_methodology_drc_routed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="tpu_transmit_utilization_placed.pb"/>
+  <File Type="ROUTE-TIMING-PB" Name="tpu_transmit_timing_summary_routed.pb"/>
+  <File Type="ROUTE-CLK" Name="tpu_transmit_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="tpu_transmit_bus_skew_routed.rpx"/>
   <File Type="ROUTE-DCP" Name="tpu_transmit_routed.dcp"/>
   <File Type="ROUTE-BUS-SKEW" Name="tpu_transmit_bus_skew_routed.rpt"/>
   <File Type="BG-BIT" Name="tpu_transmit.bit"/>
@@ -29,13 +41,11 @@
   <File Type="OPT-HWDEF" Name="tpu_transmit.hwdef"/>
   <File Type="PWROPT-DCP" Name="tpu_transmit_pwropt.dcp"/>
   <File Type="BG-BIN" Name="tpu_transmit.bin"/>
-  <File Type="PLACE-CTRL" Name="tpu_transmit_control_sets_placed.rpt"/>
   <File Type="PLACE-DCP" Name="tpu_transmit_placed.dcp"/>
   <File Type="BG-BGN" Name="tpu_transmit.bgn"/>
   <File Type="PLACE-UTIL" Name="tpu_transmit_utilization_placed.rpt"/>
   <File Type="OPT-DCP" Name="tpu_transmit_opt.dcp"/>
   <File Type="BG-DRC" Name="tpu_transmit.drc"/>
-  <File Type="PLACE-UTIL-PB" Name="tpu_transmit_utilization_placed.pb"/>
   <File Type="BITSTR-BMM" Name="tpu_transmit_bd.bmm"/>
   <File Type="PDI-FILE" Name="tpu_transmit.pdi"/>
   <File Type="ROUTE-DRC" Name="tpu_transmit_drc_routed.rpt"/>
@@ -46,16 +56,6 @@
   <File Type="RDI-RDI" Name="tpu_transmit.vdi"/>
   <File Type="ROUTE-DRC-RPX" Name="tpu_transmit_drc_routed.rpx"/>
   <File Type="CFI_FILE" Name="tpu_transmit.cfi"/>
-  <File Type="ROUTE-PWR" Name="tpu_transmit_power_routed.rpt"/>
-  <File Type="BITSTR-SYSDEF" Name="tpu_transmit.sysdef"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="tpu_transmit_postroute_physopt_bb.dcp"/>
-  <File Type="NPI_FILE" Name="tpu_transmit.npi"/>
-  <File Type="ROUTE-PWR-RPX" Name="tpu_transmit_power_routed.rpx"/>
-  <File Type="RNPI_FILE" Name="tpu_transmit.rnpi"/>
-  <File Type="ROUTE-PWR-SUM" Name="tpu_transmit_power_summary_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="tpu_transmit.ltx"/>
-  <File Type="RBD_FILE" Name="tpu_transmit.rbd"/>
-  <File Type="ROUTE-STATUS" Name="tpu_transmit_route_status.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/mac_phy/mac_phy.bd">

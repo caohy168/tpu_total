@@ -1,0 +1,617 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 78281
+License: Customer
+
+Current time: 	Thu Nov 12 01:54:34 PST 2020
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Ubuntu
+OS Version: 5.4.0-52-generic
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: :0
+Screen size: 1920x1440
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 715 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	root
+User home directory: /root
+User working directory: /home/caohy/work/tpu_total/tpu_double/tpu_transmit
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2019.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /root/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /root/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /root/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/caohy/work/tpu_total/tpu_double/tpu_transmit/vivado.log
+Vivado journal file location: 	/home/caohy/work/tpu_total/tpu_double/tpu_transmit/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-78281-ubuntu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2019.2
+XILINX_VITIS: /tools/Vitis/Vitis/2019.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	221 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,027 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y (x, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,013 MB. GUI used memory: 57 MB. Current time: 11/12/20, 1:54:36 AM PST
+setFileChooser("/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.xpr");
+// [GUI Memory]: 66 MB (+66378kb) [00:00:12]
+// [Engine Memory]: 1,023 MB (+921639kb) [00:00:12]
+// Opening Vivado Project: /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 82 MB (+13875kb) [00:00:21]
+// [Engine Memory]: 1,154 MB (+83189kb) [00:00:21]
+// [GUI Memory]: 106 MB (+20303kb) [00:00:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  3064 ms.
+// [GUI Memory]: 118 MB (+6912kb) [00:00:22]
+// [Engine Memory]: 1,263 MB (+54105kb) [00:00:22]
+// Tcl Message: open_project /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 6765.859 ; gain = 183.930 ; free physical = 52333 ; free virtual = 62016 
+// Project name: tpu_transmit; location: /home/caohy/work/tpu_total/tpu_double/tpu_transmit; part: xcku040-ffva1156-2-e
+// 'i' command handler elapsed time: 14 seconds
+// Elapsed time: 11 seconds
+dismissDialog("Open Project"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,366 MB. GUI used memory: 62 MB. Current time: 11/12/20, 1:54:52 AM PST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,374 MB (+49778kb) [00:00:28]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 67 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv)]", 1); // B (F, cr)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "1 critical warning"); // h (Q, cr)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1790] Evaluation License Warning: This design contains one or more evaluation cores that will cease to function after a certain period of time. This design should NOT be used in production systems.. . Evaluation cores found in this design:.     IP core 'mac_phy_ten_gig_eth_mac_ch0_0' (ten_gig_eth_mac_v15_1_7) was generated using a design_linking license..     IP core 'mac_phy_ten_gig_eth_pcs_pma_ch0_0' (ten_gig_eth_pcs_pma_v6_0_16) was generated using a design_linking license.. . Resolution: If a new IP Core license was added, in order for the new license to be picked up, the current netlist needs to be updated by resetting and re-generating the IP output products before bitstream generation.. ]", 2, false); // ah (O, cr)
+// [Engine Memory]: 1,472 MB (+30529kb) [00:01:41]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.sim/sim_1/behav/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.sim/sim_1/behav/xsim' INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'... 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,312 MB. GUI used memory: 63 MB. Current time: 11/12/20, 1:56:12 AM PST
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Pass Through NonSizing Optimizer ERROR: [VRFC 10-2063] Module <radio_transmit> not found while processing module instance <radio_transmit> [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/radio.sv:67] ERROR: [VRFC 10-2063] Module <radio_receive> not found while processing module instance <radio_receive> [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/radio.sv:92] ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed. 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-99] Step results log file:'/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 6991.758 ; gain = 0.000 ; free physical = 52361 ; free virtual = 62045 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 18 seconds
+// Elapsed time: 18 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// a (cr): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.sim/sim_1/behav/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.sim/sim_1/behav/xsim' INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'... 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.sim/sim_1/behav/xsim' 
+// Tcl Message: xvlog --incr --relax -prj tb_vlog.prj xvhdl --incr --relax -prj tb_vhdl.prj 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Pass Through NonSizing Optimizer ERROR: [VRFC 10-2063] Module <radio_transmit> not found while processing module instance <radio_transmit> [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/radio.sv:67] ERROR: [VRFC 10-2063] Module <radio_receive> not found while processing module instance <radio_receive> [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/radio.sv:92] ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed. 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 6991.758 ; gain = 0.000 ; free physical = 52376 ; free virtual = 62060 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 9 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// a (cr): Critical Messages: addNotify
+// Elapsed time: 251 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv)]", 5); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv)]", 5); // B (F, cr)
+// Elapsed time: 14 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "1 critical warning"); // h (Q, cr)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1790] Evaluation License Warning: This design contains one or more evaluation cores that will cease to function after a certain period of time. This design should NOT be used in production systems.. . Evaluation cores found in this design:.     IP core 'mac_phy_ten_gig_eth_mac_ch0_0' (ten_gig_eth_mac_v15_1_7) was generated using a design_linking license..     IP core 'mac_phy_ten_gig_eth_pcs_pma_ch0_0' (ten_gig_eth_pcs_pma_v6_0_16) was generated using a design_linking license.. . Resolution: If a new IP Core license was added, in order for the new license to be picked up, the current netlist needs to be updated by resetting and re-generating the IP output products before bitstream generation.. ]", 3, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1790] Evaluation License Warning: This design contains one or more evaluation cores that will cease to function after a certain period of time. This design should NOT be used in production systems.. . Evaluation cores found in this design:.     IP core 'mac_phy_ten_gig_eth_mac_ch0_0' (ten_gig_eth_mac_v15_1_7) was generated using a design_linking license..     IP core 'mac_phy_ten_gig_eth_pcs_pma_ch0_0' (ten_gig_eth_pcs_pma_v6_0_16) was generated using a design_linking license.. . Resolution: If a new IP Core license was added, in order for the new license to be picked up, the current netlist needs to be updated by resetting and re-generating the IP output products before bitstream generation.. ]", 3, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1790] Evaluation License Warning: This design contains one or more evaluation cores that will cease to function after a certain period of time. This design should NOT be used in production systems.. . Evaluation cores found in this design:.     IP core 'mac_phy_ten_gig_eth_mac_ch0_0' (ten_gig_eth_mac_v15_1_7) was generated using a design_linking license..     IP core 'mac_phy_ten_gig_eth_pcs_pma_ch0_0' (ten_gig_eth_pcs_pma_v6_0_16) was generated using a design_linking license.. . Resolution: If a new IP Core license was added, in order for the new license to be picked up, the current netlist needs to be updated by resetting and re-generating the IP output products before bitstream generation.. ]", 3, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1790] Evaluation License Warning: This design contains one or more evaluation cores that will cease to function after a certain period of time. This design should NOT be used in production systems.. . Evaluation cores found in this design:.     IP core 'mac_phy_ten_gig_eth_mac_ch0_0' (ten_gig_eth_mac_v15_1_7) was generated using a design_linking license..     IP core 'mac_phy_ten_gig_eth_pcs_pma_ch0_0' (ten_gig_eth_pcs_pma_v6_0_16) was generated using a design_linking license.. . Resolution: If a new IP Core license was added, in order for the new license to be picked up, the current netlist needs to be updated by resetting and re-generating the IP output products before bitstream generation.. ]", 3, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1790] Evaluation License Warning: This design contains one or more evaluation cores that will cease to function after a certain period of time. This design should NOT be used in production systems.. . Evaluation cores found in this design:.     IP core 'mac_phy_ten_gig_eth_mac_ch0_0' (ten_gig_eth_mac_v15_1_7) was generated using a design_linking license..     IP core 'mac_phy_ten_gig_eth_pcs_pma_ch0_0' (ten_gig_eth_pcs_pma_v6_0_16) was generated using a design_linking license.. . Resolution: If a new IP Core license was added, in order for the new license to be picked up, the current netlist needs to be updated by resetting and re-generating the IP output products before bitstream generation.. ]", 3, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1790] Evaluation License Warning: This design contains one or more evaluation cores that will cease to function after a certain period of time. This design should NOT be used in production systems.. . Evaluation cores found in this design:.     IP core 'mac_phy_ten_gig_eth_mac_ch0_0' (ten_gig_eth_mac_v15_1_7) was generated using a design_linking license..     IP core 'mac_phy_ten_gig_eth_pcs_pma_ch0_0' (ten_gig_eth_pcs_pma_v6_0_16) was generated using a design_linking license.. . Resolution: If a new IP Core license was added, in order for the new license to be picked up, the current netlist needs to be updated by resetting and re-generating the IP output products before bitstream generation.. ]", 3, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1790] Evaluation License Warning: This design contains one or more evaluation cores that will cease to function after a certain period of time. This design should NOT be used in production systems.. . Evaluation cores found in this design:.     IP core 'mac_phy_ten_gig_eth_mac_ch0_0' (ten_gig_eth_mac_v15_1_7) was generated using a design_linking license..     IP core 'mac_phy_ten_gig_eth_pcs_pma_ch0_0' (ten_gig_eth_pcs_pma_v6_0_16) was generated using a design_linking license.. . Resolution: If a new IP Core license was added, in order for the new license to be picked up, the current netlist needs to be updated by resetting and re-generating the IP output products before bitstream generation.. ]", 3, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1790] Evaluation License Warning: This design contains one or more evaluation cores that will cease to function after a certain period of time. This design should NOT be used in production systems.. . Evaluation cores found in this design:.     IP core 'mac_phy_ten_gig_eth_mac_ch0_0' (ten_gig_eth_mac_v15_1_7) was generated using a design_linking license..     IP core 'mac_phy_ten_gig_eth_pcs_pma_ch0_0' (ten_gig_eth_pcs_pma_v6_0_16) was generated using a design_linking license.. . Resolution: If a new IP Core license was added, in order for the new license to be picked up, the current netlist needs to be updated by resetting and re-generating the IP output products before bitstream generation.. ]", 3, false); // ah (O, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,314 MB. GUI used memory: 62 MB. Current time: 11/12/20, 2:01:37 AM PST
+// Elapsed time: 38 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation]", 4); // ah (O, cr)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1]", 5); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-2063] Module <radio_transmit> not found while processing module instance <radio_transmit> [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/radio.sv:67]. ]", 6, true); // ah (O, cr) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-2063] Module <radio_transmit> not found while processing module instance <radio_transmit> [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/radio.sv:67]. ]", 6, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/radio.sv;-;;-;16;-;line;-;67;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-2063] Module <radio_transmit> not found while processing module instance <radio_transmit> [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/radio.sv:67]. ]", 6, true, false, false, false, false, true); // ah (O, cr) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv)]", 7); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv)]", 7, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv)]", 7, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("radio.sv", 163, 660); // ch (w, cr)
+selectCodeEditor("radio.sv", 449, 665); // ch (w, cr)
+selectCodeEditor("radio.sv", 383, 684); // ch (w, cr)
+selectCodeEditor("radio.sv", 367, 684); // ch (w, cr)
+selectCodeEditor("radio.sv", 187, 318); // ch (w, cr)
+selectCodeEditor("radio.sv", 187, 318, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 163, 313); // ch (w, cr)
+selectCodeEditor("radio.sv", 163, 313, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 251, 546); // ch (w, cr)
+selectCodeEditor("radio.sv", 251, 546, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 291, 564); // ch (w, cr)
+selectCodeEditor("radio.sv", 291, 564, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 282, 589); // ch (w, cr)
+selectCodeEditor("radio.sv", 282, 589, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 269, 573); // ch (w, cr)
+selectCodeEditor("radio.sv", 269, 573, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 266, 582); // ch (w, cr)
+selectCodeEditor("radio.sv", 266, 582, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 277, 610); // ch (w, cr)
+selectCodeEditor("radio.sv", 277, 610, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 173, 585); // ch (w, cr)
+selectCodeEditor("radio.sv", 173, 585, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 160, 556); // ch (w, cr)
+selectCodeEditor("radio.sv", 160, 556, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 152, 525); // ch (w, cr)
+selectCodeEditor("radio.sv", 149, 489); // ch (w, cr)
+selectCodeEditor("radio.sv", 149, 489, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 154, 498); // ch (w, cr)
+selectCodeEditor("radio.sv", 154, 498, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 171, 489); // ch (w, cr)
+selectCodeEditor("radio.sv", 171, 489, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 171, 496); // ch (w, cr)
+selectCodeEditor("radio.sv", 171, 496, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 176, 497); // ch (w, cr)
+selectCodeEditor("radio.sv", 176, 497, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 161, 488); // ch (w, cr)
+selectCodeEditor("radio.sv", 161, 488, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 265, 568); // ch (w, cr)
+selectCodeEditor("radio.sv", 265, 568, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 268, 574); // ch (w, cr)
+selectCodeEditor("radio.sv", 268, 574, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 264, 584); // ch (w, cr)
+selectCodeEditor("radio.sv", 264, 584, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 271, 594); // ch (w, cr)
+selectCodeEditor("radio.sv", 271, 594, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 268, 608); // ch (w, cr)
+selectCodeEditor("radio.sv", 268, 608, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 268, 620); // ch (w, cr)
+selectCodeEditor("radio.sv", 268, 620, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 259, 634); // ch (w, cr)
+selectCodeEditor("radio.sv", 259, 634, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 263, 644); // ch (w, cr)
+selectCodeEditor("radio.sv", 263, 644, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 267, 657); // ch (w, cr)
+selectCodeEditor("radio.sv", 267, 657, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 219, 408); // ch (w, cr)
+selectCodeEditor("radio.sv", 219, 408, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 182, 436); // ch (w, cr)
+selectCodeEditor("radio.sv", 182, 436, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 179, 406); // ch (w, cr)
+selectCodeEditor("radio.sv", 179, 406, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 171, 360); // ch (w, cr)
+selectCodeEditor("radio.sv", 171, 360, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 310, 170); // ch (w, cr)
+selectCodeEditor("radio.sv", 346, 184); // ch (w, cr)
+selectCodeEditor("radio.sv", 279, 174); // ch (w, cr)
+selectCodeEditor("radio.sv", 330, 178); // ch (w, cr)
+selectCodeEditor("radio.sv", 338, 178); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("radio.sv", 250, 410); // ch (w, cr)
+selectCodeEditor("radio.sv", 272, 474); // ch (w, cr)
+// Elapsed time: 38 seconds
+selectCodeEditor("radio.sv", 446, 362); // ch (w, cr)
+selectCodeEditor("radio.sv", 64, 328); // ch (w, cr)
+selectCodeEditor("radio.sv", 64, 328, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 80, 341); // ch (w, cr)
+selectCodeEditor("radio.sv", 80, 341, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 618 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), buffer[0].axis_fifo_tQ : axis_fifo_t (axis_fifo_t.xci)]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), buffer[0].axis_fifo_tQ : axis_fifo_t (axis_fifo_t.xci)]", 9, false); // B (F, cr)
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv)]", 7); // B (F, cr)
+// [GUI Memory]: 124 MB (+190kb) [00:20:10]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : xil_defaultlib.radio_transmit]", 8, false); // B (F, cr)
+// Elapsed time: 84 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv)]", 7, true); // B (F, cr) - Node
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cr)
+// Elapsed time: 13 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 13 seconds
+dismissFileChooser();
+// Elapsed time: 27 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+setFileChooser("/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/radio_transmit.sv");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 53 seconds
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/radio_transmit.sv 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv)]", 8); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[0].duc : xil_defaultlib.duc]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[1].duc : xil_defaultlib.duc]", 10, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[0].duc : xil_defaultlib.duc]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[1].duc : xil_defaultlib.duc]", 10, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[0].duc : xil_defaultlib.duc]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[1].duc : xil_defaultlib.duc]", 10, false); // B (F, cr)
+// Elapsed time: 37 seconds
+selectCodeEditor("radio.sv", 303, 552); // ch (w, cr)
+selectCodeEditor("radio.sv", 270, 494); // ch (w, cr)
+selectCodeEditor("radio.sv", 270, 494, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 251, 453); // ch (w, cr)
+selectCodeEditor("radio.sv", 251, 453, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 247, 432); // ch (w, cr)
+selectCodeEditor("radio.sv", 247, 432, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 251, 421); // ch (w, cr)
+selectCodeEditor("radio.sv", 251, 421, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio.sv", 254, 410); // ch (w, cr)
+selectCodeEditor("radio.sv", 254, 410, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[0].duc : xil_defaultlib.duc]", 9, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[1].duc : xil_defaultlib.duc]", 10, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[0].duc : xil_defaultlib.duc]", 9, false); // B (F, cr)
+// Elapsed time: 137 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv)]", 8, true); // B (F, cr) - Node
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cr)
+// Elapsed time: 94 seconds
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ai (ao, cr)
+// Elapsed time: 51 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[0].duc : xil_defaultlib.duc]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[0].duc : xil_defaultlib.duc]", 9, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a (E, c)
+// Elapsed time: 16 seconds
+setFolderChooser("/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/dds_125m_q");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 23 seconds
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 131 MB (+1598kb) [00:29:35]
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/dds_125m_q/dds_125m_q.xci /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/dds_125m_i/dds_125m_i.xci /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/mult_duc/mult_duc.xci} 
+// bB (cr):  Add Sources  : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 18 seconds
+dismissDialog("Add Sources"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 1,631 MB (+90293kb) [00:29:58]
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_125m_i (dds_125m_i.xci)]", 43, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[0].duc : xil_defaultlib.duc]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[0].duc : xil_defaultlib.duc]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[1].duc : xil_defaultlib.duc]", 10, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[0].duc : xil_defaultlib.duc]", 9, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv), radio_transmit[1].duc : xil_defaultlib.duc]", 10, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mult_duc (mult_duc.xci)]", 45, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_125m_i (dds_125m_i.xci)]", 43, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_125m_q (dds_125m_q.xci)]", 44, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mult_duc (mult_duc.xci)]", 45, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_125m_i (dds_125m_i.xci)]", 43, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dds_125m_q (dds_125m_q.xci)]", 44, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv)]", 8, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv)]", 8, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tpu_transmit (tpu_transmit.sv), tpu_upstream : tpu_upstream (tpu_upstream.sv), radio_upstream : radio (radio.sv), radio_transmit : radio_transmit (radio_transmit.sv)]", 8); // B (F, cr)
+// Elapsed time: 53 seconds
+selectCodeEditor("radio_transmit.sv", 307, 509); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 327, 540); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 327, 540, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 338, 568); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 338, 568, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 314, 554); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 310, 550); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 310, 550, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 322, 562); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 322, 562, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 335, 572); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 335, 572, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 342, 592); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 342, 592, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 352, 609); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 352, 609, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 353, 617); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 353, 617, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 343, 648); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 343, 648, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 322, 640); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 322, 640, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 310, 622); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 310, 622, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 292, 608); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 292, 608, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 282, 582); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 282, 582, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 282, 546); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 282, 546, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 286, 500); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 286, 500, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("radio_transmit.sv", 190, 428); // ch (w, cr)
+selectCodeEditor("radio_transmit.sv", 190, 428, false, false, false, false, true); // ch (w, cr) - Double Click

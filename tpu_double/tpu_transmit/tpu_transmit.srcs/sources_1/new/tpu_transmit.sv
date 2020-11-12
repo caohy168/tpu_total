@@ -114,16 +114,7 @@ logic m_axis_outputQ_tlast[8];
   .s_axis_input_tvalid(axis_tvalid_transfer),
   .s_axis_input_tready(axis_tready_transfer),
   .s_axis_input_tdata(axis_tdata_transfer),
-  .s_axis_input_tlast(axis_tlast_transfer),
-  
-  .m_axis_outputIf_tvalid(m_axis_outputI_tvalid),
-  .m_axis_outputIf_tready(m_axis_outputI_tready),
-  .m_axis_outputIf_tdata(m_axis_outputI_tdata),
-  .m_axis_outputIf_tlast(m_axis_outputI_tlast),
-  .m_axis_outputQf_tvalid(m_axis_outputQ_tvalid),
-  .m_axis_outputQf_tready(m_axis_outputQ_tready),
-  .m_axis_outputQf_tdata(m_axis_outputQ_tdata),
-  .m_axis_outputQf_tlast(m_axis_outputQ_tlast));
+  .s_axis_input_tlast(axis_tlast_transfer));
         
       
     endmodule

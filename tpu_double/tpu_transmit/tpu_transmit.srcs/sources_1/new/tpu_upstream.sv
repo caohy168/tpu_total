@@ -25,28 +25,7 @@ input clk_250m,clk_500m,reset,
 input s_axis_input_tvalid,
 output logic s_axis_input_tready,
 input [63:0]s_axis_input_tdata,
-input s_axis_input_tlast,
-
-output logic m_axis_outputIf_tvalid[8],
-input  m_axis_outputIf_tready[8],
-output logic [15:0]m_axis_outputIf_tdata[8],
-output logic m_axis_outputIf_tlast[8],
-output logic m_axis_outputQf_tvalid[8],
-input  m_axis_outputQf_tready[8],
-output logic [15:0]m_axis_outputQf_tdata[8],
-output logic m_axis_outputQf_tlast[8],
-
-output logic m_axis_outputIf_tvalid_8[8],
-input  m_axis_outputIf_tready_8[8],
-output logic [7:0]m_axis_outputIf_tdata_8[8],
-output logic m_axis_outputIf_tlast_8[8],
-output logic m_axis_outputQf_tvalid_8[8],
-input  m_axis_outputQf_tready_8[8],
-output logic [7:0]m_axis_outputQf_tdata_8[8],
-output logic m_axis_outputQf_tlast_8[8]
-
-
-);
+input s_axis_input_tlast);
 
 logic m_axis_outputI_tvalid_8[8];
 logic m_axis_outputI_tready_8[8];
@@ -58,13 +37,31 @@ logic [7:0]m_axis_outputQ_tdata_8[8];
 logic m_axis_outputQ_tlast_8[8];
 
 logic m_axis_outputI_tvalid[8];
-logic m_axis_outputI_tready[8];
+logic m_axis_outputI_tready[8]={1,1,1,1,1,1,1,1};;
 logic [15:0]m_axis_outputI_tdata[8];
 logic m_axis_outputI_tlast[8];
 logic m_axis_outputQ_tvalid[8];
-logic m_axis_outputQ_tready[8];
+logic m_axis_outputQ_tready[8]={1,1,1,1,1,1,1,1};;
 logic [15:0]m_axis_outputQ_tdata[8];
 logic m_axis_outputQ_tlast[8];
+
+logic m_axis_outputI_tvalid_radio[8];
+logic  m_axis_outputI_tready_radio[8];
+logic [15:0]m_axis_outputI_tdata_radio[8];
+logic m_axis_outputI_tlast_radio[8];
+logic m_axis_outputQ_tvalid_radio[8];
+logic  m_axis_outputQ_tready_radio[8];
+logic [15:0]m_axis_outputQ_tdata_radio[8];
+logic m_axis_outputQ_tlast_radio[8];
+
+logic m_axis_outputI_tvalid_radio8[8];
+logic m_axis_outputI_tready_radio8[8]={1,1,1,1,1,1,1,1};
+logic [7:0]m_axis_outputI_tdata_radio8[8];
+logic m_axis_outputI_tlast_radio8[8];
+logic m_axis_outputQ_tvalid_radio8[8];
+logic m_axis_outputQ_tready_radio8[8]={1,1,1,1,1,1,1,1};
+logic [7:0]m_axis_outputQ_tdata_radio8[8];
+logic m_axis_outputQ_tlast_radio8[8];
 
 layer1 layer1_upstream(
     .clk(clk_250m),
@@ -103,10 +100,10 @@ generate
           .s_axis_tready(m_axis_outputI_tready[i]),
           .s_axis_tdata(m_axis_outputI_tdata[i]),
           .s_axis_tlast(m_axis_outputI_tlast[i]),
-          .m_axis_tvalid(m_axis_outputIf_tvalid[i]),
-          .m_axis_tready(m_axis_outputIf_tready[i]),
-          .m_axis_tdata(m_axis_outputIf_tdata[i]),
-          .m_axis_tlast(m_axis_outputIf_tlast[i]));
+          .m_axis_tvalid(m_axis_outputI_tvalid_radio[i]),
+          .m_axis_tready(m_axis_outputI_tready_radio[i]),
+          .m_axis_tdata(m_axis_outputI_tdata_radio[i]),
+          .m_axis_tlast(m_axis_outputI_tlast_radio[i]));
              
         axis_fifo_t axis_fifo_tQ  (
           .s_axis_aresetn(!reset),
@@ -115,10 +112,10 @@ generate
           .s_axis_tready(m_axis_outputQ_tready[i]),
           .s_axis_tdata(m_axis_outputQ_tdata[i]),
           .s_axis_tlast(m_axis_outputQ_tlast[i]),
-          .m_axis_tvalid(m_axis_outputQf_tvalid[i]),
-          .m_axis_tready(m_axis_outputQf_tready[i]),
-          .m_axis_tdata(m_axis_outputQf_tdata[i]),
-          .m_axis_tlast(m_axis_outputQf_tlast[i]));
+          .m_axis_tvalid(m_axis_outputQ_tvalid_radio[i]),
+          .m_axis_tready(m_axis_outputQ_tready_radio[i]),
+          .m_axis_tdata(m_axis_outputQ_tdata_radio[i]),
+          .m_axis_tlast(m_axis_outputQ_tlast_radio[i]));
           
          axis_fifo_t8 axis_fifo_t8I  (
           .s_axis_aresetn(!reset),
@@ -127,10 +124,10 @@ generate
           .s_axis_tready(m_axis_outputI_tready_8[i]),
           .s_axis_tdata(m_axis_outputI_tdata_8[i]),
           .s_axis_tlast(m_axis_outputI_tlast_8[i]),
-          .m_axis_tvalid(m_axis_outputIf_tvalid_8[i]),
-          .m_axis_tready(m_axis_outputIf_tready_8[i]),
-          .m_axis_tdata(m_axis_outputIf_tdata_8[i]),
-          .m_axis_tlast(m_axis_outputIf_tlast_8[i]));
+          .m_axis_tvalid(m_axis_outputI_tvalid_radio8[i]),
+          .m_axis_tready(m_axis_outputI_tready_radio8[i]),
+          .m_axis_tdata(m_axis_outputI_tdata_radio8[i]),
+          .m_axis_tlast(m_axis_outputI_tlast_radio8[i]));
           
         axis_fifo_t8 axis_fifo_t8Q  (
           .s_axis_aresetn(!reset),
@@ -139,33 +136,33 @@ generate
           .s_axis_tready(m_axis_outputQ_tready_8[i]),
           .s_axis_tdata(m_axis_outputQ_tdata_8[i]),
           .s_axis_tlast(m_axis_outputQ_tlast_8[i]),
-          .m_axis_tvalid(m_axis_outputQf_tvalid_8[i]),
-          .m_axis_tready(m_axis_outputQf_tready_8[i]),
-          .m_axis_tdata(m_axis_outputQf_tdata_8[i]),
-          .m_axis_tlast(m_axis_outputQf_tlast_8[i]));
+          .m_axis_tvalid(m_axis_outputQ_tvalid_radio8[i]),
+          .m_axis_tready(m_axis_outputQ_tready_radio8[i]),
+          .m_axis_tdata(m_axis_outputQ_tdata_radio8[i]),
+          .m_axis_tlast(m_axis_outputQ_tlast_radio8[i]));
 end
 endgenerate
 
-//radio radio_upstream(
-//    .clk_250m(clk_250m),
-//    .clk_500m(clk_500m),
-//    .reset(reset),
-    
-//    .m_axis_outputI_tvalid_8(s_axis_inputI_tvalid_8),
-//    .m_axis_outputI_tready_8(s_axis_inputI_tready_8),
-//    .m_axis_outputI_tdata_8(s_axis_inputI_tdata_8),
-//    .m_axis_outputI_tlast_8(s_axis_inputI_tlast_8),
-//    .m_axis_outputQ_tvalid_8(s_axis_inputQ_tvalid_8),
-//    .m_axis_outputQ_tready_8(s_axis_inputQ_tready_8),
-//    .m_axis_outputQ_tdata_8(s_axis_inputQ_tdata_8),
-//    .m_axis_outputQ_tlast_8(s_axis_inputQ_tlast_8),
-    
-//    .s_axis_inputI_tvalid_8(m_axis_outputIf_tvalid_8),
-//    .s_axis_inputI_tready_8(m_axis_outputIf_tready_8),
-//    .s_axis_inputI_tdata_8(m_axis_outputIf_tdata_8),
-//    .s_axis_inputI_tlast_8(m_axis_outputIf_tlast_8),
-//    .s_axis_inputQ_tvalid_8(m_axis_outputQf_tvalid_8),
-//    .s_axis_inputQ_tready_8(m_axis_outputQf_tready_8),
-//    .s_axis_inputQ_tdata_8(m_axis_outputQf_tdata_8),
-//    .s_axis_inputQ_tlast_8(m_axis_outputQf_tlast_8));
+radio radio_upstream(
+    .clk_250m(clk_250m),
+    .clk_500m(clk_500m),
+    .reset(reset),
+  
+    .m_axis_outputI_tvalid_8(),
+    .m_axis_outputI_tready_8(),
+    .m_axis_outputI_tdata_8(),
+    .m_axis_outputI_tlast_8(),
+    .m_axis_outputQ_tvalid_8(),
+    .m_axis_outputQ_tready_8(),
+    .m_axis_outputQ_tdata_8(),
+    .m_axis_outputQ_tlast_8(),
+  
+    .s_axis_inputI_tvalid_8(m_axis_outputI_tvalid_radio8),
+    .s_axis_inputI_tready_8(m_axis_outputI_tready_radio8),
+    .s_axis_inputI_tdata_8(m_axis_outputI_tdata_radio8),
+    .s_axis_inputI_tlast_8(m_axis_outputI_tlast_radio8),
+    .s_axis_inputQ_tvalid_8(m_axis_outputQ_tvalid_radio8),
+    .s_axis_inputQ_tready_8(m_axis_outputQ_tready_radio8),
+    .s_axis_inputQ_tdata_8(m_axis_outputQ_tdata_radio8),
+    .s_axis_inputQ_tlast_8(m_axis_outputQ_tlast_radio8));
 endmodule
