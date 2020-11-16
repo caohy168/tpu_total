@@ -1,0 +1,2 @@
+sub_duc.vhd,vhdl,xil_defaultlib,../../../../tpu_transmit.srcs/sources_1/new/sub_duc/sim/sub_duc.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

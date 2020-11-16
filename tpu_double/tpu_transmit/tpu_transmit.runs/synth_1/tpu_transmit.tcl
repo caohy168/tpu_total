@@ -18,7 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param general.maxThreads 32
-set_param chipscope.maxJobs 4
 create_project -in_memory -part xcku040-ffva1156-2-e
 
 set_param project.singleFileAddWarning.threshold 0
@@ -37,11 +36,54 @@ read_verilog -library xil_defaultlib -sv {
   /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/axi_stream_gen.sv
   /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/axi_stream_gen_mon_0.sv
   /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/axi_stream_interface.sv
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/crc_generator.sv
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/datastream_transfer.sv
   /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/debounce_reset.sv
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/duc.sv
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/interleaver.sv
   /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/kcu105_10gbaser.sv
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/layer1.sv
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/layer1_transmit.sv
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/mac_block.sv
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/qam.sv
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/radio.sv
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/radio_transmit.sv
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/scrambler.sv
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/tpu_upstream.sv
   /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/tpu_transmit.sv
 }
-read_verilog -library xil_defaultlib /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/mac_phy/hdl/mac_phy_wrapper.v
+read_verilog -library xil_defaultlib {
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/crc24_calc_1bit.v
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/crc24_insert_1bit.v
+  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/mac_phy/hdl/mac_phy_wrapper.v
+}
+read_ip -quiet /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/axis_fifo_t8/axis_fifo_t8.xci
+set_property used_in_implementation false [get_files -all /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/axis_fifo_t8/axis_fifo_t8_ooc.xdc]
+
+read_ip -quiet /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/axis_fifo_t/axis_fifo_t.xci
+set_property used_in_implementation false [get_files -all /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/axis_fifo_t/axis_fifo_t_ooc.xdc]
+
+read_ip -quiet /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/duc_out_fifo/duc_out_fifo.xci
+set_property used_in_implementation false [get_files -all /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/duc_out_fifo/duc_out_fifo_ooc.xdc]
+
+read_ip -quiet /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/add_duc/add_duc.xci
+set_property used_in_implementation false [get_files -all /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/add_duc/add_duc_ooc.xdc]
+
+read_ip -quiet /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/mult_duc/mult_duc.xci
+set_property used_in_implementation false [get_files -all /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/mult_duc/mult_duc_ooc.xdc]
+
+read_ip -quiet /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/sub_duc/sub_duc.xci
+set_property used_in_implementation false [get_files -all /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/sub_duc/sub_duc_ooc.xdc]
+
+read_ip -quiet /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/dds_125m_q/dds_125m_q.xci
+set_property used_in_implementation false [get_files -all /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/dds_125m_q/dds_125m_q_ooc.xdc]
+
+read_ip -quiet /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/dds_125m_i/dds_125m_i.xci
+set_property used_in_implementation false [get_files -all /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/dds_125m_i/dds_125m_i_ooc.xdc]
+
+read_ip -quiet /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/rs_encoder/rs_encoder.xci
+set_property used_in_implementation false [get_files -all /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/rs_encoder/rs_encoder_ooc.xdc]
+
 add_files /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/mac_phy/mac_phy.bd
 set_property used_in_implementation false [get_files -all /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/mac_phy/ip/mac_phy_ten_gig_eth_mac_ch0_0/synth/mac_phy_ten_gig_eth_mac_ch0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/mac_phy/ip/mac_phy_ten_gig_eth_mac_ch0_0/synth/mac_phy_ten_gig_eth_mac_ch0_0_clocks.xdc]

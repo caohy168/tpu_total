@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date              : Tue Nov 10 00:27:26 2020
+| Date              : Sun Nov 15 17:36:00 2020
 | Host              : ubuntu running 64-bit Ubuntu 18.04.5 LTS
 | Command           : report_bus_skew -warn_on_violation -file tpu_transmit_bus_skew_routed.rpt -pb tpu_transmit_bus_skew_routed.pb -rpx tpu_transmit_bus_skew_routed.rpx
 | Design            : tpu_transmit
@@ -44,7 +44,7 @@ Id  Position  From                            To                              Co
           {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][7]} \
           {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][8]} \
           {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][9]}]]
-                                                                              Slow              4.000       0.822      3.178
+                                                                              Slow              4.000       0.693      3.307
 2   91        [get_cells [list {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} \
           {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[10]} \
           {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} \
@@ -67,7 +67,7 @@ Id  Position  From                            To                              Co
           {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
           {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
           {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
-                                                                              Slow              4.000       1.027      2.973
+                                                                              Slow              4.000       0.781      3.219
 3   93        [get_cells [list {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} \
           {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[10]} \
           {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} \
@@ -90,7 +90,7 @@ Id  Position  From                            To                              Co
           {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
           {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
           {datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
-                                                                              Slow              4.000       1.197      2.803
+                                                                              Slow              4.000       0.929      3.071
 
 
 2. Bus Skew Report Per Constraint
@@ -124,27 +124,27 @@ Endpoints: 11
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 refclk_p              clk_out1_tpu_transmit_clock
-                                            datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][5]/D
-                                                                            datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][1]/D
-                                                                                                            Slow         0.822      3.178
+                                            datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                            datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                                                                                                            Slow         0.693      3.307
 
 
-Slack (MET) :             3.178ns  (requirement - actual skew)
-  Endpoint Source:        datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_gray_ff_reg[5]/C
+Slack (MET) :             3.307ns  (requirement - actual skew)
+  Endpoint Source:        datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_gray_ff_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by refclk_p)
-  Endpoint Destination:   datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][5]/D
+  Endpoint Destination:   datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][2]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_tpu_transmit_clock)
-  Reference Source:       datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_gray_ff_reg[1]/C
+  Reference Source:       datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_gray_ff_reg[8]/C
                             (rising edge-triggered cell FDRE clocked by refclk_p)
-  Reference Destination:  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  Reference Destination:  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][8]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_tpu_transmit_clock)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            4.000ns
-  Endpoint Relative Delay:    4.543ns
-  Reference Relative Delay:   3.361ns
-  Relative CRPR:              0.520ns
+  Endpoint Relative Delay:    4.584ns
+  Reference Relative Delay:   3.516ns
+  Relative CRPR:              0.534ns
   Uncertainty:                0.160ns
-  Actual Bus Skew:            0.822ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            0.693ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -158,13 +158,13 @@ Endpoint path:
                          net (fo=2, routed)           0.082     0.445    datasource_10g/mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/refclkcopy
     BUFG_GT_X0Y72        BUFG_GT (Prop_BUFG_GT_I_O)
                                                       0.315     0.760 r  datasource_10g/mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/refclk_bufg_gt_i/O
-    X3Y2 (CLOCK_ROOT)    net (fo=3129, routed)        2.071     2.831    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_clk
-    SLICE_X85Y183        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_gray_ff_reg[5]/C
+    X3Y1 (CLOCK_ROOT)    net (fo=3129, routed)        2.229     2.989    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_clk
+    SLICE_X92Y86         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_gray_ff_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X85Y183        FDRE (Prop_DFF_SLICEL_C_Q)
-                                                      0.114     2.945 r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_gray_ff_reg[5]/Q
-                         net (fo=1, routed)           0.778     3.723    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/async_path[5]
-    SLICE_X83Y183        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][5]/D
+    SLICE_X92Y86         FDRE (Prop_GFF_SLICEL_C_Q)
+                                                      0.114     3.103 r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.610     3.713    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/async_path[2]
+    SLICE_X91Y86         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_tpu_transmit_clock rise edge)
@@ -178,20 +178,20 @@ Endpoint path:
                                                       0.000     0.375 r  tpu_transmit_clock/inst/clkin1_ibufds/IBUFCTRL_INST/O
                          net (fo=1, routed)           0.778     1.153    tpu_transmit_clock/inst/clk_in1_tpu_transmit_clock
     MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
-                                                     -4.261    -3.108 r  tpu_transmit_clock/inst/mmcme3_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.372    -2.736    tpu_transmit_clock/inst/clk_out1_tpu_transmit_clock
+                                                     -4.637    -3.484 r  tpu_transmit_clock/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.372    -3.112    tpu_transmit_clock/inst/clk_out1_tpu_transmit_clock
     BUFGCE_X1Y63         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
-                                                      0.075    -2.661 r  tpu_transmit_clock/inst/clkout1_buf/O
-    X2Y2 (CLOCK_ROOT)    net (fo=163, routed)         1.782    -0.879    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_clk
-    SLICE_X83Y183        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][5]/C
-                         clock pessimism              0.000    -0.879    
-    SLICE_X83Y183        FDRE (Setup_HFF2_SLICEL_C_D)
-                                                      0.060    -0.819    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][5]
+                                                      0.075    -3.037 r  tpu_transmit_clock/inst/clkout1_buf/O
+    X2Y1 (CLOCK_ROOT)    net (fo=249, routed)         2.104    -0.933    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_clk
+    SLICE_X91Y86         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000    -0.933    
+    SLICE_X91Y86         FDRE (Setup_DFF2_SLICEL_C_D)
+                                                      0.063    -0.870    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][2]
   -------------------------------------------------------------------
-                         data arrival                           3.723    
-                         clock arrival                         -0.819    
+                         data arrival                           3.713    
+                         clock arrival                         -0.870    
   -------------------------------------------------------------------
-                         relative delay                         4.543    
+                         relative delay                         4.584    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -205,13 +205,13 @@ Reference path:
                          net (fo=2, routed)           0.046     0.255    datasource_10g/mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/refclkcopy
     BUFG_GT_X0Y72        BUFG_GT (Prop_BUFG_GT_I_O)
                                                       0.283     0.538 r  datasource_10g/mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/refclk_bufg_gt_i/O
-    X3Y2 (CLOCK_ROOT)    net (fo=3129, routed)        1.844     2.382    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_clk
-    SLICE_X86Y182        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_gray_ff_reg[1]/C
+    X3Y1 (CLOCK_ROOT)    net (fo=3129, routed)        1.992     2.530    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_clk
+    SLICE_X94Y85         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_gray_ff_reg[8]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X86Y182        FDRE (Prop_HFF2_SLICEL_C_Q)
-                                                      0.106     2.488 r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.356     2.844    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/async_path[1]
-    SLICE_X83Y181        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][1]/D
+    SLICE_X94Y85         FDRE (Prop_HFF2_SLICEM_C_Q)
+                                                      0.106     2.636 r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/src_gray_ff_reg[8]/Q
+                         net (fo=1, routed)           0.371     3.007    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/async_path[8]
+    SLICE_X94Y84         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][8]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_tpu_transmit_clock rise edge)
@@ -225,20 +225,20 @@ Reference path:
                                                       0.000     0.611 r  tpu_transmit_clock/inst/clkin1_ibufds/IBUFCTRL_INST/O
                          net (fo=1, routed)           0.865     1.476    tpu_transmit_clock/inst/clk_in1_tpu_transmit_clock
     MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
-                                                     -4.642    -3.166 r  tpu_transmit_clock/inst/mmcme3_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.437    -2.729    tpu_transmit_clock/inst/clk_out1_tpu_transmit_clock
+                                                     -4.985    -3.509 r  tpu_transmit_clock/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.437    -3.072    tpu_transmit_clock/inst/clk_out1_tpu_transmit_clock
     BUFGCE_X1Y63         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
-                                                      0.083    -2.646 r  tpu_transmit_clock/inst/clkout1_buf/O
-    X2Y2 (CLOCK_ROOT)    net (fo=163, routed)         2.019    -0.627    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_clk
-    SLICE_X83Y181        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism              0.000    -0.627    
-    SLICE_X83Y181        FDRE (Hold_DFF2_SLICEL_C_D)
-                                                      0.109    -0.518    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][1]
+                                                      0.083    -2.989 r  tpu_transmit_clock/inst/clkout1_buf/O
+    X2Y1 (CLOCK_ROOT)    net (fo=249, routed)         2.370    -0.619    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_clk
+    SLICE_X94Y84         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][8]/C
+                         clock pessimism              0.000    -0.619    
+    SLICE_X94Y84         FDRE (Hold_DFF2_SLICEM_C_D)
+                                                      0.109    -0.510    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/gaxis_pkt_fifo_ic.wpkt_cnt_cdc_inst/dest_graysync_ff_reg[0][8]
   -------------------------------------------------------------------
-                         data arrival                           2.844    
-                         clock arrival                         -0.518    
+                         data arrival                           3.007    
+                         clock arrival                         -0.510    
   -------------------------------------------------------------------
-                         relative delay                         3.361    
+                         relative delay                         3.516    
 
 
 
@@ -270,27 +270,27 @@ Endpoints: 11
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_out1_tpu_transmit_clock
-                      refclk_p              datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                            datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
-                                                                                                            Slow         1.027      2.973
+                      refclk_p              datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                                                                            datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][10]/D
+                                                                                                            Slow         0.781      3.219
 
 
-Slack (MET) :             2.973ns  (requirement - actual skew)
-  Endpoint Source:        datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+Slack (MET) :             3.219ns  (requirement - actual skew)
+  Endpoint Source:        datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_tpu_transmit_clock)
-  Endpoint Destination:   datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  Endpoint Destination:   datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
                             (rising edge-triggered cell FDRE clocked by refclk_p)
-  Reference Source:       datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+  Reference Source:       datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[10]/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_tpu_transmit_clock)
-  Reference Destination:  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+  Reference Destination:  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][10]/D
                             (rising edge-triggered cell FDRE clocked by refclk_p)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            4.000ns
-  Endpoint Relative Delay:   -2.066ns
-  Reference Relative Delay:  -3.292ns
-  Relative CRPR:              0.358ns
+  Endpoint Relative Delay:   -2.408ns
+  Reference Relative Delay:  -3.564ns
+  Relative CRPR:              0.534ns
   Uncertainty:                0.160ns
-  Actual Bus Skew:            1.027ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            0.781ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -306,17 +306,17 @@ Endpoint path:
                                                       0.000     0.611 r  tpu_transmit_clock/inst/clkin1_ibufds/IBUFCTRL_INST/O
                          net (fo=1, routed)           0.865     1.476    tpu_transmit_clock/inst/clk_in1_tpu_transmit_clock
     MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
-                                                     -4.642    -3.166 r  tpu_transmit_clock/inst/mmcme3_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.437    -2.729    tpu_transmit_clock/inst/clk_out1_tpu_transmit_clock
+                                                     -4.985    -3.509 r  tpu_transmit_clock/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.437    -3.072    tpu_transmit_clock/inst/clk_out1_tpu_transmit_clock
     BUFGCE_X1Y63         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
-                                                      0.083    -2.646 r  tpu_transmit_clock/inst/clkout1_buf/O
-    X2Y2 (CLOCK_ROOT)    net (fo=163, routed)         1.999    -0.647    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X87Y175        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                                                      0.083    -2.989 r  tpu_transmit_clock/inst/clkout1_buf/O
+    X2Y1 (CLOCK_ROOT)    net (fo=249, routed)         2.352    -0.637    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X93Y94         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X87Y175        FDRE (Prop_DFF2_SLICEL_C_Q)
-                                                      0.117    -0.530 r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           0.876     0.346    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[2]
-    SLICE_X87Y175        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+    SLICE_X93Y94         FDRE (Prop_CFF_SLICEL_C_Q)
+                                                      0.114    -0.523 r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[8]/Q
+                         net (fo=1, routed)           0.719     0.196    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[8]
+    SLICE_X94Y94         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock refclk_p rise edge)
@@ -328,16 +328,16 @@ Endpoint path:
                          net (fo=2, routed)           0.046     0.255    datasource_10g/mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/refclkcopy
     BUFG_GT_X0Y72        BUFG_GT (Prop_BUFG_GT_I_O)
                                                       0.283     0.538 r  datasource_10g/mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/refclk_bufg_gt_i/O
-    X3Y2 (CLOCK_ROOT)    net (fo=3129, routed)        1.815     2.353    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X87Y175        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.000     2.353    
-    SLICE_X87Y175        FDRE (Setup_HFF2_SLICEL_C_D)
-                                                      0.060     2.413    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+    X3Y1 (CLOCK_ROOT)    net (fo=3129, routed)        2.004     2.542    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X94Y94         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/C
+                         clock pessimism              0.000     2.542    
+    SLICE_X94Y94         FDRE (Setup_DFF2_SLICEM_C_D)
+                                                      0.063     2.605    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]
   -------------------------------------------------------------------
-                         data arrival                           0.346    
-                         clock arrival                          2.413    
+                         data arrival                           0.196    
+                         clock arrival                          2.605    
   -------------------------------------------------------------------
-                         relative delay                        -2.066    
+                         relative delay                        -2.408    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -353,17 +353,17 @@ Reference path:
                                                       0.000     0.375 r  tpu_transmit_clock/inst/clkin1_ibufds/IBUFCTRL_INST/O
                          net (fo=1, routed)           0.778     1.153    tpu_transmit_clock/inst/clk_in1_tpu_transmit_clock
     MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
-                                                     -4.261    -3.108 r  tpu_transmit_clock/inst/mmcme3_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.372    -2.736    tpu_transmit_clock/inst/clk_out1_tpu_transmit_clock
+                                                     -4.637    -3.484 r  tpu_transmit_clock/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.372    -3.112    tpu_transmit_clock/inst/clk_out1_tpu_transmit_clock
     BUFGCE_X1Y63         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
-                                                      0.075    -2.661 r  tpu_transmit_clock/inst/clkout1_buf/O
-    X2Y2 (CLOCK_ROOT)    net (fo=163, routed)         1.802    -0.859    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X86Y183        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                                                      0.075    -3.037 r  tpu_transmit_clock/inst/clkout1_buf/O
+    X2Y1 (CLOCK_ROOT)    net (fo=249, routed)         2.092    -0.945    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X96Y91         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[10]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X86Y183        FDRE (Prop_DFF_SLICEL_C_Q)
-                                                      0.104    -0.755 r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/Q
-                         net (fo=1, routed)           0.426    -0.329    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[6]
-    SLICE_X87Y181        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+    SLICE_X96Y91         FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.103    -0.842 r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[10]/Q
+                         net (fo=1, routed)           0.380    -0.462    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[10]
+    SLICE_X96Y91         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][10]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock refclk_p rise edge)
@@ -375,16 +375,16 @@ Reference path:
                          net (fo=2, routed)           0.082     0.445    datasource_10g/mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/refclkcopy
     BUFG_GT_X0Y72        BUFG_GT (Prop_BUFG_GT_I_O)
                                                       0.315     0.760 r  datasource_10g/mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/refclk_bufg_gt_i/O
-    X3Y2 (CLOCK_ROOT)    net (fo=3129, routed)        2.094     2.854    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X87Y181        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
-                         clock pessimism              0.000     2.854    
-    SLICE_X87Y181        FDRE (Hold_HFF2_SLICEL_C_D)
-                                                      0.108     2.962    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+    X3Y1 (CLOCK_ROOT)    net (fo=3129, routed)        2.232     2.992    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X96Y91         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][10]/C
+                         clock pessimism              0.000     2.992    
+    SLICE_X96Y91         FDRE (Hold_DFF2_SLICEL_C_D)
+                                                      0.109     3.101    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][10]
   -------------------------------------------------------------------
-                         data arrival                          -0.329    
-                         clock arrival                          2.962    
+                         data arrival                          -0.462    
+                         clock arrival                          3.101    
   -------------------------------------------------------------------
-                         relative delay                        -3.292    
+                         relative delay                        -3.564    
 
 
 
@@ -416,27 +416,27 @@ Endpoints: 11
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 refclk_p              clk_out1_tpu_transmit_clock
-                                            datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                            datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
-                                                                                                            Slow         1.197      2.803
+                                            datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                                                                            datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][10]/D
+                                                                                                            Slow         0.929      3.071
 
 
-Slack (MET) :             2.803ns  (requirement - actual skew)
-  Endpoint Source:        datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+Slack (MET) :             3.071ns  (requirement - actual skew)
+  Endpoint Source:        datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]/C
                             (rising edge-triggered cell FDRE clocked by refclk_p)
-  Endpoint Destination:   datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  Endpoint Destination:   datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_tpu_transmit_clock)
-  Reference Source:       datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]/C
+  Reference Source:       datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[10]/C
                             (rising edge-triggered cell FDRE clocked by refclk_p)
-  Reference Destination:  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+  Reference Destination:  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][10]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_tpu_transmit_clock)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            4.000ns
-  Endpoint Relative Delay:    4.873ns
-  Reference Relative Delay:   3.378ns
-  Relative CRPR:              0.457ns
+  Endpoint Relative Delay:    4.818ns
+  Reference Relative Delay:   3.514ns
+  Relative CRPR:              0.534ns
   Uncertainty:                0.160ns
-  Actual Bus Skew:            1.197ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            0.929ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -450,13 +450,13 @@ Endpoint path:
                          net (fo=2, routed)           0.082     0.445    datasource_10g/mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/refclkcopy
     BUFG_GT_X0Y72        BUFG_GT (Prop_BUFG_GT_I_O)
                                                       0.315     0.760 r  datasource_10g/mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/refclk_bufg_gt_i/O
-    X3Y2 (CLOCK_ROOT)    net (fo=3129, routed)        2.053     2.813    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X86Y175        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+    X3Y1 (CLOCK_ROOT)    net (fo=3129, routed)        2.245     3.005    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X91Y88         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X86Y175        FDRE (Prop_DFF2_SLICEL_C_Q)
-                                                      0.117     2.930 r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           1.109     4.039    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[2]
-    SLICE_X83Y175        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+    SLICE_X91Y88         FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.114     3.119 r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[8]/Q
+                         net (fo=1, routed)           0.829     3.948    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[8]
+    SLICE_X92Y88         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_tpu_transmit_clock rise edge)
@@ -470,20 +470,20 @@ Endpoint path:
                                                       0.000     0.375 r  tpu_transmit_clock/inst/clkin1_ibufds/IBUFCTRL_INST/O
                          net (fo=1, routed)           0.778     1.153    tpu_transmit_clock/inst/clk_in1_tpu_transmit_clock
     MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
-                                                     -4.261    -3.108 r  tpu_transmit_clock/inst/mmcme3_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.372    -2.736    tpu_transmit_clock/inst/clk_out1_tpu_transmit_clock
+                                                     -4.637    -3.484 r  tpu_transmit_clock/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.372    -3.112    tpu_transmit_clock/inst/clk_out1_tpu_transmit_clock
     BUFGCE_X1Y63         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
-                                                      0.075    -2.661 r  tpu_transmit_clock/inst/clkout1_buf/O
-    X2Y2 (CLOCK_ROOT)    net (fo=163, routed)         1.765    -0.896    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X83Y175        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.000    -0.896    
-    SLICE_X83Y175        FDRE (Setup_DFF2_SLICEL_C_D)
-                                                      0.063    -0.833    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+                                                      0.075    -3.037 r  tpu_transmit_clock/inst/clkout1_buf/O
+    X2Y1 (CLOCK_ROOT)    net (fo=249, routed)         2.108    -0.929    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X92Y88         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/C
+                         clock pessimism              0.000    -0.929    
+    SLICE_X92Y88         FDRE (Setup_HFF2_SLICEL_C_D)
+                                                      0.060    -0.869    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]
   -------------------------------------------------------------------
-                         data arrival                           4.039    
-                         clock arrival                         -0.833    
+                         data arrival                           3.948    
+                         clock arrival                         -0.869    
   -------------------------------------------------------------------
-                         relative delay                         4.873    
+                         relative delay                         4.818    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -497,13 +497,13 @@ Reference path:
                          net (fo=2, routed)           0.046     0.255    datasource_10g/mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/refclkcopy
     BUFG_GT_X0Y72        BUFG_GT (Prop_BUFG_GT_I_O)
                                                       0.283     0.538 r  datasource_10g/mac_phy_wrapper_i/mac_phy_i/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/refclk_bufg_gt_i/O
-    X3Y2 (CLOCK_ROOT)    net (fo=3129, routed)        1.805     2.343    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X85Y177        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]/C
+    X3Y1 (CLOCK_ROOT)    net (fo=3129, routed)        1.985     2.523    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X93Y95         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[10]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X85Y177        FDRE (Prop_DFF2_SLICEL_C_Q)
-                                                      0.107     2.450 r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]/Q
-                         net (fo=1, routed)           0.414     2.864    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[5]
-    SLICE_X85Y178        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+    SLICE_X93Y95         FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.103     2.626 r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[10]/Q
+                         net (fo=1, routed)           0.362     2.988    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[10]
+    SLICE_X93Y95         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][10]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_tpu_transmit_clock rise edge)
@@ -517,20 +517,20 @@ Reference path:
                                                       0.000     0.611 r  tpu_transmit_clock/inst/clkin1_ibufds/IBUFCTRL_INST/O
                          net (fo=1, routed)           0.865     1.476    tpu_transmit_clock/inst/clk_in1_tpu_transmit_clock
     MMCME3_ADV_X1Y2      MMCME3_ADV (Prop_MMCME3_ADV_CLKIN1_CLKOUT0)
-                                                     -4.642    -3.166 r  tpu_transmit_clock/inst/mmcme3_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.437    -2.729    tpu_transmit_clock/inst/clk_out1_tpu_transmit_clock
+                                                     -4.985    -3.509 r  tpu_transmit_clock/inst/mmcme3_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.437    -3.072    tpu_transmit_clock/inst/clk_out1_tpu_transmit_clock
     BUFGCE_X1Y63         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
-                                                      0.083    -2.646 r  tpu_transmit_clock/inst/clkout1_buf/O
-    X2Y2 (CLOCK_ROOT)    net (fo=163, routed)         2.022    -0.624    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X85Y178        FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C
-                         clock pessimism              0.000    -0.624    
-    SLICE_X85Y178        FDRE (Hold_DFF2_SLICEL_C_D)
-                                                      0.109    -0.515    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]
+                                                      0.083    -2.989 r  tpu_transmit_clock/inst/clkout1_buf/O
+    X2Y1 (CLOCK_ROOT)    net (fo=249, routed)         2.353    -0.636    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X93Y95         FDRE                                         r  datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][10]/C
+                         clock pessimism              0.000    -0.636    
+    SLICE_X93Y95         FDRE (Hold_CFF2_SLICEL_C_D)
+                                                      0.109    -0.527    datasource_10g/axi_stream_gen_mon_0/axi_stream_interface/bb_interface_fifo_rx/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][10]
   -------------------------------------------------------------------
-                         data arrival                           2.864    
-                         clock arrival                         -0.515    
+                         data arrival                           2.988    
+                         clock arrival                         -0.527    
   -------------------------------------------------------------------
-                         relative delay                         3.378    
+                         relative delay                         3.514    
 
 
 

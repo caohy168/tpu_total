@@ -7,7 +7,7 @@
 // Design Name: 
 // Module Name: tpu_transmit
 // Project Name: 
-// Target Devices: 
+// Target Devices: kcu105
 // Tool Versions: 
 // Description: 
 // 
@@ -30,7 +30,15 @@ module tpu_transmit#(
   output       xphy_txp,
   output       xphy_txn,
   input        xphy_rxp,
-  input        xphy_rxn);
+  input        xphy_rxn,
+  
+  output  m_axis_outputADI_tvalid[8],  
+  output  m_axis_outputADQ_tvalid[8],
+  output  m_axis_outputADI_tlast[8],
+  output  m_axis_outputADQ_tlast[8],     
+  output [15:0]m_axis_outputADI_tdata[8],
+  output [15:0]m_axis_outputADQ_tdata[8]
+  );
   
 logic clk_250m,clk_500m;   
 
@@ -113,8 +121,15 @@ logic m_axis_outputQ_tlast[8];
   
   .s_axis_input_tvalid(axis_tvalid_transfer),
   .s_axis_input_tready(axis_tready_transfer),
-  .s_axis_input_tdata(axis_tdata_transfer),
-  .s_axis_input_tlast(axis_tlast_transfer));
+  .s_axis_input_tdata (axis_tdata_transfer),
+  .s_axis_input_tlast (axis_tlast_transfer),
+  
+  .m_axis_outputADI_tvalid(m_axis_outputADI_tvalid),  
+  .m_axis_outputADQ_tvalid(m_axis_outputADQ_tvalid),
+  .m_axis_outputADI_tlast (m_axis_outputADI_tlast ),
+  .m_axis_outputADQ_tlast (m_axis_outputADQ_tlast ),     
+  .m_axis_outputADI_tdata (m_axis_outputADI_tdata ),
+  .m_axis_outputADQ_tdata (m_axis_outputADQ_tdata ));
         
       
     endmodule

@@ -1,5 +1,10 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
+"../../../../tpu_transmit.srcs/sources_1/new/add_duc/sim/add_duc.vhd" \
+"../../../../tpu_transmit.srcs/sources_1/new/mult_duc/sim/mult_duc.vhd" \
+"../../../../tpu_transmit.srcs/sources_1/new/sub_duc/sim/sub_duc.vhd" \
+"../../../../tpu_transmit.srcs/sources_1/new/dds_125m_q/sim/dds_125m_q.vhd" \
+"../../../../tpu_transmit.srcs/sources_1/new/dds_125m_i/sim/dds_125m_i.vhd" \
 "../../../../tpu_transmit.srcs/sources_1/new/rs_encoder/sim/rs_encoder.vhd" \
 
 # Do not sort compile order

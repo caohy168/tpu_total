@@ -6,7 +6,7 @@
 // Design Name: Telecommunications processing unit
 // Module Name: tpu
 // Project Name: BFB(base frequency band) research group
-// Target Devices: xcvu9p
+// Target Devices: kcu105
 // Tool Versions: vivado 2019.2
 // Description: 
 // 
@@ -121,6 +121,22 @@ end
 
 assign tb.tpu_transmit.datasource_10g.sim_speedup_control_ch = speed_up;
 
+logic  m_axis_outputADI_tvalid[8];  
+logic  m_axis_outputADQ_tvalid[8];
+logic  m_axis_outputADI_tlast[8];
+logic  m_axis_outputADQ_tlast[8];     
+logic [15:0]m_axis_outputADI_tdata[8];
+logic [15:0]m_axis_outputADQ_tdata[8];
+
+integer out_file;
+initial begin
+    out_file = $fopen("/home/caohy/work/tpu_total/tpu_double/intermediate_database/outputADI_tdata.txt","w");
+    end
+
+always @(clk_250m)
+    if(m_axis_outputADI_tvalid[0])begin
+    $fwrite(out_file,"%d",$signed(m_axis_outputADI_tdata[0])); end
+
 tpu_transmit tpu_transmit(
 
   .CLK_125MHZ_P(clk_125m),
@@ -132,7 +148,14 @@ tpu_transmit tpu_transmit(
   .xphy_txp(xphy_txp),
   .xphy_txn(xphy_txn),
   .xphy_rxp(xphy_rxp),
-  .xphy_rxn(xphy_rxn));
+  .xphy_rxn(xphy_rxn),
+  
+  .m_axis_outputADI_tvalid(m_axis_outputADI_tvalid),  
+  .m_axis_outputADQ_tvalid(m_axis_outputADQ_tvalid),
+  .m_axis_outputADI_tlast(m_axis_outputADI_tlast),
+  .m_axis_outputADQ_tlast(m_axis_outputADQ_tlast),     
+  .m_axis_outputADI_tdata(m_axis_outputADI_tdata),
+  .m_axis_outputADQ_tdata(m_axis_outputADQ_tdata));
 
 
 endmodule 

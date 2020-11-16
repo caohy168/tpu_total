@@ -29,18 +29,20 @@ module radio(
     input  s_axis_inputQ_tvalid_8[8],
     output logic s_axis_inputQ_tready_8[8],
     input  [7:0]s_axis_inputQ_tdata_8[8],
-    input  s_axis_inputQ_tlast_8[8]
+    input  s_axis_inputQ_tlast_8[8],
+    
+    output  m_axis_outputADI_tvalid[8],   
+    output  m_axis_outputADQ_tvalid[8],
+    output  m_axis_outputADI_tlast[8],
+    output  m_axis_outputADQ_tlast[8],     
+    output [15:0]m_axis_outputADI_tdata[8],
+    output [15:0]m_axis_outputADQ_tdata[8]
+    
     );
 
-    logic m_axis_outputADI_tready[8];
-    logic m_axis_outputADQ_tready[8];
+    logic m_axis_outputADI_tready[8]={1,1,1,1,1,1,1,1};
+    logic m_axis_outputADQ_tready[8]={1,1,1,1,1,1,1,1};
     
-    logic m_axis_outputADI_tvalid[8];
-    logic m_axis_outputADQ_tvalid[8];
-    logic m_axis_outputADI_tlast[8];
-    logic m_axis_outputADQ_tlast[8];
-    logic[15:0]m_axis_outputADI_tdata[8];
-    logic[15:0]m_axis_outputADQ_tdata[8];
 
 //ila_radio ila_radio (
 //    .clk(clk_500m),

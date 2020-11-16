@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Tue Nov 10 00:23:40 2020
+| Date         : Sun Nov 15 17:32:04 2020
 | Host         : ubuntu running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_utilization -file tpu_transmit_utilization_synth.rpt -pb tpu_transmit_utilization_synth.pb
 | Design       : tpu_transmit
@@ -28,22 +28,22 @@ Table of Contents
 1. CLB Logic
 ------------
 
-+----------------------------+------+-------+-----------+-------+
-|          Site Type         | Used | Fixed | Available | Util% |
-+----------------------------+------+-------+-----------+-------+
-| CLB LUTs*                  |  105 |     0 |    242400 |  0.04 |
-|   LUT as Logic             |  104 |     0 |    242400 |  0.04 |
-|   LUT as Memory            |    1 |     0 |    112800 | <0.01 |
-|     LUT as Distributed RAM |    0 |     0 |           |       |
-|     LUT as Shift Register  |    1 |     0 |           |       |
-| CLB Registers              |  121 |     0 |    484800 |  0.02 |
-|   Register as Flip Flop    |  121 |     0 |    484800 |  0.02 |
-|   Register as Latch        |    0 |     0 |    484800 |  0.00 |
-| CARRY8                     |    4 |     0 |     30300 |  0.01 |
-| F7 Muxes                   |    0 |     0 |    121200 |  0.00 |
-| F8 Muxes                   |    0 |     0 |     60600 |  0.00 |
-| F9 Muxes                   |    0 |     0 |     30300 |  0.00 |
-+----------------------------+------+-------+-----------+-------+
++----------------------------+-------+-------+-----------+-------+
+|          Site Type         |  Used | Fixed | Available | Util% |
++----------------------------+-------+-------+-----------+-------+
+| CLB LUTs*                  | 19211 |     0 |    242400 |  7.93 |
+|   LUT as Logic             | 18294 |     0 |    242400 |  7.55 |
+|   LUT as Memory            |   917 |     0 |    112800 |  0.81 |
+|     LUT as Distributed RAM |   912 |     0 |           |       |
+|     LUT as Shift Register  |     5 |     0 |           |       |
+| CLB Registers              | 12915 |     0 |    484800 |  2.66 |
+|   Register as Flip Flop    | 12915 |     0 |    484800 |  2.66 |
+|   Register as Latch        |     0 |     0 |    484800 |  0.00 |
+| CARRY8                     |    12 |     0 |     30300 |  0.04 |
+| F7 Muxes                   |  1774 |     0 |    121200 |  1.46 |
+| F8 Muxes                   |   644 |     0 |     60600 |  1.06 |
+| F9 Muxes                   |     0 |     0 |     30300 |  0.00 |
++----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
 
@@ -60,9 +60,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 0     |          Yes |           - |        Reset |
-| 0     |          Yes |         Set |            - |
-| 121   |          Yes |       Reset |            - |
+| 66    |          Yes |           - |        Reset |
+| 30    |          Yes |         Set |            - |
+| 12819 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -151,21 +151,27 @@ Table of Contents
 8. Primitives
 -------------
 
-+----------+------+---------------------+
-| Ref Name | Used | Functional Category |
-+----------+------+---------------------+
-| FDRE     |  121 |            Register |
-| LUT6     |   39 |                 CLB |
-| LUT4     |   39 |                 CLB |
-| LUT3     |   28 |                 CLB |
-| LUT5     |   22 |                 CLB |
-| LUT2     |   12 |                 CLB |
-| LUT1     |    6 |                 CLB |
-| CARRY8   |    4 |                 CLB |
-| SRL16E   |    1 |                 CLB |
-| INBUF    |    1 |                 I/O |
-| IBUFCTRL |    1 |              Others |
-+----------+------+---------------------+
++----------+-------+---------------------+
+| Ref Name |  Used | Functional Category |
++----------+-------+---------------------+
+| FDRE     | 12819 |            Register |
+| LUT6     |  8426 |                 CLB |
+| LUT3     |  5239 |                 CLB |
+| LUT5     |  3301 |                 CLB |
+| LUT4     |  3189 |                 CLB |
+| MUXF7    |  1774 |                 CLB |
+| LUT2     |  1415 |                 CLB |
+| RAMD64E  |   752 |                 CLB |
+| MUXF8    |   644 |                 CLB |
+| RAMD32   |   160 |                 CLB |
+| LUT1     |    66 |                 CLB |
+| FDCE     |    66 |            Register |
+| FDSE     |    30 |            Register |
+| CARRY8   |    12 |                 CLB |
+| SRL16E   |     5 |                 CLB |
+| INBUF    |     1 |                 I/O |
+| IBUFCTRL |     1 |              Others |
++----------+-------+---------------------+
 
 
 9. Black Boxes
@@ -174,7 +180,16 @@ Table of Contents
 +-----------------------------------+------+
 |              Ref Name             | Used |
 +-----------------------------------+------+
+| axis_fifo_t8                      |   16 |
+| axis_fifo_t                       |   16 |
+| mult_duc                          |    8 |
+| duc_out_fifo                      |    4 |
+| sub_duc                           |    2 |
+| rs_encoder                        |    2 |
+| dds_125m_q                        |    2 |
+| dds_125m_i                        |    2 |
 | bb_interface_fifo                 |    2 |
+| add_duc                           |    2 |
 | tpu_transmit_clock                |    1 |
 | mac_phy_ten_gig_eth_pcs_pma_ch0_0 |    1 |
 | mac_phy_ten_gig_eth_mac_ch0_0     |    1 |

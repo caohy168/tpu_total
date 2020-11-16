@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../tpu_transmit.srcs/sources_1/new/sub_duc/sim/sub_duc.vhd" \
+
+nosort

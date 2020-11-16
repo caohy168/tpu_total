@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date             : Tue Nov 10 00:27:23 2020
+| Date             : Sun Nov 15 17:35:57 2020
 | Host             : ubuntu running 64-bit Ubuntu 18.04.5 LTS
 | Command          : report_power -file tpu_transmit_power_routed.rpt -pb tpu_transmit_power_summary_routed.pb -rpx tpu_transmit_power_routed.rpx
 | Design           : tpu_transmit
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.109        |
+| Total On-Chip Power (W)  | 1.121        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.580        |
+| Dynamic (W)              | 0.592        |
 | Device Static (W)        | 0.530        |
 | Effective TJA (C/W)      | 1.4          |
 | Max Ambient (C)          | 98.4         |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.052 |       12 |       --- |             --- |
-| CLB Logic                |     0.026 |    12569 |       --- |             --- |
-|   LUT as Logic           |     0.022 |     4744 |    242400 |            1.96 |
-|   LUT as Distributed RAM |     0.002 |       98 |    112800 |            0.09 |
-|   Register               |     0.002 |     5978 |    484800 |            1.23 |
+| Clocks                   |     0.049 |       12 |       --- |             --- |
+| CLB Logic                |     0.029 |    13836 |       --- |             --- |
+|   LUT as Logic           |     0.024 |     5895 |    242400 |            2.43 |
+|   LUT as Distributed RAM |     0.003 |      178 |    112800 |            0.16 |
+|   Register               |     0.002 |     5984 |    484800 |            1.23 |
 |   LUT as Shift Register  |    <0.001 |        9 |    112800 |           <0.01 |
 |   CARRY8                 |    <0.001 |       57 |     30300 |            0.19 |
 |   F7/F8 Muxes            |    <0.001 |       27 |    242400 |            0.01 |
-|   Others                 |     0.000 |      453 |       --- |             --- |
-| Signals                  |     0.028 |     9686 |       --- |             --- |
-| Block RAM                |     0.021 |        9 |       600 |            1.50 |
+|   Others                 |     0.000 |      454 |       --- |             --- |
+| Signals                  |     0.031 |     9913 |       --- |             --- |
+| Block RAM                |     0.029 |        9 |       600 |            1.50 |
 | MMCM                     |     0.114 |        1 |        10 |           10.00 |
 | I/O                      |     0.003 |        3 |       520 |            0.58 |
 | GTH                      |     0.336 |        1 |        20 |            5.00 |
 | Static Power             |     0.530 |          |           |                 |
-| Total                    |     1.109 |          |           |                 |
+| Total                    |     1.121 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +------------+-------------+-----------+-------------+------------+
 | Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +------------+-------------+-----------+-------------+------------+
-| Vccint     |       0.950 |     0.319 |       0.169 |      0.150 |
+| Vccint     |       0.950 |     0.331 |       0.181 |      0.150 |
 | Vccaux     |       1.800 |     0.159 |       0.063 |      0.096 |
 | Vccaux_io  |       1.800 |     0.066 |       0.001 |      0.065 |
 | Vccint_io  |       0.950 |     0.016 |       0.001 |      0.016 |
@@ -161,12 +161,13 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| tpu_transmit               |     0.580 |
-|   datasource_10g           |     0.462 |
-|     axi_stream_gen_mon_0   |     0.035 |
-|       axi_stream_interface |     0.034 |
-|     mac_phy_wrapper_i      |     0.426 |
-|       mac_phy_i            |     0.426 |
+| tpu_transmit               |     0.592 |
+|   datasource_10g           |     0.470 |
+|     axi_stream_gen_mon_0   |     0.043 |
+|       axi_stream_interface |     0.040 |
+|     mac_phy_wrapper_i      |     0.427 |
+|       mac_phy_i            |     0.427 |
+|   datastream_transfer      |     0.003 |
 |   tpu_transmit_clock       |     0.118 |
 |     inst                   |     0.118 |
 |       clkin1_ibufds        |     0.003 |

@@ -7,8 +7,8 @@
 // Design Name: 
 // Module Name: radio_transmit
 // Project Name: 
-// Target Devices: 
-// Tool Versions: 
+// Target Devices:xcku040 
+// Tool Versions: vivado
 // Description: 
 // 
 // Dependencies: 
@@ -85,7 +85,7 @@ logic [7:0]m_axis_outputI_inter_tdata[8],m_axis_outputQ_inter_tdata[8];
 
 genvar j;
 generate
-    for (j = 0; j < radio_transmit_lane_number; j = j + 1)begin: radio_transmit
+    for (j = 0; j < radio_transmit_lane_number; j = j + 1)begin: duc_transmit
 //        inter2 inter2_I(
 //            .aclk(clk_250m),
 //            .aclk1(clk_500m),
@@ -141,8 +141,8 @@ generate
              .m_axis_data_tvalid_duc_Q(m_axis_outputQ_tvalid[j]),
              .m_axis_data_tdata_duc_I (m_axis_outputI_tdata[j]),
              .m_axis_data_tdata_duc_Q (m_axis_outputQ_tdata[j]),
-             .m_axis_data_tlast_duc_I(m_axis_outputI_tlast[j]),
-             .m_axis_data_tlast_duc_Q(m_axis_outputQ_tlast[j])); 
+             .m_axis_data_tlast_duc_I (m_axis_outputI_tlast[j]),
+             .m_axis_data_tlast_duc_Q (m_axis_outputQ_tlast[j])); 
 end
 endgenerate
 

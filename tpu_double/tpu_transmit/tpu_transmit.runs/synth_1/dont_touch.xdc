@@ -3,6 +3,33 @@
 
 # XDC: new/tpu_transmit.xdc
 
+# IP: new/axis_fifo_t8/axis_fifo_t8.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==axis_fifo_t8 || ORIG_REF_NAME==axis_fifo_t8} -quiet] -quiet
+
+# IP: new/axis_fifo_t/axis_fifo_t.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==axis_fifo_t || ORIG_REF_NAME==axis_fifo_t} -quiet] -quiet
+
+# IP: new/duc_out_fifo/duc_out_fifo.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==duc_out_fifo || ORIG_REF_NAME==duc_out_fifo} -quiet] -quiet
+
+# IP: new/add_duc/add_duc.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==add_duc || ORIG_REF_NAME==add_duc} -quiet] -quiet
+
+# IP: new/mult_duc/mult_duc.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mult_duc || ORIG_REF_NAME==mult_duc} -quiet] -quiet
+
+# IP: new/sub_duc/sub_duc.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sub_duc || ORIG_REF_NAME==sub_duc} -quiet] -quiet
+
+# IP: new/dds_125m_q/dds_125m_q.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dds_125m_q || ORIG_REF_NAME==dds_125m_q} -quiet] -quiet
+
+# IP: new/dds_125m_i/dds_125m_i.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dds_125m_i || ORIG_REF_NAME==dds_125m_i} -quiet] -quiet
+
+# IP: new/rs_encoder/rs_encoder.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==rs_encoder || ORIG_REF_NAME==rs_encoder} -quiet] -quiet
+
 # Block Designs: new/mac_phy/mac_phy.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mac_phy || ORIG_REF_NAME==mac_phy} -quiet] -quiet
 
