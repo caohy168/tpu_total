@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Nov 22 17:59:55 2020
+# Process ID: 5696
+# Current directory: /home/caohy/work/tpu_total/tpu_double/tpu_receive
+# Command line: vivado
+# Log file: /home/caohy/work/tpu_total/tpu_double/tpu_receive/vivado.log
+# Journal file: /home/caohy/work/tpu_total/tpu_double/tpu_receive/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/caohy/work/tpu_total/tpu_double/tpu_receive/tpu_receive.xpr
+launch_simulation
+source tb.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb/m_axis_outputADI_tvalid}} {{/tb/m_axis_outputADQ_tvalid}} {{/tb/m_axis_outputADI_tlast}} {{/tb/m_axis_outputADQ_tlast}} {{/tb/m_axis_outputADI_tdata}} {{/tb/m_axis_outputADQ_tdata}} 
+restart
+run all
+relaunch_sim
+restart
+run all
+add_bp {/home/caohy/work/tpu_total/tpu_double/tpu_receive/tpu_receive.srcs/sim_1/new/tb.sv} 163
+restart
+run all
+add_bp {/home/caohy/work/tpu_total/tpu_double/tpu_receive/tpu_receive.srcs/sim_1/new/tb.sv} 166
+remove_bps -file {/home/caohy/work/tpu_total/tpu_double/tpu_receive/tpu_receive.srcs/sim_1/new/tb.sv} -line 163
+restart
+run all
+remove_bps -file {/home/caohy/work/tpu_total/tpu_double/tpu_receive/tpu_receive.srcs/sim_1/new/tb.sv} -line 166
+relaunch_sim
+relaunch_sim
+restart
+run all
+relaunch_sim
+restart
+run all
+relaunch_sim

@@ -119,23 +119,68 @@ initial begin
    speed_up = 1'b1; 
 end
 
-assign tb.tpu_transmit.datasource_10g.sim_speedup_control_ch = speed_up;
+assign tb.tpu_transmit.mainnet_down10g.sim_speedup_control_ch = speed_up;
 
-logic  m_axis_outputADI_tvalid[8];  
-logic  m_axis_outputADQ_tvalid[8];
-logic  m_axis_outputADI_tlast[8];
-logic  m_axis_outputADQ_tlast[8];     
-logic [15:0]m_axis_outputADI_tdata[8];
-logic [15:0]m_axis_outputADQ_tdata[8];
+logic       m_axis_outputDAI_tvalid[8];  
+logic       m_axis_outputDAQ_tvalid[8];
+logic       m_axis_outputDAI_tlast[8];
+logic       m_axis_outputDAQ_tlast[8];     
+logic [15:0]m_axis_outputDAI_tdata[8];
+logic [15:0]m_axis_outputDAQ_tdata[8];
 
-integer out_file;
-initial begin
-    out_file = $fopen("/home/caohy/work/tpu_total/tpu_double/intermediate_database/outputADI_tdata.txt","w");
+//integer out_file_dai0,out_file_daq0;
+//initial begin
+//    out_file_dai0 = $fopen("/home/caohy/work/tpu_total/tpu_double/intermediate_database/dai_data0","w");
+//    out_file_daq0 = $fopen("/home/caohy/work/tpu_total/tpu_double/intermediate_database/daq_data0","w");
+//    end
+logic [15:0]mem_pushi[8][1700];
+logic [15:0]mem_pushq[8][1700];
+//$writememh("memory_hex.txt", memory);
+integer ni[8]={0,0,0,0,0,0,0,0};
+integer nq[8]={0,0,0,0,0,0,0,0};
+genvar mem_push_i;
+generate
+    for (mem_push_i = 0; mem_push_i < 8; mem_push_i = mem_push_i + 1)begin: mem_push
+        always @(posedge clk_250m) begin
+            if(m_axis_outputDAI_tvalid[mem_push_i])begin
+                mem_pushi[mem_push_i][ni[mem_push_i]]=m_axis_outputDAI_tdata[mem_push_i];
+                ni[mem_push_i]++;
+                end
+            if(m_axis_outputDAQ_tvalid[mem_push_i])begin
+                mem_pushq[mem_push_i][nq[mem_push_i]]=m_axis_outputDAQ_tdata[mem_push_i];
+                nq[mem_push_i]++;
+                end end end
+endgenerate
+
+
+//always @(clk_250m) begin
+//    if(m_axis_outputDAI_tvalid[0])begin
+//        ni=ni+1;
+//        if(ni%2==0)begin
+//            //$fwrite(out_file_dai0,"%d",$signed(m_axis_outputDAI_tdata[0]));
+//            //$fwrite(out_file_dai0,"%h",m_axis_outputDAI_tdata[0]); 
+            
+//            end end
+//    if(m_axis_outputDAQ_tvalid[0])begin
+//        nq=nq+1;
+//        if(nq%2==0)begin
+//            //$fwrite(out_file_daq0,"%d",$signed(m_axis_outputDAQ_tdata[0])); 
+//            //$fwrite(out_file_daq0,"%h",m_axis_outputDAQ_tdata[0]);
+//            end end end   
+integer nstop=0;                     
+always @(negedge m_axis_outputDAI_tvalid[0]) begin 
+    nstop=nstop+1;
+    if(nstop==6) begin
+        //$fclose(out_file_dai0); 
+        //$fclose(out_file_daq0);    
+        #500;  
+        $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data0", mem_pushi[0]);
+        $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data0", mem_pushq[0]); 
+        $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data1", mem_pushi[1]);
+        $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data1", mem_pushq[1]);   
+        $finish;end 
     end
-
-always @(clk_250m)
-    if(m_axis_outputADI_tvalid[0])begin
-    $fwrite(out_file,"%d",$signed(m_axis_outputADI_tdata[0])); end
+            
 
 tpu_transmit tpu_transmit(
 
@@ -150,12 +195,12 @@ tpu_transmit tpu_transmit(
   .xphy_rxp(xphy_rxp),
   .xphy_rxn(xphy_rxn),
   
-  .m_axis_outputADI_tvalid(m_axis_outputADI_tvalid),  
-  .m_axis_outputADQ_tvalid(m_axis_outputADQ_tvalid),
-  .m_axis_outputADI_tlast(m_axis_outputADI_tlast),
-  .m_axis_outputADQ_tlast(m_axis_outputADQ_tlast),     
-  .m_axis_outputADI_tdata(m_axis_outputADI_tdata),
-  .m_axis_outputADQ_tdata(m_axis_outputADQ_tdata));
+  .m_axis_outputDAI_tvalid(m_axis_outputDAI_tvalid),  
+  .m_axis_outputDAQ_tvalid(m_axis_outputDAQ_tvalid),
+  .m_axis_outputDAI_tlast (m_axis_outputDAI_tlast),
+  .m_axis_outputDAQ_tlast (m_axis_outputDAQ_tlast),     
+  .m_axis_outputDAI_tdata (m_axis_outputDAI_tdata),
+  .m_axis_outputDAQ_tdata (m_axis_outputDAQ_tdata));
 
 
 endmodule 

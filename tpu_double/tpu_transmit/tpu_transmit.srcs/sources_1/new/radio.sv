@@ -31,31 +31,18 @@ module radio(
     input  [7:0]s_axis_inputQ_tdata_8[8],
     input  s_axis_inputQ_tlast_8[8],
     
-    output  m_axis_outputADI_tvalid[8],   
-    output  m_axis_outputADQ_tvalid[8],
-    output  m_axis_outputADI_tlast[8],
-    output  m_axis_outputADQ_tlast[8],     
-    output [15:0]m_axis_outputADI_tdata[8],
-    output [15:0]m_axis_outputADQ_tdata[8]
+    output  m_axis_outputDAI_tvalid[8],   
+    output  m_axis_outputDAQ_tvalid[8],
+    output  m_axis_outputDAI_tlast[8],
+    output  m_axis_outputDAQ_tlast[8],     
+    output [15:0]m_axis_outputDAI_tdata[8],
+    output [15:0]m_axis_outputDAQ_tdata[8]
     
     );
 
-    logic m_axis_outputADI_tready[8]={1,1,1,1,1,1,1,1};
-    logic m_axis_outputADQ_tready[8]={1,1,1,1,1,1,1,1};
-    
-
-//ila_radio ila_radio (
-//    .clk(clk_500m),
-    
-//    .probe0(m_axis_outputADI_tready[0]),
-//    .probe1(m_axis_outputADI_tvalid[0]),
-//    .probe2(m_axis_outputADI_tlast[0]),
-//    .probe3(m_axis_outputADI_tdata[0]),
-//    .probe4(m_axis_outputI_tvalid_8[0]),
-//    .probe5(m_axis_outputI_tready_8[0]),
-//    .probe6(m_axis_outputI_tdata_8[0]),
-//    .probe7(m_axis_outputI_tlast_8[0])
-//    );
+    logic m_axis_outputDAI_tready[8]={1,1,1,1,1,1,1,1};
+    logic m_axis_outputDAQ_tready[8]={1,1,1,1,1,1,1,1};
+   
 
 radio_transmit radio_transmit(
     .clk_250m(clk_250m),
@@ -71,14 +58,14 @@ radio_transmit radio_transmit(
     .s_axis_inputQ_tdata(s_axis_inputQ_tdata_8),
     .s_axis_inputQ_tlast(s_axis_inputQ_tlast_8),
     
-    .m_axis_outputI_tready(m_axis_outputADI_tready),
-    .m_axis_outputQ_tready(m_axis_outputADQ_tready),
-    .m_axis_outputI_tvalid(m_axis_outputADI_tvalid),
-    .m_axis_outputQ_tvalid(m_axis_outputADQ_tvalid),
-    .m_axis_outputI_tlast(m_axis_outputADI_tlast),
-    .m_axis_outputQ_tlast(m_axis_outputADQ_tlast),
-    .m_axis_outputI_tdata(m_axis_outputADI_tdata),
-    .m_axis_outputQ_tdata(m_axis_outputADQ_tdata)
+    .m_axis_outputI_tready(m_axis_outputDAI_tready),
+    .m_axis_outputQ_tready(m_axis_outputDAQ_tready),
+    .m_axis_outputI_tvalid(m_axis_outputDAI_tvalid),
+    .m_axis_outputQ_tvalid(m_axis_outputDAQ_tvalid),
+    .m_axis_outputI_tlast(m_axis_outputDAI_tlast),
+    .m_axis_outputQ_tlast(m_axis_outputDAQ_tlast),
+    .m_axis_outputI_tdata(m_axis_outputDAI_tdata),
+    .m_axis_outputQ_tdata(m_axis_outputDAQ_tdata)
     );
     
         

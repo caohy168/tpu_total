@@ -32,12 +32,12 @@ module tpu_transmit#(
   input        xphy_rxp,
   input        xphy_rxn,
   
-  output  m_axis_outputADI_tvalid[8],  
-  output  m_axis_outputADQ_tvalid[8],
-  output  m_axis_outputADI_tlast[8],
-  output  m_axis_outputADQ_tlast[8],     
-  output [15:0]m_axis_outputADI_tdata[8],
-  output [15:0]m_axis_outputADQ_tdata[8]
+  output       m_axis_outputDAI_tvalid[8],  
+  output       m_axis_outputDAQ_tvalid[8],
+  output       m_axis_outputDAI_tlast[8],
+  output       m_axis_outputDAQ_tlast[8],     
+  output [15:0]m_axis_outputDAI_tdata[8],
+  output [15:0]m_axis_outputDAQ_tdata[8]
   );
   
 logic clk_250m,clk_500m;   
@@ -59,7 +59,7 @@ logic                        axis_tlast_10g;
 logic                        axis_tuser_10g;
 logic                        axis_tready_10g=1;
 
-  kcu105_10gbaser datasource_10g(
+  kcu105_10gbaser mainnet_down10g(
   
   .refclk_n         (refclk_n),        
   .refclk_p         (refclk_p),        
@@ -86,7 +86,7 @@ logic                        axis_tlast_transfer;
 logic                        axis_tuser_transfer;
 logic                        axis_tready_transfer=1; 
   
- datastream_transfer datastream_transfer (
+ datastream_transfer dst_transmit (
 
   .aclk(clk_250m),
   .reset(reset),  
@@ -110,11 +110,11 @@ logic m_axis_outputI_tready[8];
 logic [15:0]m_axis_outputI_tdata[8];
 logic m_axis_outputI_tlast[8];
 logic m_axis_outputQ_tvalid[8]={1,1,1,1,1,1,1,1};
-logic m_axis_outputQ_tready[8]={1,1,1,1,1,1,1,1};;
+logic m_axis_outputQ_tready[8]={1,1,1,1,1,1,1,1};
 logic [15:0]m_axis_outputQ_tdata[8];
 logic m_axis_outputQ_tlast[8];
   
- tpu_upstream tpu_upstream(
+ tpu_pushstream tpu_pushstream(
   .clk_250m(clk_250m),
   .clk_500m(clk_500m),
   .reset(reset),
@@ -124,12 +124,11 @@ logic m_axis_outputQ_tlast[8];
   .s_axis_input_tdata (axis_tdata_transfer),
   .s_axis_input_tlast (axis_tlast_transfer),
   
-  .m_axis_outputADI_tvalid(m_axis_outputADI_tvalid),  
-  .m_axis_outputADQ_tvalid(m_axis_outputADQ_tvalid),
-  .m_axis_outputADI_tlast (m_axis_outputADI_tlast ),
-  .m_axis_outputADQ_tlast (m_axis_outputADQ_tlast ),     
-  .m_axis_outputADI_tdata (m_axis_outputADI_tdata ),
-  .m_axis_outputADQ_tdata (m_axis_outputADQ_tdata ));
+  .m_axis_outputDAI_tvalid(m_axis_outputDAI_tvalid),  
+  .m_axis_outputDAQ_tvalid(m_axis_outputDAQ_tvalid),
+  .m_axis_outputDAI_tlast (m_axis_outputDAI_tlast ),
+  .m_axis_outputDAQ_tlast (m_axis_outputDAQ_tlast ),     
+  .m_axis_outputDAI_tdata (m_axis_outputDAI_tdata ),
+  .m_axis_outputDAQ_tdata (m_axis_outputDAQ_tdata ));
         
-      
-    endmodule
+endmodule

@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov 19 01:06:49 2020
+# Process ID: 60938
+# Current directory: /home/caohy/work/tpu_total/tpu_double/tpu_receive
+# Command line: vivado
+# Log file: /home/caohy/work/tpu_total/tpu_double/tpu_receive/vivado.log
+# Journal file: /home/caohy/work/tpu_total/tpu_double/tpu_receive/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/caohy/work/tpu_total/tpu_double/tpu_receive/tpu_receive.xpr
+launch_simulation
+source tb.tcl
+relaunch_sim
+restart
+run all
+current_wave_config {Untitled 1}
+add_wave {{/tb/xphy_txp}} {{/tb/xphy_txn}} {{/tb/xphy_rxp}} {{/tb/xphy_rxn}} {{/tb/clk_125m}} {{/tb/clk_250m}} {{/tb/clk_500m}} {{/tb/clk_156_p}} {{/tb/clk_156_n}} {{/tb/sys_clk_p}} {{/tb/sys_clk_n}} {{/tb/reset}} {{/tb/sys_clk}} {{/tb/clk_156}} {{/tb/i}} {{/tb/j}} {{/tb/k}} {{/tb/speed_up}} {{/tb/m_axis_outputADI_tvalid}} {{/tb/m_axis_outputADQ_tvalid}} {{/tb/m_axis_outputADI_tlast}} {{/tb/m_axis_outputADQ_tlast}} {{/tb/m_axis_outputADI_tdata}} {{/tb/m_axis_outputADQ_tdata}} {{/tb/mem_loadi}} {{/tb/mem_loadq}} {{/tb/in_file_dai0}} {{/tb/in_file_daq0}} {{/tb/ni}} {{/tb/nq}} {{/tb/AXIS_TDATA_WIDTH}} {{/tb/AXIS_TKEEP_WIDTH}} {{/tb/CLK_500M_PERIOD}} {{/tb/CLK_125M_PERIOD}} 
+relaunch_sim
+restart
+run all
+current_wave_config {Untitled 1}
+add_wave {{/tb/mem_loadi}} {{/tb/mem_loadq}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/tb/mem_loadi}} {{/tb/mem_loadq}} 
+restart
+run all
+relaunch_sim
+restart
+run all
+relaunch_sim
+relaunch_sim
+restart
+run all
+relaunch_sim
+add_bp {/home/caohy/work/tpu_total/tpu_double/tpu_receive/tpu_receive.srcs/sim_1/new/tb.sv} 155
+run all
+restart
+run all
+remove_bps -file {/home/caohy/work/tpu_total/tpu_double/tpu_receive/tpu_receive.srcs/sim_1/new/tb.sv} -line 155
+relaunch_sim
+restart
+run all
+relaunch_sim
+restart
+run all
+relaunch_sim
+restart
+run all
+relaunch_sim
+relaunch_sim
+restart
+run all
+restart
+restart
+relaunch_sim
+restart
+run all
+relaunch_sim
+restart
+run all
+relaunch_sim
+restart
+run all
+relaunch_sim
+restart
+run all
+relaunch_sim
+restart
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run all
+close_sim

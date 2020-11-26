@@ -1,0 +1,2 @@
+dds_ri.vhd,vhdl,xil_defaultlib,../../../../tpu_receive.srcs/sources_1/new/dds_ri/sim/dds_ri.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v
