@@ -18,7 +18,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-parameter layer1_receive_lane_number = 2;//2--lane2;4--lane4;8--lane8
+parameter layer1_receive_lane_number = 8;//2--lane2;4--lane4;8--lane8
 module layer1_receive(
 input clk,reset,
 

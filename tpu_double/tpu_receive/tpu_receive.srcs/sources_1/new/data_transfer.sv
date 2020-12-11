@@ -22,7 +22,7 @@
 //`include "parameter_define.vh"
 // the name include left means data from RF to tpu base band processor to 10g MAC
 // the nane include right means data from 10G MAC to tpu base band processor to RF
-parameter mux_number = 2;//2--lane2;4--lane4;8--lane8
+parameter mux_number = 8;//2--lane2;4--lane4;8--lane8
 module data_transfer #(
         parameter AXIS_TDATA_WIDTH =  64,
         parameter AXIS_TKEEP_WIDTH =  AXIS_TDATA_WIDTH/8
@@ -415,36 +415,36 @@ always @ (*) begin
             tx_axis_tdata_left=rx_axis_tdata_left;
     
             tx_axis_tuser_left=0;
-            if(pkg_cnt_left<=187)
+            if(pkg_cnt_left<59)
                 tx_axis_tvalid_left=rx_axis_tvalid_left;
             else
                 tx_axis_tvalid_left=0;
-            if( pkg_cnt_left==187) begin
-                tx_axis_tkeep_left='h0F;
-                tx_axis_tlast_left=1;
-            end
-            else begin
+//            if( pkg_cnt_left==187) begin
+//                tx_axis_tkeep_left='h0F;
+//                tx_axis_tlast_left=1;
+//            end
+//            else begin
                 tx_axis_tkeep_left='hFF;
                 tx_axis_tlast_left=0;
-            end
+//            end
         end
         default : begin
             tx_axis_tdata_left=rx_axis_tdata_left;
     
             tx_axis_tuser_left=0;
-            if(pkg_cnt_left<=187)
+            if(pkg_cnt_left<59)
                 tx_axis_tvalid_left=rx_axis_tvalid_left;
             else
                 tx_axis_tvalid_left=0;
-            if( pkg_cnt_left==187) begin
-                tx_axis_tkeep_left='h0F;
-                tx_axis_tlast_left=1;
-            end
-            else begin
+//            if( pkg_cnt_left==187) begin
+//                tx_axis_tkeep_left='h0F;
+//                tx_axis_tlast_left=1;
+//            end
+//            else begin
                 tx_axis_tkeep_left='hFF;
                 tx_axis_tlast_left=0;
             end           
-          end
+//          end
     endcase 
 end 
 

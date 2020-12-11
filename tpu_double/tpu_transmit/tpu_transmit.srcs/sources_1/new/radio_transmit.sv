@@ -18,7 +18,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-parameter radio_transmit_lane_number = 2;//2--lane2;4--lane4;8--lane8
+parameter radio_transmit_lane_number = 8;//2--lane2;4--lane4;8--lane8
 module radio_transmit(
     input clk_250m,clk_500m,
     input reset,

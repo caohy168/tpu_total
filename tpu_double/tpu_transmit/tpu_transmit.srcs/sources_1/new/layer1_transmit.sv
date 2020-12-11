@@ -18,7 +18,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-parameter layer1_transmit_lane_number = 2;//2--lane2;4--lane4;8--lane8
+parameter layer1_transmit_lane_number = 8;//2--lane2;4--lane4;8--lane8
 //`include "parameter_define.vh"
 module layer1_transmit(
 input clk,reset,

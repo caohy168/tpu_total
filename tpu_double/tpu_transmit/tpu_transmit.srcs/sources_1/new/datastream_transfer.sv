@@ -21,7 +21,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 //`include "parameter_define.vh"
 // the nane include right means data from 10G MAC to tpu base band processor to RF
-parameter mux_number = 2;//2--lane2;4--lane4;8--lane8
+parameter mux_number = 8;//2--lane2;4--lane4;8--lane8
 module datastream_transfer #(
         parameter AXIS_TDATA_WIDTH =  64,
         parameter AXIS_TKEEP_WIDTH =  AXIS_TDATA_WIDTH/8
@@ -203,14 +203,14 @@ always @ (posedge aclk) begin
         end
         4: begin
         end
-        8:begin
-            if(pkg_cnt_right<188)tx_axis_tdata_right=rx_axis_tdata_right;
-            else if(pkg_cnt_right>=188 && pkg_cnt_right<=235)tx_axis_tdata_right=64'h16816888_16816888;
+        8:begin//package length from 10g mac 236*2,when lane 8 the vaild data equal to 236*2/8=59,the rest of data be filled by 64'h01234567_89abcdef
+            if(pkg_cnt_right<59)tx_axis_tdata_right=rx_axis_tdata_right;
+            else if(pkg_cnt_right>=59 && pkg_cnt_right<=235)tx_axis_tdata_right=64'h01234567_89abcdef;
             else tx_axis_tdata_right=0;  
         end
         default : begin
-            if(pkg_cnt_right<188)tx_axis_tdata_right=rx_axis_tdata_right;
-            else if(pkg_cnt_right>=188 && pkg_cnt_right<=235)tx_axis_tdata_right=64'h16816888_16816888;
+            if(pkg_cnt_right<59)tx_axis_tdata_right=rx_axis_tdata_right;
+            else if(pkg_cnt_right>=59 && pkg_cnt_right<=235)tx_axis_tdata_right=64'h01234567_89abcdef;
             else tx_axis_tdata_right=0;  
           end
     endcase
