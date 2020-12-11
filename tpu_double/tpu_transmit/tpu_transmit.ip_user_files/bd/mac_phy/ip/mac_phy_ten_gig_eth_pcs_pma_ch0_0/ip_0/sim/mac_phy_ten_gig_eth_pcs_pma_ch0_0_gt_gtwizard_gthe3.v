@@ -2250,7 +2250,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
       // Instantiate one CPLL calibration block for each transceiver channel
       genvar cal;
       for (cal = 0; cal < `mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3_N_CH; cal = cal + 1) begin : gen_cpll_cal_inst
-        gtwizard_ultrascale_v1_7_7_gthe3_cpll_cal gtwizard_ultrascale_v1_7_7_gthe3_cpll_cal_inst (
+        gtwizard_ultrascale_v1_7_9_gthe3_cpll_cal gtwizard_ultrascale_v1_7_9_gthe3_cpll_cal_inst (
           .TXOUTCLK_PERIOD_IN         (cpll_cal_txoutclk_period_int[(18*cal)+17:18*cal]),
           .WAIT_DEASSERT_CPLLPD_IN    (p_cpll_cal_wait_deassert_cpllpd_int),
           .CNT_TOL_IN                 (cpll_cal_cnt_tol_int[(18*cal)+17:18*cal]),
@@ -2322,9 +2322,8 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
     // within this inactive generate block for proper HDL fileset hierarchy elaboration
     if (0) begin : gen_cpll_cal_gthe4
 
-      gtwizard_ultrascale_v1_7_7_gthe4_cpll_cal gtwizard_ultrascale_v1_7_7_gthe4_cpll_cal_inst (
+      gtwizard_ultrascale_v1_7_9_gthe4_cpll_cal gtwizard_ultrascale_v1_7_9_gthe4_cpll_cal_inst (
         .TXOUTCLK_PERIOD_IN         (18'b0),
-        .WAIT_DEASSERT_CPLLPD_IN    (16'b0),
         .CNT_TOL_IN                 (18'b0),
         .FREQ_COUNT_WINDOW_IN       (16'b0),
         .RESET_IN                   (1'b0),
@@ -2364,9 +2363,8 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
     end
     if (0) begin : gen_cpll_cal_gtye4
 
-      gtwizard_ultrascale_v1_7_7_gtye4_cpll_cal gtwizard_ultrascale_v1_7_7_gtye4_cpll_cal_inst (
+      gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst (
         .TXOUTCLK_PERIOD_IN         (18'b0),
-        .WAIT_DEASSERT_CPLLPD_IN    (16'b0),
         .CNT_TOL_IN                 (18'b0),
         .FREQ_COUNT_WINDOW_IN       (16'b0),
         .RESET_IN                   (1'b0),
@@ -2475,7 +2473,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
         end
 
         // Instantiate a single instance of the transmitter user clocking network helper block
-        gtwizard_ultrascale_v1_7_7_gtwiz_userclk_tx #(
+        gtwizard_ultrascale_v1_7_9_gtwiz_userclk_tx #(
           .P_CONTENTS                     (C_TX_USER_CLOCKING_CONTENTS),
           .P_FREQ_RATIO_SOURCE_TO_USRCLK  (C_TX_OUTCLK_BUFG_GT_DIV),
           .P_FREQ_RATIO_USRCLK_TO_USRCLK2 (C_TX_USER_CLOCKING_RATIO_FUSRCLK_FUSRCLK2)
@@ -2527,7 +2525,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
             assign gtwiz_userclk_tx_reset_int[gi_hb_txclk] = gtwiz_userclk_rx_reset_in[gi_hb_txclk];
           end
 
-          gtwizard_ultrascale_v1_7_7_gtwiz_userclk_tx #(
+          gtwizard_ultrascale_v1_7_9_gtwiz_userclk_tx #(
             .P_CONTENTS                     (C_TX_USER_CLOCKING_CONTENTS),
             .P_FREQ_RATIO_SOURCE_TO_USRCLK  (C_TX_OUTCLK_BUFG_GT_DIV),
             .P_FREQ_RATIO_USRCLK_TO_USRCLK2 (C_TX_USER_CLOCKING_RATIO_FUSRCLK_FUSRCLK2)
@@ -2611,7 +2609,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
         end
 
         // Instantiate a single instance of the receiver user clocking network helper block
-        gtwizard_ultrascale_v1_7_7_gtwiz_userclk_rx #(
+        gtwizard_ultrascale_v1_7_9_gtwiz_userclk_rx #(
           .P_CONTENTS                     (C_RX_USER_CLOCKING_CONTENTS),
           .P_FREQ_RATIO_SOURCE_TO_USRCLK  (C_RX_OUTCLK_BUFG_GT_DIV),
           .P_FREQ_RATIO_USRCLK_TO_USRCLK2 (C_RX_USER_CLOCKING_RATIO_FUSRCLK_FUSRCLK2)
@@ -2665,7 +2663,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
             assign gtwiz_userclk_rx_reset_int[gi_hb_rxclk] = gtwiz_userclk_tx_reset_in;
           end
 
-          gtwizard_ultrascale_v1_7_7_gtwiz_userclk_rx #(
+          gtwizard_ultrascale_v1_7_9_gtwiz_userclk_rx #(
             .P_CONTENTS                     (C_RX_USER_CLOCKING_CONTENTS),
             .P_FREQ_RATIO_SOURCE_TO_USRCLK  (C_RX_OUTCLK_BUFG_GT_DIV),
             .P_FREQ_RATIO_USRCLK_TO_USRCLK2 (C_RX_USER_CLOCKING_RATIO_FUSRCLK_FUSRCLK2)
@@ -2735,7 +2733,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
           assign gtwiz_buffbypass_tx_resetdone_int = &gtwiz_reset_tx_done_out;
         end
 
-        gtwizard_ultrascale_v1_7_7_gtwiz_buffbypass_tx #(
+        gtwizard_ultrascale_v1_7_9_gtwiz_buffbypass_tx #(
           .P_BUFFER_BYPASS_MODE       (C_TX_BUFFBYPASS_MODE),
           .P_TOTAL_NUMBER_OF_CHANNELS (C_TOTAL_NUM_CHANNELS),
           .P_MASTER_CHANNEL_POINTER   (P_TX_MASTER_CH_PACKED_IDX)
@@ -2790,7 +2788,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
 
         genvar gi_hb_txbb;
         for (gi_hb_txbb = 0; gi_hb_txbb < `mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3_N_CH; gi_hb_txbb = gi_hb_txbb + 1) begin : gen_gtwiz_buffbypass_tx
-          gtwizard_ultrascale_v1_7_7_gtwiz_buffbypass_tx #(
+          gtwizard_ultrascale_v1_7_9_gtwiz_buffbypass_tx #(
             .P_BUFFER_BYPASS_MODE       (C_TX_BUFFBYPASS_MODE),
             .P_TOTAL_NUMBER_OF_CHANNELS (1),
             .P_MASTER_CHANNEL_POINTER   (0)
@@ -2889,7 +2887,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
           assign gtwiz_buffbypass_rx_resetdone_int = &gtwiz_reset_rx_done_out;
         end
 
-        gtwizard_ultrascale_v1_7_7_gtwiz_buffbypass_rx #(
+        gtwizard_ultrascale_v1_7_9_gtwiz_buffbypass_rx #(
           .P_BUFFER_BYPASS_MODE       (C_RX_BUFFBYPASS_MODE),
           .P_TOTAL_NUMBER_OF_CHANNELS (C_TOTAL_NUM_CHANNELS),
           .P_MASTER_CHANNEL_POINTER   (P_RX_MASTER_CH_PACKED_IDX)
@@ -2939,7 +2937,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
 
         genvar gi_hb_rxbb;
         for (gi_hb_rxbb = 0; gi_hb_rxbb < `mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3_N_CH; gi_hb_rxbb = gi_hb_rxbb + 1) begin : gen_gtwiz_buffbypass_rx
-          gtwizard_ultrascale_v1_7_7_gtwiz_buffbypass_rx #(
+          gtwizard_ultrascale_v1_7_9_gtwiz_buffbypass_rx #(
             .P_BUFFER_BYPASS_MODE       (C_RX_BUFFBYPASS_MODE),
             .P_TOTAL_NUMBER_OF_CHANNELS (1),
             .P_MASTER_CHANNEL_POINTER   (0)
@@ -3038,7 +3036,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
 
           genvar gi_ch_rxclk;
           for (gi_ch_rxclk = 0; gi_ch_rxclk < `mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3_N_CH; gi_ch_rxclk = gi_ch_rxclk + 1) begin : gen_ch_rxclk
-            gtwizard_ultrascale_v1_7_7_bit_synchronizer bit_synchronizer_gtwiz_reset_userclk_rx_active_inst (
+            gtwizard_ultrascale_v1_7_9_bit_synchronizer bit_synchronizer_gtwiz_reset_userclk_rx_active_inst (
               .clk_in (gtwiz_reset_clk_freerun_in),
               .i_in   (gtwiz_userclk_rx_active_out[gi_ch_rxclk]),
               .o_out  (gtwiz_userclk_rx_active_sync[gi_ch_rxclk])
@@ -3083,12 +3081,12 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
         wire [`mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3_N_CH-1:0] rxresetdone_sync;
         genvar gi_ch_xrd;
         for (gi_ch_xrd = 0; gi_ch_xrd < `mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3_N_CH; gi_ch_xrd = gi_ch_xrd + 1) begin : gen_ch_xrd
-          gtwizard_ultrascale_v1_7_7_bit_synchronizer bit_synchronizer_txresetdone_inst (
+          gtwizard_ultrascale_v1_7_9_bit_synchronizer bit_synchronizer_txresetdone_inst (
             .clk_in (gtwiz_reset_clk_freerun_in),
             .i_in   (txresetdone_int[gi_ch_xrd]),
             .o_out  (txresetdone_sync[gi_ch_xrd])
           );
-          gtwizard_ultrascale_v1_7_7_bit_synchronizer bit_synchronizer_rxresetdone_inst (
+          gtwizard_ultrascale_v1_7_9_bit_synchronizer bit_synchronizer_rxresetdone_inst (
             .clk_in (gtwiz_reset_clk_freerun_in),
             .i_in   (rxresetdone_int[gi_ch_xrd]),
             .o_out  (rxresetdone_sync[gi_ch_xrd])
@@ -3127,7 +3125,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
         end
 
         // Instantiate the single reset controller
-        gtwizard_ultrascale_v1_7_7_gtwiz_reset #(
+        gtwizard_ultrascale_v1_7_9_gtwiz_reset #(
           .P_FREERUN_FREQUENCY       (C_FREERUN_FREQUENCY),
           .P_USE_CPLL_CAL            (P_USE_CPLL_CAL),
           .P_TX_PLL_TYPE             (C_TX_PLL_TYPE),
@@ -3379,7 +3377,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
           endcase
 
           // Instantiate a reset controller per channel
-          gtwizard_ultrascale_v1_7_7_gtwiz_reset #(
+          gtwizard_ultrascale_v1_7_9_gtwiz_reset #(
             .P_FREERUN_FREQUENCY       (C_FREERUN_FREQUENCY),
             .P_USE_CPLL_CAL            (P_USE_CPLL_CAL),
             .P_TX_PLL_TYPE             (C_TX_PLL_TYPE),
@@ -3580,7 +3578,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
       wire [(C_TOTAL_NUM_CHANNELS* 16)-1:0] gtwiz_userdata_tx_txctrl0_int;
       wire [(C_TOTAL_NUM_CHANNELS* 16)-1:0] gtwiz_userdata_tx_txctrl1_int;
 
-      gtwizard_ultrascale_v1_7_7_gtwiz_userdata_tx #(
+      gtwizard_ultrascale_v1_7_9_gtwiz_userdata_tx #(
         .P_TX_USER_DATA_WIDTH       (C_TX_USER_DATA_WIDTH),
         .P_TX_DATA_ENCODING         (C_TX_DATA_ENCODING),
         .P_TOTAL_NUMBER_OF_CHANNELS (C_TOTAL_NUM_CHANNELS)
@@ -3626,7 +3624,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3 #(
         (C_LOCATE_USER_DATA_WIDTH_SIZING == `mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gtwizard_gthe3_LOCATE_USER_DATA_WIDTH_SIZING__CORE))
         begin : gen_rx_userdata_internal
 
-      gtwizard_ultrascale_v1_7_7_gtwiz_userdata_rx #(
+      gtwizard_ultrascale_v1_7_9_gtwiz_userdata_rx #(
         .P_RX_USER_DATA_WIDTH       (C_RX_USER_DATA_WIDTH),
         .P_RX_DATA_DECODING         (C_RX_DATA_DECODING),
         .P_TOTAL_NUMBER_OF_CHANNELS (C_TOTAL_NUM_CHANNELS)

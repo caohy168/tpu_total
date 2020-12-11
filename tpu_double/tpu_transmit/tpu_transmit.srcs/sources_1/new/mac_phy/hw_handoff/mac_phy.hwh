@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Nov  9 00:15:10 2020" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Dec  3 11:37:20 2020" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="kintexu" BOARD="xilinx.com:kcu105:part0:1.6" DEVICE="xcku040" NAME="mac_phy" PACKAGE="ffva1156" SPEEDGRADE="-2"/>
 
   <EXTERNALPORTS>
-    <PORT DIR="I" NAME="aux_resetn" SIGIS="rst" SIGNAME="External_Ports_aux_resetn">
+    <PORT DIR="I" NAME="aux_resetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_aux_resetn">
       <CONNECTIONS>
         <CONNECTION INSTANCE="External_Ports" PORT="s_axi_aresetn"/>
         <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="s_axi_aresetn"/>
@@ -25,7 +25,7 @@
         <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0" PORT="prtad"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+    <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_reset">
       <CONNECTIONS>
         <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="reset"/>
         <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0" PORT="reset"/>
@@ -37,7 +37,7 @@
         <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="rx_axis_aresetn"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="0" NAME="s_axi_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="External_Ports_aux_resetn">
+    <PORT DIR="O" LEFT="0" NAME="s_axi_aresetn" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst" SIGNAME="External_Ports_aux_resetn">
       <CONNECTIONS>
         <CONNECTION INSTANCE="External_Ports" PORT="aux_resetn"/>
       </CONNECTIONS>
@@ -82,26 +82,6 @@
         <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="s_axi_aclk"/>
       </CONNECTIONS>
     </PORT>
-    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="refclk_diff_port_clk_n" SIGIS="clk" SIGNAME="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0_refclk_n">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0" PORT="refclk_n"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="refclk_diff_port_clk_p" SIGIS="clk" SIGNAME="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0_refclk_p">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0" PORT="refclk_p"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="15" NAME="s_axis_pause_ch0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_pause_val">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="pause_val"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="s_axis_pause_ch0_tvalid" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_pause_req">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="pause_req"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="I" LEFT="63" NAME="s_axis_tx_0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_tx_axis_tdata">
       <CONNECTIONS>
         <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="tx_axis_tdata"/>
@@ -132,6 +112,46 @@
         <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="tx_axis_tvalid"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" LEFT="15" NAME="s_axis_pause_ch0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_pause_val">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="pause_val"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axis_pause_ch0_tvalid" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_pause_req">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="pause_req"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="refclk_diff_port_clk_n" SIGIS="clk" SIGNAME="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0_refclk_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0" PORT="refclk_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="refclk_diff_port_clk_p" SIGIS="clk" SIGNAME="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0_refclk_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0" PORT="refclk_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="rx_statistics_ch0_valid" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_rx_statistics_valid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="rx_statistics_valid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="29" NAME="rx_statistics_ch0_vector" RIGHT="0" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_rx_statistics_vector">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="rx_statistics_vector"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="tx_statistics_ch0_valid" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_tx_statistics_valid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="tx_statistics_valid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="25" NAME="tx_statistics_ch0_vector" RIGHT="0" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_tx_statistics_vector">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="tx_statistics_vector"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT DIR="O" LEFT="63" NAME="m_axis_rx_0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_rx_axis_tdata">
       <CONNECTIONS>
         <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="rx_axis_tdata"/>
@@ -155,26 +175,6 @@
     <PORT DIR="O" NAME="m_axis_rx_0_tvalid" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_rx_axis_tvalid">
       <CONNECTIONS>
         <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="rx_axis_tvalid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="tx_statistics_ch0_valid" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_tx_statistics_valid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="tx_statistics_valid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="25" NAME="tx_statistics_ch0_vector" RIGHT="0" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_tx_statistics_vector">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="tx_statistics_vector"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="rx_statistics_ch0_valid" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_rx_statistics_valid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="rx_statistics_valid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="29" NAME="rx_statistics_ch0_vector" RIGHT="0" SIGIS="undef" SIGNAME="mac_phy_ch0_ten_gig_eth_mac_ch0_rx_statistics_vector">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" PORT="rx_statistics_vector"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -267,7 +267,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="7" FULLNAME="/mac_phy_ch0/ten_gig_eth_mac_ch0" HWVERSION="15.1" INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ten_gig_eth_mac" VLNV="xilinx.com:ip:ten_gig_eth_mac:15.1">
+    <MODULE COREREVISION="9" FULLNAME="/mac_phy_ch0/ten_gig_eth_mac_ch0" HWVERSION="15.1" INSTANCE="mac_phy_ch0_ten_gig_eth_mac_ch0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ten_gig_eth_mac" VLNV="xilinx.com:ip:ten_gig_eth_mac:15.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=ten_gig_eth_mac;v=v15_1;d=pg072-ten-gig-eth-mac.pdf"/>
       </DOCUMENTS>
@@ -313,12 +313,12 @@
             <CONNECTION INSTANCE="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0" PORT="coreclk_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_reset">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="tx_axis_aresetn" SIGIS="rst" SIGNAME="External_Ports_reset_n">
+        <PORT DIR="I" NAME="tx_axis_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_n">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="reset_n"/>
           </CONNECTIONS>
@@ -368,7 +368,7 @@
             <CONNECTION INSTANCE="mac_phy_imp" PORT="tx_statistics_ch0_valid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rx_axis_aresetn" SIGIS="rst" SIGNAME="External_Ports_reset_n">
+        <PORT DIR="I" NAME="rx_axis_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_n">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="reset_n"/>
           </CONNECTIONS>
@@ -423,7 +423,7 @@
             <CONNECTION INSTANCE="External_Ports" PORT="mb_clk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axi_aresetn" SIGIS="rst" SIGNAME="External_Ports_aux_resetn">
+        <PORT DIR="I" NAME="s_axi_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_aux_resetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="aux_resetn"/>
           </CONNECTIONS>
@@ -573,8 +573,8 @@
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
           <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
           <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
-          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
-          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
           <PARAMETER NAME="PHASE" VALUE="0.000"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="mac_phy_mb_clk"/>
@@ -644,7 +644,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="16" FULLNAME="/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0" HWVERSION="6.0" INSTANCE="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ten_gig_eth_pcs_pma" VLNV="xilinx.com:ip:ten_gig_eth_pcs_pma:6.0">
+    <MODULE COREREVISION="18" FULLNAME="/mac_phy_ch0/ten_gig_eth_pcs_pma_ch0" HWVERSION="6.0" INSTANCE="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ten_gig_eth_pcs_pma" VLNV="xilinx.com:ip:ten_gig_eth_pcs_pma:6.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=ten_gig_eth_pcs_pma;v=v6_0;d=pg068-ten-gig-eth-pcs-pma.pdf"/>
       </DOCUMENTS>
@@ -687,17 +687,17 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="refclk_p" SIGIS="clk" SIGNAME="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0_refclk_p">
+        <PORT CLKFREQUENCY="156250000" DIR="I" NAME="refclk_p" SIGIS="clk" SIGNAME="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0_refclk_p">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mac_phy_imp" PORT="refclk_diff_port_clk_p"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="refclk_n" SIGIS="clk" SIGNAME="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0_refclk_n">
+        <PORT CLKFREQUENCY="156250000" DIR="I" NAME="refclk_n" SIGIS="clk" SIGNAME="mac_phy_ch0_ten_gig_eth_pcs_pma_ch0_refclk_n">
           <CONNECTIONS>
             <CONNECTION INSTANCE="mac_phy_imp" PORT="refclk_diff_port_clk_n"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_reset">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
           </CONNECTIONS>
@@ -748,10 +748,10 @@
         </PORT>
         <PORT CLKFREQUENCY="312500000" DIR="O" NAME="txusrclk_out" SIGIS="clk"/>
         <PORT CLKFREQUENCY="156250000" DIR="O" NAME="txusrclk2_out" SIGIS="clk"/>
-        <PORT DIR="O" NAME="areset_coreclk_out" SIGIS="rst"/>
-        <PORT DIR="O" NAME="areset_datapathclk_out" SIGIS="rst"/>
-        <PORT DIR="O" NAME="gttxreset_out" SIGIS="rst"/>
-        <PORT DIR="O" NAME="gtrxreset_out" SIGIS="rst"/>
+        <PORT DIR="O" NAME="areset_coreclk_out" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
+        <PORT DIR="O" NAME="areset_datapathclk_out" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
+        <PORT DIR="O" NAME="gttxreset_out" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
+        <PORT DIR="O" NAME="gtrxreset_out" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
         <PORT DIR="O" NAME="txuserrdy_out" SIGIS="undef"/>
         <PORT DIR="O" NAME="reset_counter_done_out" SIGIS="undef"/>
         <PORT DIR="O" NAME="qpll0lock_out" SIGIS="undef"/>
@@ -938,7 +938,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="6" FULLNAME="/xlconstant_1b0" HWVERSION="1.1" INSTANCE="xlconstant_1b0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_1b0" HWVERSION="1.1" INSTANCE="xlconstant_1b0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
@@ -955,7 +955,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="6" FULLNAME="/xlconstant_1b1" HWVERSION="1.1" INSTANCE="xlconstant_1b1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_1b1" HWVERSION="1.1" INSTANCE="xlconstant_1b1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
@@ -974,7 +974,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="6" FULLNAME="/xlconstant_3b101" HWVERSION="1.1" INSTANCE="xlconstant_3b101" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_3b101" HWVERSION="1.1" INSTANCE="xlconstant_3b101" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="CONST_WIDTH" VALUE="3"/>
@@ -987,7 +987,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="6" FULLNAME="/xlconstant_8b0" HWVERSION="1.1" INSTANCE="xlconstant_8b0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_8b0" HWVERSION="1.1" INSTANCE="xlconstant_8b0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="CONST_WIDTH" VALUE="8"/>

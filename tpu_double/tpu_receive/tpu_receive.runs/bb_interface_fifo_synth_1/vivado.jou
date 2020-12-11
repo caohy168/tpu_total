@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec  4 16:53:32 2020
+# Process ID: 20436
+# Current directory: D:/tpu_double/tpu_receive/tpu_receive.runs/bb_interface_fifo_synth_1
+# Command line: vivado.exe -log bb_interface_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bb_interface_fifo.tcl
+# Log file: D:/tpu_double/tpu_receive/tpu_receive.runs/bb_interface_fifo_synth_1/bb_interface_fifo.vds
+# Journal file: D:/tpu_double/tpu_receive/tpu_receive.runs/bb_interface_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bb_interface_fifo.tcl -notrace

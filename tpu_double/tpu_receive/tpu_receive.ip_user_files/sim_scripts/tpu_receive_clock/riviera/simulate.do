@@ -1,7 +1,7 @@
 onbreak {quit -force}
 onerror {quit -force}
 
-asim -t 1ps +access +r +m+tpu_receive_clock -L xpm -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -O5 xil_defaultlib.tpu_receive_clock xil_defaultlib.glbl
+asim +access +r +m+tpu_receive_clock -L xpm -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -O5 xil_defaultlib.tpu_receive_clock xil_defaultlib.glbl
 
 do {wave.do}
 

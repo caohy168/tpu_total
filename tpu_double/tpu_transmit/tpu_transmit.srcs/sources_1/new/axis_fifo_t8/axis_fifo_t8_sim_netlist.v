@@ -1,10 +1,10 @@
-// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Wed May 20 01:51:18 2020
-// Host        : ubuntu running 64-bit Ubuntu 18.04.4 LTS
+// Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+// Date        : Thu Dec  3 11:43:47 2020
+// Host        : DESKTOP-4A374NS running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               /home/caohy/tpu_kcu105/tpu.srcs/sources_1/ip/axis_fifo_t8/axis_fifo_t8_sim_netlist.v
+//               d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/axis_fifo_t8/axis_fifo_t8_sim_netlist.v
 // Design      : axis_fifo_t8
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "axis_fifo_t8,axis_data_fifo_v2_0_2_top,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axis_data_fifo_v2_0_2_top,Vivado 2019.2" *) 
+(* CHECK_LICENSE_TYPE = "axis_fifo_t8,axis_data_fifo_v2_0_4_top,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axis_data_fifo_v2_0_4_top,Vivado 2020.2" *) 
 (* NotValidForBitStream *)
 module axis_fifo_t8
    (s_axis_aresetn,
@@ -26,7 +26,7 @@ module axis_fifo_t8
     m_axis_tdata,
     m_axis_tlast);
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S_RSTIF RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_RSTIF, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s_axis_aresetn;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S_CLKIF CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_CLKIF, ASSOCIATED_BUSIF S_AXIS, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *) input s_axis_aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S_CLKIF CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_CLKIF, ASSOCIATED_BUSIF S_AXIS, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0" *) input s_axis_aclk;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TVALID" *) input s_axis_tvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TREADY" *) output s_axis_tready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TDATA" *) input [7:0]s_axis_tdata;
@@ -61,7 +61,7 @@ module axis_fifo_t8
   wire [0:0]NLW_inst_m_axis_tuser_UNCONNECTED;
 
   (* C_ACLKEN_CONV_MODE = "0" *) 
-  (* C_AXIS_SIGNAL_SET = "32'b00000000000000000000000000010011" *) 
+  (* C_AXIS_SIGNAL_SET = "19" *) 
   (* C_AXIS_TDATA_WIDTH = "8" *) 
   (* C_AXIS_TDEST_WIDTH = "1" *) 
   (* C_AXIS_TID_WIDTH = "1" *) 
@@ -113,7 +113,7 @@ module axis_fifo_t8
   (* LP_TUSER_WIDTH = "1" *) 
   (* LP_USE_ADV_FEATURES = "825241648" *) 
   (* LP_WR_DATA_COUNT_WIDTH = "11" *) 
-  axis_fifo_t8_axis_data_fifo_v2_0_2_top inst
+  axis_fifo_t8_axis_data_fifo_v2_0_4_top inst
        (.almost_empty(NLW_inst_almost_empty_UNCONNECTED),
         .almost_full(NLW_inst_almost_full_UNCONNECTED),
         .axis_rd_data_count(NLW_inst_axis_rd_data_count_UNCONNECTED[31:0]),
@@ -149,7 +149,7 @@ module axis_fifo_t8
         .sbiterr(NLW_inst_sbiterr_UNCONNECTED));
 endmodule
 
-(* C_ACLKEN_CONV_MODE = "0" *) (* C_AXIS_SIGNAL_SET = "32'b00000000000000000000000000010011" *) (* C_AXIS_TDATA_WIDTH = "8" *) 
+(* C_ACLKEN_CONV_MODE = "0" *) (* C_AXIS_SIGNAL_SET = "19" *) (* C_AXIS_TDATA_WIDTH = "8" *) 
 (* C_AXIS_TDEST_WIDTH = "1" *) (* C_AXIS_TID_WIDTH = "1" *) (* C_AXIS_TUSER_WIDTH = "1" *) 
 (* C_ECC_MODE = "0" *) (* C_FAMILY = "kintexu" *) (* C_FIFO_DEPTH = "1024" *) 
 (* C_FIFO_MEMORY_TYPE = "auto" *) (* C_FIFO_MODE = "1" *) (* C_IS_ACLK_ASYNC = "0" *) 
@@ -166,8 +166,8 @@ endmodule
 (* LP_PROG_EMPTY_THRESH = "5" *) (* LP_PROG_FULL_THRESH = "11" *) (* LP_RD_DATA_COUNT_WIDTH = "11" *) 
 (* LP_RELATED_CLOCKS = "0" *) (* LP_S_ACLKEN_CAN_TOGGLE = "0" *) (* LP_TDATA_WIDTH = "8" *) 
 (* LP_TDEST_WIDTH = "1" *) (* LP_TID_WIDTH = "1" *) (* LP_TUSER_WIDTH = "1" *) 
-(* LP_USE_ADV_FEATURES = "825241648" *) (* LP_WR_DATA_COUNT_WIDTH = "11" *) (* ORIG_REF_NAME = "axis_data_fifo_v2_0_2_top" *) 
-module axis_fifo_t8_axis_data_fifo_v2_0_2_top
+(* LP_USE_ADV_FEATURES = "825241648" *) (* LP_WR_DATA_COUNT_WIDTH = "11" *) (* ORIG_REF_NAME = "axis_data_fifo_v2_0_4_top" *) 
+module axis_fifo_t8_axis_data_fifo_v2_0_4_top
    (s_axis_aclk,
     s_axis_aresetn,
     s_axis_aclken,
@@ -236,33 +236,52 @@ module axis_fifo_t8_axis_data_fifo_v2_0_2_top
   output dbiterr;
 
   wire \<const0> ;
-  wire \<const1> ;
-  wire almost_empty;
-  wire almost_full;
-  wire [10:0]\^axis_rd_data_count ;
-  wire [10:0]\^axis_wr_data_count ;
-  wire dbiterr;
-  wire injectdbiterr;
-  wire injectsbiterr;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_16 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_17 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_18 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_19 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_20 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_21 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_22 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_23 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_24 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_25 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_26 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_27 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_28 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_29 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_30 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_31 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_32 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_33 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_34 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_35 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_36 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_37 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_38 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_39 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_40 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_41 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_42 ;
+  wire \gen_fifo.xpm_fifo_axis_inst_n_43 ;
   wire [7:0]m_axis_tdata;
   wire m_axis_tlast;
   wire m_axis_tready;
   wire m_axis_tvalid;
-  wire prog_empty;
-  wire prog_full;
   wire s_axis_aclk;
   wire s_axis_aresetn;
   wire [7:0]s_axis_tdata;
   wire s_axis_tlast;
   wire s_axis_tready;
   wire s_axis_tvalid;
-  wire sbiterr;
   wire [0:0]\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tdest_UNCONNECTED ;
   wire [0:0]\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tid_UNCONNECTED ;
   wire [0:0]\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tkeep_UNCONNECTED ;
   wire [0:0]\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tstrb_UNCONNECTED ;
   wire [0:0]\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tuser_UNCONNECTED ;
 
+  assign almost_empty = \<const0> ;
+  assign almost_full = \<const0> ;
   assign axis_rd_data_count[31] = \<const0> ;
   assign axis_rd_data_count[30] = \<const0> ;
   assign axis_rd_data_count[29] = \<const0> ;
@@ -284,7 +303,17 @@ module axis_fifo_t8_axis_data_fifo_v2_0_2_top
   assign axis_rd_data_count[13] = \<const0> ;
   assign axis_rd_data_count[12] = \<const0> ;
   assign axis_rd_data_count[11] = \<const0> ;
-  assign axis_rd_data_count[10:0] = \^axis_rd_data_count [10:0];
+  assign axis_rd_data_count[10] = \<const0> ;
+  assign axis_rd_data_count[9] = \<const0> ;
+  assign axis_rd_data_count[8] = \<const0> ;
+  assign axis_rd_data_count[7] = \<const0> ;
+  assign axis_rd_data_count[6] = \<const0> ;
+  assign axis_rd_data_count[5] = \<const0> ;
+  assign axis_rd_data_count[4] = \<const0> ;
+  assign axis_rd_data_count[3] = \<const0> ;
+  assign axis_rd_data_count[2] = \<const0> ;
+  assign axis_rd_data_count[1] = \<const0> ;
+  assign axis_rd_data_count[0] = \<const0> ;
   assign axis_wr_data_count[31] = \<const0> ;
   assign axis_wr_data_count[30] = \<const0> ;
   assign axis_wr_data_count[29] = \<const0> ;
@@ -306,16 +335,28 @@ module axis_fifo_t8_axis_data_fifo_v2_0_2_top
   assign axis_wr_data_count[13] = \<const0> ;
   assign axis_wr_data_count[12] = \<const0> ;
   assign axis_wr_data_count[11] = \<const0> ;
-  assign axis_wr_data_count[10:0] = \^axis_wr_data_count [10:0];
+  assign axis_wr_data_count[10] = \<const0> ;
+  assign axis_wr_data_count[9] = \<const0> ;
+  assign axis_wr_data_count[8] = \<const0> ;
+  assign axis_wr_data_count[7] = \<const0> ;
+  assign axis_wr_data_count[6] = \<const0> ;
+  assign axis_wr_data_count[5] = \<const0> ;
+  assign axis_wr_data_count[4] = \<const0> ;
+  assign axis_wr_data_count[3] = \<const0> ;
+  assign axis_wr_data_count[2] = \<const0> ;
+  assign axis_wr_data_count[1] = \<const0> ;
+  assign axis_wr_data_count[0] = \<const0> ;
+  assign dbiterr = \<const0> ;
   assign m_axis_tdest[0] = \<const0> ;
   assign m_axis_tid[0] = \<const0> ;
-  assign m_axis_tkeep[0] = \<const1> ;
-  assign m_axis_tstrb[0] = \<const1> ;
+  assign m_axis_tkeep[0] = \<const0> ;
+  assign m_axis_tstrb[0] = \<const0> ;
   assign m_axis_tuser[0] = \<const0> ;
+  assign prog_empty = \<const0> ;
+  assign prog_full = \<const0> ;
+  assign sbiterr = \<const0> ;
   GND GND
        (.G(\<const0> ));
-  VCC VCC
-       (.P(\<const1> ));
   (* AXIS_DATA_WIDTH = "14" *) 
   (* AXIS_FINAL_DATA_WIDTH = "14" *) 
   (* CASCADE_HEIGHT = "0" *) 
@@ -357,11 +398,11 @@ module axis_fifo_t8_axis_data_fifo_v2_0_2_top
   (* WR_DATA_COUNT_WIDTH = "11" *) 
   (* XPM_MODULE = "TRUE" *) 
   axis_fifo_t8_xpm_fifo_axis \gen_fifo.xpm_fifo_axis_inst 
-       (.almost_empty_axis(almost_empty),
-        .almost_full_axis(almost_full),
-        .dbiterr_axis(dbiterr),
-        .injectdbiterr_axis(injectdbiterr),
-        .injectsbiterr_axis(injectsbiterr),
+       (.almost_empty_axis(\gen_fifo.xpm_fifo_axis_inst_n_41 ),
+        .almost_full_axis(\gen_fifo.xpm_fifo_axis_inst_n_28 ),
+        .dbiterr_axis(\gen_fifo.xpm_fifo_axis_inst_n_43 ),
+        .injectdbiterr_axis(1'b0),
+        .injectsbiterr_axis(1'b0),
         .m_aclk(s_axis_aclk),
         .m_axis_tdata(m_axis_tdata),
         .m_axis_tdest(\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tdest_UNCONNECTED [0]),
@@ -372,9 +413,9 @@ module axis_fifo_t8_axis_data_fifo_v2_0_2_top
         .m_axis_tstrb(\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tstrb_UNCONNECTED [0]),
         .m_axis_tuser(\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tuser_UNCONNECTED [0]),
         .m_axis_tvalid(m_axis_tvalid),
-        .prog_empty_axis(prog_empty),
-        .prog_full_axis(prog_full),
-        .rd_data_count_axis(\^axis_rd_data_count ),
+        .prog_empty_axis(\gen_fifo.xpm_fifo_axis_inst_n_29 ),
+        .prog_full_axis(\gen_fifo.xpm_fifo_axis_inst_n_16 ),
+        .rd_data_count_axis({\gen_fifo.xpm_fifo_axis_inst_n_30 ,\gen_fifo.xpm_fifo_axis_inst_n_31 ,\gen_fifo.xpm_fifo_axis_inst_n_32 ,\gen_fifo.xpm_fifo_axis_inst_n_33 ,\gen_fifo.xpm_fifo_axis_inst_n_34 ,\gen_fifo.xpm_fifo_axis_inst_n_35 ,\gen_fifo.xpm_fifo_axis_inst_n_36 ,\gen_fifo.xpm_fifo_axis_inst_n_37 ,\gen_fifo.xpm_fifo_axis_inst_n_38 ,\gen_fifo.xpm_fifo_axis_inst_n_39 ,\gen_fifo.xpm_fifo_axis_inst_n_40 }),
         .s_aclk(s_axis_aclk),
         .s_aresetn(s_axis_aresetn),
         .s_axis_tdata(s_axis_tdata),
@@ -386,13 +427,14 @@ module axis_fifo_t8_axis_data_fifo_v2_0_2_top
         .s_axis_tstrb(1'b0),
         .s_axis_tuser(1'b0),
         .s_axis_tvalid(s_axis_tvalid),
-        .sbiterr_axis(sbiterr),
-        .wr_data_count_axis(\^axis_wr_data_count ));
+        .sbiterr_axis(\gen_fifo.xpm_fifo_axis_inst_n_42 ),
+        .wr_data_count_axis({\gen_fifo.xpm_fifo_axis_inst_n_17 ,\gen_fifo.xpm_fifo_axis_inst_n_18 ,\gen_fifo.xpm_fifo_axis_inst_n_19 ,\gen_fifo.xpm_fifo_axis_inst_n_20 ,\gen_fifo.xpm_fifo_axis_inst_n_21 ,\gen_fifo.xpm_fifo_axis_inst_n_22 ,\gen_fifo.xpm_fifo_axis_inst_n_23 ,\gen_fifo.xpm_fifo_axis_inst_n_24 ,\gen_fifo.xpm_fifo_axis_inst_n_25 ,\gen_fifo.xpm_fifo_axis_inst_n_26 ,\gen_fifo.xpm_fifo_axis_inst_n_27 }));
 endmodule
 
 (* DEF_VAL = "1'b0" *) (* DEST_SYNC_FF = "4" *) (* INIT = "0" *) 
 (* INIT_SYNC_FF = "1" *) (* ORIG_REF_NAME = "xpm_cdc_sync_rst" *) (* SIM_ASSERT_CHK = "0" *) 
-(* VERSION = "0" *) (* XPM_MODULE = "TRUE" *) (* xpm_cdc = "SYNC_RST" *) 
+(* VERSION = "0" *) (* XPM_MODULE = "TRUE" *) (* keep_hierarchy = "true" *) 
+(* xpm_cdc = "SYNC_RST" *) 
 module axis_fifo_t8_xpm_cdc_sync_rst
    (src_rst,
     dest_clk,
@@ -1167,7 +1209,7 @@ module axis_fifo_t8_xpm_counter_updn__parameterized1
         .I1(Q[1]),
         .I2(Q[2]),
         .O(\count_value_i[2]_i_1__2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \count_value_i[3]_i_1__2 
@@ -1176,7 +1218,7 @@ module axis_fifo_t8_xpm_counter_updn__parameterized1
         .I2(Q[2]),
         .I3(Q[3]),
         .O(\count_value_i[3]_i_1__2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \count_value_i[4]_i_1__2 
@@ -1215,7 +1257,7 @@ module axis_fifo_t8_xpm_counter_updn__parameterized1
         .I4(ram_empty_i),
         .I5(Q[0]),
         .O(\count_value_i[6]_i_2__2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \count_value_i[7]_i_1__2 
@@ -1224,7 +1266,7 @@ module axis_fifo_t8_xpm_counter_updn__parameterized1
         .I2(Q[6]),
         .I3(Q[7]),
         .O(\count_value_i[7]_i_1__2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \count_value_i[8]_i_1__2 
@@ -1401,7 +1443,7 @@ module axis_fifo_t8_xpm_counter_updn__parameterized1_1
         .I1(Q[1]),
         .I2(Q[2]),
         .O(\count_value_i[2]_i_1__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \count_value_i[3]_i_1__0 
@@ -1410,7 +1452,7 @@ module axis_fifo_t8_xpm_counter_updn__parameterized1_1
         .I2(Q[2]),
         .I3(Q[3]),
         .O(\count_value_i[3]_i_1__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \count_value_i[4]_i_1__0 
@@ -1449,7 +1491,7 @@ module axis_fifo_t8_xpm_counter_updn__parameterized1_1
         .I4(rst_d1),
         .I5(Q[0]),
         .O(\count_value_i[6]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \count_value_i[7]_i_1 
@@ -1458,7 +1500,7 @@ module axis_fifo_t8_xpm_counter_updn__parameterized1_1
         .I2(Q[6]),
         .I3(Q[7]),
         .O(\count_value_i[7]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \count_value_i[8]_i_1 
@@ -1583,7 +1625,7 @@ endmodule
 (* TID_OFFSET = "11" *) (* TID_WIDTH = "1" *) (* TKEEP_OFFSET = "10" *) 
 (* TSTRB_OFFSET = "9" *) (* TUSER_MAX_WIDTH = "4083" *) (* TUSER_OFFSET = "13" *) 
 (* TUSER_WIDTH = "1" *) (* USE_ADV_FEATURES = "825241648" *) (* USE_ADV_FEATURES_INT = "825241648" *) 
-(* WR_DATA_COUNT_WIDTH = "11" *) (* XPM_MODULE = "TRUE" *) 
+(* WR_DATA_COUNT_WIDTH = "11" *) (* XPM_MODULE = "TRUE" *) (* dont_touch = "true" *) 
 module axis_fifo_t8_xpm_fifo_axis
    (s_aresetn,
     s_aclk,
@@ -1757,6 +1799,7 @@ module axis_fifo_t8_xpm_fifo_axis
   (* FIFO_WRITE_DEPTH = "1024" *) 
   (* FULL_RESET_VALUE = "1" *) 
   (* FULL_RST_VAL = "1'b1" *) 
+  (* KEEP_HIERARCHY = "soft" *) 
   (* PE_THRESH_ADJ = "3" *) 
   (* PE_THRESH_MAX = "1019" *) 
   (* PE_THRESH_MIN = "5" *) 
@@ -1772,6 +1815,7 @@ module axis_fifo_t8_xpm_fifo_axis
   (* RD_PNTR_WIDTH = "10" *) 
   (* READ_DATA_WIDTH = "14" *) 
   (* READ_MODE = "1" *) 
+  (* READ_MODE_LL = "1" *) 
   (* RELATED_CLOCKS = "0" *) 
   (* REMOVE_WR_RD_PROT_LOGIC = "0" *) 
   (* SIM_ASSERT_CHK = "0" *) 
@@ -1841,13 +1885,13 @@ endmodule
 (* PROG_EMPTY_THRESH = "5" *) (* PROG_FULL_THRESH = "11" *) (* RD_DATA_COUNT_WIDTH = "11" *) 
 (* RD_DC_WIDTH_EXT = "11" *) (* RD_LATENCY = "2" *) (* RD_MODE = "1" *) 
 (* RD_PNTR_WIDTH = "10" *) (* READ_DATA_WIDTH = "14" *) (* READ_MODE = "1" *) 
-(* RELATED_CLOCKS = "0" *) (* REMOVE_WR_RD_PROT_LOGIC = "0" *) (* SIM_ASSERT_CHK = "0" *) 
-(* USE_ADV_FEATURES = "825241648" *) (* VERSION = "0" *) (* WAKEUP_TIME = "0" *) 
-(* WIDTH_RATIO = "1" *) (* WRITE_DATA_WIDTH = "14" *) (* WR_DATA_COUNT_WIDTH = "11" *) 
-(* WR_DC_WIDTH_EXT = "11" *) (* WR_DEPTH_LOG = "10" *) (* WR_PNTR_WIDTH = "10" *) 
-(* WR_RD_RATIO = "0" *) (* WR_WIDTH_LOG = "4" *) (* XPM_MODULE = "TRUE" *) 
-(* both_stages_valid = "3" *) (* invalid = "0" *) (* stage1_valid = "2" *) 
-(* stage2_valid = "1" *) 
+(* READ_MODE_LL = "1" *) (* RELATED_CLOCKS = "0" *) (* REMOVE_WR_RD_PROT_LOGIC = "0" *) 
+(* SIM_ASSERT_CHK = "0" *) (* USE_ADV_FEATURES = "825241648" *) (* VERSION = "0" *) 
+(* WAKEUP_TIME = "0" *) (* WIDTH_RATIO = "1" *) (* WRITE_DATA_WIDTH = "14" *) 
+(* WR_DATA_COUNT_WIDTH = "11" *) (* WR_DC_WIDTH_EXT = "11" *) (* WR_DEPTH_LOG = "10" *) 
+(* WR_PNTR_WIDTH = "10" *) (* WR_RD_RATIO = "0" *) (* WR_WIDTH_LOG = "4" *) 
+(* XPM_MODULE = "TRUE" *) (* both_stages_valid = "3" *) (* invalid = "0" *) 
+(* keep_hierarchy = "soft" *) (* stage1_valid = "2" *) (* stage2_valid = "1" *) 
 module axis_fifo_t8_xpm_fifo_base
    (sleep,
     rst,
@@ -1993,7 +2037,7 @@ module axis_fifo_t8_xpm_fifo_base
   assign wr_data_count[1] = \<const0> ;
   assign wr_data_count[0] = \<const0> ;
   assign wr_rst_busy = \<const0> ;
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT4 #(
     .INIT(16'h6A85)) 
     \FSM_sequential_gen_fwft.curr_fwft_state[0]_i_1 
@@ -2030,6 +2074,7 @@ module axis_fifo_t8_xpm_fifo_base
         .R(xpm_fifo_rst_inst_n_1));
   GND GND
        (.G(\<const0> ));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT4 #(
     .INIT(16'hF380)) 
     \gen_fwft.empty_fwft_i_i_1 
@@ -2046,7 +2091,6 @@ module axis_fifo_t8_xpm_fifo_base
         .D(data_valid_fwft1),
         .Q(\gen_fwft.empty_fwft_i_reg_n_0 ),
         .S(xpm_fifo_rst_inst_n_1));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT4 #(
     .INIT(16'h3575)) 
     \gen_fwft.gdvld_fwft.data_valid_fwft_i_1 
@@ -2095,6 +2139,7 @@ module axis_fifo_t8_xpm_fifo_base
   (* CASCADE_HEIGHT = "0" *) 
   (* CLOCKING_MODE = "0" *) 
   (* ECC_MODE = "0" *) 
+  (* KEEP_HIERARCHY = "soft" *) 
   (* MAX_NUM_CHAR = "0" *) 
   (* \MEM.ADDRESS_SPACE  *) 
   (* \MEM.ADDRESS_SPACE_BEGIN  = "0" *) 
@@ -2150,12 +2195,14 @@ module axis_fifo_t8_xpm_fifo_base
   (* SIM_ASSERT_CHK = "0" *) 
   (* USE_EMBEDDED_CONSTRAINT = "0" *) 
   (* USE_MEM_INIT = "0" *) 
+  (* USE_MEM_INIT_MMI = "0" *) 
   (* VERSION = "0" *) 
   (* WAKEUP_TIME = "0" *) 
   (* WRITE_DATA_WIDTH_A = "14" *) 
   (* WRITE_DATA_WIDTH_B = "14" *) 
   (* WRITE_MODE_A = "2" *) 
   (* WRITE_MODE_B = "2" *) 
+  (* WRITE_PROTECT = "1" *) 
   (* XPM_MODULE = "TRUE" *) 
   (* rsta_loop_iter = "16" *) 
   (* rstb_loop_iter = "16" *) 
@@ -2394,9 +2441,10 @@ endmodule
 (* READ_DATA_WIDTH_B = "14" *) (* READ_LATENCY_A = "2" *) (* READ_LATENCY_B = "2" *) 
 (* READ_RESET_VALUE_A = "0" *) (* READ_RESET_VALUE_B = "" *) (* RST_MODE_A = "SYNC" *) 
 (* RST_MODE_B = "SYNC" *) (* SIM_ASSERT_CHK = "0" *) (* USE_EMBEDDED_CONSTRAINT = "0" *) 
-(* USE_MEM_INIT = "0" *) (* VERSION = "0" *) (* WAKEUP_TIME = "0" *) 
-(* WRITE_DATA_WIDTH_A = "14" *) (* WRITE_DATA_WIDTH_B = "14" *) (* WRITE_MODE_A = "2" *) 
-(* WRITE_MODE_B = "2" *) (* XPM_MODULE = "TRUE" *) (* rsta_loop_iter = "16" *) 
+(* USE_MEM_INIT = "0" *) (* USE_MEM_INIT_MMI = "0" *) (* VERSION = "0" *) 
+(* WAKEUP_TIME = "0" *) (* WRITE_DATA_WIDTH_A = "14" *) (* WRITE_DATA_WIDTH_B = "14" *) 
+(* WRITE_MODE_A = "2" *) (* WRITE_MODE_B = "2" *) (* WRITE_PROTECT = "1" *) 
+(* XPM_MODULE = "TRUE" *) (* keep_hierarchy = "soft" *) (* rsta_loop_iter = "16" *) 
 (* rstb_loop_iter = "16" *) 
 module axis_fifo_t8_xpm_memory_base
    (sleep,
@@ -2511,10 +2559,7 @@ module axis_fifo_t8_xpm_memory_base
   (* RDADDR_COLLISION_HWCONFIG = "DELAYED_WRITE" *) 
   (* RTL_RAM_BITS = "14336" *) 
   (* RTL_RAM_NAME = "gen_wr_a.gen_word_narrow.mem" *) 
-  (* bram_addr_begin = "0" *) 
-  (* bram_addr_end = "1023" *) 
-  (* bram_slice_begin = "0" *) 
-  (* bram_slice_end = "8" *) 
+  (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "1023" *) 
   (* ram_offset = "0" *) 
@@ -2670,12 +2715,15 @@ module glbl ();
 
     parameter ROC_WIDTH = 100000;
     parameter TOC_WIDTH = 0;
+    parameter GRES_WIDTH = 10000;
+    parameter GRES_START = 10000;
 
 //--------   STARTUP Globals --------------
     wire GSR;
     wire GTS;
     wire GWE;
     wire PRLD;
+    wire GRESTORE;
     tri1 p_up_tmp;
     tri (weak1, strong0) PLL_LOCKG = p_up_tmp;
 
@@ -2688,6 +2736,7 @@ module glbl ();
     reg GSR_int;
     reg GTS_int;
     reg PRLD_int;
+    reg GRESTORE_int;
 
 //--------   JTAG Globals --------------
     wire JTAG_TDO_GLBL;
@@ -2715,6 +2764,7 @@ module glbl ();
     assign (strong1, weak0) GSR = GSR_int;
     assign (strong1, weak0) GTS = GTS_int;
     assign (weak1, weak0) PRLD = PRLD_int;
+    assign (strong1, weak0) GRESTORE = GRESTORE_int;
 
     initial begin
 	GSR_int = 1'b1;
@@ -2728,6 +2778,14 @@ module glbl ();
 	GTS_int = 1'b1;
 	#(TOC_WIDTH)
 	GTS_int = 1'b0;
+    end
+
+    initial begin 
+	GRESTORE_int = 1'b0;
+	#(GRES_START);
+	GRESTORE_int = 1'b1;
+	#(GRES_WIDTH);
+	GRESTORE_int = 1'b0;
     end
 
 endmodule

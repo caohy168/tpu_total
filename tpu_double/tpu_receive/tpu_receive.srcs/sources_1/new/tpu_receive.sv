@@ -89,15 +89,15 @@ logic m_axis_output_tlast;
   .rx_axis_tuser (axis_tuser_10g ),
   .rx_axis_tready(axis_tready_10g),
   
-  .s_axis_tx_tdata(m_axis_output_tdata),
-  .s_axis_tx_tkeep(255),
-  .s_axis_tx_tlast(m_axis_output_tlast),
-  .s_axis_tx_tready(m_axis_output_tready),
-  .s_axis_tx_tuser(0),
-  .s_axis_tx_tvalid(m_axis_output_tvalid),
+  .s_axis_tx_tdata(axis_tdata_bb),
+  .s_axis_tx_tkeep(axis_tkeep_bb),
+  .s_axis_tx_tlast(axis_tlast_bb),
+  .s_axis_tx_tready(axis_tready_bb),
+  .s_axis_tx_tuser(axis_tuser_bb),
+  .s_axis_tx_tvalid(axis_tvalid_bb),
   
   .leds());
-  
+   
 //logic [AXIS_TDATA_WIDTH-1:0] axis_tdata_transfer;
 //logic [AXIS_TKEEP_WIDTH-1:0] axis_tkeep_transfer;
 //logic                        axis_tvalid_transfer;

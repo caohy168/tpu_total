@@ -7,7 +7,7 @@
 // Module Name: tpu
 // Project Name: BFB(base frequency band) research group
 // Target Devices: kcu105
-// Tool Versions: vivado 2019.2
+// Tool Versions: vivado 2020.2
 // Description: 
 // 
 // Dependencies: 
@@ -17,9 +17,8 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
-
 `timescale 1 ps / 1 ps
+//`define Ubuntu
 
 module tb;
 
@@ -128,11 +127,6 @@ logic       m_axis_outputDAQ_tlast[8];
 logic [15:0]m_axis_outputDAI_tdata[8];
 logic [15:0]m_axis_outputDAQ_tdata[8];
 
-//integer out_file_dai0,out_file_daq0;
-//initial begin
-//    out_file_dai0 = $fopen("/home/caohy/work/tpu_total/tpu_double/intermediate_database/dai_data0","w");
-//    out_file_daq0 = $fopen("/home/caohy/work/tpu_total/tpu_double/intermediate_database/daq_data0","w");
-//    end
 logic [15:0]mem_pushi[8][1700];
 logic [15:0]mem_pushq[8][1700];
 //$writememh("memory_hex.txt", memory);
@@ -151,22 +145,7 @@ generate
                 nq[mem_push_i]++;
                 end end end
 endgenerate
-
-
-//always @(clk_250m) begin
-//    if(m_axis_outputDAI_tvalid[0])begin
-//        ni=ni+1;
-//        if(ni%2==0)begin
-//            //$fwrite(out_file_dai0,"%d",$signed(m_axis_outputDAI_tdata[0]));
-//            //$fwrite(out_file_dai0,"%h",m_axis_outputDAI_tdata[0]); 
-            
-//            end end
-//    if(m_axis_outputDAQ_tvalid[0])begin
-//        nq=nq+1;
-//        if(nq%2==0)begin
-//            //$fwrite(out_file_daq0,"%d",$signed(m_axis_outputDAQ_tdata[0])); 
-//            //$fwrite(out_file_daq0,"%h",m_axis_outputDAQ_tdata[0]);
-//            end end end   
+ 
 integer nstop=0;                     
 always @(negedge m_axis_outputDAI_tvalid[0]) begin 
     nstop=nstop+1;
@@ -174,14 +153,50 @@ always @(negedge m_axis_outputDAI_tvalid[0]) begin
         //$fclose(out_file_dai0); 
         //$fclose(out_file_daq0);    
         #500;  
-        $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data0", mem_pushi[0]);
-        $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data0", mem_pushq[0]); 
-        $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data1", mem_pushi[1]);
-        $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data1", mem_pushq[1]);   
+        `ifdef Ubuntu
+            begin
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data0", mem_pushi[0]);
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data1", mem_pushi[1]); 
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data2", mem_pushi[2]);
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data3", mem_pushi[3]); 
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data4", mem_pushi[4]);
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data5", mem_pushi[5]); 
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data6", mem_pushi[6]);
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data7", mem_pushi[7]); 
+                
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data0", mem_pushq[0]);
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data1", mem_pushq[1]); 
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data2", mem_pushq[2]);
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data3", mem_pushq[3]); 
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data4", mem_pushq[4]);
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data5", mem_pushq[5]); 
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data6", mem_pushq[6]);
+                $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data7", mem_pushq[7]);   
+            end
+        `else
+            begin
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\dai_data0", mem_pushi[0]);
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\dai_data1", mem_pushi[1]); 
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\dai_data2", mem_pushi[2]);
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\dai_data3", mem_pushi[3]);   
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\dai_data4", mem_pushi[4]);
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\dai_data5", mem_pushi[5]); 
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\dai_data6", mem_pushi[6]);
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\dai_data7", mem_pushi[7]);  
+                
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\daq_data0", mem_pushq[0]);
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\daq_data1", mem_pushq[1]); 
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\daq_data2", mem_pushq[2]);
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\daq_data3", mem_pushq[3]);  
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\daq_data4", mem_pushq[4]);
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\daq_data5", mem_pushq[5]); 
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\daq_data6", mem_pushq[6]);
+                $writememh("D:\\tpu_double\\intermediate\\transmit\\daq_data7", mem_pushq[7]);  
+            end
+        `endif
         $finish;end 
     end
-            
-
+               
 tpu_transmit tpu_transmit(
 
   .CLK_125MHZ_P(clk_125m),
@@ -201,8 +216,7 @@ tpu_transmit tpu_transmit(
   .m_axis_outputDAQ_tlast (m_axis_outputDAQ_tlast),     
   .m_axis_outputDAI_tdata (m_axis_outputDAI_tdata),
   .m_axis_outputDAQ_tdata (m_axis_outputDAQ_tdata));
-
-
+  
 endmodule 
     
     

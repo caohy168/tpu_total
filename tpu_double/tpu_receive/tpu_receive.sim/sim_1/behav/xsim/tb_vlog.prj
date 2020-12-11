@@ -33,7 +33,7 @@ verilog xil_defaultlib  --include "../../../../tpu_receive.ip_user_files/ipstati
 "../../../../tpu_receive.srcs/sources_1/ip/tpu_receive_clock/tpu_receive_clock.v" \
 "../../../../tpu_receive.srcs/sources_1/new/crc24_calc_1bit.v" \
 "../../../../tpu_receive.srcs/sources_1/new/crc24_insert_1bit.v" \
-"../../../../tpu_receive.srcs/sources_1/new/mac_phy_wrapper.v" \
+"../../../../tpu_receive.srcs/sources_1/new/mac_phy/hdl/mac_phy_wrapper.v" \
 
 sv xil_defaultlib  --include "../../../../tpu_receive.ip_user_files/ipstatic/hdl" --include "../../../../tpu_receive.srcs/sources_1/ip/tpu_receive_clock" \
 "../../../../tpu_receive.srcs/sources_1/new/axi_stream_gen.sv" \

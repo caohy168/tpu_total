@@ -1,8 +1,8 @@
-//Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+//Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-//Date        : Wed Nov 25 23:30:08 2020
-//Host        : ubuntu running 64-bit Ubuntu 18.04.5 LTS
+//Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+//Date        : Fri Dec  4 16:49:57 2020
+//Host        : DESKTOP-4A374NS running 64-bit major release  (build 9200)
 //Command     : generate_target mac_phy_wrapper.bd
 //Design      : mac_phy_wrapper
 //Purpose     : IP block netlist

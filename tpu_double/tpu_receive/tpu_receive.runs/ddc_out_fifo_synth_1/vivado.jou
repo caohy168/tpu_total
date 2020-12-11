@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec  4 16:50:52 2020
+# Process ID: 572
+# Current directory: D:/tpu_double/tpu_receive/tpu_receive.runs/ddc_out_fifo_synth_1
+# Command line: vivado.exe -log ddc_out_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ddc_out_fifo.tcl
+# Log file: D:/tpu_double/tpu_receive/tpu_receive.runs/ddc_out_fifo_synth_1/ddc_out_fifo.vds
+# Journal file: D:/tpu_double/tpu_receive/tpu_receive.runs/ddc_out_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ddc_out_fifo.tcl -notrace

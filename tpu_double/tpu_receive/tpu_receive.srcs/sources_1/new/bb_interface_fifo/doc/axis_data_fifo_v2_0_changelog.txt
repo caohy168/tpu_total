@@ -1,3 +1,23 @@
+2020.2:
+ * Version 2.0 (Rev. 4)
+ * Revision change in one or more subcores
+
+2020.1.1:
+ * Version 2.0 (Rev. 3)
+ * No changes
+
+2020.1:
+ * Version 2.0 (Rev. 3)
+ * Revision change in one or more subcores
+
+2019.2.2:
+ * Version 2.0 (Rev. 2)
+ * No changes
+
+2019.2.1:
+ * Version 2.0 (Rev. 2)
+ * No changes
+
 2019.2:
  * Version 2.0 (Rev. 2)
  * Revision change in one or more subcores
@@ -156,7 +176,7 @@
  * Native Vivado Release
  * There have been no functional or interface changes to this IP.  The version number has changed to support unique versioning in Vivado starting with 2013.1.
 
-(c) Copyright 2012 - 2019 Xilinx, Inc. All rights reserved.
+(c) Copyright 2012 - 2020 Xilinx, Inc. All rights reserved.
 
 This file contains confidential and proprietary information
 of Xilinx, Inc. and is protected under U.S. and

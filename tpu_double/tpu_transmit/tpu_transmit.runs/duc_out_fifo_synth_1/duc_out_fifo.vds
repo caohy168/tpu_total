@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Dec  3 11:44:30 2020
+# Process ID: 10756
+# Current directory: D:/tpu_double/tpu_transmit/tpu_transmit.runs/duc_out_fifo_synth_1
+# Command line: vivado.exe -log duc_out_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source duc_out_fifo.tcl
+# Log file: D:/tpu_double/tpu_transmit/tpu_transmit.runs/duc_out_fifo_synth_1/duc_out_fifo.vds
+# Journal file: D:/tpu_double/tpu_transmit/tpu_transmit.runs/duc_out_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source duc_out_fifo.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP duc_out_fifo, cache-ID = 8a94aec2dd86a87f.
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  3 11:44:36 2020...

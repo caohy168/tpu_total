@@ -72,7 +72,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_common_wrapper (
 
 
 
-gtwizard_ultrascale_v1_7_7_gthe3_common #(
+gtwizard_ultrascale_v1_7_9_gthe3_common #(
   .GTHE3_COMMON_BGBYPASSB_TIE_EN                (1'b1),
   .GTHE3_COMMON_BGBYPASSB_VAL                   (1'b1),
   .GTHE3_COMMON_BGMONITORENB_TIE_EN             (1'b1),

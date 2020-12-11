@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/constrs_1/new/tpu_transmit.xdc rfile:../../../tpu_transmit.srcs/constrs_1/new/tpu_transmit.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/tpu_double/tpu_transmit/tpu_transmit.srcs/constrs_1/new/tpu_transmit.xdc rfile:../../../tpu_transmit.srcs/constrs_1/new/tpu_transmit.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN AN8 [get_ports reset]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

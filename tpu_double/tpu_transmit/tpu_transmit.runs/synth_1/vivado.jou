@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2019.2 (64-bit)
-# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
-# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sun Nov 15 17:26:48 2020
-# Process ID: 3724
-# Current directory: /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.runs/synth_1
-# Command line: vivado -log tpu_transmit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tpu_transmit.tcl
-# Log file: /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.runs/synth_1/tpu_transmit.vds
-# Journal file: /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.runs/synth_1/vivado.jou
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec  4 10:19:00 2020
+# Process ID: 9184
+# Current directory: D:/tpu_double/tpu_transmit/tpu_transmit.runs/synth_1
+# Command line: vivado.exe -log tpu_transmit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tpu_transmit.tcl
+# Log file: D:/tpu_double/tpu_transmit/tpu_transmit.runs/synth_1/tpu_transmit.vds
+# Journal file: D:/tpu_double/tpu_transmit/tpu_transmit.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source tpu_transmit.tcl -notrace

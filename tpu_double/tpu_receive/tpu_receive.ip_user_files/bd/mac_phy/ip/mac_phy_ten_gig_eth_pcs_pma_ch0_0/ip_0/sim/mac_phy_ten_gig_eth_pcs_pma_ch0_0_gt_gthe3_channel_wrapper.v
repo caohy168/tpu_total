@@ -391,7 +391,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt_gthe3_channel_wrapper #(
 
 
 
-gtwizard_ultrascale_v1_7_7_gthe3_channel #(
+gtwizard_ultrascale_v1_7_9_gthe3_channel #(
   .GTHE3_CHANNEL_ACJTAG_DEBUG_MODE              (1'b0),
   .GTHE3_CHANNEL_ACJTAG_MODE                    (1'b0),
   .GTHE3_CHANNEL_ACJTAG_RESET                   (1'b0),

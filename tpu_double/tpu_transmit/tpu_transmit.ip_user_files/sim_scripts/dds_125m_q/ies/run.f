@@ -1,10 +1,10 @@
 -makelib ies_lib/xpm -sv \
-  "/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-  "/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
-  "/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+  "D:/Xilinx/2020.02/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "D:/Xilinx/2020.02/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
+  "D:/Xilinx/2020.02/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 -endlib
 -makelib ies_lib/xpm \
-  "/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
+  "D:/Xilinx/2020.02/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/xbip_utils_v3_0_10 \
   "../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
@@ -30,7 +30,7 @@
 -makelib ies_lib/xbip_dsp48_multadd_v3_0_6 \
   "../../../ipstatic/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" \
 -endlib
--makelib ies_lib/dds_compiler_v6_0_19 \
+-makelib ies_lib/dds_compiler_v6_0_20 \
   "../../../ipstatic/hdl/dds_compiler_v6_0_vh_rfs.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="bb_data_loopback_fifo_synth_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1607071848">
+  <File Type="PA-TCL" Name="bb_data_loopback_fifo.tcl"/>
+  <File Type="REPORTS-TCL" Name="bb_data_loopback_fifo_reports.tcl"/>
+  <File Type="RDS-RDS" Name="bb_data_loopback_fifo.vds"/>
+  <File Type="RDS-UTIL" Name="bb_data_loopback_fifo_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="bb_data_loopback_fifo_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="bb_data_loopback_fifo.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bb_data_loopback_fifo">
+    <File Path="$PSRCDIR/sources_1/new/bb_data_loopback_fifo/bb_data_loopback_fifo.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="bb_data_loopback_fifo"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bb_data_loopback_fifo">
+    <File Path="$PSRCDIR/sources_1/new/bb_data_loopback_fifo/bb_data_loopback_fifo.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="bb_data_loopback_fifo"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

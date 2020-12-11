@@ -1,11 +1,12 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xA02946B28A5FE49C",
+      "boundary_crc": "0xA02946B2266CFAB1",
       "device": "xcku040-ffva1156-2-e",
       "name": "mac_phy",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.2",
+      "tool_version": "2020.2",
       "validated": "true"
     },
     "design_tree": {
@@ -39,6 +40,36 @@
         "mode": "Slave",
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
         "parameters": {
+          "CLK_DOMAIN": {
+            "value": "mac_phy_ten_gig_eth_pcs_pma_ch0_0_coreclk_out",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "156250000",
+            "value_src": "user_prop"
+          },
+          "HAS_TKEEP": {
+            "value": "0"
+          },
+          "HAS_TLAST": {
+            "value": "0"
+          },
+          "HAS_TREADY": {
+            "value": "0"
+          },
+          "HAS_TSTRB": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef"
+          },
+          "PHASE": {
+            "value": "0.000"
+          },
           "TDATA_NUM_BYTES": {
             "value": "2"
           },
@@ -50,36 +81,6 @@
           },
           "TUSER_WIDTH": {
             "value": "0"
-          },
-          "HAS_TREADY": {
-            "value": "0"
-          },
-          "HAS_TSTRB": {
-            "value": "0"
-          },
-          "HAS_TKEEP": {
-            "value": "0"
-          },
-          "HAS_TLAST": {
-            "value": "0"
-          },
-          "FREQ_HZ": {
-            "value": "156250000",
-            "value_src": "user_prop"
-          },
-          "PHASE": {
-            "value": "0.000"
-          },
-          "CLK_DOMAIN": {
-            "value": "mac_phy_ten_gig_eth_pcs_pma_ch0_0_coreclk_out",
-            "value_src": "default_prop"
-          },
-          "LAYERED_METADATA": {
-            "value": "undef"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
           }
         }
       },
@@ -91,6 +92,32 @@
         "mode": "Slave",
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
         "parameters": {
+          "FREQ_HZ": {
+            "value": "156250000"
+          },
+          "HAS_TKEEP": {
+            "value": "1"
+          },
+          "HAS_TLAST": {
+            "value": "1"
+          },
+          "HAS_TREADY": {
+            "value": "1"
+          },
+          "HAS_TSTRB": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          },
           "TDATA_NUM_BYTES": {
             "value": "8"
           },
@@ -102,32 +129,6 @@
           },
           "TUSER_WIDTH": {
             "value": "1"
-          },
-          "HAS_TREADY": {
-            "value": "1"
-          },
-          "HAS_TSTRB": {
-            "value": "0"
-          },
-          "HAS_TKEEP": {
-            "value": "1"
-          },
-          "HAS_TLAST": {
-            "value": "1"
-          },
-          "FREQ_HZ": {
-            "value": "156250000"
-          },
-          "PHASE": {
-            "value": "0.000",
-            "value_src": "default"
-          },
-          "LAYERED_METADATA": {
-            "value": "undef"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
           }
         }
       },
@@ -135,6 +136,37 @@
         "mode": "Master",
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
         "parameters": {
+          "FREQ_HZ": {
+            "value": "156250000"
+          },
+          "HAS_TKEEP": {
+            "value": "1",
+            "value_src": "auto_prop"
+          },
+          "HAS_TLAST": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "HAS_TREADY": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "HAS_TSTRB": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          },
           "TDATA_NUM_BYTES": {
             "value": "8",
             "value_src": "auto_prop"
@@ -150,37 +182,6 @@
           "TUSER_WIDTH": {
             "value": "1",
             "value_src": "const_prop"
-          },
-          "HAS_TREADY": {
-            "value": "0",
-            "value_src": "const_prop"
-          },
-          "HAS_TSTRB": {
-            "value": "0",
-            "value_src": "const_prop"
-          },
-          "HAS_TKEEP": {
-            "value": "1",
-            "value_src": "auto_prop"
-          },
-          "HAS_TLAST": {
-            "value": "1",
-            "value_src": "const_prop"
-          },
-          "FREQ_HZ": {
-            "value": "156250000"
-          },
-          "PHASE": {
-            "value": "0.000",
-            "value_src": "default"
-          },
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
           }
         }
       }
@@ -214,6 +215,10 @@
           "FREQ_HZ": {
             "value": "156250000",
             "value_src": "user_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
           },
           "INSERT_VIP": {
             "value": "0",
@@ -302,6 +307,10 @@
           },
           "FREQ_HZ": {
             "value": "156250000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
           },
           "INSERT_VIP": {
             "value": "0",
@@ -476,22 +485,28 @@
           }
         },
         "interface_nets": {
-          "Conn1": {
+          "ten_gig_eth_pcs_pma_ch0_core_to_gt_drp": {
             "interface_ports": [
-              "s_axis_pause",
-              "ten_gig_eth_mac_ch0/s_axis_pause"
+              "ten_gig_eth_pcs_pma_ch0/core_to_gt_drp",
+              "ten_gig_eth_pcs_pma_ch0/gt_drp"
+            ]
+          },
+          "Conn4": {
+            "interface_ports": [
+              "rx_statistics",
+              "ten_gig_eth_mac_ch0/rx_statistics"
+            ]
+          },
+          "microblaze_0_axi_periph_M04_AXI": {
+            "interface_ports": [
+              "s_axi",
+              "ten_gig_eth_mac_ch0/s_axi"
             ]
           },
           "Conn2": {
             "interface_ports": [
               "refclk_diff_port",
               "ten_gig_eth_pcs_pma_ch0/refclk_diff_port"
-            ]
-          },
-          "ten_gig_eth_pcs_pma_ch0_core_to_gt_drp": {
-            "interface_ports": [
-              "ten_gig_eth_pcs_pma_ch0/core_to_gt_drp",
-              "ten_gig_eth_pcs_pma_ch0/gt_drp"
             ]
           },
           "ten_gig_eth_mac_ch0_xgmii_xgmac": {
@@ -506,16 +521,10 @@
               "ten_gig_eth_mac_ch0/tx_statistics"
             ]
           },
-          "Conn4": {
+          "Conn1": {
             "interface_ports": [
-              "rx_statistics",
-              "ten_gig_eth_mac_ch0/rx_statistics"
-            ]
-          },
-          "microblaze_0_axi_periph_M04_AXI": {
-            "interface_ports": [
-              "s_axi",
-              "ten_gig_eth_mac_ch0/s_axi"
+              "s_axis_pause",
+              "ten_gig_eth_mac_ch0/s_axis_pause"
             ]
           },
           "axis_data_fifo_tx_ch0_M_AXIS": {

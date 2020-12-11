@@ -1,34 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1605490006">
+<GenRun Id="synth_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1607048333">
   <File Type="PA-TCL" Name="tpu_transmit.tcl"/>
-  <File Type="RDS-UTIL" Name="tpu_transmit_utilization_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="tpu_transmit_reports.tcl"/>
-  <File Type="RDS-UTIL-PB" Name="tpu_transmit_utilization_synth.pb"/>
   <File Type="RDS-RDS" Name="tpu_transmit.vds"/>
+  <File Type="RDS-UTIL" Name="tpu_transmit_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="tpu_transmit_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="tpu_transmit.dcp"/>
-  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/axis_fifo_t8/axis_fifo_t8.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/axis_fifo_t/axis_fifo_t.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/duc_out_fifo/duc_out_fifo.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/add_duc/add_duc.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -50,13 +29,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/dds_125m_q/dds_125m_q.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/dds_125m_i/dds_125m_i.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -72,13 +44,6 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/mac_phy/mac_phy.bd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/bb_interface_fifo/bb_interface_fifo.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -218,7 +183,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/tpu_upstream.sv">
+    <File Path="$PSRCDIR/sources_1/new/tpu_pushstream.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -260,5 +225,12 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="mac_phy_ten_gig_eth_mac_ch0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="duc_out_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="mac_phy_ten_gig_eth_pcs_pma_ch0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bb_interface_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="axis_fifo_t8"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_125m_q"/>
+  <BlockFileSet Type="BlockSrcs" Name="axis_fifo_t"/>
   <BlockFileSet Type="BlockSrcs" Name="tpu_transmit_clock"/>
 </GenRun>

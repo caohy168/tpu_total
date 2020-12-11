@@ -377,7 +377,7 @@ module mac_phy_ten_gig_eth_pcs_pma_ch0_0_block
      .rxusrclk2(rxusrclk2)
     );
 
-  ten_gig_eth_pcs_pma_v6_0_16 #(
+  ten_gig_eth_pcs_pma_v6_0_18 #(
       .C_HAS_MDIO                  (1'b1),
       .C_HAS_FEC                   (1'b0),
       .C_HAS_AN                    (1'b0),

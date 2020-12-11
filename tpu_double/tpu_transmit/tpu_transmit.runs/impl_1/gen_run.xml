@@ -1,84 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1605490006">
-  <File Type="ROUTE-TIMINGSUMMARY" Name="tpu_transmit_timing_summary_routed.rpt"/>
-  <File Type="PLACE-CTRL" Name="tpu_transmit_control_sets_placed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="tpu_transmit_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="tpu_transmit_routed_bb.dcp"/>
-  <File Type="NPI_FILE" Name="tpu_transmit.npi"/>
-  <File Type="ROUTE-PWR-RPX" Name="tpu_transmit_power_routed.rpx"/>
-  <File Type="ROUTE-PWR-SUM" Name="tpu_transmit_power_summary_routed.pb"/>
-  <File Type="RNPI_FILE" Name="tpu_transmit.rnpi"/>
-  <File Type="BITSTR-SYSDEF" Name="tpu_transmit.sysdef"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="tpu_transmit_postroute_physopt_bb.dcp"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+<GenRun Id="impl_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1607048334">
+  <File Type="ROUTE-PWR" Name="tpu_transmit_power_routed.rpt"/>
   <File Type="PA-TCL" Name="tpu_transmit.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="tpu_transmit_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="tpu_transmit_reports.tcl"/>
-  <File Type="OPT-DRC" Name="tpu_transmit_drc_opted.rpt"/>
   <File Type="BITSTR-MSK" Name="tpu_transmit.msk"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="tpu_transmit_postplace_pwropt.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="tpu_transmit_routed_error.dcp"/>
-  <File Type="ROUTE-DRC-RPX" Name="tpu_transmit_drc_routed.rpx"/>
-  <File Type="BITSTR-RBT" Name="tpu_transmit.rbt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="tpu_transmit_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="tpu_transmit_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-CLK" Name="tpu_transmit_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="tpu_transmit_bus_skew_routed.rpx"/>
-  <File Type="ROUTE-DCP" Name="tpu_transmit_routed.dcp"/>
-  <File Type="BG-BGN" Name="tpu_transmit.bgn"/>
-  <File Type="PLACE-DCP" Name="tpu_transmit_placed.dcp"/>
-  <File Type="PLACE-UTIL-PB" Name="tpu_transmit_utilization_placed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="tpu_transmit_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="tpu_transmit_bus_skew_routed.rpt"/>
+  <File Type="RDI-RDI" Name="tpu_transmit.vdi"/>
   <File Type="BG-BIT" Name="tpu_transmit.bit"/>
+  <File Type="BG-DRC" Name="tpu_transmit.drc"/>
+  <File Type="BG-BGN" Name="tpu_transmit.bgn"/>
+  <File Type="BG-BIN" Name="tpu_transmit.bin"/>
+  <File Type="BITSTR-RBT" Name="tpu_transmit.rbt"/>
+  <File Type="BITSTR-NKY" Name="tpu_transmit.nky"/>
+  <File Type="BITSTR-BMM" Name="tpu_transmit_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="tpu_transmit_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="tpu_transmit.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="tpu_transmit_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="tpu_transmit.sysdef"/>
+  <File Type="ROUTE-DRC-RPX" Name="tpu_transmit_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="tpu_transmit.ltx"/>
+  <File Type="RCFI_FILE" Name="tpu_transmit.rcfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="tpu_transmit_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="tpu_transmit.hwdef"/>
+  <File Type="PLACE-IO" Name="tpu_transmit_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="tpu_transmit_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="tpu_transmit_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="tpu_transmit_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="tpu_transmit_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="tpu_transmit_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="tpu_transmit_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="tpu_transmit_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="tpu_transmit_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="tpu_transmit_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="tpu_transmit_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="tpu_transmit_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="tpu_transmit_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="tpu_transmit_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="tpu_transmit_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="tpu_transmit_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="tpu_transmit_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="tpu_transmit_bus_skew_routed.pb"/>
-  <File Type="ROUTE-STATUS-PB" Name="tpu_transmit_route_status.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="tpu_transmit_bus_skew_routed.rpx"/>
   <File Type="OPT-DCP" Name="tpu_transmit_opt.dcp"/>
-  <File Type="BG-DRC" Name="tpu_transmit.drc"/>
-  <File Type="PLACE-UTIL" Name="tpu_transmit_utilization_placed.rpt"/>
-  <File Type="BG-BIN" Name="tpu_transmit.bin"/>
+  <File Type="PLACE-DCP" Name="tpu_transmit_placed.dcp"/>
   <File Type="PWROPT-DCP" Name="tpu_transmit_pwropt.dcp"/>
-  <File Type="PLACE-IO" Name="tpu_transmit_io_placed.rpt"/>
-  <File Type="OPT-HWDEF" Name="tpu_transmit.hwdef"/>
-  <File Type="RDI-RDI" Name="tpu_transmit.vdi"/>
-  <File Type="RCFI_FILE" Name="tpu_transmit.rcfi"/>
-  <File Type="ROUTE-DRC-PB" Name="tpu_transmit_drc_routed.pb"/>
-  <File Type="BITSTR-MMI" Name="tpu_transmit.mmi"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="tpu_transmit_postroute_physopt.dcp"/>
-  <File Type="CFI_FILE" Name="tpu_transmit.cfi"/>
-  <File Type="ROUTE-PWR" Name="tpu_transmit_power_routed.rpt"/>
-  <File Type="BITSTR-NKY" Name="tpu_transmit.nky"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="tpu_transmit_postplace_pwropt.dcp"/>
   <File Type="PHYSOPT-DCP" Name="tpu_transmit_physopt.dcp"/>
-  <File Type="ROUTE-DRC" Name="tpu_transmit_drc_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="tpu_transmit_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="tpu_transmit_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="tpu_transmit_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="tpu_transmit.pdi"/>
-  <File Type="BITSTR-BMM" Name="tpu_transmit_bd.bmm"/>
+  <File Type="CFI_FILE" Name="tpu_transmit.cfi"/>
+  <File Type="RNPI_FILE" Name="tpu_transmit.rnpi"/>
+  <File Type="NPI_FILE" Name="tpu_transmit.npi"/>
   <File Type="RBD_FILE" Name="tpu_transmit.rbd"/>
-  <File Type="ROUTE-STATUS" Name="tpu_transmit_route_status.rpt"/>
-  <File Type="BITSTR-LTX" Name="tpu_transmit.ltx"/>
-  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/axis_fifo_t8/axis_fifo_t8.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/axis_fifo_t/axis_fifo_t.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/duc_out_fifo/duc_out_fifo.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/add_duc/add_duc.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -100,13 +80,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/dds_125m_q/dds_125m_q.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/dds_125m_i/dds_125m_i.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -122,13 +95,6 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/mac_phy/mac_phy.bd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/bb_interface_fifo/bb_interface_fifo.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -268,7 +234,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/tpu_upstream.sv">
+    <File Path="$PSRCDIR/sources_1/new/tpu_pushstream.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -319,5 +285,12 @@
     <Step Id="write_bitstream"/>
     <Step Id="write_device_image"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="mac_phy_ten_gig_eth_mac_ch0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="duc_out_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="mac_phy_ten_gig_eth_pcs_pma_ch0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bb_interface_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="axis_fifo_t8"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_125m_q"/>
+  <BlockFileSet Type="BlockSrcs" Name="axis_fifo_t"/>
   <BlockFileSet Type="BlockSrcs" Name="tpu_transmit_clock"/>
 </GenRun>

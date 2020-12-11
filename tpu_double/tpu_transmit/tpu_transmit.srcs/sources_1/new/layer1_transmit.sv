@@ -8,7 +8,7 @@
 // Module Name: layer1_transmit
 // Project Name: BFB(base frequency band) search group
 // Target Devices: xcvu9p
-// Tool Versions: vivado 2019.2
+// Tool Versions: vivado 2020.2
 // Description: 
 // layer1 transnit module of the system
 // Dependencies: 

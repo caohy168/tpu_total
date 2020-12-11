@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:ip:xlconstant:1.1
-// IP Revision: 6
+// IP Revision: 7
 
-(* X_CORE_INFO = "xlconstant_v1_1_6_xlconstant,Vivado 2019.2" *)
-(* CHECK_LICENSE_TYPE = "mac_phy_xlconstant_8b0_0,xlconstant_v1_1_6_xlconstant,{}" *)
-(* CORE_GENERATION_INFO = "mac_phy_xlconstant_8b0_0,xlconstant_v1_1_6_xlconstant,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlconstant,x_ipVersion=1.1,x_ipCoreRevision=6,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,CONST_WIDTH=8,CONST_VAL=0x00}" *)
+(* X_CORE_INFO = "xlconstant_v1_1_7_xlconstant,Vivado 2020.2" *)
+(* CHECK_LICENSE_TYPE = "mac_phy_xlconstant_8b0_0,xlconstant_v1_1_7_xlconstant,{}" *)
+(* CORE_GENERATION_INFO = "mac_phy_xlconstant_8b0_0,xlconstant_v1_1_7_xlconstant,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlconstant,x_ipVersion=1.1,x_ipCoreRevision=7,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,CONST_WIDTH=8,CONST_VAL=0x00}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module mac_phy_xlconstant_8b0_0 (
   dout
@@ -60,9 +60,9 @@ module mac_phy_xlconstant_8b0_0 (
 
 output wire [7 : 0] dout;
 
-  xlconstant_v1_1_6_xlconstant #(
+  xlconstant_v1_1_7_xlconstant #(
     .CONST_WIDTH(8),
-    .CONST_VAL('H00)
+    .CONST_VAL(8'H00)
   ) inst (
     .dout(dout)
   );

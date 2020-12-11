@@ -54,8 +54,8 @@
 
 `timescale 1ps / 1ps
 
-(* CORE_GENERATION_INFO = "mac_phy_ten_gig_eth_pcs_pma_ch0_0,ten_gig_eth_pcs_pma_v6_0_16,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=ten_gig_eth_pcs_pma,x_ipVersion=6.0,x_ipCoreRevision=16,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,c_family=kintexu,c_component_name=mac_phy_ten_gig_eth_pcs_pma_ch0_0,c_has_mdio=true,c_has_fec=false,c_has_an=false,c_is_kr=false,c_is_32bit=false,c_no_ebuff=false,c_gttype=2,c_1588=0,c_gtif_width=64,c_speed10_25=10,c_sub_core_name=mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt,c_gt_loc=X0Y10,c_refclk=clk0,c_refclkrate=156,c_dclkrate=100.00,x_ipLicense=ten_gig_eth_pcs_pma_basekr@2015.04(design_linking)}" *)
-(* X_CORE_INFO = "ten_gig_eth_pcs_pma_v6_0_16,Vivado 2019.2" *)
+(* CORE_GENERATION_INFO = "mac_phy_ten_gig_eth_pcs_pma_ch0_0,ten_gig_eth_pcs_pma_v6_0_18,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=ten_gig_eth_pcs_pma,x_ipVersion=6.0,x_ipCoreRevision=18,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,c_family=kintexu,c_component_name=mac_phy_ten_gig_eth_pcs_pma_ch0_0,c_has_mdio=true,c_has_fec=false,c_has_an=false,c_is_kr=false,c_is_32bit=false,c_no_ebuff=false,c_gttype=2,c_1588=0,c_gtif_width=64,c_speed10_25=10,c_sub_core_name=mac_phy_ten_gig_eth_pcs_pma_ch0_0_gt,c_gt_loc=X0Y10,c_refclk=clk0,c_refclkrate=156,c_dclkrate=100.00,x_ipLicense=ten_gig_eth_pcs_pma_basekr@2015.04(design_linking)}" *)
+(* X_CORE_INFO = "ten_gig_eth_pcs_pma_v6_0_18,Vivado 2020.2" *)
 (* DowngradeIPIdentifiedWarnings="yes" *)
 module mac_phy_ten_gig_eth_pcs_pma_ch0_0
   (

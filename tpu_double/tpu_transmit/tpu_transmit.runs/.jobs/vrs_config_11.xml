@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="axis_fifo_t8_synth_1" LaunchDir="D:/tpu_double/tpu_transmit/tpu_transmit.runs/axis_fifo_t8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axis_fifo_t_synth_1" LaunchDir="D:/tpu_double/tpu_transmit/tpu_transmit.runs/axis_fifo_t_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="duc_out_fifo_synth_1" LaunchDir="D:/tpu_double/tpu_transmit/tpu_transmit.runs/duc_out_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="axis_fifo_t_synth_1"/>
+	</Run>
+	<Run Id="dds_125m_q_synth_1" LaunchDir="D:/tpu_double/tpu_transmit/tpu_transmit.runs/dds_125m_q_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dds_125m_i_synth_1" LaunchDir="D:/tpu_double/tpu_transmit/tpu_transmit.runs/dds_125m_i_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bb_interface_fifo_synth_1" LaunchDir="D:/tpu_double/tpu_transmit/tpu_transmit.runs/bb_interface_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="tpu_transmit_clock_synth_1" LaunchDir="D:/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

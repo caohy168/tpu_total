@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
-# Vivado v2019.2 (64-bit)
-# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
-# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sun Nov  8 18:55:26 2020
-# Process ID: 93845
-# Current directory: /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1
-# Command line: vivado -log tpu_transmit_clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tpu_transmit_clock.tcl
-# Log file: /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1/tpu_transmit_clock.vds
-# Journal file: /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1/vivado.jou
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Dec  3 11:46:49 2020
+# Process ID: 7412
+# Current directory: D:/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1
+# Command line: vivado.exe -log tpu_transmit_clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tpu_transmit_clock.tcl
+# Log file: D:/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1/tpu_transmit_clock.vds
+# Journal file: D:/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1\vivado.jou
 #-----------------------------------------------------------
 source tpu_transmit_clock.tcl -notrace
 Command: synth_design -top tpu_transmit_clock -part xcku040-ffva1156-2-e -mode out_of_context
@@ -15,14 +15,15 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
 INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
-INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 93941 
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5376
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2238.465 ; gain = 197.684 ; free physical = 47672 ; free virtual = 56540
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1406.012 ; gain = 256.316
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'tpu_transmit_clock' [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock.v:71]
-INFO: [Synth 8-6157] synthesizing module 'tpu_transmit_clock_clk_wiz' [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_clk_wiz.v:69]
-INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32952]
+INFO: [Synth 8-6157] synthesizing module 'tpu_transmit_clock' [d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock.v:71]
+INFO: [Synth 8-6157] synthesizing module 'tpu_transmit_clock_clk_wiz' [d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [D:/Xilinx/2020.02/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32998]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter DIFF_TERM bound to: FALSE - type: string 
 	Parameter DQS_BIAS bound to: FALSE - type: string 
@@ -30,8 +31,8 @@ INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/tools/Xilinx/Vivado/2019.2/s
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32952]
-INFO: [Synth 8-6157] synthesizing module 'MMCME3_ADV' [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:40131]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [D:/Xilinx/2020.02/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32998]
+INFO: [Synth 8-6157] synthesizing module 'MMCME3_ADV' [D:/Xilinx/2020.02/Vivado/2020.2/scripts/rt/data/unisim_comp.v:40189]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: double 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
@@ -83,59 +84,54 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME3_ADV' [/tools/Xilinx/Vivado/2019
 	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'MMCME3_ADV' (2#1) [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:40131]
-INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
-INFO: [Synth 8-6155] done synthesizing module 'tpu_transmit_clock_clk_wiz' (4#1) [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_clk_wiz.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'tpu_transmit_clock' (5#1) [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME3_ADV' (2#1) [D:/Xilinx/2020.02/Vivado/2020.2/scripts/rt/data/unisim_comp.v:40189]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Xilinx/2020.02/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [D:/Xilinx/2020.02/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'tpu_transmit_clock_clk_wiz' (4#1) [d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'tpu_transmit_clock' (5#1) [d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock.v:71]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2301.215 ; gain = 260.434 ; free physical = 47702 ; free virtual = 56573
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1461.848 ; gain = 312.152
 ---------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2304.184 ; gain = 263.402 ; free physical = 47699 ; free virtual = 56569
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1479.742 ; gain = 330.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2304.184 ; gain = 263.402 ; free physical = 47699 ; free virtual = 56569
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1479.742 ; gain = 330.047
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2314.090 ; gain = 0.000 ; free physical = 47692 ; free virtual = 56562
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1491.809 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_board.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_board.xdc] for cell 'inst'
-Parsing XDC File [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock.xdc] for cell 'inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tpu_transmit_clock_propImpl.xdc].
+Parsing XDC File [d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_board.xdc] for cell 'inst'
+WARNING: [Constraints 18-1039] DIFF_TERM is not supported in Ultrascale.  Automatically translating to DIFF_TERM_ADV=TERM_100. [d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_board.xdc:3]
+WARNING: [Constraints 18-1039] DIFF_TERM is not supported in Ultrascale.  Automatically translating to DIFF_TERM_ADV=TERM_100. [d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_board.xdc:4]
+Finished Parsing XDC File [d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_board.xdc] for cell 'inst'
+Parsing XDC File [d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tpu_transmit_clock_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/tpu_transmit_clock_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Parsing XDC File [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1/dont_touch.xdc]
+Parsing XDC File [D:/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2401.934 ; gain = 0.000 ; free physical = 47639 ; free virtual = 56518
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1516.047 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   BUFG => BUFGCE: 3 instances
   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2401.934 ; gain = 0.000 ; free physical = 47639 ; free virtual = 56518
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1516.047 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 2401.934 ; gain = 361.152 ; free physical = 47676 ; free virtual = 56556
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1516.047 ; gain = 366.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -143,37 +139,26 @@ Start Loading Part and Timing Information
 Loading part: xcku040-ffva1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 2401.934 ; gain = 361.152 ; free physical = 47676 ; free virtual = 56556
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1516.047 ; gain = 366.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP = true for clk_in1_n. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for clk_in1_p. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 2401.934 ; gain = 361.152 ; free physical = 47676 ; free virtual = 56556
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1516.047 ; gain = 366.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 2401.934 ; gain = 361.152 ; free physical = 47678 ; free virtual = 56559
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1516.047 ; gain = 366.352
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Hierarchical Component Statistics 
----------------------------------------------------------------------------------
-Hierarchical RTL Component report 
----------------------------------------------------------------------------------
-Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Part Resource Summary
@@ -187,46 +172,27 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 2401.934 ; gain = 361.152 ; free physical = 47675 ; free virtual = 56558
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1516.047 ; gain = 366.352
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:48 . Memory (MB): peak = 2470.355 ; gain = 429.574 ; free physical = 47445 ; free virtual = 56337
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1646.445 ; gain = 496.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:48 . Memory (MB): peak = 2470.355 ; gain = 429.574 ; free physical = 47445 ; free virtual = 56337
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1646.445 ; gain = 496.750
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:48 . Memory (MB): peak = 2480.371 ; gain = 439.590 ; free physical = 47443 ; free virtual = 56336
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1665.555 ; gain = 515.859
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -243,50 +209,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 2494.246 ; gain = 453.465 ; free physical = 47439 ; free virtual = 56332
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1672.371 ; gain = 522.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 2494.246 ; gain = 453.465 ; free physical = 47439 ; free virtual = 56332
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1672.371 ; gain = 522.676
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 2494.246 ; gain = 453.465 ; free physical = 47439 ; free virtual = 56332
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1672.371 ; gain = 522.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 2494.246 ; gain = 453.465 ; free physical = 47439 ; free virtual = 56332
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1672.371 ; gain = 522.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 2494.246 ; gain = 453.465 ; free physical = 47439 ; free virtual = 56332
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1672.371 ; gain = 522.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 2494.246 ; gain = 453.465 ; free physical = 47439 ; free virtual = 56332
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1672.371 ; gain = 522.676
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -306,45 +259,31 @@ Report Cell Usage:
 |2     |MMCME3_ADV |     1|
 |3     |IBUFDS     |     1|
 +------+-----------+------+
-
-Report Instance Areas: 
-+------+---------+---------------------------+------+
-|      |Instance |Module                     |Cells |
-+------+---------+---------------------------+------+
-|1     |top      |                           |     5|
-|2     |  inst   |tpu_transmit_clock_clk_wiz |     5|
-+------+---------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 2494.246 ; gain = 453.465 ; free physical = 47439 ; free virtual = 56332
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1672.371 ; gain = 522.676
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:49 . Memory (MB): peak = 2494.246 ; gain = 355.715 ; free physical = 47461 ; free virtual = 56353
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 2494.254 ; gain = 453.465 ; free physical = 47461 ; free virtual = 56353
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1672.371 ; gain = 486.371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1672.371 ; gain = 522.676
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2494.254 ; gain = 0.000 ; free physical = 47454 ; free virtual = 56347
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1672.371 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2521.996 ; gain = 0.000 ; free physical = 47487 ; free virtual = 56380
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1706.680 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   BUFG => BUFGCE: 3 instances
   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
 
 INFO: [Common 17-83] Releasing license: Synthesis
-26 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+29 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:11 . Memory (MB): peak = 2521.996 ; gain = 960.020 ; free physical = 47611 ; free virtual = 56504
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2521.996 ; gain = 0.000 ; free physical = 47611 ; free virtual = 56504
-WARNING: [Constraints 18-5210] No constraints selected for write.
-Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1/tpu_transmit_clock.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1706.680 ; gain = 589.355
+INFO: [Common 17-1381] The checkpoint 'D:/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1/tpu_transmit_clock.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP tpu_transmit_clock, cache-ID = e297e77d1adf2634
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2521.996 ; gain = 0.000 ; free physical = 47614 ; free virtual = 56508
-WARNING: [Constraints 18-5210] No constraints selected for write.
-Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1/tpu_transmit_clock.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP tpu_transmit_clock, cache-ID = daf46974c1e802d9
+INFO: [Common 17-1381] The checkpoint 'D:/tpu_double/tpu_transmit/tpu_transmit.runs/tpu_transmit_clock_synth_1/tpu_transmit_clock.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file tpu_transmit_clock_utilization_synth.rpt -pb tpu_transmit_clock_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Nov  8 18:56:52 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  3 11:47:25 2020...

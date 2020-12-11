@@ -53,15 +53,13 @@
 #ifndef _mac_phy_xlconstant_8b0_0_H_
 #define _mac_phy_xlconstant_8b0_0_H_
 
-#include "xlconstant_v1_1_6.h"
+#include "xlconstant_v1_1_7.h"
 #include "systemc.h"
 class mac_phy_xlconstant_8b0_0 : public sc_module {
   public:
-xlconstant_v1_1_6<8,0> mod;
+xlconstant_v1_1_7<8,0> mod;
   sc_out< sc_bv<8> > dout;
-mac_phy_xlconstant_8b0_0 (sc_core::sc_module_name name) :sc_module(name), mod("mod") {
-    mod.dout(dout);
-  }
-};
+mac_phy_xlconstant_8b0_0 (sc_core::sc_module_name name);
+  };
 
 #endif

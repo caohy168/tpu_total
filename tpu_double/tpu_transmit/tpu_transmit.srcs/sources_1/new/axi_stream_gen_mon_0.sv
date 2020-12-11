@@ -8,7 +8,7 @@
 // Module Name: tpu
 // Project Name: BFB(base frequency band) research group
 // Target Devices: xcvu9p
-// Tool Versions: vivado 2019.2
+// Tool Versions: vivado 2020.2
 // Description: 
 // 
 // Dependencies: 

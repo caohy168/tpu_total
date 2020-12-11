@@ -1,7 +1,7 @@
 onbreak {quit -f}
 onerror {quit -f}
 
-vsim -t 1ps -lib xil_defaultlib tpu_transmit_clock_opt
+vsim -lib xil_defaultlib tpu_transmit_clock_opt
 
 do {wave.do}
 

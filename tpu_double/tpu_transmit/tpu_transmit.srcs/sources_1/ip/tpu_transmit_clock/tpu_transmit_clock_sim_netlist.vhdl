@@ -1,10 +1,10 @@
--- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Sun Nov  8 18:56:52 2020
--- Host        : ubuntu running 64-bit Ubuntu 18.04.5 LTS
+-- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+-- Date        : Thu Dec  3 11:47:25 2020
+-- Host        : DESKTOP-4A374NS running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               /home/caohy/work/tpu_total/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_sim_netlist.vhdl
+--               d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock/tpu_transmit_clock_sim_netlist.vhdl
 -- Design      : tpu_transmit_clock
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.

@@ -1,10 +1,10 @@
--- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Mon Nov  9 00:11:24 2020
--- Host        : ubuntu running 64-bit Ubuntu 18.04.5 LTS
--- Command     : write_vhdl -force -mode synth_stub -rename_top mac_phy_ten_gig_eth_mac_ch0_0 -prefix
---               mac_phy_ten_gig_eth_mac_ch0_0_ mac_phy_ten_gig_eth_mac_ch0_0_stub.vhdl
+-- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+-- Date        : Thu Dec  3 11:38:47 2020
+-- Host        : DESKTOP-4A374NS running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub
+--               d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/mac_phy/ip/mac_phy_ten_gig_eth_mac_ch0_0/mac_phy_ten_gig_eth_mac_ch0_0_stub.vhdl
 -- Design      : mac_phy_ten_gig_eth_mac_ch0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xcku040-ffva1156-2-e
@@ -76,6 +76,6 @@ attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
 attribute black_box_pad_pin of stub : architecture is "tx_clk0,reset,tx_axis_aresetn,tx_axis_tdata[63:0],tx_axis_tkeep[7:0],tx_axis_tvalid,tx_axis_tlast,tx_axis_tuser,tx_ifg_delay[7:0],tx_axis_tready,tx_statistics_vector[25:0],tx_statistics_valid,pause_val[15:0],pause_req,rx_axis_aresetn,rx_axis_tdata[63:0],rx_axis_tkeep[7:0],rx_axis_tvalid,rx_axis_tuser,rx_axis_tlast,rx_statistics_vector[29:0],rx_statistics_valid,s_axi_aclk,s_axi_aresetn,s_axi_awaddr[10:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[10:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,xgmacint,mdc,mdio_in,mdio_out,mdio_tri,tx_dcm_locked,xgmii_txd[63:0],xgmii_txc[7:0],rx_clk0,rx_dcm_locked,xgmii_rxd[63:0],xgmii_rxc[7:0]";
 attribute X_CORE_INFO : string;
-attribute X_CORE_INFO of stub : architecture is "ten_gig_eth_mac_v15_1_7,Vivado 2019.2";
+attribute X_CORE_INFO of stub : architecture is "ten_gig_eth_mac_v15_1_9,Vivado 2020.2";
 begin
 end;

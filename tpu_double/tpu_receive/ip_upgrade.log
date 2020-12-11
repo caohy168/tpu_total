@@ -1,0 +1,232 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Dec  4 16:08:31 2020
+| Host         : DESKTOP-4A374NS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'tpu_receive_clock'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of tpu_receive_clock (xilinx.com:ip:clk_wiz:6.0) from (Rev. 4) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Dec  4 16:08:24 2020
+| Host         : DESKTOP-4A374NS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_phy_xlconstant_8b0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mac_phy_xlconstant_8b0_0 (xilinx.com:ip:xlconstant:1.1) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Dec  4 16:08:24 2020
+| Host         : DESKTOP-4A374NS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_phy_xlconstant_1b1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mac_phy_xlconstant_1b1_0 (xilinx.com:ip:xlconstant:1.1) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Dec  4 16:08:24 2020
+| Host         : DESKTOP-4A374NS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_phy_xlconstant_1b0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mac_phy_xlconstant_1b0_0 (xilinx.com:ip:xlconstant:1.1) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Dec  4 16:08:24 2020
+| Host         : DESKTOP-4A374NS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_phy_ten_gig_eth_pcs_pma_ch0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mac_phy_ten_gig_eth_pcs_pma_ch0_0 (xilinx.com:ip:ten_gig_eth_pcs_pma:6.0) from (Rev. 16) to (Rev. 18)
+
+2. Upgrade messages
+-------------------
+
+Removed parameter vu_gt_type
+Added parameter vu_gt_type with value GTH (source 'default')
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Dec  4 16:08:24 2020
+| Host         : DESKTOP-4A374NS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mac_phy_ten_gig_eth_mac_ch0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mac_phy_ten_gig_eth_mac_ch0_0 (xilinx.com:ip:ten_gig_eth_mac:15.1) from (Rev. 7) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Dec  4 16:07:43 2020
+| Host         : DESKTOP-4A374NS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dds_rq'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of dds_rq (xilinx.com:ip:dds_compiler:6.0) from (Rev. 19) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Dec  4 16:07:41 2020
+| Host         : DESKTOP-4A374NS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dds_ri'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of dds_ri (xilinx.com:ip:dds_compiler:6.0) from (Rev. 19) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Dec  4 16:07:40 2020
+| Host         : DESKTOP-4A374NS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ddc_out_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ddc_out_fifo (xilinx.com:ip:axis_data_fifo:2.0) from (Rev. 2) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Dec  4 16:07:40 2020
+| Host         : DESKTOP-4A374NS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bb_interface_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of bb_interface_fifo (xilinx.com:ip:axis_data_fifo:2.0) from (Rev. 2) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Dec  4 16:07:39 2020
+| Host         : DESKTOP-4A374NS running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xcku040-ffva1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bb_data_loopback_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of bb_data_loopback_fifo (xilinx.com:ip:axis_data_fifo:2.0) from (Rev. 2) to (Rev. 4)
+

@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:dds_compiler:6.0
--- IP Revision: 19
+-- IP Revision: 20
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY dds_compiler_v6_0_19;
-USE dds_compiler_v6_0_19.dds_compiler_v6_0_19;
+LIBRARY dds_compiler_v6_0_20;
+USE dds_compiler_v6_0_20.dds_compiler_v6_0_20;
 
 ENTITY dds_ri IS
   PORT (
@@ -69,7 +69,7 @@ END dds_ri;
 ARCHITECTURE dds_ri_arch OF dds_ri IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF dds_ri_arch: ARCHITECTURE IS "yes";
-  COMPONENT dds_compiler_v6_0_19 IS
+  COMPONENT dds_compiler_v6_0_20 IS
     GENERIC (
       C_XDEVICEFAMILY : STRING;
       C_MODE_OF_OPERATION : INTEGER;
@@ -151,7 +151,7 @@ ARCHITECTURE dds_ri_arch OF dds_ri IS
       event_s_config_tlast_missing : OUT STD_LOGIC;
       event_s_config_tlast_unexpected : OUT STD_LOGIC
     );
-  END COMPONENT dds_compiler_v6_0_19;
+  END COMPONENT dds_compiler_v6_0_20;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_phase_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 M_AXIS_PHASE TDATA";
@@ -160,10 +160,10 @@ ARCHITECTURE dds_ri_arch OF dds_ri IS
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_data_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 M_AXIS_DATA TDATA";
   ATTRIBUTE X_INTERFACE_PARAMETER OF m_axis_data_tvalid: SIGNAL IS "XIL_INTERFACENAME M_AXIS_DATA, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_data_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 M_AXIS_DATA TVALID";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF aclk: SIGNAL IS "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF M_AXIS_PHASE:S_AXIS_CONFIG:M_AXIS_DATA:S_AXIS_PHASE, ASSOCIATED_RESET aresetn, ASSOCIATED_CLKEN aclken, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF aclk: SIGNAL IS "XIL_INTERFACENAME aclk_intf, ASSOCIATED_BUSIF M_AXIS_PHASE:S_AXIS_CONFIG:M_AXIS_DATA:S_AXIS_PHASE, ASSOCIATED_RESET aresetn, ASSOCIATED_CLKEN aclken, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 aclk_intf CLK";
 BEGIN
-  U0 : dds_compiler_v6_0_19
+  U0 : dds_compiler_v6_0_20
     GENERIC MAP (
       C_XDEVICEFAMILY => "kintexu",
       C_MODE_OF_OPERATION => 0,

@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2019.2 (64-bit)
-# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
-# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Mon Nov 23 21:43:09 2020
-# Process ID: 95936
-# Current directory: /home/caohy/work/tpu_total/tpu_double/tpu_receive/tpu_receive.runs/tpu_receive_clock_synth_1
-# Command line: vivado -log tpu_receive_clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tpu_receive_clock.tcl
-# Log file: /home/caohy/work/tpu_total/tpu_double/tpu_receive/tpu_receive.runs/tpu_receive_clock_synth_1/tpu_receive_clock.vds
-# Journal file: /home/caohy/work/tpu_total/tpu_double/tpu_receive/tpu_receive.runs/tpu_receive_clock_synth_1/vivado.jou
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec  4 16:55:02 2020
+# Process ID: 15564
+# Current directory: D:/tpu_double/tpu_receive/tpu_receive.runs/tpu_receive_clock_synth_1
+# Command line: vivado.exe -log tpu_receive_clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tpu_receive_clock.tcl
+# Log file: D:/tpu_double/tpu_receive/tpu_receive.runs/tpu_receive_clock_synth_1/tpu_receive_clock.vds
+# Journal file: D:/tpu_double/tpu_receive/tpu_receive.runs/tpu_receive_clock_synth_1\vivado.jou
 #-----------------------------------------------------------
 source tpu_receive_clock.tcl -notrace

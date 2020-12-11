@@ -1,8 +1,8 @@
-//Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+//Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-//Date        : Mon Nov  9 00:15:01 2020
-//Host        : ubuntu running 64-bit Ubuntu 18.04.5 LTS
+//Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+//Date        : Thu Dec  3 11:37:09 2020
+//Host        : DESKTOP-4A374NS running 64-bit major release  (build 9200)
 //Command     : generate_target mac_phy.bd
 //Design      : mac_phy
 //Purpose     : IP block netlist
@@ -46,22 +46,22 @@ module mac_phy
     txn_ch0,
     txp_ch0);
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.AUX_RESETN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.AUX_RESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input aux_resetn;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CORE_CLK156_OUT CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CORE_CLK156_OUT, ASSOCIATED_BUSIF s_axis_pause_ch1:s_axis_pause_ch0, CLK_DOMAIN mac_phy_ten_gig_eth_pcs_pma_ch0_0_coreclk_out, FREQ_HZ 156250000, INSERT_VIP 0, PHASE 0.000" *) output core_clk156_out;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CORE_CLK156_OUT CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CORE_CLK156_OUT, ASSOCIATED_BUSIF s_axis_pause_ch1:s_axis_pause_ch0, CLK_DOMAIN mac_phy_ten_gig_eth_pcs_pma_ch0_0_coreclk_out, FREQ_HZ 156250000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) output core_clk156_out;
   output [7:0]core_status_ch0;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rx_0 " *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_rx_0, FREQ_HZ 156250000, HAS_TKEEP 1, HAS_TLAST 1, HAS_TREADY 0, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1" *) output [63:0]m_axis_rx_0_tdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rx_0 " *) output [7:0]m_axis_rx_0_tkeep;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rx_0 " *) output m_axis_rx_0_tlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rx_0 " *) output m_axis_rx_0_tuser;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rx_0 " *) output m_axis_rx_0_tvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.MB_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.MB_CLK, ASSOCIATED_BUSIF M03_AXI_0:M05_AXI_0, CLK_DOMAIN mac_phy_mb_clk, FREQ_HZ 156250000, INSERT_VIP 0, PHASE 0.000" *) input mb_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rx_0 TDATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_rx_0, FREQ_HZ 156250000, HAS_TKEEP 1, HAS_TLAST 1, HAS_TREADY 0, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1" *) output [63:0]m_axis_rx_0_tdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rx_0 TKEEP" *) output [7:0]m_axis_rx_0_tkeep;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rx_0 TLAST" *) output m_axis_rx_0_tlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rx_0 TUSER" *) output m_axis_rx_0_tuser;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_rx_0 TVALID" *) output m_axis_rx_0_tvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.MB_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.MB_CLK, ASSOCIATED_BUSIF M03_AXI_0:M05_AXI_0, CLK_DOMAIN mac_phy_mb_clk, FREQ_HZ 156250000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input mb_clk;
   input [4:0]prtad_ch0;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 refclk_diff_port CLK_N" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME refclk_diff_port, CAN_DEBUG false, FREQ_HZ 156250000" *) input refclk_diff_port_clk_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 refclk_diff_port CLK_P" *) input refclk_diff_port_clk_p;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset;
   input reset_n;
   output resetdone_ch0;
-  (* X_INTERFACE_INFO = "xilinx.com:display_ten_gig_eth_mac:statistics:2.0 rx_statistics_ch0 " *) output rx_statistics_ch0_valid;
-  (* X_INTERFACE_INFO = "xilinx.com:display_ten_gig_eth_mac:statistics:2.0 rx_statistics_ch0 " *) output [29:0]rx_statistics_ch0_vector;
+  (* X_INTERFACE_INFO = "xilinx.com:display_ten_gig_eth_mac:statistics:2.0 rx_statistics_ch0 valid" *) output rx_statistics_ch0_valid;
+  (* X_INTERFACE_INFO = "xilinx.com:display_ten_gig_eth_mac:statistics:2.0 rx_statistics_ch0 vector" *) output [29:0]rx_statistics_ch0_vector;
   input rxn_ch0;
   input rxp_ch0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.S_AXI_ARESETN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.S_AXI_ARESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) output [0:0]s_axi_aresetn;
@@ -75,8 +75,8 @@ module mac_phy
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_tx_0 TVALID" *) input s_axis_tx_0_tvalid;
   input sim_speedup_control_ch0;
   output tx_disable_ch0;
-  (* X_INTERFACE_INFO = "xilinx.com:display_ten_gig_eth_mac:statistics:2.0 tx_statistics_ch0 " *) output tx_statistics_ch0_valid;
-  (* X_INTERFACE_INFO = "xilinx.com:display_ten_gig_eth_mac:statistics:2.0 tx_statistics_ch0 " *) output [25:0]tx_statistics_ch0_vector;
+  (* X_INTERFACE_INFO = "xilinx.com:display_ten_gig_eth_mac:statistics:2.0 tx_statistics_ch0 valid" *) output tx_statistics_ch0_valid;
+  (* X_INTERFACE_INFO = "xilinx.com:display_ten_gig_eth_mac:statistics:2.0 tx_statistics_ch0 vector" *) output [25:0]tx_statistics_ch0_vector;
   output txn_ch0;
   output txp_ch0;
 

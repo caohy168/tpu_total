@@ -18,6 +18,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 `timescale 1 ps / 1 ps
+//`define Ubuntu
 
 module tb;
 
@@ -144,10 +145,48 @@ logic [15:0]mem_loadq[8][1700];
 //    for(j=1;j<=1700;j=j+1)mem_loadi[j]=0;               
      //file_rd = $fopen("E:/Project/file_ctrl/sim/tb/data_in.txt","r");
      //file_wr = $fopen("E:/Project/file_ctrl/sim/tb/data_out.txt","w");
-    $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data0", mem_loadi[0]);
-    $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data0", mem_loadq[0]);   
-    $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data1", mem_loadi[1]);
-    $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data1", mem_loadq[1]);  
+     `ifdef Ubuntu
+        begin
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data0", mem_loadi[0]);
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data1", mem_loadi[1]);   
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data2", mem_loadi[2]);
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data3", mem_loadi[3]); 
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data4", mem_loadi[4]);
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data5", mem_loadi[5]);   
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data6", mem_loadi[6]);
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data7", mem_loadi[7]);
+            
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data0", mem_loadq[0]);
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data1", mem_loadq[1]);   
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data2", mem_loadq[2]);
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data3", mem_loadq[3]); 
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data4", mem_loadq[4]);
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data5", mem_loadq[5]);   
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data6", mem_loadq[6]);
+            $readmemh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data7", mem_loadq[7]);   
+        end
+    `else
+        begin
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\dai_data0", mem_loadi[0]);
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\dai_data1", mem_loadi[1]); 
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\dai_data2", mem_loadi[2]);
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\dai_data3", mem_loadi[3]); 
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\dai_data4", mem_loadi[4]);
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\dai_data5", mem_loadi[5]); 
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\dai_data6", mem_loadi[6]);
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\dai_data7", mem_loadi[7]);    
+            
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\daq_data0", mem_loadq[0]);
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\daq_data1", mem_loadq[1]); 
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\daq_data2", mem_loadq[2]);
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\daq_data3", mem_loadq[3]); 
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\daq_data4", mem_loadq[4]);
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\daq_data5", mem_loadq[5]); 
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\daq_data6", mem_loadq[6]);
+            $readmemh("D:\\tpu_double\\intermediate\\transmit\\daq_data7", mem_loadq[7]);  
+        end
+    `endif
+
  end      
 
 int package_i[8],package_j[8],package_interval[8];
@@ -191,8 +230,8 @@ always @(negedge m_axis_outputADI_tvalid[0]) begin
 //        $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data0", mem_pushi[0]);
 //        $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data0", mem_pushq[0]); 
 //        $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/dai_data1", mem_pushi[1]);
-//        $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data1", mem_pushq[1]);          $finish;end 
-    end
+//        $writememh("/home/caohy/work/tpu_total/tpu_double/intermediate/transmit/daq_data1", mem_pushq[1]);          
+        $finish;end end
 //end
 //initial $fread(mem_loadi,in_file_dai0);
 //initial $fread(mem_loadq,in_file_daq0);

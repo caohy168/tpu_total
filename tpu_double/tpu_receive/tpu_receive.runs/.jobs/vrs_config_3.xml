@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ddc_out_fifo_synth_1" LaunchDir="D:/tpu_double/tpu_receive/tpu_receive.runs/ddc_out_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dds_rq_synth_1" LaunchDir="D:/tpu_double/tpu_receive/tpu_receive.runs/dds_rq_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dds_ri_synth_1" LaunchDir="D:/tpu_double/tpu_receive/tpu_receive.runs/dds_ri_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bb_interface_fifo_synth_1" LaunchDir="D:/tpu_double/tpu_receive/tpu_receive.runs/bb_interface_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bb_data_loopback_fifo_synth_1" LaunchDir="D:/tpu_double/tpu_receive/tpu_receive.runs/bb_data_loopback_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="tpu_receive_clock_synth_1" LaunchDir="D:/tpu_double/tpu_receive/tpu_receive.runs/tpu_receive_clock_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

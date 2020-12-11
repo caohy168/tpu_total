@@ -1,10 +1,10 @@
-// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Mon Nov  9 00:11:20 2020
-// Host        : ubuntu running 64-bit Ubuntu 18.04.5 LTS
-// Command     : write_verilog -force -mode synth_stub -rename_top mac_phy_ten_gig_eth_pcs_pma_ch0_0 -prefix
-//               mac_phy_ten_gig_eth_pcs_pma_ch0_0_ mac_phy_ten_gig_eth_pcs_pma_ch0_0_stub.v
+// Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+// Date        : Thu Dec  3 11:38:43 2020
+// Host        : DESKTOP-4A374NS running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               d:/tpu_double/tpu_transmit/tpu_transmit.srcs/sources_1/new/mac_phy/ip/mac_phy_ten_gig_eth_pcs_pma_ch0_0/mac_phy_ten_gig_eth_pcs_pma_ch0_0_stub.v
 // Design      : mac_phy_ten_gig_eth_pcs_pma_ch0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xcku040-ffva1156-2-e
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* X_CORE_INFO = "ten_gig_eth_pcs_pma_v6_0_16,Vivado 2019.2" *)
+(* X_CORE_INFO = "ten_gig_eth_pcs_pma_v6_0_18,Vivado 2020.2" *)
 module mac_phy_ten_gig_eth_pcs_pma_ch0_0(dclk, rxrecclk_out, refclk_p, refclk_n, 
   sim_speedup_control, coreclk_out, qpll0outclk_out, qpll0outrefclk_out, qpll0lock_out, 
   txusrclk_out, txusrclk2_out, areset_datapathclk_out, areset_coreclk_out, gttxreset_out, 
