@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 parameter layer1_transmit_lane_number = 8;//2--lane2;4--lane4;8--lane8
-//`include "parameter_define.vh"
+//`include "parameter_declare.sv"
 module layer1_transmit(
 input clk,reset,
 

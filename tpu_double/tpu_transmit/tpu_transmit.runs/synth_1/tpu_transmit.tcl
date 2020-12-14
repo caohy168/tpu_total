@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param general.maxThreads 32
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xcku040-ffva1156-2-e
 

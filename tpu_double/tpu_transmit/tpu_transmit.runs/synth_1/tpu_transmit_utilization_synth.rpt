@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Dec  4 10:32:27 2020
+| Date         : Mon Dec 14 17:22:03 2020
 | Host         : DESKTOP-4A374NS running 64-bit major release  (build 9200)
 | Command      : report_utilization -file tpu_transmit_utilization_synth.rpt -pb tpu_transmit_utilization_synth.pb
 | Design       : tpu_transmit
@@ -31,8 +31,8 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| CLB LUTs*                  | 64007 |     0 |    242400 | 26.41 |
-|   LUT as Logic             | 60662 |     0 |    242400 | 25.03 |
+| CLB LUTs*                  | 64014 |     0 |    242400 | 26.41 |
+|   LUT as Logic             | 60669 |     0 |    242400 | 25.03 |
 |   LUT as Memory            |  3345 |     0 |    112800 |  2.97 |
 |     LUT as Distributed RAM |  3328 |     0 |           |       |
 |     LUT as Shift Register  |    17 |     0 |           |       |
@@ -155,13 +155,13 @@ Table of Contents
 | Ref Name |  Used | Functional Category |
 +----------+-------+---------------------+
 | FDRE     | 35459 |            Register |
-| LUT3     | 34707 |                 CLB |
-| LUT6     | 24703 |                 CLB |
+| LUT3     | 34721 |                 CLB |
+| LUT6     | 24704 |                 CLB |
 | LUT5     | 12798 |                 CLB |
-| LUT2     |  6810 |                 CLB |
+| LUT2     |  6809 |                 CLB |
 | MUXF7    |  5560 |                 CLB |
 | RAMD64E  |  2688 |                 CLB |
-| LUT4     |  2159 |                 CLB |
+| LUT4     |  2158 |                 CLB |
 | MUXF8    |  2088 |                 CLB |
 | RAMD32   |   640 |                 CLB |
 | OBUF     |   288 |                 I/O |

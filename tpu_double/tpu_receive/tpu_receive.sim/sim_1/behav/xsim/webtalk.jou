@@ -2,8 +2,8 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Dec 11 18:50:29 2020
-# Process ID: 940
+# Start of session at: Mon Dec 14 17:57:43 2020
+# Process ID: 13768
 # Current directory: D:/tpu_double/tpu_receive/tpu_receive.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source D:/tpu_double/tpu_receive/tpu_receive.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/tpu_double/tpu_receive/tpu_receive.sim/sim_1/behav/xsim/webtalk.log

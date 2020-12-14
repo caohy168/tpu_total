@@ -19,7 +19,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-//`include "parameter_define.vh"
+//`include "parameter_declare.sv"
 // the nane include right means data from 10G MAC to tpu base band processor to RF
 parameter mux_number = 8;//2--lane2;4--lane4;8--lane8
 module datastream_transfer #(
@@ -214,9 +214,7 @@ always @ (posedge aclk) begin
             else tx_axis_tdata_right=0;  
           end
     endcase
-        
-
-
+       
 end 
 
 always @ (*) begin
@@ -264,6 +262,5 @@ always @ (*) begin
           end
     endcase  
 end 
-
 
 endmodule
