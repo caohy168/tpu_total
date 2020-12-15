@@ -18,8 +18,8 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-//`include "parameter_declare.sv"
-parameter radio_transmit_lane_number = 8;//2--lane2;4--lane4;8--lane8
+`include "lane_select.vh"
+//parameter radio_transmit_lane_number = 8;//2--lane2;4--lane4;8--lane8
 module radio_transmit(
     input clk_250m,clk_500m,
     input reset,
@@ -86,7 +86,7 @@ logic [7:0]m_axis_outputI_inter_tdata[8],m_axis_outputQ_inter_tdata[8];
 
 genvar j;
 generate
-    for (j = 0; j < radio_transmit_lane_number; j = j + 1)begin: duc_transmit
+    for (j = 0; j < `radio_transmit_lane_number; j = j + 1)begin: duc_transmit
 //        inter2 inter2_I(
 //            .aclk(clk_250m),
 //            .aclk1(clk_500m),

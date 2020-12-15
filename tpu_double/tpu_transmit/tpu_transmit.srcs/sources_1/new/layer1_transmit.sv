@@ -18,8 +18,8 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-parameter layer1_transmit_lane_number = 8;//2--lane2;4--lane4;8--lane8
-//`include "parameter_declare.sv"
+//parameter layer1_transmit_lane_number = 8;//2--lane2;4--lane4;8--lane8
+`include "lane_select.vh"
 module layer1_transmit(
 input clk,reset,
 
@@ -113,7 +113,7 @@ logic qam_tready[8];
 
 genvar i;
 generate
-    for (i = 0; i < layer1_transmit_lane_number; i = i + 1)begin:layer1_transmit_lane
+    for (i = 0; i < `layer1_transmit_lane_number; i = i + 1)begin:layer1_transmit_lane
         crc_generator crc_generator(
         .clk(clk),
         .reset(reset),

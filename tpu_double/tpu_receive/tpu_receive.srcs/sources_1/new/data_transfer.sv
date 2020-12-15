@@ -19,10 +19,10 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-//`include "parameter_define.vh"
+`include "lane_select.vh"
 // the name include left means data from RF to tpu base band processor to 10g MAC
 // the nane include right means data from 10G MAC to tpu base band processor to RF
-parameter mux_number = 8;//2--lane2;4--lane4;8--lane8
+//parameter mux_number = 8;//2--lane2;4--lane4;8--lane8
 module data_transfer #(
         parameter AXIS_TDATA_WIDTH =  64,
         parameter AXIS_TKEEP_WIDTH =  AXIS_TDATA_WIDTH/8
@@ -293,7 +293,7 @@ end
 
 logic [15:00]tranfer_state_left,tranfer_pkg_cnt_left;
 always @ (posedge aclk) begin
-    case (mux_number)
+    case (`mux_number)
         2:begin
             if (reset)begin
                 tranfer_state_left=0;
@@ -339,7 +339,7 @@ always @ (posedge aclk) begin
 end
   
 always @ (*) begin
-    case (mux_number)
+    case (`mux_number)
         2:begin
           if(tranfer_state_left==2 && tranfer_pkg_cnt_left<59)begin
             tx_axis_tdata_left={lane2_pkg_dat8_left[8*tranfer_pkg_cnt_left+8],
@@ -406,7 +406,7 @@ always @ (posedge aclk) begin
 end  
 
 always @ (*) begin
-    case (mux_number)
+    case (`mux_number)
         2:begin
         end
         4: begin
@@ -419,14 +419,12 @@ always @ (*) begin
                 tx_axis_tvalid_left=rx_axis_tvalid_left;
             else
                 tx_axis_tvalid_left=0;
-//            if( pkg_cnt_left==187) begin
-//                tx_axis_tkeep_left='h0F;
-//                tx_axis_tlast_left=1;
-//            end
-//            else begin
                 tx_axis_tkeep_left='hFF;
+            
+            if(pkg_cnt_left==58)
+                tx_axis_tlast_left=1;
+            else
                 tx_axis_tlast_left=0;
-//            end
         end
         default : begin
             tx_axis_tdata_left=rx_axis_tdata_left;
@@ -436,12 +434,10 @@ always @ (*) begin
                 tx_axis_tvalid_left=rx_axis_tvalid_left;
             else
                 tx_axis_tvalid_left=0;
-//            if( pkg_cnt_left==187) begin
-//                tx_axis_tkeep_left='h0F;
-//                tx_axis_tlast_left=1;
-//            end
-//            else begin
-                tx_axis_tkeep_left='hFF;
+            tx_axis_tkeep_left='hFF;
+            if(pkg_cnt_left==58)
+                tx_axis_tlast_left=1;
+            else
                 tx_axis_tlast_left=0;
             end           
 //          end

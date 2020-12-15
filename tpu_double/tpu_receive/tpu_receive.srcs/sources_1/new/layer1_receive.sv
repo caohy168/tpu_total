@@ -18,7 +18,8 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-parameter layer1_receive_lane_number = 8;//2--lane2;4--lane4;8--lane8
+`include "lane_select.vh"
+//parameter layer1_receive_lane_number = 8;//2--lane2;4--lane4;8--lane8
 module layer1_receive(
 input clk,reset,
 
@@ -101,7 +102,7 @@ always@(posedge clk)
 
 genvar i;
 generate
-    for (i = 0; i < layer1_receive_lane_number; i = i + 1)begin:layer1_receive_lane
+    for (i = 0; i < `layer1_receive_lane_number; i = i + 1)begin:layer1_receive_lane
 eqam eqam(
     .clk(clk),
     .reset(reset),

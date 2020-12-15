@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1607937364">
   <File Type="PA-TCL" Name="tpu_transmit.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="tpu_transmit_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="tpu_transmit_reports.tcl"/>
   <File Type="RDS-RDS" Name="tpu_transmit.vds"/>
   <File Type="RDS-UTIL" Name="tpu_transmit_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="tpu_transmit_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="tpu_transmit.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="tpu_transmit_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="tpu_transmit_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/add_duc/add_duc.xci">
@@ -237,11 +234,11 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="mac_phy_ten_gig_eth_mac_ch0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="duc_out_fifo"/>
   <BlockFileSet Type="BlockSrcs" Name="mac_phy_ten_gig_eth_pcs_pma_ch0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="bb_interface_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="duc_out_fifo"/>
   <BlockFileSet Type="BlockSrcs" Name="axis_fifo_t8"/>
-  <BlockFileSet Type="BlockSrcs" Name="dds_125m_q"/>
+  <BlockFileSet Type="BlockSrcs" Name="bb_interface_fifo"/>
   <BlockFileSet Type="BlockSrcs" Name="axis_fifo_t"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_125m_q"/>
   <BlockFileSet Type="BlockSrcs" Name="tpu_transmit_clock"/>
 </GenRun>

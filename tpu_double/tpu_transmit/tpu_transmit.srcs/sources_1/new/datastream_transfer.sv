@@ -19,9 +19,9 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-//`include "parameter_declare.sv"
+`include "lane_select.vh"
 // the nane include right means data from 10G MAC to tpu base band processor to RF
-parameter mux_number = 8;//2--lane2;4--lane4;8--lane8
+//parameter mux_number = 8;//2--lane2;4--lane4;8--lane8
 module datastream_transfer #(
         parameter AXIS_TDATA_WIDTH =  64,
         parameter AXIS_TKEEP_WIDTH =  AXIS_TDATA_WIDTH/8
@@ -51,7 +51,7 @@ logic [63:00]lane2_pkg_dat_right[59:1];
 logic [07:00]lane2_pkg_dat8_right[472:1];
 logic [15:00]lane2_i;
 always @ (posedge aclk) begin
-    if(mux_number==2)begin//receive date from 10g MAC put into 64bit buffer lane2_pkg_dat_right
+    if(`mux_number==2)begin//receive date from 10g MAC put into 64bit buffer lane2_pkg_dat_right
         if(rx_axis_tvalid_right)begin
             lane2_i=lane2_i+1;
             lane2_pkg_dat_right[lane2_i]=rx_axis_tdata_right;
@@ -75,7 +75,7 @@ end
 //state1 save data from 10g MAC into bufer(lane2_pkg_dat_right and lane2_pkg_dat8_right) 
 //transfer the date to tpu baseband process
 always @ (posedge aclk) begin
-    case (mux_number)
+    case (`mux_number)
         2:begin
             if (reset)begin
                 tranfer_state_right=0;
@@ -192,7 +192,7 @@ always @ (posedge aclk) begin
 end  
   
 always @ (posedge aclk) begin
-    case (mux_number)
+    case (`mux_number)
         2:begin//tranfer the data from lane1-2
             if(pkg_cnt_right<236 && tranfer_state_right==2)begin
                 tx_axis_tdata_right[07:00]=lane2_pkg_dat8_right[2*(pkg_cnt_right+1)-1];
@@ -218,7 +218,7 @@ always @ (posedge aclk) begin
 end 
 
 always @ (*) begin
-    case (mux_number)
+    case (`mux_number)
         2:begin
             if(tranfer_state_right==2 && pkg_cnt_right<=235)begin
                 tx_axis_tvalid_right=1;

@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../tpu_transmit.ip_user_files/ipstatic/hdl" --include "../../../../tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock" \
+verilog xil_defaultlib  --include "../../../../tpu_transmit.srcs/sources_1/new" --include "../../../../tpu_transmit.ip_user_files/ipstatic/hdl" --include "../../../../tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock" \
 "../../../../tpu_transmit.srcs/sources_1/new/axis_fifo_t8/sim/axis_fifo_t8.v" \
 "../../../../tpu_transmit.srcs/sources_1/new/axis_fifo_t/sim/axis_fifo_t.v" \
 "../../../../tpu_transmit.srcs/sources_1/new/duc_out_fifo/sim/duc_out_fifo.v" \
@@ -37,7 +37,7 @@ verilog xil_defaultlib  --include "../../../../tpu_transmit.ip_user_files/ipstat
 "../../../../tpu_transmit.srcs/sources_1/new/crc24_insert_1bit.v" \
 "../../../../tpu_transmit.srcs/sources_1/new/mac_phy/hdl/mac_phy_wrapper.v" \
 
-sv xil_defaultlib  --include "../../../../tpu_transmit.ip_user_files/ipstatic/hdl" --include "../../../../tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock" \
+sv xil_defaultlib  --include "../../../../tpu_transmit.srcs/sources_1/new" --include "../../../../tpu_transmit.ip_user_files/ipstatic/hdl" --include "../../../../tpu_transmit.srcs/sources_1/ip/tpu_transmit_clock" \
 "../../../../tpu_transmit.srcs/sources_1/new/axi_stream_gen.sv" \
 "../../../../tpu_transmit.srcs/sources_1/new/axi_stream_gen_mon_0.sv" \
 "../../../../tpu_transmit.srcs/sources_1/new/axi_stream_interface.sv" \

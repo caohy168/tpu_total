@@ -18,8 +18,8 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-parameter radio_receive_lane_number = 8;//2--lane2;4--lane4;8--lane8
-
+//parameter radio_receive_lane_number = 8;//2--lane2;4--lane4;8--lane8
+`include "lane_select.vh"
 module radio_receive(
     input clk_250m,clk_500m,
     input reset,
@@ -63,7 +63,7 @@ logic [7:0]m_axis_data_tdata_ddc_I[8],m_axis_data_tdata_ddc_Q[8];
         
 genvar i;
 generate
-    for (i = 0; i < radio_receive_lane_number; i = i + 1)begin: radio_receive
+    for (i = 0; i < `radio_receive_lane_number; i = i + 1)begin: radio_receive
     ddc ddc(
 //        .aclk(clk_500m),
         .aclk(clk_250m),
